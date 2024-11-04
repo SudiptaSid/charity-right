@@ -1,0 +1,49 @@
+// About box One
+.aboutBoxOne {
+  background-color: clr(light, outline);
+  padding: 24px;
+
+  h6 {
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 24px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    li {
+      background-color: clr(light, main);
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      span {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: clr(primary, main);
+        position: relative;
+        border-radius: 50%;
+        flex-shrink: 0;
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          background-color: clr(light, outline);
+          border-radius: 50%;
+          width: 6px;
+          height: 6px;
+        }
+      }
+    }
+  }
+}

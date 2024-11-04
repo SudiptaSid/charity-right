@@ -1,0 +1,118 @@
+// Footer One
+.footer-one {
+    padding-top: 100px;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding-top: 50px;
+    }
+    .logo {
+        display: inline-block;
+        margin-bottom: 34px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            margin-bottom: 24px;
+        }
+        + p {
+            margin-bottom: 0;
+        }
+    }
+    h4 {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 700;
+        margin-bottom: 24px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            margin-bottom: 16px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    .quick-links {
+        li {
+            a {
+                display: inline-block;
+                color: $clr-363636;
+            }
+            + li {
+                margin-top: 16px;
+                /* Max Width 991px */
+                @media (max-width: $break_991) {
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+    .social-links {
+        margin-top: 32px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            margin-top: 24px;
+        }
+        li {
+            a {
+                color: $clr-B02830;
+                border-color: $clr-B02830;
+                background-color: $white-clr;
+            }
+        }
+    }
+    .copyright {
+        font-size: 14px;
+        padding: 50px 0;
+        margin-top: 50px;
+        text-align: center;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            padding: 50px 0 15px 0;
+            margin-top: 40px;
+        }
+        span {
+            display: inline-block;
+            color: $clr-B02830;
+        }
+    }
+}
+
+// Footer Two
+.footer-two {
+    padding-top: 90px;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding-top: 40px;
+    }
+    .logo {
+        display: inline-block;
+        margin-bottom: 34px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            margin-bottom: 24px;
+        }
+    }
+    .social-links {
+        justify-content: center;
+        li {
+            a {
+                color: $clr-31AC61;
+                border-color: $clr-31AC61;
+                background-color: $white-clr;
+            }
+        }
+    }
+    .copyright {
+        position: relative;
+        padding: 40px 0;
+        margin-top: 50px;
+        text-align: center;
+        border-top: 1px solid #cfbabb;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+        span {
+            display: inline-block;
+            color: $clr-31AC61;
+        }
+    }
+}

@@ -1,0 +1,399 @@
+// Box 143
+.box-413 {
+    max-width: 413px;
+    border-radius: 12px;
+    box-shadow: $shadow-1;
+    background-color: $white-clr;
+    padding: 35px 30px;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+    h5 {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .currency-control {
+        margin-bottom: 20px;
+    }
+}
+
+// Tab Panel One
+.tab-one {
+    .nav {
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .nav-item {
+            width: calc(50% - 7px);
+            .nav-link {
+                display: block;
+                font-size: 14px;
+                line-height: 20px;
+                color: rgba($black-clr, 0.5);
+                background-color: $white-clr;
+                border: $border-1-solid $clr-DAE0E5;
+                border-radius: 50px;
+                text-align: center;
+                padding: 10px 20px;
+                &.active {
+                    color: $white-clr;
+                    background-color: $primary-clr;
+                    border-color: $primary-clr;
+                }
+            }
+        }
+    }
+}
+
+// Tab Panel Two
+.tab-two {
+    .nav {
+        justify-content: center;
+        margin-bottom: 70px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            margin-bottom: 30px;
+        }
+        .nav-item {
+            width: 45%;
+            max-width: 215px;
+            + .nav-item {
+                margin-left: 15px;
+                /* Max Width 991px */
+                @media (max-width: $break_991) {
+                    margin-left: 5px;
+                }
+            }
+            .nav-link {
+                display: block;
+                font-size: 14px;
+                line-height: 20px;
+                color: $white-clr;
+                background-color: $no-clr;
+                border: $border-1-solid $white-clr;
+                border-radius: 50px;
+                text-align: center;
+                padding: 10px 20px;
+                /* Max Width 991px */
+                @media (max-width: $break_991) {
+                    font-size: 12px;
+                }
+                &.active {
+                    color: $black-clr;
+                    background-color: $white-clr;
+                    border-color: $white-clr;
+                }
+            }
+        }
+    }
+}
+
+// Donate Shortlist
+.donate-shortlist {
+    margin-bottom: 20px;
+    li {
+        + li {
+            margin-top: 10px;
+        }
+    }
+}
+
+// Stats Box
+.stats-box {
+    text-align: center;
+    img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            width: 100px;
+            height: 100px;
+        }
+        + h2 {
+            margin-top: 40px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                margin-top: 5px;
+            }
+        }
+    }
+    h2 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: -1px;
+        margin-bottom: 0;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            font-size: 30px;
+        }
+        + p {
+            margin-top: 15px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                margin-top: 0;
+            }
+        }
+    }
+    p {
+        font-size: 20px;
+        line-height: 26px;
+        max-height: 55px;
+        overflow: hidden;
+        max-width: 260px;
+        margin: auto;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            font-size: 18px;
+            max-width: 100%;
+        }
+    }
+    &.blue-bx {
+        h2 {
+            color: $blue-clr;
+        }
+    }
+    &.pink-bx {
+        h2 {
+            color: $primary-clr;
+        }
+    }
+}
+
+// Video Box
+.video-box {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    line-height: 0;
+    /* Max width 767px */
+    @media (max-width: $break_767) {
+        height: 200px;
+    }
+    img {
+        width: 100%;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            height: 100%;
+        }
+    }
+    a,
+    button {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        background: transparent;
+        border: none;
+        outline: none;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            width: 70px;
+            height: 70px;
+        }
+    }
+    iframe {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+}
+
+// Give Box
+.give-box {
+    box-shadow: $shadow-1;
+    border-radius: 20px;
+    overflow: hidden;
+    .details-sec {
+        padding: 35px 30px;
+        background-color: $white-clr;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            padding: 25px 20px;
+        }
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1;
+            color: $primary-clr;
+            margin-bottom: 0;
+            /* Max width 767px */
+            @media (max-width: $break_767) {
+                font-size: 30px;
+            }
+            + p {
+                margin-top: 15px;
+            }
+        }
+        p {
+            margin-bottom: 0;
+            color: $black-clr;
+            font-size: 18px;
+            line-height: 1;
+            /* Max width 767px */
+            @media (max-width: $break_767) {
+                font-size: 16px;
+            }
+            + a {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+// Work Box
+.work-box {
+    .img-sec {
+        display: block;
+        border-radius: 20px;
+        overflow: hidden;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            border-radius: 10px;
+        }
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 0;
+        margin-top: 20px;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        a {
+            display: inline-block;
+            color: $clr-101010;
+            img {
+                width: auto !important;
+                display: inline-block !important;
+            }
+        }
+    }
+}
+
+// Accordian
+.accordion {
+    /* Max width 767px */
+    @media (max-width: $break_767) {
+    }
+    .card {
+        background-color: $no-clr;
+        border: $border-1-solid $blue-clr;
+        border-radius: 10px;
+        padding: 25px 30px;
+        position: relative;
+        z-index: 4;
+        overflow: hidden;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .card-header {
+            border: none;
+            border-radius: 0;
+            background-color: $no-clr;
+            padding: 0;
+            h2 {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 700;
+                /* Max width 767px */
+                @media (max-width: $break_767) {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                button {
+                    font-weight: 700;
+                    color: $primary-clr;
+                    background-color: $no-clr;
+                    border: none;
+                    border-radius: 0;
+                    padding: 0;
+                    display: block;
+                    width: 100%;
+                    position: relative;
+                    text-align: left;
+                    /* Max width 767px */
+                    @media (max-width: $break_767) {
+                        padding-right: 30px;
+                    }
+                    &:after {
+                        content: "";
+                        width: 32px;
+                        height: 32px;
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        background-image: url(../images/generic/remove.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        /* Max width 767px */
+                        @media (max-width: $break_767) {
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+                    &.collapsed {
+                        color: $black-clr;
+                        &:after {
+                            background-image: url(../images/generic/add.svg);
+                        }
+                    }
+                }
+            }
+        }
+        .card-body {
+            padding: 0;
+            margin-top: 30px;
+            /* Max width 767px */
+            @media (max-width: $break_767) {
+                margin-top: 15px;
+            }
+            &:before {
+                content: "";
+                width: calc(100% + 2px);
+                height: calc(100% + 2px);
+                background-color: $white-clr;
+                border: $border-1-solid $primary-clr;
+                position: absolute;
+                top: -1px;
+                left: -1px;
+                z-index: -1;
+            }
+            p {
+                font-size: 18px;
+                line-height: 28px;
+                margin-bottom: 0;
+                color: $clr-7A8193;
+                /* Max width 767px */
+                @media (max-width: $break_767) {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                + p {
+                    margin-top: 20px;
+                }
+            }
+        }
+        + .card {
+            margin-top: 20px;
+        }
+    }
+}

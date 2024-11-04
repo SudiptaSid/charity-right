@@ -1,0 +1,53 @@
+// Heading One
+.heading-one {
+    h1 {
+        font-size: $sz-40;
+        font-weight: 800;
+        color: inherit;
+        margin-bottom: 0;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            font-size: $sz-24;
+        }
+        &.fz-30 {
+            font-size: $sz-30;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                font-size: $sz-20;
+            }
+        }
+        + p {
+            margin-top: 12px;
+        }
+    }
+    p {
+        font-size: $sz-16;
+        margin-bottom: 0;
+        &.fz-20 {
+            font-size: $sz-20;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                font-size: $sz-16;
+            }
+        }
+        + p {
+            margin-top: 16px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                margin-top: 12px;
+            }
+        }
+        + .btn-sec {
+            margin-top: 24px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                margin-top: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+// Reset
+* {
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: $clr-999999;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $clr-333335;
+        border-radius: 10px;
+    }
+}
+body {
+    font-family: $ff-poppins;
+    font-size: $sz-16;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $clr-333335;
+    background-color: $clr-F5F5F5;
+    overflow-x: hidden;
+}
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $ff-inter;
+    margin-bottom: 15px;
+}
+a {
+    display: inline-block;
+    color: $white-clr;
+    transition: 0.3s;
+    &:hover {
+        text-decoration: none;
+    }
+}
+a,
+button,
+input,
+textarea,
+select {
+    &:focus,
+    &:hover,
+    &:active {
+        outline: none;
+        box-shadow: none;
+    }
+}
+small,
+.small {
+    font-size: 80%;
+}
+section {
+    position: relative;
+}
+hr {
+    border-color: $clr-333335;
+}
+img {
+    max-width: 100%;
+}

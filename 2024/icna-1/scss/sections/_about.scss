@@ -1,0 +1,109 @@
+// About One
+.aboutOne {
+  padding: 40px 0;
+
+  .sectionTitle {
+    p {
+      color: clr(black, focus);
+    }
+
+    .btnSec {
+      .btn {
+        width: 100%;
+        max-width: 350px;
+
+        @include md {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// About Two
+.aboutTwo {
+  padding: 80px 0;
+  background-size: cover;
+  background-position: center;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .sectionTitle {
+    color: clr(light, outline);
+
+    h1 {
+      color: inherit;
+
+      small {
+        font-size: 50%;
+        font-weight: 600;
+        display: block;
+      }
+    }
+
+    .btnSec {
+      .btn {
+        text-transform: uppercase;
+        color: clr(light, outline) !important;
+        background-color: transparent !important;
+        border: 1px solid clr(light, outline) !important;
+
+        &:hover,
+        &:focus {
+          color: clr(secondary, main) !important;
+          background-color: clr(light, outline) !important;
+        }
+
+        @include md {
+          min-width: 90%;
+        }
+      }
+    }
+  }
+
+  .imgSec {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// About Three
+.aboutThree {
+  padding: 80px 0;
+  background-color: clr(light, outline);
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .sectionTitle {
+    text-align: right;
+
+    h1 {
+      color: clr(secondary, main);
+
+      small {
+        font-size: 50%;
+        font-weight: 600;
+        display: block;
+      }
+    }
+
+    .btnSec {
+      .btn {
+        @include md {
+          min-width: 90%;
+        }
+      }
+    }
+  }
+
+  .imgSec {
+    img {
+      width: 100%;
+    }
+  }
+}

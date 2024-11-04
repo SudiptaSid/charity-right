@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Athelas';
+    src: url('Athelas-Bold.woff2') format('woff2'),
+        url('Athelas-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Athelas';
+    src: url('Athelas-Italic.woff2') format('woff2'),
+        url('Athelas-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Athelas';
+    src: url('Athelas-BoldItalic.woff2') format('woff2'),
+        url('Athelas-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Athelas';
+    src: url('Athelas-Regular.woff2') format('woff2'),
+        url('Athelas-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

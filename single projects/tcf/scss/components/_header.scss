@@ -1,0 +1,27 @@
+// Main Header
+.main-header {
+    padding: 40px 0;
+    /* Max width 767px */
+    @media (max-width: $break_767) {
+        padding: 15px 0;
+    }
+    .logo {
+        display: inline-block;
+        img {
+            /* Max width 767px */
+            @media (max-width: $break_767) {
+                max-width: 120px;
+            }
+        }
+    }
+    .btn {
+        width: 100%;
+        max-width: 175px;
+        text-transform: uppercase;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            max-width: unset;
+            width: auto;
+        }
+    }
+}

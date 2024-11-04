@@ -1,0 +1,17 @@
+// Main Header
+.mainHeader {
+    padding: 15px 0;
+    background-color: clr(light, outline);
+    position: relative;
+    box-shadow: 0px 10px 10px rgba(clr(black, main), 0.2);
+    z-index: 9;
+
+    .btn {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .rightSec {
+        text-align: right;
+    }
+}

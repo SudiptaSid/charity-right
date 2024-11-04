@@ -1,0 +1,46 @@
+// Avatar Sec
+.avatarSec {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+
+    @include lg {
+        gap: 5px;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .name {
+        h6 {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 12px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Avatar Stack
+.avatarStack {
+    display: flex;
+    gap: 5px;
+
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}

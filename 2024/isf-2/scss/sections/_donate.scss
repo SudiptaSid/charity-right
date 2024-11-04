@@ -1,0 +1,32 @@
+// Donate One
+.donateOne {
+  padding: 40px 0;
+  background-color: clr(light, main);
+
+  .sectionTitle {
+    text-align: center;
+    margin-bottom: 32px;
+
+    h1 {
+      color: clr(primary, main);
+    }
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    @include lg {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include md {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    li {
+      padding: 0 12px;
+    }
+  }
+}

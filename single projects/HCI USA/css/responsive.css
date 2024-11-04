@@ -1,0 +1,548 @@
+/* Default Layout	*/
+
+
+/*	Extra small devices (portrait phones, less than 576px)	*/
+@media (max-width: 575.98px) {
+	
+	.heading h3{
+		font-size: 28px;
+	}
+	.heading h4{
+		font-size: 22px;
+	}
+	.heading h5{
+		font-size: 15px;
+	}
+	.para_texts p{
+		font-size: 15px;
+	}
+	.cta_btn{
+		font-size: 16px;
+		min-width: 100%;
+		display: block;
+		padding: 12.5px 25px;	
+	}
+
+	/* ============================== */
+
+	.hero_banner {
+		padding-top: 25px;
+		padding-bottom: 50px;
+	}
+	.hero_banner .logo {
+		margin-bottom: 60px;
+	}
+	.hero_banner .heading h3 {
+		font-size: 30px;
+	}
+
+	/* ============================== */
+
+	.colored_banner {
+		padding: 30px 0px;
+		padding-top: 25px;
+	}
+	.colored_banner .sadaqah_fields {
+		-ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+	.colored_banner .sadaqah_fields .single_field .icon img {
+		max-width: 50px;
+	}
+	.colored_banner .sadaqah_fields .single_field h5{
+		font-size: 15px;
+	}
+
+	/* ============================== */
+
+	.most_blessed_days {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 20px;
+		padding: 30px 0px;
+		padding-top: 25px;
+	}
+	.most_blessed_days .left_contents {
+		padding-left: 0px;
+	}
+	.most_blessed_days .left_contents .contents {
+		max-width: 100%;
+		margin: 0px auto;
+		padding: 0px 15px;
+	}
+
+	.worth_supporting {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 20px;
+		padding: 30px 0px;
+		padding-top: 25px;
+	}
+	.worth_supporting .left_image{
+		-webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+	}
+	.worth_supporting .right_contents {
+		padding-right: 0px;
+	}
+	.worth_supporting .right_contents .contents {
+		max-width: 100%;
+		margin: 0px auto;
+		padding: 0px 15px;
+	}
+	.most_blessed_days .para_texts .bold_italic{
+		font-size: 14px;
+	}
+
+	/* ============================== */
+
+	.donate_boxes_wrap {
+		padding: 30px 0px;
+		padding-top: 25px;
+	}
+	.donate_boxes_wrap .heading {
+		margin-bottom: 30px;
+	}
+	.donate_boxes {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 20px;
+	}
+	.donate_boxes .single_box {
+		background: var(--lightColor);
+		padding: 30px 20px;
+	}
+	.donate_boxes .single_box p {
+		margin-bottom: 25px;
+	}
+
+	/* ============================== */
+
+	.subscribe_banner_wrap {
+		padding: 25px 0px;
+	}
+	.subscribe_us {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 25px;
+	}
+	.subscribe_us .contents h4{
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+	.subscribe_us .contents p{
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+	.subscribe_us .vector{
+		text-align: center;
+	}
+	.subscribe_us .vector img{
+		max-width: 200px;
+	}
+	.subscribe_us .contents .form-control {
+		font-size: 15px;
+		border-radius: 7px;
+		padding: 12.5px 15px;
+		padding-right: 105px;
+		height: 48px;
+	}
+	.subscribe_us .contents .cta_btn {
+		font-size: 15px;
+		padding: 12.5px 20px;
+		right: 0px;
+		top: 0px;
+		height: 48px;
+		border-radius: 0px 6px 6px 0px;
+	}
+
+	/* ============================== */
+
+	.footer {
+		padding-top: 30px;
+	}
+	.footer .logo_social {
+		padding-bottom: 20px;
+	}
+	.footer .logo_social .logo {
+		margin-bottom: 20px;
+	}
+	.footer .logo_social .logo img {
+		max-width: 150px;
+	}
+	.footer .copyright {
+		padding: 15px 0px;
+	}
+	.footer .social_media ul li i {
+		width: 32px;
+		height: 32px;
+		line-height: 30px;
+		font-size: 14px;
+	}
+	.footer .copyright p {
+		font-size: 14px;
+		text-align: center;
+	}
+	
+}
+
+/*	Small devices (landscape phones, 576px and up)	*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	
+	.container{
+		max-width: 540px;
+	}
+
+	.heading h3{
+		font-size: 30px;
+	}
+	.heading h4{
+		font-size: 24px;
+	}
+	.heading h5{
+		font-size: 16px;
+	}
+	.para_texts p{
+		font-size: 16px;
+	}
+
+	/* ============================== */
+
+	.hero_banner {
+		padding-top: 25px;
+		padding-bottom: 60px;
+	}
+	.hero_banner .logo {
+		margin-bottom: 75px;
+	}
+	.hero_banner .heading h3 {
+		font-size: 36px;
+	}
+
+	/* ============================== */
+
+	.colored_banner {
+		padding: 40px 0px;
+		padding-top: 30px;
+	}
+	.colored_banner .sadaqah_fields .single_field .icon img {
+		max-width: 60px;
+	}
+	.colored_banner .sadaqah_fields .single_field h5{
+		font-size: 18px;
+	}
+
+	/* ============================== */
+
+	.most_blessed_days {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 25px;
+		padding: 40px 0px;
+		padding-top: 30px;
+	}
+	.most_blessed_days .left_contents {
+		padding-left: 0px;
+	}
+	.most_blessed_days .left_contents .contents {
+		max-width: 540px;
+		margin: 0px auto;
+		padding: 0px 15px;
+	}
+
+	.worth_supporting {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 25px;
+		padding: 40px 0px;
+		padding-top: 30px;
+	}
+	.worth_supporting .left_image{
+		-webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+	}
+	.worth_supporting .right_contents {
+		padding-right: 0px;
+	}
+	.worth_supporting .right_contents .contents {
+		max-width: 540px;
+		margin: 0px auto;
+		padding: 0px 15px;
+	}
+
+	/* ============================== */
+
+	.donate_boxes_wrap {
+		padding: 40px 0px;
+		padding-top: 30px;
+	}
+	.donate_boxes {
+		-ms-grid-columns: 1fr 20px 1fr;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+	.donate_boxes .single_box {
+		background: var(--lightColor);
+		padding: 30px 20px;
+	}
+	.donate_boxes .single_box p {
+		margin-bottom: 25px;
+	}
+
+	/* ============================== */
+
+	.subscribe_banner_wrap {
+		padding: 30px 0px;
+	}
+	.subscribe_us {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 25px;
+	}
+	.subscribe_us .contents h4{
+		font-size: 28px;
+	}
+	.subscribe_us .contents p{
+		font-size: 16px;
+	}
+	.subscribe_us .vector{
+		text-align: center;
+	}
+	.subscribe_us .vector img{
+		max-width: 275px;
+	}
+
+	/* ============================== */
+
+	.footer {
+		padding-top: 40px;
+	}
+	.footer .logo_social {
+		padding-bottom: 25px;
+	}
+	.footer .logo_social .logo {
+		margin-bottom: 20px;
+	}
+	.footer .logo_social .logo img {
+		max-width: 160px;
+	}
+	.footer .copyright {
+		padding: 20px 0px;
+	}
+
+	/* ============================== */
+	
+}
+
+/*	Medium devices (tablets, 768px and up)	*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	
+	.container{
+		max-width: 720px;
+	}
+
+	.heading h3{
+		font-size: 36px;
+	}
+	.heading h4{
+		font-size: 28px;
+	}
+	.heading h5{
+		font-size: 18px;
+	}
+	.para_texts p{
+		font-size: 16px;
+	}
+
+	/* ============================== */
+
+	.hero_banner {
+		padding-top: 25px;
+		padding-bottom: 60px;
+	}
+	.hero_banner .logo {
+		margin-bottom: 75px;
+	}
+	.hero_banner .heading h3 {
+		font-size: 42px;
+	}
+
+	/* ============================== */
+
+	.colored_banner {
+		padding: 50px 0px;
+		padding-top: 40px;
+	}
+
+	/* ============================== */
+
+	.most_blessed_days {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 30px;
+		padding: 50px 0px;
+		padding-top: 40px;
+	}
+	.most_blessed_days .left_contents {
+		padding-left: 0px;
+	}
+	.most_blessed_days .left_contents .contents {
+		max-width: 720px;
+		margin: 0px auto;
+		padding: 0px 15px;
+	}
+
+	.worth_supporting {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 30px;
+		padding: 50px 0px;
+		padding-top: 40px;
+	}
+	.worth_supporting .left_image{
+		-webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+	}
+	.worth_supporting .right_contents {
+		padding-right: 0px;
+	}
+	.worth_supporting .right_contents .contents {
+		max-width: 720px;
+		margin: 0px auto;
+		padding: 0px 15px;
+	}
+
+	/* ============================== */
+
+	.donate_boxes_wrap {
+		padding: 50px 0px;
+		padding-top: 40px;
+	}
+	.donate_boxes {
+		-ms-grid-columns: 1fr 30px 1fr;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+	}
+
+	/* ============================== */
+
+	.subscribe_banner_wrap {
+		padding: 40px 0px;
+	}
+	.subscribe_us {
+		-ms-grid-columns: 1fr 15px 190px;
+		grid-template-columns: 1fr 190px;
+		gap: 15px;
+	}
+	.subscribe_us .contents h4{
+		font-size: 28px;
+	}
+	.subscribe_us .contents p{
+		font-size: 16px;
+	}
+
+	/* ============================== */
+
+	.footer .logo_social .logo img {
+		max-width: 180px;
+	}
+
+	/* ============================== */
+	
+}
+
+/*	Large devices (desktops, 992px and up)	*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	
+	.container{
+		max-width: 960px;
+	}
+
+	.heading h3{
+		font-size: 40px;
+	}
+	.heading h4{
+		font-size: 32px;
+	}
+	.heading h5{
+		font-size: 18px;
+	}
+	.para_texts p{
+		font-size: 16px;
+	}
+
+	/* ============================== */
+
+	.hero_banner .heading h3 {
+		font-size: 45px;
+	}
+
+	/* ============================== */
+
+	.most_blessed_days {
+		-ms-grid-columns: 1fr 30px 1fr;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+		padding: 60px 0px;
+	}
+	.most_blessed_days .left_contents {
+		padding-left: 35px;
+	}
+	.most_blessed_days .left_contents .contents {
+		max-width: 450px;
+	}
+
+	.worth_supporting {
+		-ms-grid-columns: 1fr 30px 1fr;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+		padding: 60px 0px;
+	}
+	.worth_supporting .right_contents {
+		padding-right: 35px;
+	}
+	.worth_supporting .right_contents .contents {
+		max-width: 450px;
+	}
+
+	/* ============================== */
+
+	.donate_boxes {
+		-ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20px;
+	}
+	.donate_boxes .single_box {
+		text-align: center;
+		background: var(--lightColor);
+		padding: 30px 22px;
+	}
+	.donate_boxes .single_box h4{
+		font-size: 17px;
+	}
+
+	/* ============================== */
+
+	.donate_boxes_wrap {
+		padding: 60px 0px;
+		padding-top: 50px;
+	}
+
+	/* ============================== */
+
+	.subscribe_us {
+		-ms-grid-columns: 1fr 25px 285px;
+		grid-template-columns: 1fr 285px;
+		gap: 25px;
+	}
+	.subscribe_us .contents h4{
+		font-size: 36px;
+	}
+
+	/* ============================== */
+	
+}

@@ -1,0 +1,228 @@
+// Sign In Body
+#sign-in-body {
+    margin-top:122px;
+    // --------------------------------
+    @media (max-width: $break_767) {
+        margin-top:100px;
+    }
+    .top-pattern {
+        position: absolute;
+        top:0;
+        left:15px;
+        max-width:154px;
+        // --------------------------------
+        @media (max-width: $break_767) {
+            display: none;
+        }
+        img {
+            width:100%;
+        }
+    }
+    .bottom-pattern {
+        position: absolute;
+        bottom:0;
+        right:15px;
+        max-width:154px;
+        // --------------------------------
+        @media (max-width: $break_767) {
+            display: none;
+        }
+        img {
+            width:100%;
+        }
+    }
+    .content {
+        position: relative;
+        text-align: center;
+        padding-right: 0;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        // --------------------------------
+        @media (min-width: $break_767 + 1px) {
+            height:calc(100vh - 150px);
+            overflow-y: auto;
+            padding-top: 50px;
+            padding-bottom: 140px;
+        }
+        // --------------------------------
+        @media (max-width: $break_767) {
+            padding-bottom:5px;
+        }
+        h1 {
+            font-size:48px;
+            line-height:54px;
+            font-weight:700;
+            margin-bottom:40px;
+            // --------------------------------
+            @media (max-width: $break_767) {
+                font-size:24px;
+                line-height:30px;
+                margin-bottom:24px;
+            }
+        }
+        form {
+            text-align: left;
+            max-width:414px;
+            margin:auto;
+        }
+        .text-right {
+            margin-bottom:24px;
+            // --------------------------------
+            @media (max-width: $break_767) {
+                margin-bottom:20px;
+                margin-top: 20px;
+            }
+            a {
+                color:$black-light;
+                &:hover {
+                    color:$primary-clr;
+                }
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    font-size:14px;
+                    line-height:18px;
+                }
+            }
+        }
+        .text-left {
+            margin-bottom:24px;
+            // --------------------------------
+            @media (max-width: $break_767) {
+                margin-bottom:20px;
+                margin-top: 20px;
+            }
+            .custom-checkbox {
+                margin-bottom:0;
+            }
+            a {
+                color:$light-blue-clr;
+                &:hover {
+                    color:$primary-clr;
+                }
+            }
+        }
+        .divider {
+            position: relative;
+            margin: 40px 0;
+            border-top: 1px solid $grey-clr;
+            // --------------------------------
+            @media (max-width: $break_767) {
+                margin:24px 0;
+            }
+            span {
+                position: absolute;
+                color:$black-clr;
+                background-color:$white-clr;
+                padding: 0px 24px;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    padding:0 16px;
+                    font-size:16px;
+                }
+            }
+        }
+        .btn-social {
+            margin-bottom:12px;
+            &:last-child {
+                margin-bottom:0;
+            }
+        }
+    }
+    &.forgot-password {
+        .content {
+            h1 {
+                max-width:400px;
+                display: inline-block;
+                margin-bottom:24px !important;
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    margin-bottom:15px !important;
+                }
+            }
+            p {
+                color:#7A8193;
+                text-align: center;
+                max-width:414px;
+                margin:auto;
+                margin-bottom:40px;
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    font-size:14px;
+                    line-height:18px;
+                    margin-bottom:24px;
+                }
+            }
+        }
+    }
+    &.forgot-password2 {
+        .content {
+            h1 {
+                max-width:unset;
+                display: block;
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    text-align:left;
+                }
+            }
+        }
+    }
+    &.forgot-password4 {
+        .content {
+            h1 {
+                max-width:500px;
+                margin:auto;
+                display: block;
+            }
+            p {
+                max-width: 410px;
+                display: inline-block;
+            }
+        }
+    }
+    &.forgot-password-ptrn {
+        // --------------------------------
+        @media (max-width: $break_767) {
+            padding-top:100px;
+        }
+        .top-pattern {
+            // --------------------------------
+            @media (max-width: $break_767) {
+                display: block;
+                max-width: 70px;
+            }
+        }
+        .bottom-pattern {
+            // --------------------------------
+            @media (max-width: $break_767) {
+                display: block;
+                max-width: 70px;
+            }
+        }
+        .content {
+            // --------------------------------
+            @media (max-width: $break_767) {
+                padding: 65px 0;
+                height: auto;
+            }
+            h1 {               
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    max-width:280px;
+                }
+            }
+            .btn-main {
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    width: calc(100% - 30px);
+                    position: fixed;
+                    left: 15px;
+                    bottom: 25px;
+                }
+            }
+        }
+    }
+}

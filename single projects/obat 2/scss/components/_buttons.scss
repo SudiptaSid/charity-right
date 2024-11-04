@@ -1,0 +1,75 @@
+a,
+button {
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 1em;
+    cursor: pointer;
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}
+// Button
+.btn {
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 20px;
+    border: none;
+    border-radius: 0;
+    padding: 20px 30px;
+    text-align: center;
+    position: relative;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none;
+        box-shadow: none;
+        text-shadow: none;
+    }
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 10px 16px;
+    }
+}
+
+// Btn Width 176
+.btn-176 {
+    max-width: 176px;
+    width: 100%;
+}
+
+// Btn Width 350
+.btn-350 {
+    max-width: 350px;
+    width: 100%;
+}
+
+// Green Btn
+.btn-green {
+    color: $white-clr;
+    background-color: $clr-6CAF6B;
+    &:hover,
+    &:focus {
+        color: $white-clr;
+        background-color: darken($clr-6CAF6B, 5%);
+    }
+}
+
+// Brown Btn
+.btn-brown {
+    color: $white-clr;
+    background-color: $clr-786453;
+    &:hover,
+    &:focus {
+        color: $white-clr;
+        background-color: darken($clr-786453, 5%);
+    }
+}

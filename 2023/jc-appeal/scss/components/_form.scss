@@ -1,0 +1,95 @@
+// Form
+input,
+textarea,
+select {
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    &:focus {
+        outline: none;
+        box-shadow: none !important;
+        text-shadow: none;
+    }
+}
+
+// Label
+label {
+    font-size: $sz-14;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 3px;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        font-size: $sz-12;
+    }
+}
+
+// Form Control
+.form-control {    
+    font-size: 1em;
+    line-height: 1.4;
+    border: none;
+    border-radius: 0;
+    padding: 12px 20px;
+    text-shadow: none;
+    outline: none;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        text-shadow: none;
+        text-decoration: none;
+    }
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 8px 14px;
+    }
+}
+
+// Custom Radio One
+.radio-one {
+    display: block;
+    position: relative;
+    margin-bottom: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 4;
+    padding: 6px 10px;
+    text-align: center;
+    font-size: 1em;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 10px;
+        line-height: 20px;
+    }
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $white-clr;
+        z-index: -1;
+    }
+    .txt {
+        color: $clr-333335;
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        &:checked ~ .checkmark {
+            background-color: $clr-333335;
+        }
+        &:checked ~ .txt {
+            color: $white-clr;
+        }
+    }
+}

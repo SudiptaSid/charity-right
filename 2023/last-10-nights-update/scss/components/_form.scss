@@ -1,0 +1,45 @@
+// Form
+input,
+textarea,
+select {
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    &:focus {
+        outline: none;
+        box-shadow: none !important;
+        text-shadow: none;
+    }
+}
+
+// Label
+label {
+    font-size: $sz-14;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 3px;
+}
+
+// Form Control
+.form-control {    
+    font-size: 1em;
+    line-height: 1.4;
+    border: none;
+    border-radius: 0;
+    padding: 12px 24px;
+    text-shadow: none;
+    outline: none;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        text-shadow: none;
+        text-decoration: none;
+    }
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 10px 16px;
+    }
+}

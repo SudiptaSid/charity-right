@@ -1,0 +1,441 @@
+/* Default Layout	*/
+
+
+/*	Extra small devices (portrait phones, less than 576px)	*/
+@media (max-width: 575.98px) {
+	
+	.heading{
+		margin-bottom: 20px;
+	}
+	.heading h2{
+		font-size: 30px;
+	}
+	.heading h3{
+		font-size: 24px;
+	}
+	.heading h4{
+		font-size: 22px;
+	}
+	.heading h5{
+		font-size: 15px;
+	}
+	.heading h6{
+		font-size: 15px;
+	}
+	.bottom_donate h6{
+		font-size: 15px;
+	}
+	.para_texts p{
+		font-size: 15px;
+	}
+
+	.cta_btn {
+		font-size: 15px;
+		padding: 10px 20px;
+		min-width: 100%;
+		display: block;
+	}
+	.bottom_donate .cta_btn {
+		font-size: 15px;
+		padding: 10px 20px;
+	}
+
+	.dots_image {
+		max-width: 75px;
+	}
+	.bottom_donate {
+		margin-top: 20px;
+	}
+
+	/* ============================== */
+
+	.header_wrap {
+		padding: 7.5px 0px;
+	}
+	.header .cta_btn{
+		font-size: 14px;
+		padding: 7.5px 20px;
+		min-width: inherit;
+		display: inline-block;
+	}
+	.header .logo img {
+		max-width: 150px;
+	}
+
+	/* ============================== */
+
+	.hero_banner_wrap{
+		padding: 30px 0px;
+	}
+	.hero_banner {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 25px;
+	}
+
+	/* ============================== */
+
+	.education_rights_wrap {
+		padding: 25px 0px;
+	}
+	.education_rights .two_photos {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 20px;
+		margin-top: 30px;
+	}
+
+	/* ============================== */
+
+	.donate_boxes_wrap {
+		padding-top: 15px;
+		padding-bottom: 40px;
+	}
+	.donate_boxes {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 20px;
+		max-width: 320px;
+		margin: 0px auto;
+	}
+	.donate_boxes_wrap .heading {
+		margin-bottom: 25px;
+	}
+	.donate_boxes .single_box {
+		padding: 25px 15px;
+	}
+	.donate_boxes .single_box .form-control {
+		font-size: 16px;
+		padding: 10px 15px;
+	}
+	
+	/* ============================== */
+
+	.news_contact {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		padding: 0px;
+	}
+	.news_contact .newsletter {
+		padding: 25px;
+		border-right: none;
+		border-bottom: 1px solid #50AD85;
+	}
+	.news_contact .contact_us {
+		padding: 25px;
+	}
+	.news_contact .contact_us .charity_logos {
+		position: static;
+		margin-top: 20px;
+	}
+	.news_contact h4{
+		font-size: 24px;
+	}
+	.news_contact .contact_us .contact_info ul li{
+		font-size: 16px;
+	}
+
+	/* ============================== */
+
+	.footer .logo_social_wrap {
+		padding: 20px 0px;
+	}
+	.footer .logo_social .logo img {
+		max-width: 150px;
+	}
+	.footer .copyright {
+		padding: 10px 0px;
+	}
+	.footer .social_media ul li {
+		margin-right: 10px;
+	}
+	.footer .social_media ul li i {
+		width: 32px;
+		height: 32px;
+		line-height: 30px;
+		font-size: 14px;
+	}
+	.footer .copyright p {
+		font-size: 14px;
+		text-align: center;
+	}
+
+	/* ============================== */
+	
+}
+
+/*	Small devices (landscape phones, 576px and up)	*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	
+	.container{
+		max-width: 540px;
+	}
+
+	.heading{
+		margin-bottom: 20px;
+	}
+	.heading h2{
+		font-size: 32px;
+	}
+	.heading h3{
+		font-size: 24px;
+	}
+	.para_texts p{
+		font-size: 15px;
+	}
+	.cta_btn {
+		font-size: 16px;
+		padding: 12.5px 25px;
+	}
+
+	/* ============================== */
+
+	.header_wrap {
+		padding: 10px 0px;
+	}
+	.header .cta_btn{
+		font-size: 14px;
+		padding: 10px 25px;
+		min-width: inherit;
+	}
+
+	/* ============================== */
+
+	.hero_banner_wrap{
+		padding: 30px 0px;
+	}
+	.hero_banner {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 25px;
+	}
+
+	/* ============================== */
+
+	.education_rights_wrap {
+		padding: 25px 0px;
+	}
+	.education_rights .two_photos {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 20px;
+		margin-top: 30px;
+	}
+
+	/* ============================== */
+
+	.donate_boxes_wrap {
+		padding-top: 15px;
+		padding-bottom: 40px;
+	}
+	.donate_boxes {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 20px;
+		max-width: 320px;
+		margin: 0px auto;
+	}
+	.donate_boxes_wrap .heading {
+		margin-bottom: 25px;
+	}
+	.donate_boxes .single_box {
+		padding: 25px 15px;
+	}
+	.donate_boxes .single_box .form-control {
+		font-size: 16px;
+		padding: 10px 15px;
+	}
+
+	/* ============================== */
+
+
+	/* ============================== */
+
+	.news_contact {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		padding: 0px;
+	}
+	.news_contact .newsletter {
+		padding: 40px;
+		border-right: none;
+		border-bottom: 1px solid #50AD85;
+	}
+	.news_contact .contact_us {
+		padding: 40px;
+	}
+	.news_contact .contact_us .charity_logos {
+		position: static;
+		margin-top: 20px;
+	}
+	.news_contact h4{
+		font-size: 26px;
+	}
+	.news_contact .contact_us .contact_info ul li{
+		font-size: 16px;
+	}
+
+	/* ============================== */
+
+	.footer .logo_social_wrap {
+		padding: 25px 0px;
+	}
+	.footer .logo_social .logo img {
+		max-width: 180px;
+	}
+	.footer .copyright {
+		padding: 20px 0px;
+	}
+
+	/* ============================== */
+	
+}
+
+/*	Medium devices (tablets, 768px and up)	*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	
+	.container{
+		max-width: 720px;
+	}
+	.heading{
+		margin-bottom: 20px;
+	}
+	.heading h2{
+		font-size: 36px;
+	}
+	.heading h3{
+		font-size: 28px;
+	}
+	.para_texts p{
+		font-size: 15px;
+	}
+	.cta_btn {
+		font-size: 16px;
+		padding: 12.5px 25px;
+	}
+
+	/* ============================== */
+
+	.header_wrap {
+		padding: 15px 0px;
+	}
+
+	/* ============================== */
+
+	.hero_banner_wrap{
+		padding: 25px 0px;
+	}
+	.hero_banner {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: 1fr 15px 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-auto-rows: auto;
+		gap: 15px;
+	}
+
+	/* ============================== */
+
+	.education_rights_wrap {
+		padding: 30px 0px;
+	}
+
+	/* ============================== */
+
+	.donate_boxes_wrap {
+		padding-top: 20px;
+		padding-bottom: 50px;
+	}
+	.donate_boxes_wrap .heading {
+		margin-bottom: 30px;
+	}
+	.donate_boxes {
+		-ms-grid-columns: 1fr 15px 1fr 15px 1fr;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 15px;
+	}
+	.donate_boxes .single_box {
+		padding: 30px 15px;
+		padding-bottom: 20px;
+	}
+	.donate_boxes .single_box h4{
+		font-size: 20px;
+	}
+
+	/* ============================== */
+
+
+
+	/* ============================== */
+
+	.news_contact {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		padding: 0px;
+	}
+	.news_contact .newsletter {
+		padding: 40px;
+		border-right: none;
+		border-bottom: 1px solid #50AD85;
+	}
+	.news_contact .contact_us {
+		padding: 40px;
+	}
+	.news_contact .contact_us .charity_logos {
+		position: static;
+		margin-top: 20px;
+	}
+
+	/* ============================== */
+	
+}
+
+/*	Large devices (desktops, 992px and up)	*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	
+	.container{
+		max-width: 960px;
+	}
+
+	.heading h2{
+		font-size: 42px;
+	}
+	.heading h3{
+		font-size: 32px;
+	}
+	.para_texts p{
+		font-size: 16px;
+	}
+
+	/* ============================== */
+
+	.donate_boxes .single_box {
+		padding: 40px 15px;
+		padding-bottom: 30px;
+	}
+
+	/* ============================== */
+
+
+
+	/* ============================== */
+
+	.news_contact .newsletter {
+		padding: 0px 40px;
+	}
+	.news_contact .contact_us {
+		padding: 0px 40px;
+	}
+	.news_contact h4{
+		font-size: 26px;
+	}
+	.news_contact .contact_us .contact_info ul li{
+		font-size: 15px;
+	}
+	.news_contact .contact_us .charity_logos ul li img {
+		max-width: 65px;
+	}
+
+	/* ============================== */
+	
+}

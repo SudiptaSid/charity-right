@@ -1,0 +1,105 @@
+// importing fonts 
+// ==================================================================
+@font-face
+    font-family: epilogue-regular
+    src: url("../fonts/Epilogue/Epilogue-Regular.ttf")
+
+@font-face
+    font-family: epilogue-medium
+    src: url("../fonts/Epilogue/Epilogue-Medium.ttf")
+
+@font-face
+    font-family: epilogue-bold
+    src: url("../fonts/Epilogue/Epilogue-Bold.ttf")
+
+@font-face
+    font-family: epilogue-black
+    src: url("../fonts/Epilogue/Epilogue-Black.ttf")
+
+@font-face
+    font-family: opensans-regular
+    src: url("../fonts/OpenSans/OpenSans-Regular.ttf")
+
+@font-face
+    font-family: opensans-semibold
+    src: url("../fonts/OpenSans/OpenSans-SemiBoild.ttf")
+
+@font-face
+    font-family: opensans-bold
+    src: url("../fonts/OpenSans/OpenSans-Bold.ttf")
+
+@font-face
+    font-family: opensans-extrabold
+    src: url("../fonts/OpenSans/OpenSans-ExtraBold.ttf")
+
+
+// reseting basic styles
+// ==================================================================
+html
+  scroll-behavior: smooth
+
+body
+	overflow-x: hidden
+	background: linear-gradient(287.08deg, #2D1259 8.29%, #191867 51.43%, #3C57A8 100%)
+	font-family: epilogue-regular
+
+// all element styls
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	border: none
+	background: none
+	border-radius: 0
+	outline: none
+	text-decoration: none
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+		line-height: 1.25
+		font-family: epilogue-bold
+		color: $white
+
+	p,
+	textarea,
+	input,
+	pre,
+	button,
+	figcaption,
+	label,
+	a
+		line-height: 1.25
+		font-family: epilogue-regular
+		color: $text
+
+	button,
+	a
+		cursor: pointer
+		transition: .3s
+		text-decoration: none!important
+		transition: .3s
+
+		&:hover
+			opacity: .85
+		
+	button,
+	.button
+		text-align: center
+		padding: 10px 25px
+		line-height: 1.2
+		text-transform: capitalize
+		text-decoration: none
+
+		&:focus
+			outline: none
+	
+	.disabled
+		opacity: 0.5!important
+		
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0

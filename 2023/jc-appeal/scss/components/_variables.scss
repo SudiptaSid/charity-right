@@ -1,0 +1,40 @@
+// Base
+$sz-60: 60px;
+$sz-50: 50px;
+$sz-40: 40px;
+$sz-30: 30px;
+$sz-24: 24px;
+$sz-22: 22px;
+$sz-20: 20px;
+$sz-18: 18px;
+$sz-16: 16px;
+$sz-15: 15px;
+$sz-14: 14px;
+$sz-12: 12px;
+$ff-poppins: "Poppins", sans-serif;
+$ff-noto: "Noto Serif Display", serif;
+
+// Colors
+$no-clr: transparent;
+$white-clr: #ffffff;
+$clr-F9F9FF: #f9f9ff;
+$clr-999999: #999999;
+$clr-333335: #333335;
+$black-clr: #000000;
+$clr-784DFF: #784dff;
+$clr-99A1FF: #99a1ff;
+$white-50:rgba($white-clr, 0.5);
+$F9F9FF-50: rgba($clr-F9F9FF, 0.5);
+
+// Main Color
+
+// Media Sizes
+$break-1300: 1300px;
+$break-1280: 1280px;
+$break-1080: 1080px;
+$break-991: 991px;
+$break-767: 767px;
+
+/*
+@media (max-width: $break-767) {}
+*/

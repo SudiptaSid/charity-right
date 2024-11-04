@@ -1,0 +1,62 @@
+// Contact Banner
+.contact-pg-banner {
+    .heading-one {
+        font-family: $ff-averia-libre;
+        h1 {
+            &:after {
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: $clr-E43D30;
+            }
+        }
+    }
+}
+
+// Contact Page
+.contact-info {
+    padding: 80px 0;
+    color: $clr-1D2C57;
+    font-family: $ff-averia-libre;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    h5 {
+        font-size: 1.4em;
+        font-weight: 300;
+        margin-bottom: 30px;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 1.2em;
+        }
+        a {
+            font-weight: 700;
+            color: inherit;
+        }
+    }
+    .heading-one {
+        margin-top: 100px;
+        margin-bottom: 40px;
+        text-align: center;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            margin-top: 50px;
+            margin-bottom: 24px;
+        }
+    }
+    form {
+        padding: 95px;
+        background-color: $clr-ECF1FF;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            padding: 35px 20px;
+        }
+        .btn {
+            border-radius: 0;
+        }
+    }
+}

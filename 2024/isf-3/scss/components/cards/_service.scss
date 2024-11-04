@@ -1,0 +1,79 @@
+// Service Card One
+.serviceCardOne {
+  text-align: center;
+  padding: 0 32px;
+
+  @include md {
+    padding: 0 24px;
+  }
+
+  img {
+    height: 50px;
+  }
+
+  h6 {
+    color: clr(primary, main);
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+
+// Service Card Two
+.serviceCardTwo {
+  text-align: center;
+  border: 2px solid clr(primary, main);
+  border-radius: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 440px;
+
+  @include md {
+    min-height: unset;
+  }
+
+  .topSec {
+    padding: 100px 15px 0;
+
+    h6 {
+      color: clr(primary, main);
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 1.1;
+      margin-bottom: 0;
+    }
+  }
+
+  .bottomSec {
+    padding: 0 15px 60px;
+
+    span {
+      display: block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 160px;
+      height: 160px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-size: 30px;
+      font-weight: 800;
+      color: clr(primary, main);
+
+      @include md {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+}

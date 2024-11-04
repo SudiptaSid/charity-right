@@ -1,0 +1,77 @@
+// Header
+#team-365-header {
+    display: block;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index:99;
+    transition:0.3s all;
+    /* ----- Max width 991px ----- */
+    @media (max-width: $break_991) {
+        padding:10px 0;
+    }
+    .btn {
+        padding:12px 24px;
+        font-size:14px;
+        line-height:16px;
+        /* ----- Max width 991px ----- */
+        @media (max-width: $break_991) {
+            padding:10px 16px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+    .center-menu {
+        text-align: center;
+        line-height:0;
+        .logo {
+            display: inline-block;
+            height: 42px;
+            width: 78px;
+            /* ----- Max width 991px ----- */
+            @media (max-width: $break_991) {
+                height:32px;
+                width: auto;
+            }
+            img {
+                width:100%;
+                /* ----- Max width 991px ----- */
+                @media (max-width: $break_991) {
+                    width:auto;
+                    height:100%;
+                }
+            }
+        }
+    }
+    .right-menu {
+        text-align: right;
+        /* ----- Max width 991px ----- */
+        @media (max-width: $break_991) {
+            text-align: center;
+            margin-top:10px;
+        }
+        .btn {
+            + .btn {
+                margin-left:10px;
+            }
+        }
+    }
+    // When header is fixed
+    // &.fixed-header {
+    //     position: fixed;
+    //     background-color:$white-clr;
+    //     box-shadow:$shadow-1;
+    //     .btn-white-border {
+    //         color:$primary-clr;
+    //         background-color:$no-clr;
+    //         border-color:$primary-clr;
+    //     }
+    //     .btn-white {
+    //         color:$white-clr;
+    //         background-color:$primary-clr;
+    //         border-color:$primary-clr;
+    //     }
+    // }
+}

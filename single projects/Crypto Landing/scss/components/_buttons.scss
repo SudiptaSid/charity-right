@@ -1,0 +1,92 @@
+a,
+button {
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 1em;
+    cursor: pointer;
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}
+// Button
+.btn {
+    font-size: 1em;
+    line-height: 24px;
+    font-weight: 600;
+    border: $border-1-solid $no-clr;
+    border-radius: 12px;
+    padding: 12px 30px;
+    text-align: center;
+    position: relative;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;
+
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    &:focus,
+    &:active,
+    &:hover {
+        border-color: $no-clr;
+        outline: none;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    // White Btn
+    &.btn-white {
+        color: $black-clr;
+        background-color: $white-clr;
+        border-color: $white-clr;
+        &:hover,
+        &:focus {
+            color: $black-clr;
+            background-color: darken($white-clr, 5%);
+            border-color: darken($white-clr, 5%);
+        }
+    }
+    // Btn Main
+    &.btn-main {
+        color: $white-clr;
+        background-color: $primary-clr;
+        border-color: $primary-clr;
+        &:hover,
+        &:focus {
+            color: $white-clr;
+            background-color: darken($primary-clr, 5%);
+            border-color: darken($primary-clr, 5%);
+        }
+    }
+    // Btn Grey Border
+    &.btn-grey-border {
+        color: $clr-101010;
+        background-color: $white-clr;
+        border-color: $clr-DAE0E5;
+        &:hover,
+        &:focus {
+            color: $clr-101010;
+            background-color: darken($white-clr, 5%);
+        }
+    }
+    // Btn Black
+    &.btn-black {
+        color: $white-clr;
+        background-color: $black-clr;
+        border-color: $black-clr;
+        &:hover,
+        &:focus {
+            color: $white-clr;
+            background-color: lighten($black-clr, 5%);
+            border-color: lighten($black-clr, 5%);
+        }
+    }
+}

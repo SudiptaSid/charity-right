@@ -1,0 +1,223 @@
+// Prayer Common One
+.prayer-common-one {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .heading-one {
+        h1 {
+            color: $clr-101010;
+        }
+    }
+    .img-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5em;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            gap: 1.5em 0.5em;
+        }
+        li {
+            width: calc(100% / 5);
+            max-width: 160px;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                width: calc(100% / 3);
+                max-width: 100px;
+            }
+            a {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                color: $clr-3D5970;
+                img {
+                    width: 100%;
+                }
+                p {
+                    margin-bottom: 0;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+// Prayer Common Two
+.prayer-common-two {
+    padding-bottom: 80px;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding-bottom: 50px;
+    }
+    .list-number {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 3em 0;
+        li {
+            width: calc(100% / 3);
+            display: flex;
+            gap: 1em;
+            position: relative;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                width: 100%;
+            }
+            &:before {
+                content: "";
+                width: 1px;
+                height: 60px;
+                border-right: 1px dashed $black-clr;
+                position: absolute;
+                left: 20px;
+                bottom: -50px;
+                z-index: -1;
+            }
+            span {
+                display: inline-block;
+                &:first-child {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 1.5em;
+                    font-weight: 700;
+                    line-height: 40px;
+                    color: $white-clr;
+                    background-color: $clr-2A6877;
+                    text-align: center;
+                    border-radius: 50%;
+                    flex-shrink: 0;
+                }
+                &:last-child {
+                    font-weight: 600;
+                }
+            }
+            &:nth-last-child(-n + 3) {
+                &:before {
+                    visibility: hidden;
+
+                    // Max 1080px
+                    @media (max-width: $break-1080) {
+                        visibility: visible;
+                    }
+                }
+            }
+            &:last-child {
+                &:before {
+                    // Max 1080px
+                    @media (max-width: $break-1080) {
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Prayer One
+.prayer-one {
+    padding-top: 80px;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding-top: 50px;
+    }
+    .heading-one {
+        h1 {
+            color: $clr-101010;
+        }
+    }
+    .table-heading {
+        text-align: center;
+        margin-bottom: 1px;
+        h4 {
+            margin-bottom: 0;
+            display: inline-block;
+            width: 100%;
+            max-width: 560px;
+            background-color: $clr-152243;
+            color: $white-clr;
+            padding: 10px 15px;
+            font-size: 1.5em;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+// Prayer Two
+.prayer-two {
+    padding-top: 80px;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding-top: 80px;
+    }
+}
+
+// Prayer Three
+.prayer-three {
+    padding: 60px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 40px 0;
+    }
+}
+
+// Prayer Four
+.prayer-four {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .number-content-box-one {
+        .number {
+            color: $clr-3D5970;
+            font-size: 2.4em;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.5em;
+            }
+        }
+        .details {
+            h4 {
+                color: $clr-3D5970;
+                font-size: 1.2em;
+                line-height: 1.2;
+                + p {
+                    margin-top: 5px;
+                }
+            }
+            p {
+                + p {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+// Prayer Five
+.prayer-five {
+    padding: 60px 0;
+    color: $white-clr;
+    background-color: $clr-152243;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 40px 0;
+    }
+}

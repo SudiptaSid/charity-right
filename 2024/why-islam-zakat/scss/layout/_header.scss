@@ -1,0 +1,15 @@
+// Main Header
+.mainHeader {
+  padding: 15px 0;
+  background-color: clr(light, outline);
+  position: relative;
+
+  .rightSec {
+    text-align: right;
+
+    .btn {
+      width: 100%;
+      max-width: 150px;
+    }
+  }
+}

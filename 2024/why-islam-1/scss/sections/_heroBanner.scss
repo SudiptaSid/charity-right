@@ -1,0 +1,61 @@
+// Home Banner
+.heroBannerOne {
+  padding: 80px 0;
+  position: relative;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $blueLightClr;
+    border-radius: 0 0 50px 50px;
+    z-index: -1;
+
+    @include md {
+      height: 80%;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+
+  .sectionTitle {
+    display: inline-block;
+    max-width: 800px;
+
+    h1 {
+      color: $blueClr;
+    }
+
+    .btnSec {
+      .btn {
+        width: 100%;
+        max-width: 200px;
+
+        @include md {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .imgSec {
+    border-radius: 40px;
+    max-width: 1080px;
+    display: inline-block;
+    overflow: hidden;
+
+    @include md {
+      border-radius: 10px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

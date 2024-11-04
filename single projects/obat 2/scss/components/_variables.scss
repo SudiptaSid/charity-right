@@ -1,0 +1,36 @@
+// Font
+$base-fz: 16px !default;
+$primary-ff: "Montserrat", sans-serif;
+
+// Color
+$no-clr: transparent;
+$white-clr: #ffffff;
+$black-clr: #000000;
+$clr-F1F1F1: #f1f1f1;
+$clr-646464: #646464;
+$clr-E6F5E6: #e6f5e6;
+$clr-6CAF6B: #6caf6b;
+$clr-385C37: #385c37;
+$clr-184655: #184655;
+$clr-363636: #363636;
+$clr-786453: #786453;
+$clr-FDF0E6: #fdf0e6;
+
+// Shadow
+$shadow-1: 0px 10px 40px rgba(137, 153, 170, 0.2);
+
+// Media Queries
+$break_1440: 1440px;
+$break_1366: 1366px;
+$break_1280: 1280px;
+$break_1240: 1240px;
+$break_1080: 1080px;
+$break_1024: 1024px;
+$break_991: 991px;
+$break_850: 850px;
+$break_767: 767px;
+$break_550: 550px;
+
+//@media (min-width: $break_767 + 1px) and (max-width: $break_1240) {}
+/* Max Width 991px */
+/* Max Width 1240px and Min 992px */

@@ -1,0 +1,24 @@
+// Donate One
+.donateOne {
+  .content {
+    padding-left: 100px;
+
+    @include md {
+      padding-left: 0;
+    }
+
+    .sectionTitle {
+      margin-bottom: 24px;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      gap: 15px;
+
+      @include md {
+        grid-template-columns: repeat(1, auto);
+      }
+    }
+  }
+}

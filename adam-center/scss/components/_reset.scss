@@ -1,0 +1,117 @@
+// Reset
+* {
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: rgba($clr-9A9A9A, 0.2);
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba($clr-9A9A9A, 0.6);
+        border-radius: 10px;
+    }
+}
+body {
+    font-size: $base-fz;
+    font-family: $font-open-sans;
+    line-height: 1.6;
+    font-weight: 400;
+    color: $clr-3D5970;
+    background-color: $white-clr;
+    overflow-x: hidden;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        font-size: ($base-fz - 3px);
+    }
+}
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: $clr-1DB578;
+    &:hover {
+        color: $clr-50AC97;
+        text-decoration: none;
+    }
+}
+a,
+button,
+input,
+textarea,
+select {
+    &:focus,
+    &:hover,
+    &:active {
+        outline: none;
+        box-shadow: none;
+    }
+}
+img {
+    max-width: 100%;
+}
+small {
+    font-size: 12px;
+}
+section {
+    position: relative;
+}
+.gap-1-2 {
+    gap: 0.5em 0;
+}
+.gap-1 {
+    gap: 1em 0;
+}
+.gap-2 {
+    gap: 2em 0;
+}
+.gap-3 {
+    gap: 3em 0;
+}
+
+// Bootstrap
+.container {
+    @media (min-width: $break-1340) {
+        max-width: 1280px;
+    }
+
+    @media (max-width: $break-1080) {
+        max-width: 100%;
+        padding: 0 15px !important;
+    }
+    &.small-container {
+        @media (min-width: $break-1200) {
+            max-width: 1170px;
+        }
+    }
+}
+
+.clr-50ac97 {
+    color: $clr-50AC97 !important;
+}
+
+/* -------------------------
+Link Page
+-------------------------- */
+.link-pg {
+    ul {
+        list-style-type: decimal;
+        list-style-position: inside;
+    }
+}

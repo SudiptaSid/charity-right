@@ -1,0 +1,181 @@
+// Donate Box
+.donate-box {
+    margin-top: 58px;
+    background-color: $white-clr;
+    padding: 55px 30px;
+    text-align: center;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 24px 16px;
+        margin-top: 24px;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 44px;
+        margin: 24px 0;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            font-size: 18px;
+            line-height: 24px;
+            margin: 16px 0;
+        }
+    }
+    h1 {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 54px;
+        margin-bottom: 24px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            font-size: 30px;
+            line-height: 44px;
+            margin-bottom: 16px;
+        }
+    }
+    p {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 30px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+// Donate Box Two
+.donate-box2 {
+    margin-top: 58px;
+    background-color: $white-clr;
+    padding: 70px 25px;
+    text-align: center;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 36px 16px;
+        margin-top: 24px;
+    }
+    h1 {
+        color: inherit;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 60px;
+        margin-bottom: 0;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            font-size: 30px;
+            line-height: 42px;
+        }
+    }
+    p {
+        font-size: 1em;
+        margin: 45px 0;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            margin: 24px 0;
+        }
+    }
+}
+
+// Newsletter
+.newsletter {
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: $white-clr;
+    .form-control {
+        width: calc(100% - 130px);
+        padding: 15px 30px;
+        padding-left: 0;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            width: 100%;
+            padding: 10px 16px;
+            padding-left: 0;
+        }
+    }
+    .btn {
+        font-size: 1em;
+        line-height: 20px;
+        width: 130px;
+        padding: 15px 30px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            width: auto;
+            padding: 10px 16px;
+        }
+    }
+}
+
+// Social Icons
+.social-links {
+    display: flex;
+    li {
+        a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            color: $primary-clr;
+            border: 1px solid $primary-clr;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 20px;
+        }
+        + li {
+            margin-left: 24px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+// Tab One
+.tab-one {
+    background-color: $clr-F5EDE5;
+    .nav {
+        .nav-item {
+            width: 50%;
+            .nav-link {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 30px;
+                text-align: center;
+                padding: 25px;
+                border: 8px solid $clr-F5EDE5;
+                border-radius: 0;
+                color: $white-clr;
+                background-color: $primary-clr;
+                /* Max Width 991px */
+                @media (max-width: $break_991) {
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding: 10px;
+                }
+                &.active {
+                    color: $clr-454545;
+                    background-color: $white-clr;
+                    border-color: $white-clr;
+                }
+            }
+        }
+    }
+    .tab-content {
+        padding: 40px 25px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            padding: 25px 15px;
+        }
+        p {
+            max-width: 426px;
+            margin: auto;
+            margin-bottom: 18px;
+            text-align: center;
+        }
+    }
+}

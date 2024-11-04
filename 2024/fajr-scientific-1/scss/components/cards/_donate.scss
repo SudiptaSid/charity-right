@@ -1,0 +1,31 @@
+// Donate Card One
+.donateCardOne {
+  background-color: clr(light, outline);
+  padding: 0 100px 60px 100px;
+  text-align: center;
+
+  @include md {
+    padding: 0 80px 40px 80px;
+  }
+
+  .ammount {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 250px;
+    background-color: clr(secondary, main);
+    padding: 24px;
+    padding-bottom: 32px;
+    margin-bottom: 24px;
+
+    h1 {
+      @include headingL;
+      color: clr(primary, main);
+      margin-bottom: 0;
+    }
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

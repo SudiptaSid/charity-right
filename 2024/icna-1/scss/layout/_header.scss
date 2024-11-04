@@ -1,0 +1,40 @@
+// Main Header
+.mainHeader {
+  padding: 15px 0;
+  background-color: clr(light, outline);
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 4;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: clr(secondary, main);
+      z-index: -1;
+    }
+
+    .rightSec {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 50px;
+
+      @include md {
+        gap: 15px;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 150px;
+      }
+    }
+  }
+}

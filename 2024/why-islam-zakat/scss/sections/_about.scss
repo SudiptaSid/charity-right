@@ -1,0 +1,38 @@
+// About One
+.aboutOne {
+  padding: 80px 0;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .imgSec {
+    img {
+      width: 100%;
+    }
+  }
+
+  .sectionTitle {
+    h1 {
+      color: clr(primary, main);
+
+      span {
+        display: inline-block;
+        color: clr(light, outline);
+        background-color: clr(secondary, main);
+        padding: 0 10px;
+      }
+    }
+
+    .btnSec {
+      .btn {
+        width: 100%;
+        max-width: max-content;
+
+        @include md {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

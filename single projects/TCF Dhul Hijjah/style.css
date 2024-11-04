@@ -1,0 +1,525 @@
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#FFFFFF;
+}
+:root{
+	--baseColor: #00884C;
+	--secondaryColor: #F6921E;
+	--lightColor: #FFFFFF;
+	--grayColor: #F6F6F6;
+	--darkColor: #333333;
+
+	--baseFont: 'Poppins', sans-serif;
+	--secondaryFont: 'Open Sans', sans-serif;
+}
+
+/* ========== Custom CSS Starts ========== */
+
+/* ===== CSS For "Common Cases" Starts Here ===== */
+.grid_item{
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+	align-content: center;
+}
+/* ======================== */
+.cta_btn_wrap{
+	margin-top: 30px;
+}
+.cta_btn{
+	color: var(--lightColor);
+	background: var(--secondaryColor);
+	font-family: var(--secondaryFont);
+	font-weight: 700;
+	font-size: 16px;
+	border-radius: 0px;
+	min-width: 230px;
+	text-align: center;
+	display: inline-block;
+	padding: 15px 25px;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;	
+}
+.cta_btn:hover{
+	color: var(--lightColor);
+	background: #E38314;
+	text-decoration: none;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+/* ======================== */
+.heading{
+	margin-bottom: 20px;
+}
+.heading h2{
+	color: var(--darkColor);
+	font-family: var(--baseFont);
+	font-weight: 700;
+	font-size: 48px;
+	margin-bottom: 0px;
+}
+.heading h2 .break{
+	display: block;
+}
+.heading h2 .colored_texts{
+	color: var(--baseColor);
+}
+.heading h3{
+	color: var(--darkColor);
+	font-family: var(--baseFont);
+	font-weight: 700;
+	font-size: 40px;
+	margin-bottom: 0px;
+}
+/* ======================== */
+.para_texts p{
+	color: var(--darkColor);
+	font-family: var(--baseFont);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+.para_texts p .colored_texts{
+	color: var(--baseColor);
+}
+.para_texts p:last-child{
+	margin-bottom: 0px;
+}
+/* ======================== */
+.container{
+	max-width: 1190px;
+}
+/* ===== CSS For "Common Cases" Ends Here ===== */
+
+
+/* ============================== */
+/* ============================== */
+/* ============================== */
+
+
+/* ===== CSS For "Header" Starts Here ===== */
+.header_wrap{
+	padding: 20px 0px;
+}
+.header{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 10px;	
+}
+.header .logo img{
+	max-width: 170px;
+}
+.header .cta_btn_wrap{
+	margin-top: 0px;
+	text-align: right;
+}
+/* ===== CSS For "Header" Ends Here ===== */
+
+
+/* ============================== */
+/* ============================== */
+
+.the_page{
+	background: url(images/Shape.png) no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+
+/* ============================== */
+/* ============================== */
+
+
+/* ===== CSS For "Hero Banner" Starts Here ===== */
+.hero_banner{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 50px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 50px;	
+}
+.hero_banner .heading{
+	margin-bottom: 15px;
+}
+.hero_banner .heading h2 .break{
+	display: block;
+}
+.hero_banner .para_texts{
+	max-width: 500px;
+}
+.hero_banner .cta_btn_wrap{
+	margin-top: 20px;
+}
+/* ===== CSS For "Hero Banner" Ends Here ===== */
+
+
+/* ============================== */
+/* ============================== */
+/* ============================== */
+
+
+/* ===== CSS For "Education Rights" Starts Here ===== */
+.education_rights_wrap{
+	padding: 75px 0px;
+	padding-top: 90px;
+}
+.education_rights{
+	max-width: 885px;
+	margin-left: auto;
+}
+.education_rights .education_texts{
+	max-width: 780px;
+	margin-left: auto;
+}
+.education_rights .para_texts p{
+	font-weight: 500;
+}
+.education_rights .two_photos{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 25px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 25px;
+	margin-top: 50px;
+}
+/* ===== CSS For "Education Rights" Ends Here ===== */
+
+
+/* ============================== */
+/* ============================== */
+/* ============================== */
+
+
+/* ===== CSS For "Donate Boxes" Starts Here ===== */
+.donate_boxes_wrap{
+	padding-top: 25px;
+	padding-bottom: 75px;
+}
+.donate_boxes_wrap .heading{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.donate_boxes_wrap .heading h6{
+	color: var(--lightColor);
+}
+.donate_boxes{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 45px 1fr 45px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 45px;
+	max-width: 1040px;
+	margin: 0px auto;
+}
+.donate_boxes .single_box{
+	background: var(--lightColor);
+	padding: 40px;
+	padding-bottom: 30px;
+	text-align: center;
+	box-shadow: 0px 24px 84px rgba(0, 0, 0, 0.05);	
+}
+.donate_boxes .single_box h4{
+	color: var(--darkColor);
+	font-family: var(--secondaryFont);
+	font-weight: 700;
+	font-size: 24px;
+	margin-bottom: 20px;	
+}
+.donate_boxes .single_box h4 .break{
+	display: block;
+}
+.donate_boxes .single_box .amount{
+	max-width: 190px;
+	margin: 0px auto;
+	margin-bottom: 10px;
+}
+.donate_boxes .single_box .amount .cta_btn{
+	min-width: inherit;
+	background: var(--baseColor);
+	border-radius: 7.5px;
+	display: block;
+	font-weight: 600;
+	font-size: 22px;
+	font-family: var(--baseFont);
+	padding: 10px 15px;
+}
+.donate_boxes .single_box .amount .cta_btn:hover{
+	-webkit-transform: none;
+	-moz-transform: none;
+	transform: none;	
+}
+.donate_boxes .single_box .cta_btn_wrap{
+	margin-top: 0px;
+}
+.donate_boxes .single_box .cta_btn_wrap .cta_btn{
+	min-width: 100%;
+	display: block;
+	color: var(--baseColor);
+	background: transparent;
+	font-size: 18px;
+	padding: 10px 5px;
+}
+.donate_boxes .single_box .cta_btn_wrap .cta_btn:hover{
+	-webkit-transform: none;
+	-moz-transform: none;
+	transform: none;
+	text-decoration: underline;
+}
+.donate_boxes .single_box .form-control{
+	background: #F4F4F4;
+	height: inherit;
+	color: var(--darkColor);
+	border: none;
+	border-radius: 7.5px;
+	padding: 13px 15px;
+	margin-bottom: 10px;
+	font-weight: 600;
+	font-size: 18px;
+	font-family: var(--baseFont);
+}
+.donate_boxes .single_box .form-control::placeholder{
+	color: var(--darkColor);
+	opacity: 0.5;
+}
+/* ===== CSS For "Donate Boxes" Ends Here ===== */
+
+
+/* ============================== */
+/* ============================== */
+/* ============================== */
+
+
+/* ===== CSS For "Newsletter & Contact" Starts Here ===== */
+.news_contact{
+	background: var(--baseColor);
+	padding: 40px 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 0px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap:0px;
+}
+.news_contact h4{
+	color: var(--lightColor);
+	font-family: var(--secondaryFont);
+	font-weight: 700;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.news_contact .newsletter{
+	padding: 0px 75px;
+	border-right: 1px solid #50AD85;
+}
+.news_contact .newsletter .form-group{
+	margin-bottom: 10px;
+}
+.news_contact .newsletter .form-control{
+	color: var(--darkColor);
+	font-family: var(--secondaryFont);
+	font-weight: 400;
+	font-size: 14px;
+	height: 46px;
+	padding: 12.5px 15px;
+	border: none;
+	border-radius: 0px;
+	background: var(--lightColor);
+
+}
+.news_contact .newsletter .subscribe_button{
+	margin-top: 20px;
+}
+.news_contact .newsletter .subscribe_button .cta_btn{
+	color: var(--lightColor);
+	background: transparent;
+	border: 1px solid #D9EDE4;
+	text-transform: capitalize;
+	padding: 10px 15px;
+	min-width: 155px;
+	font-size: 16px;
+	height: 46px;
+}
+.news_contact .newsletter .subscribe_button .cta_btn:active,
+.news_contact .newsletter .subscribe_button .cta_btn:focus{
+	box-shadow: none;
+}
+.news_contact .newsletter .subscribe_button .cta_btn:hover{
+	-webkit-transform: none;
+	-ms-transform: none;
+	transform: none;
+	color: var(--lightColor);
+	border: 1px solid var(--secondaryColor);
+	background: var(--secondaryColor);
+}
+
+
+.news_contact .contact_us{
+	padding: 0px 75px;
+	position: relative;
+}
+.news_contact .contact_us .contact_info ul{
+	margin-bottom: 0px;
+	font-size: 0px;
+}
+.news_contact .contact_us .contact_info ul li{
+	list-style: none;
+	margin-bottom: 7.5px;
+	color: var(--lightColor);
+	font-family: var(--secondaryFont);
+	font-weight: 600;
+	font-size: 18px;
+}
+.news_contact .contact_us .contact_info ul li .break{
+	display: block;
+}
+.news_contact .contact_us .contact_info ul li:last-child{
+	margin-bottom: 0px;
+}
+.news_contact .contact_us .contact_info ul li a{
+	color: var(--lightColor);
+}
+
+.news_contact .contact_us .charity_logos {
+	position: absolute;
+	right: 75px;
+	bottom: 145px;
+}
+.news_contact .contact_us .charity_logos ul{
+	margin-bottom: 0px;
+	font-size: 0px;
+}
+.news_contact .contact_us .charity_logos ul li{
+	list-style: none;
+	margin-right: 5px;
+	display: inline-block;
+}
+.news_contact .contact_us .charity_logos ul li:last-child{
+	margin-right: 0px;
+}
+.news_contact .contact_us .charity_logos ul li img{
+	max-width: 85px;
+}
+/* ===== CSS For "Newsletter & Contact" Ends Here ===== */
+
+
+/* ============================== */
+/* ============================== */
+/* ============================== */
+
+
+/* ===== CSS For "Footer" Starts Here ===== */
+.footer .logo_social_wrap{
+	padding: 35px 0px;
+	border-bottom: 1px solid #E2E2E2;
+}
+.footer .logo_social{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 15px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 15px;	
+}
+.footer .logo_social .logo img{
+	max-width: 220px;
+}
+.footer .social_media ul{
+	margin-bottom: 0px;
+	font-size: 0px;
+	text-align: right;
+}
+.footer .social_media ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 20px;
+}
+.footer .social_media ul li:last-child{
+	margin-right: 0px;
+}
+.footer .social_media ul li i{
+	color: var(--baseColor);
+	width: 40px;
+	height: 40px;
+	line-height: 38px;
+	border: 1px solid var(--baseColor);
+	border-radius: 50%;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 18px;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+.footer .social_media ul li i:hover{
+	color: var(--lightColor);
+	background: var(--baseColor);
+}
+
+.footer .copyright{
+	padding: 25px 0px;
+}
+.footer .copyright p{
+	color: var(--baseColor);
+	font-family: var(--secondaryFont);
+	font-weight: 400;
+	font-size: 16px;
+	font-style: italic;
+	margin-bottom: 0px;
+	text-align: right;
+}
+/* ===== CSS For "Footer" Ends Here ===== */
+
+
+/* ============================== */
+/* ============================== */
+/* ============================== */
+.custom-ammount {
+	max-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    background: var(--lightColor);
+    padding: 40px 25px;
+    text-align: center;
+    box-shadow: 0px 24px 84px rgba(0, 0, 0, 0.2);
+}
+.custom-ammount h2 {
+	color: var(--darkColor);
+    font-family: var(--secondaryFont);
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.custom-ammount .form-control {
+	border: none;
+    background-color: #ededed;
+    padding: 15px;
+    height: auto;
+    font-weight: 600;
+}
+.custom-ammount .cta_btn_wrap .cta_btn {
+    min-width: 100%;
+    display: block;
+    color: var(--baseColor);
+    background: transparent;
+    font-size: 18px;
+    padding: 10px 5px;
+}
+.custom-ammount .cta_btn_wrap .cta_btn:hover {
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+    text-decoration: underline;
+}

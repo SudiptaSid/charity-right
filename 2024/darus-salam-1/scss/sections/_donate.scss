@@ -1,0 +1,23 @@
+// Donate One
+.donateOne {
+  padding: 80px 0;
+  background-size: cover;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 12px;
+
+    @include md {
+      grid-template-columns: repeat(1, auto);
+    }
+
+    .donateCardOne {
+      height: 100%;
+    }
+  }
+}

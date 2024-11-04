@@ -1,0 +1,73 @@
+.btnOutline {
+  position: relative;
+  display: inline-block;
+
+  span {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: calc(100% + 20px);
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+  }
+}
+
+// Btn
+.btn {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
+  outline: none;
+  position: relative;
+  z-index: 5;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &Primary {
+    color: clr(light, outline) !important;
+    background-color: clr(primary, main) !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: clr(light, outline) !important;
+      background-color: clr(primary, hover) !important;
+    }
+  }
+
+  &Secondary {
+    color: clr(light, outline) !important;
+    background-color: clr(secondary, main) !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: clr(light, outline) !important;
+      background-color: clr(secondary, hover) !important;
+    }
+  }
+
+  &White {
+    color: clr(black, main) !important;
+    background-color: clr(light, main) !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: clr(light, outline) !important;
+      background-color: clr(secondary, hover) !important;
+    }
+  }
+}

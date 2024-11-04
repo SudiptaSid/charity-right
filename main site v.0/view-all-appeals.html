@@ -1,0 +1,650 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Charity Right</title>
+
+	<!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+	<!-- Custom Css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- Main Header -->
+	<header id="main-header">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-5 col-4 pr-0 pl-md-0">
+					<div class="left-menu">
+						<button id="mobile-menu-toggle">
+							<img src="images/menu-toggle.png" alt="">
+						</button>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="images/search-icon.svg" alt="">
+									Search
+								</a>
+							</li>
+							<li><a href="our-projects.html">Our projects</a></li>
+							<li><a class="active" href="fundraising.html">Fundraising</a></li>
+							<li><a href="blog.html">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2 col-4 p-0">
+					<div class="center-menu">
+						<span class="logo">
+							<a href="index.html">
+								<img src="images/logo.png" alt="">
+							</a>
+						</span>
+					</div>
+				</div>
+				<div class="col-md-5 col-4 pl-0 pr-md-0">
+					<div class="right-menu">
+						<a href="about-us.html" class="link-item">About us</a>
+						<div class="btn_sec">
+							<a href="sign-in.html" class="btn btn-grey-border">Sign in</a>
+							<a href="donate.html" class="btn btn-main">Donate</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Mobile Menu -->
+	<div id="mobile-menu">
+		<ul>
+			<li>
+				<a href="#">
+					<img src="images/search-icon.svg" alt="">
+					Search
+				</a>
+			</li>
+			<li><a href="our-projects.html">Our projects</a></li>
+			<li><a href="fundraising.html">Fundraising</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="about-us.html">About us</a></li>
+		</ul>
+		<div class="btn_sec">
+			<a href="sign-in.html" class="btn btn-grey-border">Sign in</a>
+		</div>
+		<div class="bottom-ptrn">
+			<img src="images/pattern/bottom1.png" alt="">
+		</div>
+	</div>
+
+	<!-- Hero Banner -->
+	<section id="hero-banner-fp2" class="container">
+		<span class="top-pattern">
+			<img src="images/pattern/top1.png" alt="">
+		</span>
+		<div class="row">
+			<div class="col-12">
+				<h2>All appeals</h2>
+			</div>
+		</div>
+		<span class="bottom-pattern">
+			<img src="images/pattern/bottom4.png" alt="">
+		</span>
+	</section>
+
+	<!-- All Appeals -->
+	<section id="all-appeal-grids">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="mobile-filter">
+						<ul>
+							<li>
+								<select class="single1 form-control">
+									<option selected>Sort by</option>
+									<option>From newest to oldest</option>
+									<option>From oldest to newest</option>
+									<option>Money raised (ascending)</option>
+									<option>Our pick</option>
+								</select>
+							</li>
+							<li>
+								<select class="single1 form-control">
+									<option selected>Country</option>
+									<option>All</option>
+									<option>Sudan</option>
+									<option>Turkey</option>
+									<option>Somalia</option>
+									<option>Bangladesh</option>
+									<option>Pakistan</option>
+								</select>
+							</li>
+							<li>
+								<select class="single1 form-control">
+									<option selected>Category</option>
+									<option>All</option>
+									<option>Family food packs</option>
+									<option>Health and medical</option>
+									<option>Local community</option>
+									<option>Education</option>
+									<option>School meals</option>
+									<option>Event</option>
+									<option>Quran programme</option>
+									<option>Sport</option>
+								</select>
+							</li>
+							<li>
+								<select class="single1 form-control">
+									<option selected>Type</option>
+									<option>All</option>
+									<option>Top fundraiser</option>
+									<option>Popular</option>
+									<option>Our pick</option>
+								</select>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 left-panel">
+					<h4 class="filter-heading">Filter results</h4>
+					<div class="filter-left">
+						<div id="accordion">
+							<div class="filter-box">
+								<h5><button aria-controls="collapse-1" aria-expanded="true" data-target="#collapse-1" data-toggle="collapse">Type</button></h5>
+								<div class="collapse show" data-parent="#accordion" id="collapse-1">
+									<ul class="filter-list">
+										<li><a href="#" class="active">All</a></li>
+										<li><a href="#">Top fundraiser</a></li>
+										<li><a href="#">Popular</a></li>
+										<li><a href="#">Our pick</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-box">
+								<h5><button aria-controls="collapse-2" aria-expanded="true" data-target="#collapse-2" data-toggle="collapse">Country</button></h5>
+								<div class="collapse show" data-parent="#accordion" id="collapse-2">
+									<ul class="filter-list">
+										<li><a href="#" class="active">All</a></li>
+										<li><a href="#">Sudan</a></li>
+										<li><a href="#">Turkey</a></li>
+										<li><a href="#">Somalia</a></li>
+										<li><a href="#">Bangladesh</a></li>
+										<li><a href="#">Pakistan</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-box">
+								<h5><button aria-controls="collapse-3" aria-expanded="true" data-target="#collapse-3" data-toggle="collapse">Category</button></h5>
+								<div class="collapse show" data-parent="#accordion" id="collapse-3">
+									<ul class="filter-list">
+										<li><a href="#" class="active">All</a></li>
+										<li><a href="#">Family food packs</a></li>
+										<li><a href="#">Health and medical</a></li>
+										<li><a href="#">Local community</a></li>
+										<li><a href="#">Education</a></li>
+										<li><a href="#">School meals</a></li>
+										<li><a href="#">Event</a></li>
+										<li><a href="#">Quran programme</a></li>
+										<li><a href="#">Sport</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-box">
+								<h5><button aria-controls="collapse-4" aria-expanded="true" data-target="#collapse-4" data-toggle="collapse">Sort by</button></h5>
+								<div class="collapse show" data-parent="#accordion" id="collapse-4">
+									<ul class="filter-list2">
+										<li><a href="#">From newest to oldest</a></li>
+										<li><a href="#">From oldest to newest</a></li>
+										<li><a href="#">Money raised (ascending)</a></li>
+										<li><a href="#">Money raised (descending)</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-8 right-panel">
+					<div class="row">
+						<div class="col-lg-4 col-md-6">
+							<div class="fundraising-grid1">
+								<figure>
+									<div class="img-sec">
+										<a href="appeals-details.html">
+											<img src="images/fundraising-pg/popular-appeals/1.jpg" alt="">
+										</a>
+									</div>
+									<figcaption>
+										<div class="avtr">
+											<a href="#">
+												<span>
+													<img src="images/fundraising-pg/avt1.png" alt="">
+												</span>
+												Charity Right
+											</a>
+										</div>
+										<h4 class="title">
+											<a href="#">Meals for the Needy</a>
+										</h4>
+										<p>We provide daily school meals to 900 children in the heart of Dhaka's slums. </p>
+										<div class="price">
+											<span class="span1">£364 <span>raised</span></span>
+											<span class="span2">64%</span>
+										</div>
+										<div class="progress">
+											<div class="progress-bar" style="width: 64%" role="progressbar" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<div class="days-left">6 days left</div>
+									</figcaption>	
+								</figure>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="fundraising-grid1">
+								<figure>
+									<div class="img-sec">
+										<a href="appeals-details.html">
+											<img src="images/fundraising-pg/popular-appeals/1.jpg" alt="">
+										</a>
+									</div>
+									<figcaption>
+										<div class="avtr">
+											<a href="#">
+												<span>
+													<img src="images/fundraising-pg/avt1.png" alt="">
+												</span>
+												Charity Right
+											</a>
+										</div>
+										<h4 class="title">
+											<a href="#">Meals for the Needy</a>
+										</h4>
+										<p>We provide daily school meals to 900 children in the heart of Dhaka's slums. </p>
+										<div class="price">
+											<span class="span1">£364 <span>raised</span></span>
+											<span class="span2">64%</span>
+										</div>
+										<div class="progress">
+											<div class="progress-bar" style="width: 64%" role="progressbar" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<div class="days-left">6 days left</div>
+									</figcaption>	
+								</figure>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="fundraising-grid1">
+								<figure>
+									<div class="img-sec">
+										<a href="#">
+											<img src="images/fundraising-pg/popular-appeals/1.jpg" alt="">
+										</a>
+									</div>
+									<figcaption>
+										<div class="avtr">
+											<a href="#">
+												<span>
+													<img src="images/fundraising-pg/avt1.png" alt="">
+												</span>
+												Charity Right
+											</a>
+										</div>
+										<h4 class="title">
+											<a href="#">Meals for the Needy</a>
+										</h4>
+										<p>We provide daily school meals to 900 children in the heart of Dhaka's slums. </p>
+										<div class="price">
+											<span class="span1">£364 <span>raised</span></span>
+											<span class="span2">64%</span>
+										</div>
+										<div class="progress">
+											<div class="progress-bar" style="width: 64%" role="progressbar" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<div class="days-left">6 days left</div>
+									</figcaption>	
+								</figure>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="fundraising-grid1">
+								<figure>
+									<div class="img-sec">
+										<a href="#">
+											<img src="images/fundraising-pg/popular-appeals/1.jpg" alt="">
+										</a>
+									</div>
+									<figcaption>
+										<div class="avtr">
+											<a href="#">
+												<span>
+													<img src="images/fundraising-pg/avt1.png" alt="">
+												</span>
+												Charity Right
+											</a>
+										</div>
+										<h4 class="title">
+											<a href="#">Meals for the Needy</a>
+										</h4>
+										<p>We provide daily school meals to 900 children in the heart of Dhaka's slums. </p>
+										<div class="price">
+											<span class="span1">£364 <span>raised</span></span>
+											<span class="span2">64%</span>
+										</div>
+										<div class="progress">
+											<div class="progress-bar" style="width: 64%" role="progressbar" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<div class="days-left">6 days left</div>
+									</figcaption>	
+								</figure>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="fundraising-grid1">
+								<figure>
+									<div class="img-sec">
+										<a href="#">
+											<img src="images/fundraising-pg/popular-appeals/1.jpg" alt="">
+										</a>
+									</div>
+									<figcaption>
+										<div class="avtr">
+											<a href="#">
+												<span>
+													<img src="images/fundraising-pg/avt1.png" alt="">
+												</span>
+												Charity Right
+											</a>
+										</div>
+										<h4 class="title">
+											<a href="#">Meals for the Needy</a>
+										</h4>
+										<p>We provide daily school meals to 900 children in the heart of Dhaka's slums. </p>
+										<div class="price">
+											<span class="span1">£364 <span>raised</span></span>
+											<span class="span2">64%</span>
+										</div>
+										<div class="progress">
+											<div class="progress-bar" style="width: 64%" role="progressbar" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<div class="days-left">6 days left</div>
+									</figcaption>	
+								</figure>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="fundraising-grid1">
+								<figure>
+									<div class="img-sec">
+										<a href="#">
+											<img src="images/fundraising-pg/popular-appeals/1.jpg" alt="">
+										</a>
+									</div>
+									<figcaption>
+										<div class="avtr">
+											<a href="#">
+												<span>
+													<img src="images/fundraising-pg/avt1.png" alt="">
+												</span>
+												Charity Right
+											</a>
+										</div>
+										<h4 class="title">
+											<a href="#">Meals for the Needy</a>
+										</h4>
+										<p>We provide daily school meals to 900 children in the heart of Dhaka's slums. </p>
+										<div class="price">
+											<span class="span1">£364 <span>raised</span></span>
+											<span class="span2">64%</span>
+										</div>
+										<div class="progress">
+											<div class="progress-bar" style="width: 64%" role="progressbar" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<div class="days-left">6 days left</div>
+									</figcaption>	
+								</figure>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="fundraising-grid1">
+								<figure>
+									<div class="img-sec">
+										<a href="#">
+											<img src="images/fundraising-pg/popular-appeals/1.jpg" alt="">
+										</a>
+									</div>
+									<figcaption>
+										<div class="avtr">
+											<a href="#">
+												<span>
+													<img src="images/fundraising-pg/avt1.png" alt="">
+												</span>
+												Charity Right
+											</a>
+										</div>
+										<h4 class="title">
+											<a href="#">Meals for the Needy</a>
+										</h4>
+										<p>We provide daily school meals to 900 children in the heart of Dhaka's slums. </p>
+										<div class="price">
+											<span class="span1">£364 <span>raised</span></span>
+											<span class="span2">64%</span>
+										</div>
+										<div class="progress">
+											<div class="progress-bar" style="width: 64%" role="progressbar" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<div class="days-left">6 days left</div>
+									</figcaption>	
+								</figure>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="fundraising-grid1">
+								<figure>
+									<div class="img-sec">
+										<a href="#">
+											<img src="images/fundraising-pg/popular-appeals/1.jpg" alt="">
+										</a>
+									</div>
+									<figcaption>
+										<div class="avtr">
+											<a href="#">
+												<span>
+													<img src="images/fundraising-pg/avt1.png" alt="">
+												</span>
+												Charity Right
+											</a>
+										</div>
+										<h4 class="title">
+											<a href="#">Meals for the Needy</a>
+										</h4>
+										<p>We provide daily school meals to 900 children in the heart of Dhaka's slums. </p>
+										<div class="price">
+											<span class="span1">£364 <span>raised</span></span>
+											<span class="span2">64%</span>
+										</div>
+										<div class="progress">
+											<div class="progress-bar" style="width: 64%" role="progressbar" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<div class="days-left">6 days left</div>
+									</figcaption>	
+								</figure>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="fundraising-grid1">
+								<figure>
+									<div class="img-sec">
+										<a href="#">
+											<img src="images/fundraising-pg/popular-appeals/1.jpg" alt="">
+										</a>
+									</div>
+									<figcaption>
+										<div class="avtr">
+											<a href="#">
+												<span>
+													<img src="images/fundraising-pg/avt1.png" alt="">
+												</span>
+												Charity Right
+											</a>
+										</div>
+										<h4 class="title">
+											<a href="#">Meals for the Needy</a>
+										</h4>
+										<p>We provide daily school meals to 900 children in the heart of Dhaka's slums. </p>
+										<div class="price">
+											<span class="span1">£364 <span>raised</span></span>
+											<span class="span2">64%</span>
+										</div>
+										<div class="progress">
+											<div class="progress-bar" style="width: 64%" role="progressbar" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<div class="days-left">6 days left</div>
+									</figcaption>	
+								</figure>
+							</div>
+						</div>
+						<div class="col-12 text-center">
+							<a href="#" class="btn btn-grey-border">Show more appeals</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Fundraising Banner 2 -->
+	<section id="fundraising-banner2" class="container">		
+		<div class="row">
+			<div class="col-12">
+				<div class="content">
+					<div class="row">
+						<div class="col-lg-5 col-md-6">
+							<div class="section-heading">
+								<h2>What will you do?</h2>
+								<p>Create your own fundraising appeal. Make your birthday even more special by raising money. Or celebrate a life and give in memory of a loved one.</p>
+								<p>However you decide to support the work of Charity Right, it will help people break free from the devastating effects of hunger and start to fulfil all their potential.</p>
+							</div>
+							<div class="btn-sec">
+								<a href="start-an-appeal.html" class="btn btn-main">Start an appeal</a>
+							</div>
+						</div>
+						<div class="col-lg-7 col-md-6">
+							<img src="images/home-pg/fundraising-banner.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="main-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 p-0">
+					<div class="divider">
+						<span>
+							<a href="index.html" class="logo">
+								<img src="images/footer/footer-logo.png" alt="">
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 offset-lg-1 col-12 col-f text-left">
+					<h4>Get involved!</h4>
+					<p>Do you wonder what life is like for the school, children and families we support? Well, now you can find out!</p>
+					<div class="btn-sec">
+						<a href="fill-form.html" class="btn btn-main">Fill form</a>
+						<a href="learn-more.html" class="btn btn-grey-border">Learn more</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-f">
+					<h4>Get in touch</h4>
+					<div class="social-list">
+						<a href="#" class="social social1">
+							<img src="images/footer/Youtube.png" alt="">
+						</a>
+						<a href="#" class="social social2">
+							<img src="images/footer/Instagram.png" alt="">
+						</a>
+						<a href="#" class="social social3">
+							<img src="images/footer/Facebook.png" alt="">
+						</a>
+						<a href="#" class="social social4">
+							<img src="images/footer/Twitter.png" alt="">
+						</a>
+					</div>
+					<div class="contact-info">
+						<div>
+							<span>Email</span>
+							<a href="mailto:info@charityright.org.uk">info@charityright.org.uk</a>
+						</div>
+						<div>
+							<span>Phone</span>
+							<a href="tel:01274 734839">01274 734839</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-f">
+					<div class="row m-0">
+						<div class="col-6 col-md-12 p-0">
+							<ul class="links">
+								<li><a href="our-projects.html">Our projects</a></li>
+								<li><a href="fundraising.html">Fundraising</a></li>
+							</ul>
+						</div>
+						<div class="col-6 col-md-12 p-0">
+							<ul class="links">
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="about-us.html">About us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="copyright">
+						© Charity Right - Registered <br>Charity Number: 1163944
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- Jquery Min -->
+	<script src="js/jquery.min.js"></script>
+
+	<!-- Popper Min -->
+	<script src="plugins/bootstrap/js/popper.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Owl Carousel -->
+	<script src="plugins/owl-carousel/js/owl.carousel.min.js"></script>
+
+	<!-- Star Rating -->
+	<script src="plugins/star_rating/star-rating.js"></script>
+
+	<!-- A Carousel -->
+	<script src="plugins/acarousel/jquery.acarousel.min.js"></script>
+
+	<!-- Select -->
+	<script src="plugins/select/select.js"></script>
+
+	<!-- Input Phone -->
+	<script src="plugins/phone/phone.js"></script>
+
+	<!-- Date Picker -->
+	<script src="plugins/datepicker/bootstrap-datepicker.min.js"></script>
+
+	<!-- CK Editor -->
+	<script src="plugins/ckeditor.js"></script>
+
+	<!-- Pie Chart -->
+	<script src="plugins/chart1.js"></script>
+
+	<!-- Custom Js -->
+	<script src="js/default.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+// Main Header
+.mainHeader {
+  background-color: clr(light, outline);
+  padding: 15px 0;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .btnOutline {
+      span {
+        border-color: clr(secondary, main);
+      }
+    }
+  }
+}

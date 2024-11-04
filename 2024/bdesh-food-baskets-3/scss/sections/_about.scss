@@ -1,0 +1,78 @@
+// About One
+.aboutOne {
+  padding: 80px 0;
+  background-color: clr(primary, main);
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .imgSec {
+    img {
+      width: 100%;
+    }
+  }
+
+  .sectionTitle {
+    padding: 50px 32px;
+    color: clr(light, outline);
+
+    @include md {
+      padding: 32px 15px;
+    }
+
+    h1 {
+      color: inherit;
+    }
+
+    h5 {
+      margin: 24px 0;
+      color: inherit;
+    }
+
+    .btnSec {
+      .btn {
+        width: 100%;
+        max-width: 200px;
+
+        @include md {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+}
+
+// About Two
+.aboutTwo {
+  padding: 80px 0;
+  position: relative;
+  z-index: 4;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: clr(secondary, main);
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+
+    @include md {
+      height: 90%;
+    }
+  }
+
+  .sectionTitle {
+    color: clr(light, outline);
+
+    h1 {
+      color: inherit;
+    }
+  }
+}

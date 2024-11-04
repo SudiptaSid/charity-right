@@ -1,0 +1,70 @@
+// Owl Nav
+.owl-theme {
+    .owl-nav {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            position: relative;
+            margin-top: 10px;
+            text-align: center;
+            top: unset;
+            transform: translateY(0);
+        }
+        [class*="owl-"] {
+            width: 50px;
+            height: 50px;
+            background-color: $white-clr !important;
+            color: $primary-clr !important;
+            box-shadow: $shadow-1;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 1px solid $clr-DAE0E5 !important;
+            border-radius: 50%;
+            margin: 0;
+            font-size: 26px !important;
+            line-height: 20px !important;
+            text-align: center;
+            &:focus {
+                outline: none;
+            }
+
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                position: relative;
+                top: unset;
+                transform: translateY(0);
+                margin: 0 10px;
+            }
+        }
+        .owl-prev {
+            left: -30px;
+
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                left: 0;
+            }
+            i {
+                position: relative;
+                left: -2px;
+            }
+        }
+        .owl-next {
+            right: -30px;
+
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                right: 0;
+            }
+            i {
+                position: relative;
+                left: 2px;
+            }
+        }
+    }
+}

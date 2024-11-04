@@ -1,0 +1,36 @@
+// Footer
+.mainFooter {
+    background-color: clr(light, outline);
+    border-top: 2px solid clr(primary, main);
+    padding: 40px 0;
+
+    @include md {
+        padding: 20px 0;
+    }
+
+    .logoSec {
+        text-align: left;
+        
+        .logo {
+            @include md {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+
+        a {
+            font-weight: bold;
+            color: clr(primary, main);
+        }
+    }
+
+    .socialLinks {
+        @include md {
+            justify-content: center;
+        }
+    }
+}

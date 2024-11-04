@@ -1,0 +1,114 @@
+// Hero Two
+.hero-two {
+    .content-sec {
+        background-image: url(../images/pattern1.png);
+        background-size: contain;
+        background-color: $clr-E8A61E;
+        padding: 50px;
+        height: 100%;
+        text-align: center;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            padding: 30px 20px;
+        }
+        .logo {
+            border-bottom: 1px solid $white-clr;
+            padding-bottom: 2em;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                padding-bottom: 1em;
+            }
+            a {
+                img {
+                    height: 120px;
+
+                    // Max 767px
+                    @media (max-width: $break-767) {
+                        height: 100px;
+                    }
+                }
+            }
+        }
+        .heading-one {
+            color: $white-clr;
+            padding-top: 3em;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                padding-top: 1em;
+            }
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    }
+    .img-sec {
+    }
+}
+
+// Info Two
+.info-two {
+    .content-sec {
+        background-color: $clr-FAFAFA;
+        border: 1px solid $clr-EDEDED;
+        padding: 30px;
+        height: 100%;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            padding: 30px 20px;
+        }
+        .heading-one {
+            h1 {
+                color: $clr-E8A61E;
+            }
+            p {
+                + .btn-sec {
+                    margin-top: 20px;
+
+                    // Max 767px
+                    @media (max-width: $break-767) {
+                        margin-top: 16px;
+                    }
+                }
+            }
+            .btn-sec {
+                .btn {
+                    width: 100%;
+                    max-width: 500px;
+                }
+            }
+        }
+    }
+}
+
+// CTA Two
+.cta-two {
+    .heading-one {
+        background-color: $clr-FAFAFA;
+        text-align: center;
+        padding-bottom: 2em;
+        h1 {
+            color: $white-clr;
+            background-color: $clr-E8A61E;
+            padding: 1.225em 0;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                padding: 1em 0.5em;
+            }
+        }
+        p {
+            max-width: 1200px;
+            display: inline-block;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                padding: 0 0.5em;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+// Header
+#main-header {
+    display: block;
+    padding-top: 30px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    /* ----- Max Width 767px ----- */
+    @media (max-width: $break_767) {
+        padding-top:15px;
+    }
+    .left-menu {
+        a {
+            display: inline-block;
+            img {
+                height:44px;
+                width:auto;
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    height:30px;
+                }
+            }
+        }
+    }
+    .center-menu {
+        text-align: center;
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            margin-top:10px;
+        }
+        ul {
+            display: flex;
+            justify-content:space-around;
+            font-family: $secondary-ff;
+            font-weight: 400;
+            font-size:18px;
+            line-height:38px;
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size:14px;
+                line-height:1;
+            }
+            li {
+                a {
+                    color:$black-clr;
+                }
+            }
+        }
+    }
+    .right-menu {
+        text-align: right;
+        .btn {
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                min-width:unset;
+                width:auto;
+                padding:10px 20px;
+            }
+        }
+    }
+}

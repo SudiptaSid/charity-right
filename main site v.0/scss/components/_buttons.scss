@@ -1,0 +1,98 @@
+a, button {
+    outline:none;
+    box-shadow:none;
+    text-shadow:none;
+    font-size:1em;
+    cursor: pointer;
+    &:focus, &:active, &:hover {
+        outline:none !important;
+        box-shadow:none !important;
+        text-shadow:none !important;
+    }
+}
+// Button
+.btn {
+    border:1px solid $no-clr;
+    border-radius:10px;
+    padding:14px 20px;
+    font-size:1em;
+    line-height:20px;
+    font-weight:600;
+    text-align: center;
+    position: relative;
+    outline:none;
+    box-shadow:none;
+    text-shadow:none;
+    cursor: pointer;
+    &:focus, &:active, &:hover {
+        border:1px solid $no-clr;
+        outline:none;
+        box-shadow:none;
+        text-shadow:none;
+    }
+    // -------------------------------
+    @media (max-width: $break_1024) {
+        line-height:18px;
+    }
+    // --------------------------------
+    @media (max-width: $break_767) {
+        font-size:14px;
+    }
+    // White Btn
+    &.btn-white {
+        color:$primary-clr;
+        background-color:$white-clr;
+        &:hover, &:focus {
+            color:$white-clr;
+            background-color:$primary-clr;
+        }
+    }
+    // Btn Main
+    &.btn-main {
+        color:$white-clr;
+        background-color:$primary-clr;
+        &:hover, &:focus {
+            color:$white-clr;
+            background-color:$primary-clr;
+        }
+    }
+    // Btn Grey Border
+    &.btn-grey-border {
+        color:$black-light;
+        background-color:$white-clr;
+        border-color:$grey-clr;
+        &:hover, &:focus {
+            color:$primary-clr;
+            background-color:$white-clr;
+            border-color:$primary-clr;
+        }
+    }
+    &.btn-social {
+        color:$white-clr;
+        background-color:$primary-clr;
+        span {
+            color:$primary-clr;
+            background-color:$white-clr;
+            width:22px;
+            height:22px;
+            font-size:12px;
+            line-height:25px;
+            position: absolute;
+            left:20px;
+            border-radius:50%;
+            text-align: center;
+        }
+        &.btn-google {
+            background-color:#C5331E;
+            span {
+                color:#C5331E;
+            }
+        }
+        &.btn-facebook {
+            background-color:#4E6297;
+            span {
+                color:#4E6297;
+            }
+        }
+    }
+}

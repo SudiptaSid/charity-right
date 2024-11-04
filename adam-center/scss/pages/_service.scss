@@ -1,0 +1,410 @@
+// Service Page
+.service-list-one {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .service-box-two {
+        + .service-box-two {
+            margin-top: 80px;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+// Zakat One
+.zakat-one {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .zakat-box-one {
+        height: 100%;
+    }
+}
+
+// Zakat Two
+.zakat-two {
+    padding: 60px 0;
+    color: $white-clr;
+    background-color: $clr-152243;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .zakat-box-two {
+        + .zakat-box-two {
+            margin-top: 24px;
+        }
+    }
+}
+
+// Zakat Three
+.zakat-three {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    h4 {
+        font-size: 1.5em;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1em;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 1.2em;
+            align-items: flex-start;
+        }
+        + p {
+            font-weight: 700;
+        }
+    }
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1em;
+        input {
+            border: none;
+            border-radius: 10px;
+            background-color: $clr-ECF1FF;
+            padding: 10px 15px;
+            max-width: 150px;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                max-width: 100px;
+            }
+        }
+        + p {
+            font-weight: 700;
+        }
+    }
+    .btn-sec {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.5em;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            justify-content: center;
+            gap: 1em;
+        }
+    }
+}
+
+// Funeral One
+.funeral-one {
+    padding: 80px 0;
+    color: $clr-6D6D6D;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    h1,
+    h4 {
+        color: $clr-152243;
+    }
+    h4 {
+        font-size: 1.5em;
+        font-weight: 700;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 1.2em;
+        }
+    }
+    ul {
+        list-style-type: disc;
+        list-style-position: inside;
+        margin: 50px 0;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            margin: 24px 0;
+        }
+        li {
+            + li {
+                margin-top: 15px;
+
+                // Max 1080px
+                @media (max-width: $break-1080) {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .number-content-box-one {
+        .number {
+            color: $clr-3D5970;
+            font-size: 2.4em;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.5em;
+            }
+        }
+        .details {
+            h4 {
+                color: $clr-3D5970;
+            }
+        }
+    }
+}
+
+// Accessibility One
+.accessibility-one {
+    padding: 80px 0;
+    color: $clr-6D6D6D;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    h1,
+    h4 {
+        color: $clr-152243;
+    }
+}
+
+// Accessibility Two
+.accessibility-two {
+    color: $white-clr;
+    background-color: $clr-152243;
+    padding: 60px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 30px 0;
+    }
+}
+
+// Accessibility Three
+.accessibility-three {
+    padding: 80px 0;
+    color: $clr-6D6D6D;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    h1,
+    h4 {
+        color: $clr-152243;
+    }
+    .number-content-box-one {
+        .number {
+            color: $clr-3D5970;
+            font-size: 2.4em;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.5em;
+            }
+        }
+        .details {
+            h4 {
+                color: $clr-3D5970;
+                font-size: 1.2em;
+                line-height: 1.2;
+                + h4 {
+                    margin-top: 24px;
+
+                    // Max 1080px
+                    @media (max-width: $break-1080) {
+                        margin-top: 15px;
+                    }
+                }
+                + p {
+                    margin-top: 24px;
+
+                    // Max 1080px
+                    @media (max-width: $break-1080) {
+                        margin-top: 10px;
+                    }
+                }
+            }
+            p {
+                span {
+                    display: block;
+                }
+                + p {
+                    margin-top: 24px;
+
+                    // Max 1080px
+                    @media (max-width: $break-1080) {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Covid One
+.covid-one {
+    padding: 80px 0;
+    color: $clr-6D6D6D;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    h1,
+    h4 {
+        color: $clr-3D5970;
+    }
+}
+
+// Covid Two
+.covid-two {
+    color: $white-clr;
+    background-color: $clr-152243;
+    padding: 60px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 30px 0;
+    }
+}
+
+// Covid Three
+.covid-three {
+    padding: 80px 0;
+    color: $clr-6D6D6D;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    h1,
+    h4 {
+        color: $clr-3D5970;
+    }
+    .number-content-box-one {
+        .number {
+            color: $clr-3D5970;
+            font-size: 2.4em;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.5em;
+            }
+            &:after {
+                height: 60px;
+
+                // Max 1080px
+                @media (max-width: $break-1080) {
+                    height: 100%;
+                }
+            }
+        }
+        .details {
+            h4 {
+                color: $clr-3D5970;
+                font-size: 1.2em;
+                line-height: 1.4;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// Covid Four
+.covid-four {
+    padding-bottom: 80px;
+    color: $clr-6D6D6D;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding-bottom: 50px;
+    }
+    h1,
+    h4 {
+        color: $clr-3D5970;
+    }
+    ul {
+        list-style-position: outside;
+        padding-left: 24px;
+        font-weight: 600;
+        li {
+            + li {
+                margin-top: 10px;
+            }
+        }
+    }
+    .demicle-list {
+        list-style-type: decimal;
+    }
+    .disk-list {
+        list-style-type: disc;
+    }
+    .dash-list {
+        li {
+            &::marker {
+                content: "-";
+            }
+        }
+    }
+    .half-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1em 0;
+        padding-left: 0;
+        list-style-position: inside;
+        li {
+            width: 50%;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                width: 100%;
+            }
+            + li {
+                margin-top: 0;
+            }
+        }
+    }
+    .number-content-box-one {
+        .number {
+            color: $clr-3D5970;
+            font-size: 2.4em;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.5em;
+            }
+        }
+        .details {
+            h4 {
+                color: $clr-3D5970;
+                font-size: 1.2em;
+                line-height: 1.2;
+            }
+        }
+    }
+    .heading-one {
+        h1 {
+            span {
+                display: block;
+                color: $clr-6D6D6D;
+                font-weight: 600;
+            }
+        }
+    }
+}

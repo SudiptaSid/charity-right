@@ -1,0 +1,69 @@
+a, button {
+    outline:none;
+    box-shadow:none;
+    text-shadow:none;
+    cursor: pointer;
+    &:focus, &:active, &:hover {
+        outline:none !important;
+        box-shadow:none !important;
+        text-shadow:none !important;
+    }
+}
+// Button
+.btn {
+    border:none;
+    border-radius:10px;
+    padding:13px;
+    font-size:16px;
+    line-height:24px;
+    font-weight:700;
+    text-align: center;
+    position: relative;
+    outline:none;
+    box-shadow:none;
+    text-shadow:none;
+    cursor: pointer;
+    &:focus, &:active, &:hover {
+        outline:none;
+        box-shadow:none;
+        text-shadow:none;
+    }
+    /* ----- Max Width 767px ----- */
+    @media (max-width: $break_767) {
+        font-size:14px;
+        line-height:18px;
+        padding:10px 16px;
+        border-radius:5px;
+    }
+    &.btn-hp {
+        font-size:20px;
+        line-height:24px;
+        padding:25px;
+        width:100%;
+        max-width:240px;
+        /* ----- Max Width 1200px ----- */
+        @media (max-width: $break_1200) {
+            padding:20px;
+        }
+        /* ----- Max Width 991px ----- */
+        @media (max-width: $break_991) {
+            font-size:16px;
+            padding:15px;
+            max-width:220px;
+        }
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            max-width:unset;
+            width:100%;
+            font-size:14px;
+        }
+    }
+    // Btn Main
+    &.btn-main {
+        color:$white-clr;
+        background-color:$primary-clr;
+        &:hover, &:focus {
+            background-color:darken($primary-clr, 5%);
+        }
+    }
+}

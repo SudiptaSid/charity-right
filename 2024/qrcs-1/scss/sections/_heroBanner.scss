@@ -1,0 +1,38 @@
+// Home Banner
+.heroBannerOne {
+  padding: 80px 0;
+  background-color: clr(light, hover);
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .imgSec {
+    img {
+      width: 100%;
+    }
+  }
+
+  .bgBox {
+    padding: 48px;
+    background-color: clr(light, outline);
+
+    @include md {
+      padding: 32px 15px;
+    }
+
+    .btnSec {
+      text-align: right;
+
+      @include md {
+        text-align: center;
+      }
+
+      .btn {
+        @include md {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

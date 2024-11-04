@@ -1,0 +1,91 @@
+a,
+button {
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 1em;
+    cursor: pointer;
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}
+// Button
+.btn {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
+        padding: 10px 15px;
+    }
+    &:focus,
+    &:active,
+    &:hover {
+        border-color: $no-clr;
+        outline: none;
+        box-shadow: none;
+        text-shadow: none;
+    }
+    // Green Btn
+    &.btn-green {
+        color: $white-clr;
+        background-color: $primary-clr;
+        border-color: $primary-clr;
+        &:hover,
+        &:focus {
+            color: $white-clr;
+            background-color: darken($primary-clr, 5%);
+            border-color: darken($primary-clr, 5%);
+        }
+    }
+    // White Btn
+    &.btn-white {
+        color: $primary-clr;
+        background-color: $white-clr;
+        border-color: $white-clr;
+        &:hover,
+        &:focus {
+            color: $primary-clr;
+            background-color: darken($white-clr, 5%);
+            border-color: darken($white-clr, 5%);
+        }
+    }
+    // Yellow Btn
+    &.btn-yellow {
+        color: $white-clr;
+        background-color: $yellow-clr;
+        border-color: $yellow-clr;
+        &:hover,
+        &:focus {
+            color: $white-clr;
+            background-color: darken($yellow-clr, 5%);
+            border-color: darken($yellow-clr, 5%);
+        }
+    }
+}
+
+// Btn Width
+.btn-250 {
+    width: 100%;
+    max-width: 250px;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,73 @@
+// Newsletter One
+.newsletterOne {
+  padding-bottom: 80px;
+
+  @include md {
+    padding-bottom: 40px;
+  }
+
+  .content {
+    padding: 40px 0;
+    border-top: 1px solid clr(primary, main);
+    border-bottom: 1px solid clr(primary, main);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px 0;
+
+    .col {
+      width: 50%;
+
+      @include md {
+        width: 100%;
+      }
+    }
+
+    h4 {
+      color: clr(primary, main);
+      margin: 0;
+    }
+
+    .sectionTitle {
+      margin-bottom: 32px;
+
+      h1 {
+        color: inherit;
+      }
+
+      p {
+        color: clr(light, main);
+      }
+    }
+
+    .form-group {
+      max-width: 700px;
+      margin: auto;
+      display: flex;
+      gap: 10px;
+      border: 2px solid clr(primary, main);
+
+      @include md {
+        flex-wrap: wrap;
+      }
+
+      .inputBox {
+        flex-grow: 1;
+        flex-shrink: 0;
+
+        .form-control {
+          background-color: transparent;
+        }
+      }
+
+      .btn {
+        border-radius: 0;
+        min-width: 150px;
+
+        @include md {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

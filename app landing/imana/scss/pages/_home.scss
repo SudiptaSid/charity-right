@@ -1,0 +1,331 @@
+// Hero Banner
+.hero-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+// Banner Content
+.banner-content {
+    padding: 40px 0;
+    /* Max width 767px */
+    @media (max-width: $break_767) {
+        padding: 20px 0;
+    }
+    .section-heading {
+        max-width: 700px;
+        h1 {
+            font-size: 55px;
+            line-height: 74px;
+            /* Max width 767px */
+            @media (max-width: $break_767) {
+                font-size: 30px;
+                line-height: 44px;
+            }
+        }
+        .btn {
+            min-width: 205px;
+            /* Max width 767px */
+            @media (max-width: $break_767) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// CTA One
+.cta-one {
+    padding: 50px 0;
+    color: $white-clr;
+    background-color: $blue-clr;
+    /* Max width 767px */
+    @media (max-width: $break_767) {
+    }
+    h2 {
+        font-size: 33px;
+        font-weight: 600;
+        line-height: 53px;
+        max-width: 720px;
+        display: inline-block;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            font-size: 23px;
+            line-height: 33px;
+        }
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+// Support Goes
+.support-goes {
+    padding: 80px 0;
+    /* Max width 767px */
+    @media (max-width: $break_767) {
+        padding: 50px 0;
+    }
+    .img-sec {
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            text-align: center;
+        }
+        img {
+            /* Max width 767px */
+            @media (max-width: $break_767) {
+                max-width: 50%;
+            }
+        }
+    }
+    .section-heading {
+        margin-bottom: 50px;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            margin-bottom: 24px;
+        }
+    }
+    ul {
+        li {
+            display: flex;
+            justify-content: space-between;
+            .icon-sec {
+                width: 90px;
+                height: 90px;
+                /* Max width 767px */
+                @media (max-width: $break_767) {
+                    width: 70px;
+                    height: 70px;
+                }
+                span {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $light-blue-clr;
+                    border: 10px solid $blue-clr;
+                    border-radius: 50%;
+                    line-height: 70px;
+                    text-align: center;
+                    /* Max width 767px */
+                    @media (max-width: $break_767) {
+                        border-width: 5px;
+                        line-height: 55px;
+                    }
+                }
+            }
+            .content {
+                width: calc(100% - 110px);
+                /* Max width 767px */
+                @media (max-width: $break_767) {
+                    width: calc(100% - 90px);
+                }
+                h4 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    color: $primary-clr;
+                    margin-bottom: 12px;
+                    /* Max width 767px */
+                    @media (max-width: $break_767) {
+                        font-size: 18px;
+                        line-height: 26px;
+                        margin-bottom: 8px;
+                    }
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            + li {
+                margin-top: 28px;
+                /* Max width 767px */
+                @media (max-width: $break_767) {
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}
+
+// Feature
+.featured-program {
+    padding-bottom: 80px;
+    /* Max width 767px */
+    @media (max-width: $break_767) {
+        padding-bottom: 50px;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 -15px;
+        li {
+            width: 33.333333%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding: 0 15px;
+            /* Max width 767px */
+            @media (max-width: $break_767) {
+                width: 100%;
+            }
+            .icon-sec {
+                span {
+                    display: block;
+                }
+            }
+            .content {
+                width: calc(100% - 70px);
+                /* Max width 767px */
+                @media (max-width: $break_767) {
+                    width: calc(100% - 60px);
+                }
+                h4 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    color: $primary-clr;
+                    margin-bottom: 12px;
+                    /* Max width 767px */
+                    @media (max-width: $break_767) {
+                        font-size: 18px;
+                        line-height: 26px;
+                        margin-bottom: 8px;
+                    }
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+// Get & Spread
+.get-spread {
+    padding-top: 80px;
+    /* Max width 767px */
+    @media (max-width: $break_767) {
+        padding-top: 0;
+    }
+    .content {
+        position: relative;
+        background-color: $blue-clr;
+        border-radius: 6px;
+        padding: 60px;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            border-radius: 0;
+            padding: 50px 15px;
+        }
+        .img-sec {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* Max width 767px */
+            @media (max-width: $break_767) {
+                position: relative;
+            }
+        }
+        .section-heading {
+            color: $white-clr;
+            margin-bottom: 50px;
+            /* Max width 767px */
+            @media (max-width: $break_767) {
+                margin-bottom: 24px;
+            }
+            h1 {
+                color: $white-clr;
+            }
+        }
+        .app-download {
+            a {
+                display: inline-block;
+                margin-right: 30px;
+                /* Max width 767px */
+                @media (max-width: $break_767) {
+                    margin-right: 10px;
+                }
+                img {
+                    /* Max width 767px */
+                    @media (max-width: $break_767) {
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Faq
+.faq {
+    padding: 80px 0;
+    /* Max width 767px */
+    @media (max-width: $break_767) {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+    .left-sec {
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            margin-bottom: 30px;
+        }
+        .logo-b {
+            display: inline-block;
+            img {
+                /* Max width 767px */
+                @media (max-width: $break_767) {
+                    max-width: 60%;
+                }
+            }
+        }
+    }
+    .right-sec {
+        &:before {
+            content: "";
+            width: 1000px;
+            height: 100%;
+            position: absolute;
+            left: 15px;
+            top: 0;
+            background-color: #ebf9ff;
+            border-radius: 6px;
+            /* Max width 767px */
+            @media (max-width: $break_767) {
+                width: 100%;
+                left: 0;
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+// Join Us
+.join-us-one {
+    padding: 100px 0;
+    /* Max width 767px */
+    @media (max-width: $break_767) {
+        padding: 50px 0;
+    }
+    .content {
+        background-color: #E1FAEF;
+        text-align: center;
+        padding: 80px 15px;
+        border-radius: 40px;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            padding: 30px 15px;
+            border-radius: 15px;
+        }
+    }
+    .section-heading {
+        color: $clr-00884C;
+        margin-bottom: 16px;
+        h1 {
+            color: $clr-00884C;
+        }
+        p {
+            max-width: 424px;
+            display: inline-block;
+        }
+    }
+}

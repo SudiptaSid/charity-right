@@ -1,0 +1,33 @@
+// Sponsor One
+.sponsor-box-one {
+    padding: 40px 30px;
+    background-color: $clr-FAFAFA;
+    border: 1px solid $clr-EDEDED;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 30px 20px;
+    }
+    .heading-one {
+        h1 {
+            color: $clr-E8A61E;
+        }
+    }
+}
+
+// Contact Box One
+.contact-box-one {
+    display: flex;
+    gap: 1em;
+    img {
+        width: 40px;
+    }
+    p {
+        line-height: 1.4;
+        margin-bottom: 0;
+        b {
+            display: block;
+            color: $clr-1E1E1E;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// Bootstrap
+@import "../plugins/bootstrap/scss/bootstrap.scss";
+
+// Font Awesome
+@import "../plugins/font-awesome/scss/font-awesome.scss";
+
+// Owl Carousel
+@import "../plugins/owl-carousel/scss/owl.carousel.scss";
+@import "../plugins/owl-carousel/scss/owl.theme.default.scss";
+
+// Star Rating
+@import "../plugins/star_rating/star_rating.scss";
+
+// A Carousel
+@import "../plugins/acarousel/acarousel.scss";
+
+// Select
+@import "../plugins/select/select.css";
+
+// Phone Number
+@import "../plugins/phone/phone.css";
+
+// Date Picker
+@import "../plugins/datepicker/datepicker.min.css";
+@import "../plugins/datepicker/datepicker3.min.css";
+
+// Scss Components
+@import "components/variables";
+@import "components/reset";
+@import "components/buttons";
+@import "components/form";
+@import "components/header";
+@import "components/footer";
+@import "components/headings";
+@import "components/owl-edit";
+@import "components/components";
+@import "components/section";
+
+// Grid
+@import "components/blog-grid";
+@import "components/project-grid";
+@import "components/fundraising-grid";
+@import "components/team-grid";
+
+// Pages
+@import "components/home-pg";
+@import "components/project-pg";
+@import "components/fundraising-pg";
+@import "components/blog-pg";
+@import "components/about-pg";
+@import "components/appeals-pg";
+@import "components/my-campaign-pg";
+@import "components/my-campaign-edit-pg";
+@import "components/campaign-pg";
+@import "components/signin";
+@import "components/donation-pg";
+@import "components/user-profile-pg";

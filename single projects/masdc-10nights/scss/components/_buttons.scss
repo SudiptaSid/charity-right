@@ -1,0 +1,59 @@
+a,
+button {
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 1em;
+    cursor: pointer;
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}
+
+// Button
+.btn {
+    font-size: 0.9em;
+    font-weight: 700;
+    padding: 10px 35px;
+    text-align: center;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    // Btn Main
+    &.btn-main {
+        color: $white-clr;
+        background-color: $primary-clr;
+        &:hover,
+        &:focus {
+            color: $black-clr;
+            background-color: lighten($primary-clr, 5%);
+        }
+    }
+
+    // Btn White
+    &.btn-white {
+        color: $clr-007724;
+        background-color: $white-clr;
+        &:hover,
+        &:focus {
+            color: $primary-clr;
+            background-color: darken($white-clr, 5%);
+        }
+    }
+}

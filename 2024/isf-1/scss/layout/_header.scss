@@ -1,0 +1,23 @@
+// Topbar
+.topbar {
+  padding: 10px 0;
+  background-color: clr(secondary, main);
+
+  .content {
+    .socialLinks {
+      justify-content: end;
+
+      a {
+        svg {
+          fill: clr(light, outline);
+        }
+
+        &:hover {
+          svg {
+            fill: clr(primary, hover);
+          }
+        }
+      }
+    }
+  }
+}

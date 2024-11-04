@@ -1,0 +1,16 @@
+// About Card One
+.aboutCardOne {
+    padding: 24px;
+    color: clr(light, outline);
+    background-color: clr(secondary, hover);
+
+    h5 {
+        color: inherit;
+    }
+
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,120 @@
+// Outreach One
+.outreach-one {
+    padding: 60px 0;
+    color: $white-clr;
+    background-color: $clr-152243;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .outreach-box-one {
+        + .outreach-box-one {
+            margin-top: 24px;
+        }
+    }
+}
+
+// Outreach Two
+.outreach-two {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+}
+
+// Outreach Three
+.outreach-three {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+}
+
+// Outreach Four
+.outreach-four {
+    padding: 60px 0;
+    color: $white-clr;
+    background-color: $clr-152243;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    h5 {
+        font-size: 1.4em;
+        font-weight: 700;
+        margin-bottom: 0;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 1.2em;
+        }
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            padding: 15px 30px;
+            width: 33.333333%;
+            position: relative;
+            border-bottom: 2px dashed $white-clr;
+            border-right: 2px dashed $white-clr;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                width: 100%;
+                padding-bottom: 30px;
+                padding-top: 30px;
+                border-right: none;
+            }
+            &:nth-child(3n + 3) {
+                border-right: none;
+            }
+            &:nth-last-child(-n + 3) {
+                border-bottom-width: 0;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    border-bottom-width: 2px;
+                }
+            }
+            &:nth-last-child(-n + 1) {
+                // Max 767px
+                @media (max-width: $break-767) {
+                    border-bottom-width: 0;
+                }
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 22px;
+                left: 10px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: $white-clr;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    top: 35px;
+                }
+            }
+        }
+    }
+}
+
+// Outreach Five
+.outreach-five {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+}

@@ -1,0 +1,38 @@
+// Base
+$sz-40:40px;
+$sz-30:30px;
+$sz-24:24px;
+$sz-20:20px;
+$sz-18:18px;
+$sz-16:16px;
+$sz-14: 14px;
+$sz-12: 12px;
+$ff-gilroy: "Gilroy";
+
+// Colors
+$no-clr: transparent;
+$white-clr: #ffffff;
+$clr-FAFAFA:#FAFAFA;
+$clr-EDEDED:#EDEDED;
+$clr-999999: #999999;
+$clr-333333: #333333;
+$clr-1E1E1E: #1E1E1E;
+$black-clr: #000000;
+$clr-E8A61E: #E8A61E;
+$clr-007BFF: #007bff;
+$white-50:rgba($white-clr, 0.5);
+$black-50:rgba($black-clr, 0.5);
+$E8A61E-50:rgba($clr-E8A61E, 0.5);
+
+// Main Color
+
+// Media Sizes
+$break-1300: 1300px;
+$break-1280: 1280px;
+$break-1080: 1080px;
+$break-991: 991px;
+$break-767: 767px;
+
+/*
+@media (max-width: $break-767) {}
+*/

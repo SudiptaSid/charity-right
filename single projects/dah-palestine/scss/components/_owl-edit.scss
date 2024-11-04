@@ -1,0 +1,15 @@
+// Owl Dots
+.owl-theme {
+    .owl-dots {
+        .owl-dot {
+            span {
+                background-color: $primary-clr;
+            }
+            &.active {
+                span {
+                    background-color: #c4c4c4;
+                }
+            }
+        }
+    }
+}

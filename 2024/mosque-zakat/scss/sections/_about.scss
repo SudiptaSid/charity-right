@@ -1,0 +1,43 @@
+// About One
+.aboutOne {
+  padding: 80px 0;
+  background-color: clr(light, focus);
+  position: relative;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .imgSec {
+    img {
+      width: 100%;
+
+      @include md {
+        max-height: 400px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .sectionTitle {
+    h1 {
+      color: clr(primary, main);
+    }
+  }
+
+  .aboutBoxOne {
+    + .aboutBoxOne {
+      margin-top: 24px;
+    }
+  }
+
+  .aboutBoxTwo {
+    margin: 24px 0;
+  }
+
+  .btn {
+    @include md {
+      min-width: 90%;
+    }
+  }
+}

@@ -1,0 +1,288 @@
+// Home One
+.home-one {
+    padding: 2em 0;
+    .heading-one {
+        p {
+            max-width: 450px;
+            display: inline-block;
+        }
+    }
+    .img-sec {
+        text-align: center;
+        img {
+            // Max 767px
+            @media (max-width: $break-767) {
+                max-width: 250px;
+            }
+        }
+    }
+}
+
+// Home Two
+.home-two {
+    padding: 2em 0;
+    .heading-one {
+        max-width: 450px;
+        display: inline-block;
+        h1 {
+            color: $clr-160041;
+        }
+    }
+}
+
+// Home Three
+.home-three {
+    padding: 2em 0;
+    .heading-one {
+        h1 {
+            color: $clr-160041;
+        }
+    }
+}
+
+// Home Four
+.home-four {
+    padding: 2em 0;
+    .heading-one {
+        max-width: 450px;
+        text-align: right;
+        margin-left: auto;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            text-align: left;
+        }
+        h1 {
+            color: $clr-160041;
+        }
+    }
+}
+
+// Mission Vision
+.mission-vision {
+    background-image: url(../images/bg2.png);
+    background-size: cover;
+    color: $clr-333335;
+    &:before {
+        content: "";
+        width: 1px;
+        height: calc(100% - 50px);
+        background-color: $white-clr;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            width: calc(100% - 30px);
+            height: 1px;
+        }
+    }
+    .content-sec {
+        margin: 3em 0;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            padding: 2em 0;
+        }
+        img {
+            height: 140px;
+            margin-top: 20px;
+        }
+    }
+}
+
+// Home Five
+.home-five {
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+    .logo {
+        padding-bottom: 3em;
+        margin-bottom: 2em;
+        border-bottom: 1px solid $black-clr;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            padding-bottom: 2em;
+        }
+        a {
+            display: inline;
+            img {
+                height: 100px;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    height: 80px;
+                }
+            }
+        }
+    }
+    .heading-one {
+        h1 {
+            .btn {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    }
+}
+
+// Donation One
+.donation-one {
+    background-image: url(../images/bg3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 100%;
+        gap: 10px;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            height: auto;
+        }
+        li {
+            width: calc(20% - 10px);
+            height: 100%;
+            background-color: $white-50;
+            padding: 24px 15px;
+            text-align: center;
+            color: $clr-784DFF;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                width: 100%;
+            }
+            h5 {
+                font-size: $sz-26;
+                font-weight: 800;
+                margin-bottom: 0;
+            }
+            p {
+                margin-bottom: 0;
+                margin-top: 10px;
+                b {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// Home Six
+.home-six {
+    padding: 2em 0;
+    .heading-one {
+        h1 {
+            small {
+                display: block;
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+// Hoem Seven
+.race-one {
+    padding: 2em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+    .heading-one {
+        .btn-sec {
+            .btn {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+    }
+}
+
+// Home Eight
+.home-eight {
+    padding: 2em 0;
+    .content {
+        background-color: $clr-FFCB66;
+        border-radius: 30px;
+        padding: 120px 100px 100px;
+        position: relative;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            padding: 20px 15px;
+            border-radius: 8px;
+        }
+        span {
+            font-family: $ff-open-sans;
+            font-size: $sz-26;
+            line-height: 1.2;
+            font-weight: 800;
+            text-align: center;
+            background-image: url(../images/circle.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            max-width: 260px;
+            padding: 24px 50px;
+            position: absolute;
+            top: 60px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                display: inline-block;
+                max-width: 200px;
+                position: static;
+                font-size: $sz-18;
+            }
+        }
+        img {
+            position: absolute;
+            max-width: 200px;
+            top: 46%;
+            left: 22%;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                display: none;
+            }
+        }
+        .heading-one {
+            max-width: 550px;
+            margin-left: auto;
+        }
+        form {
+            display: flex;
+            background-color: $white-clr;
+            border-radius: 10px;
+            padding: 15px;
+            max-width: 550px;
+            margin-left: auto;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                padding: 10px;
+                border-radius: 6px;
+            }
+            .form-control {
+                padding: 0;
+                padding-right: 1em;
+            }
+        }
+    }
+}

@@ -1,0 +1,224 @@
+// My CAmpaign Banner
+#hero-banner-mcp {
+    margin-top:82px;
+    // --------------------------------
+    @media (max-width: $break_991) {
+        margin-top:24px;
+    }
+    img {
+        width:100%;
+    }
+}
+
+// My Campaign Donations
+#my-campaign-donations {
+    margin-top:122px;
+    margin-bottom:100px;
+    // --------------------------------
+    @media (max-width: $break_991) {
+        margin-top:24px;
+    }
+    .container {
+        // --------------------------------
+        @media (min-width: $break_1080) {
+            padding-left:0;
+            padding-right:0;
+        }
+    }
+    .content {
+        border:1px solid $grey-clr;
+        border-radius:20px;
+        max-width: 1250px;
+        margin: auto;
+        .tab-header {
+            border-bottom:1px solid $grey-clr;
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            align-items: center;
+            flex-wrap:wrap;
+            // --------------------------------
+            @media (max-width: $break_991) {
+                padding:30px 20px;
+            }
+            h4 {
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 700;
+                margin: 0;
+                // --------------------------------
+                @media (max-width: $break_991) {
+                    font-size:18px;
+                    line-height:24px;
+                    margin-bottom:10px;
+                }
+            }
+            .btn-sec {
+                display: flex;
+                .btn {
+                    margin-left:5px;
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding: 10px 25px;
+                    min-width: 130px;
+                    // --------------------------------
+                    @media (max-width: $break_991) {
+                        margin-left:0;
+                        margin-right:5px;
+                    }
+                    // --------------------------------
+                    @media (max-width: $break_767) {
+                        min-width:unset;
+                    }
+                    &.dropdown-toggle {
+                        // --------------------------------
+                        @media (max-width: $break_767) {
+                            padding-right:50px;
+                        }
+                        &:after {
+                            content: "\f107";
+                            border: none;
+                            font-family: FontAwesome;
+                            font-size: 16px;
+                            right: 30px;
+                            top: 8px;
+                            position: absolute;
+                            vertical-align: unset;
+                            margin: 0;
+                        }
+                    }
+                }
+                .dropdown-menu {
+                    font-size: 14px;
+                    line-height:18px;
+                    border-radius: 10px;
+                    padding: 5px;
+                    width: calc(100% - 5px);
+                    background-color: $white-clr;
+                    .dropdown-item {
+                        text-align: center;
+                        background-color:$white-clr;
+                        border-radius:5px;
+                        padding: 5px;
+                        &:hover {
+                            background-color:$blue-bg-clr;
+                        }
+                    }
+                }
+            }
+        }
+        .tab-body {
+            padding:0 40px;
+            // --------------------------------
+            @media (max-width: $break_991) {
+                padding:0 20px;
+            }
+            .table {
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                tr {
+                    vertical-align:middle;
+                }
+                th {
+                    border-bottom:none;
+                    border-top:none;
+                    vertical-align:middle;
+                    min-width: 150px;
+                    padding:24px 0;
+                    // --------------------------------
+                    @media (max-width: $break_991) {
+                        min-width:120px;
+                    }
+                    &:nth-child(2) {
+                        min-width:220px;
+                    }
+                    &:last-child {
+                        min-width:60px;
+                        text-align: center;
+                    }
+                    a {
+                        color:$primary-clr;
+                        font-size:14px;
+                        line-height:18px;
+                        font-weight:600;
+                        display: inline-block;
+                    }
+                }
+                td {
+                    border-color:$grey-clr;
+                    vertical-align:middle;
+                    font-size:14px;
+                    line-height:18px;
+                    padding:20px 0;
+                    &:nth-child(6) {
+                        padding-right:50px;
+                        min-width:260px;
+                        // --------------------------------
+                        @media (max-width: $break_991) {
+                            padding-right:10px;
+                        }
+                    }
+                    &:last-child {
+                        text-align: center;
+                    }
+                    small {
+                        color:$grey2-clr;
+                        font-size:12px;
+                        line-height:16px;
+                        display: block;
+                    }
+                    .sh-hd {
+                        color:#4CA4FD;
+                    }
+                    .icons {
+                        display: inline-block;
+                        width:32px;
+                        height:32px;
+                        line-height:32px;
+                        border:1px solid $grey-clr;
+                        border-radius:50%;
+                        img {
+                            width:12px;
+                        }
+                    }
+                }
+            }
+        }
+        .pagination-mcpg {
+            text-align: center;
+            margin:40px 0;
+            // --------------------------------
+            @media (max-width: $break_991) {
+                margin:30px 0;
+            }
+            ul {
+                li {
+                    display: inline-block;
+                    margin:0 2;
+                    a {
+                        display: inline-block;
+                        width:28px;
+                        height:28px;
+                        font-size:14px;
+                        line-height:28px;
+                        text-align: center;
+                        border-radius:5px;
+                        border:1px solid $grey-clr;
+                        color:$black-light;
+                        &:hover, &.active {
+                            color:$white-clr;
+                            border-color:$primary-clr;
+                            background-color:$primary-clr;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// My Campaign Statics
+#my-campaign-statics {
+    
+}

@@ -1,0 +1,78 @@
+/* ----- Header ----- */
+#ff-header {
+    display: block;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index:99;
+    transition:0.3s all;
+    background-color: $no-clr;
+    .btn {
+        font-size:14px;
+        line-height:16px;
+        padding:12px 24px;
+        /* Max width 991px */
+        @media (max-width: $break_991) {
+            font-size: 12px;
+            line-height: 1;
+            padding:10px 24px;
+            border-radius: 10px;
+        }
+    }
+    .left-menu {
+        .btn {
+            span {
+                /* Max width 991px */
+                @media (max-width: $break_991) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .center-menu {
+        text-align: center;
+        line-height:0;
+        a {
+            display: inline-block;
+            width: auto;
+            height: 42px;
+            /* Max width 991px */
+            @media (max-width: $break_991) {
+                height: 28px;
+            }
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+    .right-menu {
+        text-align: right;
+        .btn {
+            + .btn {
+                margin-left:10px;
+                /* Max width 991px */
+                @media (max-width: $break_991) {
+                    display: none;
+                }
+            }
+        }
+    }
+    /* ----- When header is fixed ----- */
+    &.fixed-header {
+        position: fixed;
+        background-color:$white-clr;
+        .btn-white-border {
+            color:$primary-clr;
+            background-color:$no-clr;
+            border-color:$primary-clr;
+        }
+        .btn-white {
+            color:$white-clr;
+            background-color:$primary-clr;
+            border-color:$primary-clr;
+        }
+    }
+}

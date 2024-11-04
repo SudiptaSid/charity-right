@@ -1,0 +1,32 @@
+// Donation Footer
+#cs-donation-footer {
+    box-shadow: $shadow-1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:$white-clr;
+    z-index: 2;
+    .btn-sec {
+        display: flex;
+        padding: 20px 0;
+        justify-content: space-between;
+        // --------------------------------
+        @media (max-width: $break_767) {
+            padding:10px 0;
+        }
+        .btn {
+            padding: 12px 20px;
+            min-width:140px;
+            // --------------------------------
+            @media (max-width: $break_767) {
+                width:calc(50% - 5px);
+            }
+            &.btn-main {
+                &.btn-inactive {
+                    background-color:$light-pink-clr;
+                    color:$white-clr;
+                }
+            }
+        }
+    }
+}

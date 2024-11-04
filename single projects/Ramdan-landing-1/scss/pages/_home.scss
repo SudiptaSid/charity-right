@@ -1,0 +1,531 @@
+// Hero Banner
+#hero-banner-hp {
+    padding-top: 150px;
+    position: relative;
+    /* ----- Max Width 767px ----- */
+    @media (max-width: $break_767) {
+        padding-top: 100px;
+    }
+    .top-ptrn {
+        position: absolute;
+        top:0;
+        left:0;
+        max-width: 330px;
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            max-width:100px;
+        }
+        img {
+            max-width:100%;
+        }
+    }
+    .bottom-ptrn {
+        position: absolute;
+        bottom:0;
+        left:0;
+        max-width:150px;
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            max-width: 80px;
+        }
+        img {
+            max-width:100%;
+        }
+    }
+    .left-sec {
+        margin-bottom:50px;
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            margin-bottom:20px;
+        }
+        h3 {
+            font-size: 46px;
+            line-height: 70px;
+            font-weight: 400;
+            margin-bottom: 15px;
+            letter-spacing: -2px;
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size:30px;
+                line-height:36px;
+                letter-spacing: normal;
+            }
+            span {
+                color:$white-clr;
+                font-weight:700;
+            }
+        }
+        p {
+            font-size:20px;
+            line-height:30px;
+            margin-bottom:0;
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size:16px;
+                line-height:22px;
+            }
+        }
+        .btn-sec {
+            margin:50px 0;
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                margin:25px 0;
+            }
+            .btn {
+                font-size: 18px;
+                line-height: 30px;
+                min-width: 350px;
+                box-shadow: 0px 10px 20px rgba($black-clr, 0.65);
+                &.btn-white {
+                    box-shadow: 0px 10px 20px rgba($white-clr, 0.65);
+                }
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    min-width:unset;
+                    width:100%;
+                    font-size:12px;
+                }
+            }
+        }
+        .play-btn {
+            font-family: $secondary-ff;
+            a {
+                display: inline-block;
+                color:$black-clr;
+                font-size: 20PX;
+                line-height: 40PX;
+                font-weight: 500;
+                min-width:300px;
+                text-align: center;
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    font-size: 14px;
+                    line-height:30px;
+                }
+                img {
+                    max-width:100%;
+                    width: 50px;
+                    /* ----- Max Width 767px ----- */
+                    @media (max-width: $break_767) {
+                        width:30px;
+                    }
+                }
+                span {
+                    display: inline-block;
+                    margin-left:10px;
+                }
+            }
+        }
+    }
+    .right-sec {
+        .img-sec {
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                max-width:300px;
+                margin-left: auto;
+            }
+            img {
+                max-width:100%;
+            }
+        }
+    }
+}
+
+// Charity’s Fighting
+#fighting-1 {
+    padding:80px 0;
+    /* ----- Max Width 767px ----- */
+    @media (max-width: $break_767) {
+        padding:50px 0;
+    }
+    .content {
+        max-width: 1400px;
+        margin: auto;
+        .left-sec {
+            .img-sec {
+                img {
+                    max-width:100%;
+                }
+            }
+        }
+        .right-sec {
+            margin-top:160px;
+            margin-bottom:100px;
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                margin-top:0;
+                margin-bottom:50px;
+            }
+            .ptrn {
+                max-width:70px;
+                img {
+                    max-width:100%;
+                }
+            }
+            h4 {
+                font-family: $secondary-ff;
+                font-size:38px;
+                line-height:50px;
+                margin:20px 0;
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    font-size:28px;
+                    line-height:34px;
+                }
+                span {
+                    display: block;
+                }
+            }
+            p {
+                font-family: $secondary-ff;
+                color:#828282;
+                font-size:18px;
+                line-height:36px;
+                margin-bottom:0;
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    font-size:14px;
+                    line-height:22px;
+                }
+            }
+            .btn-sec {
+                margin-top:40px;
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    margin-top:20px;
+                }
+                .btn {}
+            }
+        }
+    }
+}
+
+// How It Works
+#how-it-works {
+    padding-top:40px;
+    padding-bottom:80px;
+    position: relative;
+    /* ----- Max Width 767px ----- */
+    @media (max-width: $break_767) {
+        padding-bottom:50px;
+    }
+    .top-ptrn {
+        position: absolute;
+        top:0;
+        right:0;
+        max-width: 270px;
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            max-width:100px;
+        }
+        img {
+            max-width:100%;
+        }
+    }
+    .heading {
+        text-align: center;
+        margin-bottom:65px;
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            margin-bottom:30px;
+        }
+        .ptrn {
+            max-width:70px;
+            display: inline-block;
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                max-width:40px;
+            }
+            img {
+                max-width:100%;
+            }
+        }
+        h6 {
+            margin-top:15px;
+            margin-bottom:40px;
+            font-size:22px;
+            line-height:1;
+            color: $white-clr;
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                margin-top:10px;
+                margin-bottom:20px;
+                font-size:16px;
+            }
+        }
+        h2 {
+            font-size:38px;
+            line-height:1;
+            font-weight: 700;
+            margin-bottom:0;
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size:26px;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        max-width:1130px;
+        margin:auto;
+        li {
+            width:calc(33% - 25px);
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                width:100%;
+            }
+            +li {
+                margin-top:30px;
+            }
+            .box {
+                background-color:$white-clr;
+                border-radius:50px;
+                padding:50px 40px;
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    border-radius:15px;
+                    padding:25px 15px;
+                }
+                .icon-sec {
+                    span {
+                        display: inline-block;
+                        border-radius:30px;
+                        width:138px;
+                        height:148px;
+                        text-align: center;
+                        line-height:148px;
+                        /* ----- Max Width 767px ----- */
+                        @media (max-width: $break_767) {
+                            width:90px;
+                            height:100px;
+                            line-height:100px;
+                            border-radius:15px;
+                        }
+                        img {
+                            max-width:42px;
+                            /* ----- Max Width 767px ----- */
+                            @media (max-width: $break_767) {
+                                max-width:28px;
+                            }
+                        }
+                    }
+                }
+                h5 {
+                    font-size:20px;
+                    line-height:1;
+                    font-weight: 700;
+                    margin-top:50px;
+                    margin-bottom:20px;
+                    /* ----- Max Width 767px ----- */
+                    @media (max-width: $break_767) {
+                        font-size:18px;
+                        margin-top:30px;
+                        margin-bottom:15px;
+                    }
+                }
+                p {
+                    margin-bottom:0;
+                    color:#5b6987;
+                    /* ----- Max Width 767px ----- */
+                    @media (max-width: $break_767) {
+                        font-size:14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Our Projects
+#our-projects {
+    padding:80px 0;
+    /* ----- Max Width 767px ----- */
+    @media (max-width: $break_767) {
+        padding:50px 0;
+    }
+    .heading {
+        text-align: center;
+        margin-bottom:65px;
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            margin-bottom:30px;
+        }
+        .ptrn {
+            max-width:70px;
+            display: inline-block;
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                max-width:40px;
+            }
+            img {
+                max-width:100%;
+            }
+        }
+        h6 {
+            margin-top:15px;
+            margin-bottom:40px;
+            font-size:22px;
+            line-height:1;
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                margin-top:10px;
+                margin-bottom:20px;
+                font-size:16px;
+            }
+        }
+        h2 {
+            font-size:38px;
+            line-height:1;
+            font-weight: 700;
+            margin-bottom:0;
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size:26px;
+            }
+        }
+    }
+    .listings {
+        .box {
+            border-radius:50px;
+            overflow: hidden;
+            position: relative;
+            margin-bottom:30px;
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                border-radius:20px;
+                max-height:200px;
+            }
+            .overlay {
+                position: absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                z-index:3;
+            }
+            img {
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    width:100%;
+                }
+            }
+            .content {
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform:translateX(-50%) translateY(-50%);
+                width:100%;
+                padding:15px;
+                text-align: center;
+                z-index:5;
+                color: $white-clr;
+                h4 {
+                    font-size:40px;
+                    line-height:1;
+                    margin-bottom:25px;
+                    font-weight: 700;
+                    /* ----- Max Width 767px ----- */
+                    @media (max-width: $break_767) {
+                        font-size:26px;
+                        margin-bottom:15px;
+                    }
+                }
+                p {
+                    margin-bottom: 0;
+                    font-size:18px;
+                    line-height:1.4;
+                    max-width:350px;
+                    display: inline-block;
+                    font-weight: 500;
+                    /* ----- Max Width 767px ----- */
+                    @media (max-width: $break_767) {
+                        font-size:14px;
+                    }
+                }
+            }
+        }
+    }
+    .btn-sec {
+        text-align: center;
+        margin-top:50px;
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            margin-top:20px;
+        }
+    }
+}
+
+// Charity’s Fighting
+#fighting-2 {
+    padding-bottom: 100px;
+    /* ----- Max Width 767px ----- */
+    @media (max-width: $break_767) {
+        padding-bottom:50px;
+    }
+    .content {
+        max-width: 1400px;
+        margin: auto;
+        .left-sec {
+            margin-top:160px;
+            margin-bottom:100px;
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                margin-top:50px;
+                margin-bottom:30px;
+            }
+            .ptrn {
+                max-width:70px;
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    max-width:40px;
+                }
+                img {
+                    max-width:100%;
+                }
+            }
+            h4 {
+                font-family: $secondary-ff;
+                font-size:38px;
+                line-height:50px;
+                margin:20px 0;
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    font-size:26px;
+                    line-height:36px;
+                }
+                span {
+                    display: block;
+                }
+            }
+            p {
+                font-family: $secondary-ff;
+                color:#828282;
+                font-size:18px;
+                line-height:36px;
+                margin-bottom:0;
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    font-size:14px;
+                    line-height:22px;
+                }
+            }
+            .btn-sec {
+                margin-top:40px;
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    margin-top:20px;
+                }
+            }
+        }
+        .right-sec {
+            .img-sec {
+                text-align: right;
+                img {
+                    max-width:100%;
+                }
+            }
+        }
+    }
+}

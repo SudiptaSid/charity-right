@@ -1,0 +1,77 @@
+a,
+button {
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 1em;
+    cursor: pointer;
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}
+// Button
+.btn {
+    font-size: 1em;
+    line-height: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 18px 20px;
+    text-align: center;
+    position: relative;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 14px 20px;
+    }
+    &:focus,
+    &:active,
+    &:hover {
+        border: none;
+        outline: none;
+        box-shadow: none;
+        text-shadow: none;
+    }
+    // Green Btn
+    &.btn-green {
+        color: $white-clr;
+        background-color: $primary-clr;
+        border-color: $primary-clr;
+        &:hover,
+        &:focus {
+            color: $white-clr;
+            background-color: darken($primary-clr, 5%);
+            border-color: darken($primary-clr, 5%);
+        }
+    }
+    // Green Btn 2
+    &.btn-green2 {
+        color: $white-clr;
+        background-color: $clr-00884C;
+        border-color: $clr-00884C;
+        &:hover,
+        &:focus {
+            color: $white-clr;
+            background-color: darken($clr-00884C, 5%);
+            border-color: darken($clr-00884C, 5%);
+        }
+    }
+    // Btn White Border
+    &.btn-white-border {
+        color: $white-clr;
+        background-color: $no-clr;
+        border-color: $white-clr;
+        &:hover,
+        &:focus {
+            color: $primary-clr;
+            border-color: $primary-clr;
+        }
+    }
+}

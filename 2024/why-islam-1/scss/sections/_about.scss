@@ -1,0 +1,42 @@
+// About One
+.aboutOne {
+  padding: 80px 0;
+  background-color: $blueLightClr;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .imgSec {
+    padding: 32px;
+    background-color: $blueClr;
+
+    @include md {
+      padding: 24px;
+    }
+  }
+
+  .sectionTitle {
+    padding: 32px;
+    background-color: clr(light, outline);
+
+    @include md {
+      padding: 24px;
+    }
+
+    h2 {
+      color: $blueClr;
+    }
+
+    .btnSec {
+      .btn {
+        width: 100%;
+        max-width: 200px;
+
+        @include md {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

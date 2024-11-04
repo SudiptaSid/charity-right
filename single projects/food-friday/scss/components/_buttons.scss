@@ -1,0 +1,89 @@
+a, button {
+    outline:none;
+    box-shadow:none;
+    text-shadow:none;
+    font-size:1em;
+    cursor: pointer;
+}
+/* ----- Button ----- */
+.btn {
+    border:1px solid $no-clr;
+    border-radius:12px;
+    padding:14px 24px;
+    font-size:16px;
+    line-height:20px;
+    font-weight:600;
+    text-align: center;
+    position: relative;
+    outline:none;
+    box-shadow:none;
+    text-shadow:none;
+    cursor: pointer;
+    &:focus, &:active, &:hover {
+        outline:none !important;
+        box-shadow:none !important;
+        text-shadow:none !important;
+    }
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        font-size:14px;
+        line-height:18px;
+        padding:10px 16px;
+        border-radius:12px;
+    }
+    &:focus, &:active, &:hover {
+        border:1px solid $no-clr;
+        outline:none;
+        box-shadow:none;
+        text-shadow:none;
+    }
+    /* Btn Main */
+    &.btn-main {
+        color:$white-clr;
+        background-color:$primary-clr;
+        border-color:$primary-clr;
+        &:hover, &:focus {
+            background-color:darken($primary-clr, 5%);
+            border-color:darken($primary-clr, 5%);
+        }
+    }
+    /* White Btn */
+    &.btn-white {
+        color:$primary-clr;
+        background-color:$white-clr;
+        border-color:$white-clr;
+        &:hover, &:focus {
+            color:darken($primary-clr, 5%);
+        }
+    }
+    /* Btn Main Border */
+    &.btn-main-border {
+        color:$primary-clr;
+        background-color:$no-clr;
+        border-color:$primary-clr;
+        &:hover, &:focus {
+            color:darken($primary-clr, 5%);
+            border-color:darken($primary-clr, 5%);
+        }
+    }
+    /* Btn Grey Border */
+    &.btn-grey-border {
+        color:$black-light;
+        background-color:$no-clr;
+        border-color:$grey-clr;
+        &:hover, &:focus {
+            color:$primary-clr;
+            border-color:$primary-clr;
+        }
+    }
+    /* Btn White Border */
+    &.btn-white-border {
+        color:$white-clr;
+        background-color:$no-clr;
+        border-color:$white-clr;
+        &:hover, &:focus {
+            color:darken($white-clr, 10%);
+            border-color:darken($white-clr, 10%);
+        }
+    }
+}

@@ -1,0 +1,54 @@
+// Price Box
+.price-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        height: 160px;
+        font-size: $sz-40;
+        font-weight: 800;
+        color: $clr-333335;
+        background-color: $white-clr;
+        border-radius: 50%;
+        position: relative;
+        margin-bottom: 20px;
+        box-shadow: $shadow-one;
+
+        // Max 991px
+        @media (max-width: $break-991) {
+            width: 150px;
+            height: 150px;
+            font-size: $sz-40;
+        }
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            width: 150px;
+            height: 150px;
+            font-size: $sz-36;
+            margin-bottom: 10px;
+        }
+        &:before {
+            content: "";
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            background-color: $clr-FFCB66;
+            border-radius: 0 0 10px 10px;
+            z-index: -1;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                bottom: -10px;
+                border-radius: 0 0 5px 5px;
+            }
+        }
+    }
+}

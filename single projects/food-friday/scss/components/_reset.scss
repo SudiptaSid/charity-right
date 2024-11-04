@@ -1,0 +1,41 @@
+/* ----- Reset ----- */
+body {
+    font-family:$primary-ff;
+    font-size: $base-fz;
+    line-height:22px;
+    font-weight:400;
+    color:$black-light;
+    background-color:$white-clr;
+    overflow-x: hidden;
+}
+ul,ol {
+    list-style-type:none;
+    padding-left:0px;
+    margin-bottom:0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight:500;
+    margin-bottom:15px;
+    line-height:1.2;
+    color:$black-light;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/* ----- Bootstrap ----- */
+.container {
+    position: relative;
+    @media (min-width: $break_1280 + 20px) {
+        max-width:1280px;
+    }
+}
+
+.max-w {
+    max-width: 1064px;
+    margin: auto;
+    position: relative;
+}

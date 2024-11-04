@@ -1,0 +1,102 @@
+// Home Banner
+.heroBannerOne {
+  padding-top: 90px;
+  background-size: contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+
+  .bgBox {
+    padding: 50px;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-size: cover;
+    background-position: top left;
+
+    @include md {
+      padding: 32px 15px;
+      min-height: 400px;
+    }
+
+    .sectionTitle {
+      color: clr(light, outline);
+      max-width: 480px;
+
+      h1 {
+        color: inherit;
+        margin-bottom: 12px;
+      }
+
+      h5 {
+        color: clr(primary, main);
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+
+      .btnSec {
+        .btn {
+          width: 100%;
+          max-width: 300px;
+
+          @include md {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .donateBox {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -100px;
+
+    @include md {
+      margin-top: 0;
+    }
+
+    .content {
+      padding: 50px;
+      padding-left: 150px;
+      background-color: clr(primary, main);
+      text-align: center;
+      clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+
+      @include md {
+        padding: 24px 15px;
+        clip-path: none;
+      }
+
+      h4 {
+        color: clr(light, outline);
+        margin-bottom: 24px;
+      }
+
+      ul {
+        display: grid;
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+
+        @include md {
+          gap: 5px;
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .customRadio {
+          font-size: 1.4em;
+          font-weight: 800;
+          padding: 5px 10px;
+          color: clr(light, outline);
+        }
+
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

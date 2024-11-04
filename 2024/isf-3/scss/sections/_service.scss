@@ -1,0 +1,184 @@
+// Service One
+.serviceOne {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .sectionTitle {
+    h1 {
+      color: clr(primary, main);
+
+      span {
+        font-size: 60%;
+        font-weight: 600;
+        display: block;
+      }
+    }
+
+    .btnSec {
+      .btn {
+        width: 100%;
+        max-width: max-content;
+
+        @include md {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 24px 0;
+
+    @include lg {
+      grid-template-columns: repeat(3, 33.333333%);
+    }
+
+    @include md {
+      grid-template-columns: repeat(1, 100%);
+    }
+
+    li {
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 1px;
+      }
+
+      + li {
+        &:after {
+          background-color: clr(black, outline);
+
+          @include md {
+            display: none;
+          }
+        }
+      }
+
+      &:nth-child(5) {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .bgLeft,
+  .bgRight {
+    max-height: 250px;
+    position: absolute;
+    z-index: -1;
+
+    @include md {
+      max-height: 150px;
+    }
+  }
+
+  .bgLeft {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .bgRight {
+    right: 0;
+    top: 0;
+  }
+}
+
+// Service Two
+.serviceTwo {
+  position: relative;
+  overflow: hidden;
+
+  .sectionTitle {
+    h1 {
+      color: clr(primary, main);
+
+      span {
+        font-size: 60%;
+        font-weight: 600;
+        display: block;
+      }
+    }
+
+    .btnSec {
+      .btn {
+        width: 100%;
+        max-width: max-content;
+
+        @include md {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    justify-content: center;
+    gap: 24px 0;
+
+    @include lg {
+      grid-template-columns: repeat(3, 33.333333%);
+    }
+
+    @include md {
+      grid-template-columns: repeat(1, 70%);
+    }
+
+    li {
+      padding: 5px;
+
+      .serviceCardTwo {
+        .topSec {
+          padding: 100px 15px 0;
+        }
+
+        .bottomSec {
+          padding: 0 15px 60px;
+        }
+      }
+
+      &:nth-child(even) {
+        margin-top: 200px;
+
+        @include md {
+          margin-top: 0;
+        }
+
+        .serviceCardTwo {
+          flex-direction: column-reverse;
+
+          .topSec {
+            padding: 0 15px 100px;
+          }
+
+          .bottomSec {
+            padding: 60px 15px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .bgImg {
+    max-height: 250px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+}

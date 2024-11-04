@@ -1,0 +1,79 @@
+// Donate Card One
+.donateCardOne {
+  padding: 32px 15px;
+  background-color: clr(primary, outline);
+  text-align: center;
+
+  @include md {
+    padding: 24px 15px;
+  }
+
+  h4 {
+    color: clr(primary, main);
+    margin-bottom: 15px;
+
+    span {
+      display: block;
+      color: clr(black, focus);
+      font-weight: normal;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 180px;
+
+    @include md {
+      max-width: 100%;
+    }
+  }
+}
+
+// Donate Card One
+.donateCardTwo {
+  color: clr(light, outline);
+  background-color: clr(primary, main);
+  position: relative;
+  text-align: center;
+  padding: 150px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  box-shadow: 15px 15px 0px clr(primary, hover);
+
+  @include md {
+    padding: 50px 15px;
+    box-shadow: 10px 10px 0px clr(primary, hover);
+  }
+
+  h1 {
+    @include headingL;
+    line-height: 1;
+    color: inherit;
+    display: flex;
+    gap: 10px;
+
+    input {
+      background-color: transparent;
+      padding: 0;
+      border: none;
+      border-bottom: 2px solid clr(light, outline);
+      border-radius: 0;
+      width: 140px;
+      box-shadow: none !important;
+      outline: none !important;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    max-width: max-content;
+
+    @include md {
+      max-width: 100%;
+    }
+  }
+}

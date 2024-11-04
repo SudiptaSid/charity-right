@@ -1,0 +1,59 @@
+// Header
+#team-365-header {
+    display: block;
+    padding-top:50px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index:99;
+    transition:0.3s all;
+    /* ----- Max width 767px ----- */
+    @media (max-width: $break_767) {
+        padding-top:30px;
+    }
+    .left-menu {
+        a {
+            display: inline-block;
+            img {
+                height:50px;
+                /* ----- Max width 767px ----- */
+                @media (max-width: $break_767) {
+                    height:30px;
+                }
+            }
+        }
+    }
+    .center-menu {
+        text-align: center;
+        a {
+            display: inline-block;
+            img {
+                height: 50px;
+                /* ----- Max width 767px ----- */
+                @media (max-width: $break_767) {
+                    height:40px;
+                }
+            }
+        }
+    }
+    .right-menu {
+        text-align: right;
+        .btn {
+            color:$primary-clr;
+            background-color:$white-clr;
+            font-size:20px;
+            line-height:26px;
+            font-weight:700;
+            min-width:200px;
+            text-transform: uppercase;
+            /* ----- Max width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size: 14px;
+                line-height: 20px;
+                min-width: unset;
+                padding: 8px 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+// Donate One
+.donateOne {
+  padding-top: 60px;
+
+  @include md {
+    padding-top: 40px;
+  }
+}
+
+// Donate Two
+.donateTwo {
+  padding: 60px 0;
+
+  @include md {
+    padding: 40px 0;
+  }
+}

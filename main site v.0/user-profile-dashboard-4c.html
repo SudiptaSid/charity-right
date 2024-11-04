@@ -1,0 +1,591 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Charity Right</title>
+
+	<!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+	<!-- Custom Css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- Main Header -->
+	<header id="main-header">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-5 col-4 pr-0">
+					<div class="left-menu">
+						<button id="mobile-menu-toggle">
+							<img src="images/menu-toggle.png" alt="">
+						</button>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="images/search-icon.svg" alt="">
+									Search
+								</a>
+							</li>
+							<li><a href="our-projects.html">Our projects</a></li>
+							<li><a href="fundraising.html">Fundraising</a></li>
+							<li><a href="blog.html">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2 col-4 p-0">
+					<div class="center-menu">
+						<span class="logo">
+							<a href="index.html">
+								<img src="images/logo.png" alt="">
+							</a>
+						</span>
+					</div>
+				</div>
+				<div class="col-md-5 col-4 pl-0">
+					<div class="right-menu">
+						<a href="about-us.html" class="link-item">About us</a>
+						<div class="btn_sec">
+							<span class="dropdown">
+								<button class="dropdown-toggle" type="button" id="user-profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="images/user-profile-pg/avatar.png" alt=""> Metthew Dallas
+								</button>
+								<div class="dropdown-menu" aria-labelledby="user-profile">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</span>
+							<a href="donate.html" class="btn btn-main">Donate</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Mobile Menu -->
+	<div id="mobile-menu">
+		<ul>
+			<li>
+				<a href="#">
+					<img src="images/search-icon.svg" alt="">
+					Search
+				</a>
+			</li>
+			<li><a href="our-projects.html">Our projects</a></li>
+			<li><a href="fundraising.html">Fundraising</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="about-us.html">About us</a></li>
+		</ul>
+		<div class="btn_sec">
+			<a href="sign-in.html" class="btn btn-grey-border">Sign in</a>
+		</div>
+		<div class="bottom-ptrn">
+			<img src="images/pattern/bottom1.png" alt="">
+		</div>
+	</div>
+
+	<!-- My Campaign Mobile Menu 2 -->
+	<div id="mobile-menu2">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<ul>
+						<li>
+							<a href="user-profile-dashboard.html">Dashboard</a>
+						</li>
+						<li><a href="user-profile-dashboard-2.html">My appeals</a></li>
+						<li><a href="user-profile-dashboard-3.html">Donations history</a></li>
+						<li><a class="active" href="user-profile-dashboard-4.html">Account settings</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- User profile page -->
+	<section id="user-profile-pg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 grid-left">
+					<ul>
+						<li>
+							<a href="user-profile-dashboard.html">
+								<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M2 0H20C21.1046 0 22 0.89543 22 2V16C22 17.1046 21.1046 18 20 18H2C0.89543 18 0 17.1046 0 16V2C0 0.89543 0.89543 0 2 0ZM2 2V16H20V2H2ZM6 14H8V8H6V14ZM12 14H10V4H12V14ZM14 14H16V7H14V14Z"/>
+								</svg>
+								Dashboard
+							</a>
+						</li>
+						<li>
+							<a href="user-profile-dashboard-2.html">
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M4.88768 13.6189C5.06445 13.7912 5.14511 14.0395 5.10338 14.2828L4.05071 20.4203C3.94562 21.033 4.5887 21.5002 5.13892 21.211L10.6508 18.3132C10.8693 18.1983 11.1303 18.1983 11.3488 18.3132L16.8607 21.211C17.4109 21.5002 18.054 21.033 17.9489 20.4203L16.8962 14.2828C16.8545 14.0395 16.9351 13.7912 17.1119 13.6189L21.5711 9.27228C22.0162 8.83838 21.7706 8.0824 21.1555 7.99301L14.993 7.09755C14.7487 7.06206 14.5375 6.90863 14.4283 6.68727L11.6723 1.10313C11.3972 0.5457 10.6024 0.5457 10.3272 1.10313L7.57131 6.68727C7.46206 6.90863 7.25089 7.06206 7.00661 7.09755L0.844143 7.99301C0.228978 8.0824 -0.0166552 8.83838 0.428483 9.27228L4.88768 13.6189ZM14.9619 12.9207C14.7851 13.093 14.7045 13.3412 14.7462 13.5845L15.2916 16.7643C15.3967 17.377 14.7536 17.8442 14.2034 17.5549L11.3478 16.0537C11.1293 15.9388 10.8682 15.9388 10.6497 16.0537L7.79413 17.5549C7.24391 17.8442 6.60084 17.377 6.70592 16.7643L7.25129 13.5845C7.29302 13.3412 7.21236 13.093 7.0356 12.9207L4.72536 10.6688C4.28022 10.2349 4.52585 9.47888 5.14102 9.38949L8.33369 8.92557C8.57797 8.89007 8.78915 8.73665 8.89839 8.51529L10.3262 5.62224C10.6013 5.0648 11.3962 5.0648 11.6713 5.62224L13.0991 8.51529C13.2084 8.73665 13.4195 8.89007 13.6638 8.92557L16.8565 9.38949C17.4716 9.47888 17.7173 10.2349 17.2721 10.6688L14.9619 12.9207Z"/>
+								</svg>
+								My appeals
+							</a>
+						</li>
+						<li>
+							<a href="user-profile-dashboard-3.html">
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM16 10H12V5H10V12H16V10Z"/>
+								</svg>	
+								Donations history
+							</a>
+						</li>
+						<li>
+							<a class="active" href="user-profile-dashboard-4.html">
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6562 19.897L19.8733 17.6798L19.0925 14.843L19.4327 14.0305L22 12.5818V9.44645L19.44 7.99173L19.1055 7.18067L19.8961 4.34235L17.6774 2.12683L14.8403 2.90748L14.0296 2.56758L12.5808 0H9.44544L7.99072 2.56004L7.17985 2.89446L4.34198 2.10281L2.1267 4.31809L2.90748 7.15567L2.56758 7.96634L0 9.41514V12.5496L2.55774 14.0076L2.89252 14.8193L2.10197 17.6572L4.31809 19.8733L7.15567 19.0925L7.96644 19.4325L9.41527 21.999H12.5498L14.0067 19.4412L14.8183 19.1065L17.6562 19.897ZM17.8527 12.6256L16.9809 14.7078L17.6362 17.0886L17.0678 17.657L14.692 16.9951L12.609 17.8542L11.3873 19.999H10.5829L9.37141 17.8529L7.29155 16.9808L4.90947 17.6362L4.34203 17.0688L5.00385 14.693L4.14482 12.6101L2 11.3876V10.583L4.1471 9.3715L5.0192 7.29155L4.36375 4.90947L4.93001 4.34321L7.30576 5.00595L9.38955 4.14655L10.6093 2H11.4129L12.6245 4.1471L14.7044 5.0192L17.087 4.36362L17.6558 4.93166L16.9941 7.30696L17.8534 9.39056L20 10.6103V11.4139L17.8527 12.6256ZM11 15C8.79086 15 7 13.2091 7 11C7 8.79086 8.79086 7 11 7C13.2091 7 15 8.79086 15 11C15 13.2091 13.2091 15 11 15ZM13 11C13 12.1046 12.1046 13 11 13C9.89543 13 9 12.1046 9 11C9 9.89543 9.89543 9 11 9C12.1046 9 13 9.89543 13 11Z"/>
+								</svg>	
+								Account settings
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-9 grid-right">
+					<div class="content4">
+						<div class="row">
+							<div class="col-12">								
+								<div class="g-heading">
+									<h5>Your profile</h5>
+									<p style="max-width:370px;">You can update your name, address, phone number and email address here.</p>
+								</div>
+							</div>
+						</div>
+						<div class="row flex-column-reverse flex-md-row">
+							<div class="col-md-6 pr-md-2">
+								<div class="edit-box">
+									<label for="">Your email</label>
+									<p>metthewdallas@gmail.com</p>
+									<a href="javascript:void(0)" data-toggle="modal" data-target="#emailModal">
+										<img src="images/edit-s.svg" alt="">
+									</a>
+								</div>
+								<div class="edit-box">
+									<label for="">Phone number</label>
+									<p>+ 44 1634 830808 </p>
+									<a href="javascript:void(0)" data-toggle="modal" data-target="#phoneModal">
+										<img src="images/edit-s.svg" alt="">
+									</a>
+								</div>
+								<div class="edit-box">
+									<label for="">Full name</label>
+									<p>Metthew Dallas</p>
+									<a href="javascript:void(0)" data-toggle="modal" data-target="#nameModal">
+										<img src="images/edit-s.svg" alt="">
+									</a>
+								</div>
+								<div class="edit-box2">
+									<p">Change password</p>
+									<div class="icon-sec">
+										<a href="javascript:void(0)" data-toggle="modal" data-target="#passwordModal">
+											<img src="images/edit-s.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">								
+								<div class="avt-edit-box">
+									<span class="avt-sec">
+										<img src="images/avt.png" alt="">
+									</span>
+									<p>Your image will be cropped in a circle measuring 180 x 180 pixels.</p>
+									<a href="">
+										<img src="images/edit-s.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<hr>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="g-heading">
+									<h5 class="mb-0">Payment details</h5>
+								</div>
+								<div class="edit-box2">
+									<p>****4578 <img src="images/credit-card-icon-1.png" alt=""></p>
+									<div class="icon-sec">
+										<a href="javascript:void(0)" data-toggle="modal" data-target="#cardModal">
+											<img src="images/edit-s.svg" alt="">
+										</a>
+										<a href="">
+											<img src="images/trash-icon.svg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="pay_btn_sec">
+									<a href="#" class="btn btn-grey-border">Add new card</a>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<hr>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="g-heading" style="margin-bottom:12px;">
+									<h5 class="mb-0">Newsletter preferences</h5>
+								</div>
+								<div class="txt_sec">
+									<p>Please select the newsletter you wish to receive.</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<ul class="newsletter">
+									<li>
+										<div class="boxi">
+											<div class="row m-0">
+												<div class="col-7 p-0">
+													<h5>Latest news</h5>
+													<p>Check what’s going on in our world now</p>
+													<span class="left_span">Delivery: every week</span>
+												</div>
+												<div class="col-5 pr-0">
+													<div class="img_sec">
+														<img class="main_img" src="images/user-profile-pg/thumb.jpg" alt="">
+														<a href="" class="selects added">
+															<img src="images/added.svg" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="boxi">
+											<div class="row m-0">
+												<div class="col-7 p-0">
+													<h5>Latest news</h5>
+													<p>Check what’s going on in our world now</p>
+													<span class="left_span">Delivery: every week</span>
+												</div>
+												<div class="col-5 pr-0">
+													<div class="img_sec">
+														<img class="main_img" src="images/user-profile-pg/thumb.jpg" alt="">
+														<a href="" class="selects added">
+															<img src="images/added.svg" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="boxi">
+											<div class="row m-0">
+												<div class="col-7 p-0">
+													<h5>Latest news</h5>
+													<p>Check what’s going on in our world now</p>
+													<span class="left_span">Delivery: every week</span>
+												</div>
+												<div class="col-5 pr-0">
+													<div class="img_sec">
+														<img class="main_img" src="images/user-profile-pg/thumb.jpg" alt="">
+														<a href="" class="selects">
+															<img src="images/add.svg" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="boxi">
+											<div class="row m-0">
+												<div class="col-7 p-0">
+													<h5>Latest news</h5>
+													<p>Check what’s going on in our world now</p>
+													<span class="left_span">Delivery: every week</span>
+												</div>
+												<div class="col-5 pr-0">
+													<div class="img_sec">
+														<img class="main_img" src="images/user-profile-pg/thumb.jpg" alt="">
+														<a href="" class="selects added">
+															<img src="images/added.svg" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="boxi">
+											<div class="row m-0">
+												<div class="col-7 p-0">
+													<h5>Latest news</h5>
+													<p>Check what’s going on in our world now</p>
+													<span class="left_span">Delivery: every week</span>
+												</div>
+												<div class="col-5 pr-0">
+													<div class="img_sec">
+														<img class="main_img" src="images/user-profile-pg/thumb.jpg" alt="">
+														<a href="" class="selects added">
+															<img src="images/added.svg" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="boxi">
+											<div class="row m-0">
+												<div class="col-7 p-0">
+													<h5>Latest news</h5>
+													<p>Check what’s going on in our world now</p>
+													<span class="left_span">Delivery: every week</span>
+												</div>
+												<div class="col-5 pr-0">
+													<div class="img_sec">
+														<img class="main_img" src="images/user-profile-pg/thumb.jpg" alt="">
+														<a href="" class="selects">
+															<img src="images/add.svg" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="text-bot2">
+									<a href="" class="btn btn-main">Save my settings</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Email Modal -->
+	<div aria-hidden="true" aria-labelledby="emailModalLabel" class="modal fade user-modal" id="emailModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<h5>Change email</h5>
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<img src="images/menu-close2.png" alt="">
+					</button>
+					<form action="">
+						<div class="form-group">
+							<label for="">Password</label>
+							<input type="text" class="form-control" placeholder="">
+						</div>
+						<div class="form-group">
+							<label for="">Enter new email</label>
+							<input type="text" class="form-control" placeholder="Email">
+						</div>
+						<button class="btn btn-main btn-block btn-op25" type="button" data-toggle="modal" data-target="#emailModal2">Change email</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Email Modal 2 -->
+	<div aria-hidden="true" aria-labelledby="emailModal2Label" class="modal fade user-modal user-modal2" id="emailModal2" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<img src="images/menu-close2.png" alt="">
+					</button>
+					<div class="top-ptrn">
+						<img src="images/pattern/top2.png" alt="">
+					</div>
+					<h5>We've sent you an email confirming your changes. Please check your inbox.</h5>
+					<div class="text-center">
+						<button class="btn btn-main" aria-label="Close" data-dismiss="modal" type="button">Okay</button>
+					</div>
+					<div class="bottom-ptrn">
+						<img src="images/pattern/bottom5.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Password Modal -->
+	<div aria-hidden="true" aria-labelledby="passwordModalLabel" class="modal fade user-modal" id="passwordModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<h5>Change password</h5>
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<img src="images/menu-close2.png" alt="">
+					</button>
+					<form action="">
+						<div class="form-group">
+							<label for="">Current password</label>
+							<input type="text" class="form-control" placeholder="">
+						</div>
+						<div class="form-group">
+							<label for="">New password</label>
+							<input type="text" class="form-control" placeholder="Email">
+						</div>
+						<button class="btn btn-main btn-block btn-op25">Save new password</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Phone Modal -->
+	<div aria-hidden="true" aria-labelledby="phoneModalLabel" class="modal fade user-modal" id="phoneModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<h5>Change phone number</h5>
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<img src="images/menu-close2.png" alt="">
+					</button>
+					<form action="">
+						<div class="form-group">
+							<label for="">Enter new phone number</label>
+							<div class="input-phone"></div>
+						</div>
+						<button class="btn btn-main btn-block" data-toggle="modal" data-target="#phoneModal2">Send verification code</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Phone Modal 2 -->
+	<div aria-hidden="true" aria-labelledby="phoneModal2Label" class="modal fade user-modal" id="phoneModal2" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<h5>Change phone number</h5>
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<img src="images/menu-close2.png" alt="">
+					</button>
+					<form action="">
+						<div class="form-group">
+							<label for="">Confirmation code</label>
+							<input type="text" class="form-control" placeholder="">
+						</div>
+						<button class="btn btn-main btn-block btn-op25" data-toggle="modal" data-target="#phoneModal2">Verify</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Name Modal -->
+	<div aria-hidden="true" aria-labelledby="nameModalLabel" class="modal fade user-modal" id="nameModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<img src="images/menu-close2.png" alt="">
+					</button>
+					<form action="">
+						<h5 class="text-left">Edit your name</h5>
+						<div class="form-group">
+							<label for="">Full name</label>
+							<input type="text" class="form-control" placeholder="Metthew Dallas">
+						</div>
+						<button class="btn btn-main btn-block btn-op25">Save name</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Card Modal -->
+	<div aria-hidden="true" aria-labelledby="nameModalLabel" class="modal fade user-modal" id="cardModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<img src="images/menu-close2.png" alt="">
+					</button>
+					<form action="">
+						<h5 class="text-left">Edit payment method</h5>
+						<div class="form-group">
+							<label for="">Card number</label>
+							<div class="card_img">
+								<input type="text" class="form-control" placeholder="" value="3445 5690 4522 4578">
+								<img src="images/credit-card-icon-1.png" alt="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-7">
+								<div class="form-group">
+									<label for="">Expiration date</label>
+									<input type="text" class="form-control" placeholder="MM/YYYY">
+								</div>
+							</div>
+							<div class="col-5 pl-0">
+								<div class="form-group">
+									<label for="">Security code</label>
+									<div class="row align-items-center m-0">
+										<div class="col-10 p-0">
+											<input type="text" class="form-control" placeholder="***">
+										</div>
+										<div class="col-2 p-0 text-right">
+											<img src="images/donation-pg/info.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="btn btn-main btn-block btn-op25">Save changes</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Jquery Min -->
+	<script src="js/jquery.min.js"></script>
+
+	<!-- Popper Min -->
+	<script src="plugins/bootstrap/js/popper.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Owl Carousel -->
+	<script src="plugins/owl-carousel/js/owl.carousel.min.js"></script>
+
+	<!-- Star Rating -->
+	<script src="plugins/star_rating/star-rating.js"></script>
+
+	<!-- A Carousel -->
+	<script src="plugins/acarousel/jquery.acarousel.min.js"></script>
+
+	<!-- Select -->
+	<script src="plugins/select/select.js"></script>
+
+	<!-- Input Phone -->
+	<script src="plugins/phone/phone.js"></script>
+
+	<!-- Date Picker -->
+	<script src="plugins/datepicker/bootstrap-datepicker.min.js"></script>
+
+	<!-- CK Editor -->
+	<script src="plugins/ckeditor.js"></script>
+
+	<!-- Pie Chart -->
+	<script src="plugins/chart1.js"></script>
+
+	<!-- Custom Js -->
+	<script src="js/default.js"></script>
+</body>
+</html>

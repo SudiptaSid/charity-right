@@ -1,0 +1,86 @@
+/* ----- Footer ----- */
+#main-footer {
+    background-color: #262626;
+    .content {
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+        .logo-sec {
+            a {
+                display: inline-block;
+                img {
+                    height: 42px;
+                    width: auto;
+                    /* Max Width 991px */
+                    @media (max-width: $break_991) {
+                        height: 32px;
+                    }
+                }
+            }
+        }
+        .menu-sec {
+            display: flex;
+            flex-wrap: wrap;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                margin-top: 20px;
+                justify-content: center;
+            }
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                justify-content: left;
+            }
+            li {
+                margin-right: 58px;
+                /* Max Width 991px */
+                @media (max-width: $break_991) {
+                    margin-right: 20px;
+                    margin-top: 20px;
+                }
+                a {
+                    display: inline-block;
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 600;
+                    color: $white-clr;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: $primary-clr;
+                    }
+                }
+            }
+        }
+        .social-sec {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            li {
+                +li {
+                    margin-left: 12px;
+                }
+                a {
+                    display: inline-block;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 24px 0;
+        p {
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}

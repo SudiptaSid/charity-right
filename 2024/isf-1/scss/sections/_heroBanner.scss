@@ -1,0 +1,92 @@
+// Home Banner
+.heroBannerOne {
+  .content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .col {
+      width: 50%;
+
+      @include lg {
+        width: 100%;
+      }
+    }
+
+    .sectionTitle {
+      padding: 50px;
+
+      @include lg {
+        padding: 32px 24px;
+      }
+
+      .logoSec {
+        margin-bottom: 32px;
+      }
+
+      h1 {
+        color: clr(primary, main);
+      }
+
+      h5 {
+        font-family: $bodyFont;
+        font-weight: 600;
+        color: clr(primary, main);
+        margin: 24px 0;
+      }
+    }
+
+    .donateBox {
+      background-color: clr(light, main);
+      padding: 32px 50px;
+      display: grid;
+      grid-template-columns: 50px auto auto;
+      text-align: center;
+      gap: 10px;
+
+      @include md {
+        padding: 24px 15px;
+      }
+
+      span {
+        font-size: 1.5em;
+        font-weight: 900;
+        padding: 5px 10px;
+        display: inline-block;
+        color: clr(light, outline);
+        background-color: clr(primary, focus);
+        width: 50px;
+      }
+
+      .form-group {
+        .inputBox {
+          height: 100%;
+
+          .form-control {
+            font-size: 1.5em;
+            font-weight: 900;
+            height: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .imgSec {
+      line-height: 0;
+      position: relative;
+
+      img {
+        max-height: 593px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}

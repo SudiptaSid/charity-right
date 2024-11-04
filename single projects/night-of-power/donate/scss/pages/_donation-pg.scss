@@ -1,0 +1,660 @@
+#cs-donation-pg {
+    padding-top:85px;
+    // --------------------------------
+    @media (max-width: $break_767) {
+        padding-top: 79px;
+        padding-bottom:100px;
+    }
+    .container {
+        position: relative;
+    }
+    .bottom-pattern {
+        position: absolute;
+        bottom: 2vw;
+        right: 15px;
+        max-width: 154px;
+        // --------------------------------
+        @media (max-width: $break_767) {
+            display: none;
+        }
+    }
+    .form-group {
+        &.opacity-25 {
+            opacity:0.25;
+        }
+        label {
+            font-size:14px;
+            line-height:18px;
+            margin-bottom:10px;
+        }
+    }
+    .content {
+        padding: 100px 0 50px 0;
+        position: relative;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        // --------------------------------
+        @media (min-width: $break_767 + 1px) {
+            max-height:calc(100vh - 170px);
+            overflow-y:auto;
+            margin-left: 90px;
+        }
+        // --------------------------------
+        @media (min-width: $break_767 + 1px) and (max-width: $break_1280) {
+            padding-top:40px;
+        }
+        // --------------------------------
+        @media (max-width: $break_767) {
+            padding-top:40px;
+            padding-bottom:0;
+        }
+    }
+    .content2 {
+        padding-bottom:150px;
+        // --------------------------------
+        @media (min-width: $break_767 + 1px) {
+            margin-left: 90px;
+        }
+        // --------------------------------
+        @media (max-width: $break_767) {
+            padding-top:40px;
+            padding-bottom:0;
+        }
+    }
+    .mob-steps {
+        display: block;
+        margin-bottom:10px;
+        // --------------------------------
+        @media (min-width: $break_767 + 1px) {
+            display: none;
+        }
+        li {display: inline-block;
+            position: relative;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 600;
+            span {
+                color:$primary-clr;
+            }
+        }
+    }
+    .heading-info {
+        h1 {
+            font-size:36px;
+            line-height:44px;
+            font-weight: 700;
+            margin-bottom:0;
+            letter-spacing:-2px;
+            // --------------------------------
+            @media (max-width: $break_767) {
+                font-size:22px;
+                line-height:28px;
+                margin-bottom:10px;
+                letter-spacing:0;
+            }
+            +p {
+                margin-top:12px;
+            }
+        }
+        p {
+            margin-bottom:0;
+            font-size:16px;
+            line-height:22px;
+            color:$grey2-clr;
+        }
+    }
+    .heading-24 {
+        font-size:24px;
+        line-height:30px;
+        margin-bottom:30px;
+        font-weight: 700;
+        // --------------------------------
+        @media (max-width: $break_767) {
+            font-size:18px;
+            line-height:24px;
+            margin-bottom:15px;
+        }
+    }
+    .donation-divider {
+        width:100%;
+        height:1px;
+        background: $grey-clr;
+        margin:40px 0;
+        // --------------------------------
+        @media (max-width: $break_767) {
+            margin:30px 0;
+        }
+    }
+    .donation-divider2 {
+        width:100%;
+        height:40px;
+    }
+    .donation-type-select {
+        li {
+            + li {
+                margin-top:40px;
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    margin-top:30px;
+                }
+            }
+            .boxi {
+                .top-sec {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items:center;
+                    margin-bottom:24px;
+                    // --------------------------------
+                    @media (max-width: $break_767) {
+                        margin-bottom:15px;
+                    }
+                    .img-div {
+                        width:90px;
+                        height:90px;
+                        border-radius:12px;
+                        overflow:hidden;
+                        position: relative;
+                        .main-img {
+                            width:100%;
+                            height:100%;
+                        }
+                        .checkmarks {
+                            background-color:rgba($primary-clr, 0.6);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            display: none;
+                            img {
+                                width:auto;
+                                max-width:36px;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translateX(-50%) translateY(-50%);
+                            }
+                        }
+                        &.checked {
+                            .checkmarks {
+                                display: block;
+                            }
+                        }
+                    }
+                    .details-sec {
+                        width:calc(100% - 90px);
+                        padding-left:20px;
+                        h5 {
+                            font-size:20px;
+                            line-height:26px;
+                            font-weight: 600;
+                            margin-bottom:12px;
+                            // --------------------------------
+                            @media (max-width: $break_767) {
+                                font-size:18px;
+                                line-height:22px;
+                                margin-bottom:8px;
+                            }
+                        }
+                        p {
+                            font-size:14px;
+                            line-height:18px;
+                            margin-bottom:0;
+                            color:$grey2-clr;
+                        }
+                    }
+                }
+                .bottom-sec {
+                    display: flex;
+                    justify-content:space-between;
+                    .btn {
+                        // --------------------------------
+                        @media (max-width: $break_767) {
+                            padding:12px;
+                        }
+                        &.grey-border-2 {
+                            width:100%;
+                            max-width:130px;
+                            margin-left: 12px;
+                            // --------------------------------
+                            @media (max-width: $break_767) {
+                                max-width: 110px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+                .donate-shortcut {
+                    display: none;
+                    &.view {
+                        display: block;
+                    }
+                    .p-small {
+                        font-size:14px;
+                        line-height:18px;
+                        margin-bottom:5px;
+                    }
+                    .short-donate {
+                        display: flex;
+                        flex-wrap:wrap;
+                        .donation-amount {
+                            font-size: 16px;
+                            line-height: 22px;
+                            font-weight: 600;
+                            padding: 15px;
+                            color: $grey2-clr;
+                            background-color: $white-clr;
+                            border: 1px solid $grey-clr;
+                            border-radius: 12px;
+                            min-width: 95px;
+                            text-align: center;
+                            margin:4px;
+                            &:first-child {
+                                margin-left:0;
+                            }
+                            &:nth-child(4) {
+                                margin-right:0;
+                            }
+                            &:nth-child(5) {
+                                margin-left:0;
+                            }
+                            &:last-child {
+                                margin-right:0;
+                            }
+                            &.active {
+                                color: $white-clr;
+                                background-color:$primary-clr;
+                                border-color:$primary-clr;
+                                text-decoration: none;
+                            }
+                            // --------------------------------
+                            @media (max-width: $break_767) {
+                                font-size: 14px;
+                                line-height: 18px;
+                                padding: 8px;
+                                border-radius: 6px;
+                                min-width: 75px;
+                            }
+                        }
+                    }
+                    .help-text {
+                        color:$grey2-clr;
+                        margin-bottom:15px;
+                        // --------------------------------
+                        @media (max-width: $break_767) {
+                            font-size:14px;
+                            line-height:18px;
+                        }
+                    }
+                    .checkbox-div {
+                        margin-bottom:25px;
+                        .custom-checkbox {
+                            margin-bottom:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .donation-split-select {
+        li {
+            display: flex;
+            justify-content:space-between;
+            align-items:center;
+            + li {
+                margin-top:24px;
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    margin-top:15px;
+                }
+            }
+            label {
+                margin-bottom:0;
+            }
+            .select2-container--cs-theme1 {
+                max-width:100px;
+            }
+        }
+    }
+    .donation-split-box {
+        display: flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        // --------------------------------
+        @media (min-width: $break_1240 + 1px) {
+            max-width: calc(100% - 90px);
+        }
+        li {
+            width:20%;
+            padding:10px 20px 10px 0;
+            // --------------------------------
+            @media (max-width: $break_1366) {
+                width:20%;
+            }
+            // --------------------------------
+            @media (max-width: $break_1240) {
+                width:25%;
+            }
+            // --------------------------------
+            @media (max-width: $break_991) {
+                width:33.333333%;
+                padding-right:10px;
+            }
+            // --------------------------------
+            @media (max-width: $break_550) {
+                width:50%;
+            }
+            .boxi {
+                padding:20px;
+                border:1px solid $grey-clr;
+                border-radius:10px;
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    padding:15px;
+                }
+                .circle-number {
+                    span {
+                        color:$white-clr;
+                        background-color:$light-pink-clr;
+                        width:64px;
+                        height:64px;
+                        font-size:24px;
+                        line-height:64px;
+                        font-weight: 700;
+                        display: inline-block;
+                        border-radius:50%;
+                        text-align: center;
+                        // --------------------------------
+                        @media (max-width: $break_767) {
+                            font-size:20px;
+                            width:50px;
+                            height:50px;
+                            line-height:50px;
+                        }
+                    }
+                }
+                p {
+                    font-size:18px;
+                    line-height:24px;
+                    margin:20px 0;
+                    color:$grey2-clr;
+                    // --------------------------------
+                    @media (max-width: $break_767) {
+                        font-size:16px;
+                        line-height:22px;
+                        margin:15px 0;
+                    }
+                }
+                .ammount-sec {
+                    display: flex;
+                    justify-content:space-between;
+                    align-items:center;
+                    span {
+                        display: inline-block;
+                        font-size:24px;
+                        line-height:30px;
+                        font-weight: 700;
+                        // --------------------------------
+                        @media (max-width: $break_767) {
+                            font-size:20px;
+                            line-height:26px;
+                        }
+                    }
+                    a {
+                        display: inline-block;
+                        width:32px;
+                        height:32px;
+                        // --------------------------------
+                        @media (max-width: $break_767) {
+                            width:24px;
+                            height:24px;
+                        }
+                        img {
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .donation-description {
+        padding: 100px 0 40px 0;
+        // --------------------------------
+        @media (min-width: $break_767 + 1px) {
+            margin-left: 90px;
+        }
+        // --------------------------------
+        @media (max-width: $break_767) {
+            padding: 40px 0 0px 0;
+        }
+        .inner-content {
+            max-width: 414px;
+            background-color:$white-clr;
+            border: 1px solid $grey-clr;
+            border-radius: 12px;
+            padding: 40px;
+            z-index: 1;
+            // --------------------------------
+            @media (max-width: $break_767) {
+                padding:20px;
+                border-radius:6px;
+            }
+            .supported-title {
+                h4 {
+                    font-size:24px;
+                    line-height:30px;
+                    font-weight: 700;
+                    margin-bottom:10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items:center;
+                    // --------------------------------
+                    @media (max-width: $break_767) {
+                        font-size:22px;
+                        line-height:28px;
+                    }
+                    a {
+                        display: inline-block;
+                        img {
+                            max-width:100%;
+                        }
+                    }
+                }
+                p {
+                    font-size:14px;
+                    line-height:18px;
+                    margin-bottom:0;
+                    color:$grey2-clr;
+                }
+            }
+            .donation-divider {
+                margin:24px 0;
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    margin:20px 0;
+                }
+            }
+            .donation-summery {
+                h5 {
+                    font-size:20px;
+                    line-height:26px;
+                    font-weight: 600;
+                    margin-bottom:15px;
+                    // --------------------------------
+                    @media (max-width: $break_767) {
+                        font-size:18px;
+                        line-height:24px;
+                    }
+                }
+                ul {
+                    li {
+                        display: flex;
+                        justify-content:space-between;
+                        align-items:center;
+                        span {
+                            &:first-child {
+                                font-size:16px;
+                                line-height:22px;
+                            }
+                            &:last-child {
+                                font-size:20px;
+                                line-height:26px;
+                                font-weight: 600;
+                                // --------------------------------
+                                @media (max-width: $break_767) {
+                                    font-size:18px;
+                                    line-height:24px;
+                                }
+                            }
+                        }
+                        + li {
+                            margin-top:15px;
+                        }
+                    }
+                }
+            }
+            .total-summery {
+                ul {
+                    li {
+                        display: flex;
+                        justify-content:space-between;
+                        align-items:center;
+                        span {
+                            &:first-child {
+                                font-size:20px;
+                                line-height:26px;
+                                // --------------------------------
+                                @media (max-width: $break_767) {
+                                    font-size:18px;
+                                    line-height:24px;
+                                }
+                            }
+                            &:last-child {
+                                font-size:20px;
+                                line-height:26px;
+                                font-weight: 600;
+                                // --------------------------------
+                                @media (max-width: $break_767) {
+                                    font-size:18px;
+                                    line-height:24px;
+                                }
+                            }
+                        }
+                        + li {
+                            margin-top:15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .card-select {
+        display: flex;
+        flex-wrap:wrap;
+        .custom-radio {
+            margin-bottom:0;
+            +.custom-radio {
+                margin-left:30px;
+            }
+        }
+    }
+    #creditcardValue {
+        margin:30px 0;
+        h6 {
+            font-size: 14px;
+            line-height: 18px;
+            color: $grey2-clr;
+        }
+        .we-accept {
+            margin-top: 16px;
+            margin-bottom: 24px;
+            ul {
+                display: flex;
+                align-items:center;
+                li {
+                    img {
+                        max-width:100%;
+                    }
+                    + li {
+                        margin-left:12px;
+                    }
+                }
+            }
+        }
+    }
+    .charge-info {
+        margin-top: 16px;
+        margin-bottom: 24px;
+        p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    .cs-validate {
+        position: relative;
+        .validate-btn {
+            position: absolute;
+            top:50%;
+            right:25px;
+            transform:translateY(-50%);
+            font-size:14px;
+            line-height:18px;
+            font-weight: 600;
+            color: $primary-clr;
+        }
+        .validate-img {
+            position: absolute;
+            top:50%;
+            right:25px;
+            transform:translateY(-50%);
+            img {
+                max-width:16px;
+            }
+        }
+    }
+    .iftar-time {
+        margin:40px 0;
+        display: flex;
+        opacity:0.25;
+        .iftar-sun {
+            display: flex;
+            width:50%;
+            .img-sec {
+                width:40px;
+                img {
+                    max-width:40px;
+                }
+            }
+            .detail-sec {
+                width:calc(100% - 55px);
+                padding-left:15px;
+                h6 {
+                    font-size:14px;
+                    line-height:18px;
+                    font-weight: 400;
+                    margin-bottom:4px;
+                }
+                p {
+                    margin-bottom:0;
+                    color:$grey2-clr;
+                }
+            }
+        }
+    }
+    .giftaid-description {
+        border: 1px solid $grey-clr;
+        border-radius: 12px;
+        padding: 40px 24px;
+        z-index: 1;
+        position: relative;
+        img {
+            margin-bottom: 25px;
+        }
+        .giftaid-content {
+            p {
+                color:$grey2-clr;
+            }
+        }
+    }
+}

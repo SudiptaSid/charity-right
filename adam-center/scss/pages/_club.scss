@@ -1,0 +1,45 @@
+// CLub One
+.club-one {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .btn-sec {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            margin-top: 24px;
+        }
+    }
+}
+
+// Club Two
+.club-two {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .scouts-item-two {
+        .btn-sec {
+            margin-top: 30px;
+        }
+        .img-sec {
+            text-align: right;
+        }
+        + .scouts-item-two {
+            margin-top: 80px;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                margin-top: 40px;
+            }
+        }
+    }
+}

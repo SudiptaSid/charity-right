@@ -1,0 +1,13 @@
+// Footer
+.main-footer {
+    padding: 55px 0;
+    background-color: $clr-25475a;
+    /* Max width 767px */
+    @media (max-width: $break_767) {
+        padding: 30px 0;
+    }
+    p {
+        font-weight: 700;
+        color: $clr-E1BF42;
+    }
+}

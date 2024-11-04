@@ -1,0 +1,21 @@
+// Header
+.main-header {
+    position: relative;
+    padding: 1em 0;
+    .left-sec {
+        .logo {
+            display: inline-block;
+            img {
+                height: 80px;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    height: 40px;
+                }
+            }
+        }
+    }
+    .right-sec {
+        text-align: right;
+    }
+}

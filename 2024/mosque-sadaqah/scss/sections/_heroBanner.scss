@@ -1,0 +1,10 @@
+// Home Banner
+.heroBannerOne {
+  min-height: 650px;
+  background-size: cover;
+  background-position: center;
+
+  @include md {
+    min-height: 500px;
+  }
+}

@@ -1,0 +1,28 @@
+// Main Header
+.main-header {
+    padding: 40px 0;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 10px 0;
+    }
+    .logo {
+    }
+    .left-menu {
+        .logo {
+            display: inline-block;
+            img {
+                height: 55px;
+                /* Max Width 991px */
+                @media (max-width: $break_991) {
+                    height: 35px;
+                }
+            }
+        }
+    }
+    .right-menu {
+        text-align: right;
+        .btn {
+            border-radius: 50px;
+        }
+    }
+}

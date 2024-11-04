@@ -1,0 +1,31 @@
+// Heading One
+.heading-one {
+    h1 {
+        font-size: $sz-44;
+        font-weight: 700;
+        margin-bottom: 0;
+
+        // Max Width 767px
+        @media (max-width: $break-767) {
+            font-size: $sz-18;
+        }
+        + p {
+            margin-top: $sz-15;
+
+        // Max Width 767px
+        @media (max-width: $break-767) {
+            margin-top: $sz-5;
+        }
+        }
+    }
+    p {
+        font-size: $sz-24;
+        line-height: 1.225;
+        margin-bottom: 0;
+
+        // Max Width 767px
+        @media (max-width: $break-767) {
+            font-size: $sz-12;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+// Hero Banner
+.hero-banner {
+    color: $white-clr;
+    background-color: $clr-0F3481;
+    padding: 5em 0;
+    background-image: url(../images/pattern.png);
+
+    // Max Width 767px
+    @media (max-width: $break-767) {
+        padding: 1em 0;
+        background-size: 30px;
+    }
+    .gap-y {
+        gap: 2em 0;
+    }
+    .heading-one {
+        padding-right: 3em;
+
+        // Max Width 767px
+        @media (max-width: $break-767) {
+            padding-right: 0;
+        }
+        h1 {
+            font-size: $sz-80;
+
+            // Max Width 767px
+            @media (max-width: $break-767) {
+                font-size: $sz-22;
+            }
+        }
+    }
+    .img-sec {
+        text-align: right;
+    }
+}
+
+// Service One
+.service-one {
+    padding: 3em 0;
+
+    // Max Width 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+    .gap-y {
+        gap: 1em 0;
+
+        // Max Width 767px
+        @media (max-width: $break-767) {
+            max-height: 600px;
+            overflow-y: auto;
+            gap: 10px 0;
+        }
+    }
+    .service-box-one {
+        height: 100%;
+    }
+}
+
+// CTA One
+.cta-one {
+    background-image: url(../images/cta-bg.jpg);
+    background-size: contain;
+    padding: 4em 0;
+
+    // Max Width 767px
+    @media (max-width: $break-767) {
+        padding: 1em 0;
+    }
+    .gap-y {
+        gap: 4em 0;
+
+        // Max Width 767px
+        @media (max-width: $break-767) {
+            gap: 1em 0;
+        }
+    }
+    .heading-one {
+        color: $white-clr;
+    }
+}
+
+// Bottom Form
+.bottom-form {
+    background-color: $white-clr;
+    padding: 1em 0;
+    .gap-y {
+        gap: 0.5em 0;
+    }
+    h2 {
+        font-size: $sz-22;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .form-control {
+        font-size: $sz-14;
+        padding: 8px 12px;
+        color: $white-clr;
+        background: linear-gradient(90deg, $clr-013386, $clr-2D4D91, $clr-013386);
+    }
+    .btn {
+        font-size: $sz-14;
+        text-transform: uppercase;
+        padding: 8px 12px;
+    }
+}

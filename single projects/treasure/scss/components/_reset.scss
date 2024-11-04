@@ -1,0 +1,60 @@
+/* ----- Reset ----- */
+body {
+    font-family: $primary-ff;
+    font-size: $primary-fz;
+    line-height: 22px;
+    font-weight: 400;
+    color: $white-clr;
+    background-color: $black-light;
+    overflow-x: hidden;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+ul,ol {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: $white-clr;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.color-green {
+    color: $primary-clr;
+}
+.color-yellow {
+    color: $secondary-clr;
+}
+.color-blue {
+    color: $blue-clr;
+}
+
+.p-big {
+    font-size: 20px;
+    line-height: 28px;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+/* ----- Bootstrap ----- */
+.container {
+    position: relative;
+    @media (min-width: $break_1280 + 20px) {
+        max-width: 1280px;
+    }
+}

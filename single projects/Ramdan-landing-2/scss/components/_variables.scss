@@ -1,0 +1,37 @@
+// Font
+$base-fz: 16px !default;
+$primary-ff: "Epilogue", sans-serif;
+
+// Color
+$no-clr: transparent;
+$white-clr: #ffffff;
+$black-clr: #000000;
+$primary-clr: #e42281;
+$blue-clr: #4ca4fd;
+$clr-FAC723: #fac723;
+$clr-DAE0E5: #dae0e5;
+$clr-7A8193: #7a8193;
+$clr-101010: #101010;
+$clr-EEF6FE: #eef6fe;
+
+// Shadow
+$shadow-1: 0px 10px 40px rgba(137, 153, 170, 0.2);
+
+// Borders
+$border-1-solid: 1px solid;
+
+// Media Queries
+$break_1440: 1440px;
+$break_1366: 1366px;
+$break_1280: 1280px;
+$break_1240: 1240px;
+$break_1080: 1080px;
+$break_1024: 1024px;
+$break_991: 991px;
+$break_850: 850px;
+$break_767: 767px;
+$break_550: 550px;
+
+//@media (min-width: $break_767 + 1px) and (max-width: $break_1240) {}
+/* Max Width 991px */
+/* Max Width 1240px and Min 992px */

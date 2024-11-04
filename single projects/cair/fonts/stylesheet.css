@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Neutra Text';
+    src: url('NeutraText-Bold.woff2') format('woff2'),
+        url('NeutraText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neutra Text';
+    src: url('NeutraText-Book.woff2') format('woff2'),
+        url('NeutraText-Book.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,38 @@
+// Home Banner
+.heroBannerOne {
+  position: relative;
+  z-index: 4;
+
+  .sectionTitle {
+    padding: 100px;
+
+    @include md {
+      padding: 32px 0;
+    }
+
+    h6 {
+      color: clr(secondary, main);
+      margin-bottom: 0;
+    }
+
+    h1 {
+      color: clr(secondary, main);
+      margin-bottom: 12px;
+    }
+
+    .btnSec {
+      .btn {
+        width: 100%;
+        max-width: 300px;
+
+        @include md {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,46 @@
+// Logo
+.logo {
+  display: inline-block;
+  line-height: 0;
+
+  img {
+    height: 40px;
+
+    @include lg {
+      height: 30px;
+    }
+  }
+}
+
+// Social Links
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+    color: clr(primary, main);
+    border: 1px solid clr(primary, main);
+    border-radius: 50%;
+    transition: 0.6s all;
+
+    svg {
+      fill: clr(primary, main);
+    }
+
+    &:hover {
+      color: clr(primary, main);
+      background-color: clr(primary, main);
+
+      svg {
+        fill: clr(light, outline);
+      }
+    }
+  }
+}

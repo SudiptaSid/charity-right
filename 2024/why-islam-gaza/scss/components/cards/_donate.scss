@@ -1,0 +1,62 @@
+// Donate Card One
+.donateCardOne {
+  padding: 60px 32px 32px;
+  color: clr(light, outline);
+  background-color: clr(primary, main);
+  text-align: center;
+  position: relative;
+  z-index: 4;
+
+  @include md {
+    padding: 60px 24px 24px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    background-color: clr(secondary, main);
+    z-index: -1;
+  }
+
+  h1 {
+    @include headingL;
+    color: inherit;
+    margin-bottom: 60px;
+
+    @include md {
+      margin-bottom: 32px;
+    }
+  }
+
+  .btnWhite {
+    color: clr(secondary, main) !important;
+    width: 100%;
+    max-width: 180px;
+
+    &:hover,
+    &:focus {
+      color: clr(light, outline) !important;
+      background-color: clr(secondary, hover) !important;
+    }
+
+    @include md {
+      max-width: 90%;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+    margin-top: 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      height: 16px;
+    }
+  }
+}

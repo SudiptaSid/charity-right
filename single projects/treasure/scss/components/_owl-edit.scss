@@ -1,0 +1,65 @@
+/* ----- Owl Nav ----- */
+.owl-theme {
+    .owl-nav {
+        position: absolute;
+        left:0;
+        top:50%;
+        transform:translateY(-50%);
+        width: 100%;
+        [class*='owl-'] {
+            width:50px;
+            height:50px;
+            background-color: #262626 !important;
+            color:$white-clr !important;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            border:1px solid #262626 !important;
+            border-radius: 50%;
+            margin:0;
+            font-size: 26px !important;
+            line-height: 20px !important;
+            text-align: center;
+            &:focus {
+                outline:none;
+            }
+            /* Max width 991px */
+            @media (max-width: $break_991) {
+                width: 30px;
+                height: 30px;
+                font-size: 14px !important;
+                line-height: 20px !important;
+            }
+        }
+        .owl-prev {
+            left:-150px;
+            /* Min width 992px - Max width 1280px */
+            @media (min-width: $break_991 + 1px) and (max-width: $break_1280) {
+                left:0;
+            }
+            /* Max width 991px */
+            @media (max-width: $break_991) {
+                left:-10px;
+            }
+            i {
+                position: relative;
+                left: -2px;
+            }
+        }
+        .owl-next {
+            right:-150px;
+            /* Min width 992px - Max width 1280px */
+            @media (min-width: $break_991 + 1px) and (max-width: $break_1280) {
+                right:0;
+            }
+            /* Max width 991px */
+            @media (max-width: $break_991) {
+                right:-10px;
+            }
+            i {
+                position: relative;
+                left: 2px;
+            }
+        }
+    }
+}

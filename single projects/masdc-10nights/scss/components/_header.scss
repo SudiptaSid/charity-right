@@ -1,0 +1,14 @@
+// Main Header
+.main-header {
+    padding: 20px 0;
+
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+    }
+    .logo {
+        display: inline-block;
+    }
+    .right-menu {
+        text-align: right;
+    }
+}

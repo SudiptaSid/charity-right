@@ -1,0 +1,36 @@
+// About One
+.aboutOne {
+  padding: 80px 0;
+  background-color: clr(light, hover);
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .sectionTitle {
+    h1 {
+      color: clr(primary, main);
+      border-left: 5px solid clr(primary, main);
+      padding-left: 10px;
+    }
+
+    p {
+      b {
+        color: clr(secondary, main);
+        display: block;
+      }
+
+      i {
+        font-weight: 700;
+      }
+    }
+
+    .btnSec {
+      .btn {
+        @include md {
+          min-width: 90%;
+        }
+      }
+    }
+  }
+}

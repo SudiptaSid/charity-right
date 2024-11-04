@@ -1,0 +1,57 @@
+// Heading
+.section-heading {
+    margin-bottom: 48px;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        margin-bottom: 36px;
+    }
+    h2 {
+        color: inherit;
+        font-size: 64px;
+        font-weight: 700;
+        margin-bottom: 0;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            font-size: 36px;
+        }
+        span {
+            color: $primary-clr;
+            display: inline;
+        }
+        + p {
+            margin-top: 24px;
+        }
+
+        &.h2-52 {
+            font-size: 52px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                font-size: 32px;
+            }
+        }
+        &.h2-48 {
+            font-size: 48px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                font-size: 30px;
+            }
+        }
+    }
+    .smll-divid {
+        max-width: 75px;
+        width: 100%;
+        height: 6px;
+        background-color: $primary-clr;
+        margin: 15px auto 0;
+    }
+    p {
+        color: inherit;
+        margin-bottom: 0;
+        + p {
+            margin-top: 24px;
+        }
+        + .btn-sec {
+            margin-top: 36px;
+        }
+    }
+}

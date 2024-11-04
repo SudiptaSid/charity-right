@@ -1,0 +1,102 @@
+// Home Banner
+.heroBannerOne {
+  padding: 40px 0;
+  background-color: clr(primary, main);
+  margin-bottom: 80px;
+
+  @include md {
+    margin-bottom: 40px;
+  }
+
+  .bgBox {
+    padding: 40px;
+    min-height: 700px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include md {
+      padding: 32px 15px;
+    }
+
+    .content {
+      background-color: rgba(clr(black, main), 0.5);
+      max-width: 600px;
+
+      .sectionTitle {
+        color: clr(light, outline);
+        padding: 40px 24px;
+
+        h1 {
+          color: inherit;
+          margin-bottom: 12px;
+        }
+
+        h5 {
+          color: inherit;
+          font-weight: 600;
+          font-style: italic;
+          margin-bottom: 12px;
+        }
+
+        .btnSec {
+          .btn {
+            width: 100%;
+            max-width: 300px;
+
+            @include md {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+
+      .donateBox {
+        background-color: clr(secondary, main);
+        padding: 32px 24px;
+        text-align: center;
+
+        @include md {
+          padding: 24px 15px;
+        }
+
+        h4 {
+          color: clr(light, outline);
+          margin-bottom: 24px;
+        }
+
+        ul {
+          display: grid;
+          width: 100%;
+          margin: auto;
+          grid-template-columns: repeat(4, auto);
+          gap: 10px;
+
+          @include md {
+            grid-template-columns: repeat(2, auto);
+          }
+
+          .customRadio {
+            font-size: 1.4em;
+            font-weight: 800;
+            padding: 5px 10px;
+            color: clr(light, outline);
+          }
+
+          .btn {
+            width: 100%;
+            height: 100%;
+            font-size: 13px;
+            letter-spacing: -1px;
+
+            @include md {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,507 @@
+// Hero Slider
+.hero-banner {
+    .heading-one {
+        padding: 150px 0;
+        color: $white-clr;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            padding: 50px 0;
+        }
+        h1 {
+            + p {
+                margin-top: 5px;
+            }
+        }
+        p {
+            max-width: 550px;
+        }
+        .btn-sec {
+            margin-top: 30px;
+            display: flex;
+            gap: 1em;
+        }
+    }
+    .owl-carousel {
+        .item {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .owl-nav {
+            button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50%;
+                color: $clr-003767;
+                background-color: $white-clr;
+                font-size: 1.5em !important;
+                margin: 0;
+                box-shadow: 0px 4px 40px rgba($black-clr, 0.15);
+                &:hover {
+                    background-color: $clr-50AC97;
+                }
+                &.owl-next {
+                    right: 15px;
+                }
+                &.owl-prev {
+                    left: 15px;
+                }
+            }
+        }
+    }
+}
+
+// Prayer Countdown
+.prayer-countdown {
+    padding: 80px 0;
+    background-color: $clr-f4f4f4;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .heading-one {
+        text-align: center;
+        color: $clr-3D5970;
+        margin-bottom: 50px;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            margin-bottom: 24px;
+        }
+        .is-countdown {
+            margin-top: 24px;
+        }
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3em;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            gap: 2em;
+        }
+        li {
+            text-align: center;
+            img {
+                height: 40px;
+            }
+            h5 {
+                font-size: 1.2em;
+                font-weight: 700;
+                color: $clr-012646;
+                margin: 10px 0;
+
+                // Max 1080px
+                @media (max-width: $break-1080) {
+                    font-size: 1em;
+                }
+            }
+            p {
+                margin-bottom: 0;
+                color: $clr-1DB578;
+            }
+        }
+    }
+}
+
+// Our Service
+.our-service {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .left-sec {
+        // Min 991px
+        @media (min-width: $break-991) {
+            padding-right: 40px;
+        }
+        .heading-one {
+            .btn-sec {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+// About
+.about-adams {
+    padding: 45px 0;
+    color: $white-clr;
+    background-color: $clr-152243;
+    .left-sec {
+        h3 {
+            font-size: 2.2em;
+            font-weight: 600;
+            margin-bottom: 30px;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.8em;
+                margin-bottom: 15px;
+            }
+        }
+        h4 {
+            margin-bottom: 0;
+            font-size: 1.8em;
+            font-weight: 700;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.2em;
+            }
+        }
+    }
+    .right-sec {
+        .heading-one {
+            h1 {
+                position: relative;
+                padding-bottom: 15px;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    max-width: 250px;
+                    height: 2px;
+                    background-color: $white-clr;
+                }
+                + p {
+                    margin-top: 30px;
+                }
+            }
+            p {
+                max-width: 450px;
+                margin-bottom: 20px;
+            }
+            a {
+                color: $white-clr;
+                display: inline-block;
+                position: relative;
+                padding-bottom: 5px;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: $white-clr;
+                }
+            }
+        }
+    }
+}
+
+// Upcoming Events
+.upcoming-events {
+    padding: 120px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 60px 0;
+    }
+    .heading-one {
+        text-align: center;
+        p {
+            max-width: 480px;
+            margin: auto;
+            margin-top: 20px;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                margin-top: 15px;
+            }
+        }
+    }
+    #datepicker {
+        max-width: 1150px;
+        margin: auto;
+        margin-bottom: 100px;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            margin-bottom: 30px;
+        }
+        .ui-widget {
+            padding: 0;
+            width: 100%;
+            border: none;
+            border-radius: 0;
+            .ui-datepicker-header {
+                border: none;
+                border-radius: 0;
+                padding: 0;
+                background-color: $no-clr;
+                margin-bottom: 2em;
+                a {
+                    display: none;
+                }
+                .ui-datepicker-title {
+                    font-size: 2.2em;
+                    font-weight: 700;
+                    color: $clr-003767;
+                    text-align-last: left;
+                    margin: 0;
+                    line-height: 1;
+
+                    // Max 1080px
+                    @media (max-width: $break-1080) {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+            .ui-datepicker-calendar {
+                margin-bottom: 0;
+                thead {
+                    tr {
+                        th {
+                            font-weight: 700;
+                            color: $clr-152243;
+                            padding: 5px 0 20px 0;
+                            line-height: 1;
+                            span {
+                                border-bottom: 1px solid $clr-152243;
+
+                                // Max 767px
+                                @media (max-width: $break-767) {
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    max-width: 34px;
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            text-align: center;
+                            padding: 5px 0;
+                            .ui-state-default {
+                                text-align: center;
+                                border: none;
+                                border-radius: 5px;
+                                background-color: $no-clr;
+                                font-weight: 600;
+                                display: inline-block;
+                                padding: 10px 30px;
+
+                                // Max 1080px
+                                @media (max-width: $break-1080) {
+                                    padding: 8px 15px;
+                                }
+                                &.ui-state-active {
+                                    color: $white-clr;
+                                    background-color: $clr-152243;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .left-sec {
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            margin-bottom: 30px;
+        }
+        .event-box-one {
+            + .event-box-one {
+                margin-top: 80px;
+
+                // Max 1080px
+                @media (max-width: $break-1080) {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    .right-sec {
+        .event-box-two {
+            + .event-box-two {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+// Pillars
+.pillars {
+    padding: 40px 0;
+    background-color: $clr-f4f4f4;
+    .left-sec {
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            margin-bottom: 30px;
+        }
+    }
+    .right-sec {
+        .heading-one {
+            margin-bottom: 50px;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                margin-bottom: 30px;
+            }
+            p {
+                max-width: 485px;
+            }
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5em 0;
+            li {
+                width: 50%;
+                padding-right: 15px;
+
+                // Max 1080px
+                @media (max-width: $break-1080) {
+                    width: 100%;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+// Success Story
+.success-story {
+    padding-top: 80px;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding-top: 50px;
+    }
+    .left-sec {
+        img {
+            width: 100%;
+        }
+    }
+    .right-sec {
+        padding-left: 80px;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            padding-left: 0;
+            padding-top: 30px;
+        }
+        .heading-one {
+            h1 {
+                color: $clr-152243;
+            }
+            p {
+                color: $clr-363636;
+            }
+            .btn-sec {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+// Fundraising
+.fundraising {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0 60px;
+    }
+    .heading-one {
+        margin-bottom: 80px;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            margin-bottom: 30px;
+        }
+        h1 {
+            position: relative;
+            padding-bottom: 15px;
+            color: $clr-003767;
+            &:after {
+                content: "";
+                background-color: $clr-1DB578;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 200px;
+                height: 3px;
+            }
+        }
+        p {
+            max-width: 495px;
+        }
+    }
+    .owl-carousel {
+        .item {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .owl-nav {
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                text-align: center;
+            }
+            button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 40px;
+                height: 40px;
+                line-height: 36px;
+                border: 1px solid $clr-152243;
+                border-radius: 50%;
+                color: $clr-003767;
+                background-color: $white-clr;
+                font-size: 1.5em !important;
+                margin: 0;
+                box-shadow: 0px 4px 40px rgba($black-clr, 0.15);
+
+                // Max 1080px
+                @media (max-width: $break-1080) {
+                    top: unset;
+                    bottom: unset;
+                    transform: none;
+                    position: relative;
+                    margin: 10px 20px 0;
+                }
+                &:hover {
+                    background-color: $clr-50AC97;
+                }
+                &.owl-next {
+                    right: -50px;
+
+                    // Max 1080px
+                    @media (max-width: $break-1080) {
+                        right: unset;
+                    }
+                }
+                &.owl-prev {
+                    left: -50px;
+
+                    // Max 1080px
+                    @media (max-width: $break-1080) {
+                        left: unset;
+                    }
+                }
+            }
+        }
+    }
+}

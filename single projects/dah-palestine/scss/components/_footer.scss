@@ -1,0 +1,45 @@
+// Footer One
+.footer-one {
+    padding: 40px 0;
+    .logo_wrap {
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            text-align: center;
+        }
+        a {
+            display: inline-block;
+            img {
+                max-width: 90px;
+            }
+        }
+    }
+    .info_texts {
+        color: $black-clr;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            text-align: center;
+        }
+        p {
+            + p {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .social-links {
+        justify-content: center;
+        li {
+            a {
+                background-color: $primary-clr;
+                color: $white-clr;
+            }
+        }
+    }
+    .copyright {
+        text-align: center;
+        margin-top: 15px;
+        p {
+            margin-bottom: 0;
+            color: $primary-clr;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+// Donate Card One
+.donateCardOne {
+  display: flex;
+  flex-direction: column;
+
+  .topSec {
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 250px;
+    padding: 15px;
+
+    @include md {
+      min-height: 120px;
+    }
+
+    h1 {
+      @include headingL;
+      color: clr(light, outline);
+      margin-bottom: 0;
+    }
+  }
+
+  .bottomSec {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 250px;
+    padding: 15px;
+
+    @include md {
+      min-height: 120px;
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 180px;
+
+      @include md {
+        max-width: 90%;
+      }
+    }
+  }
+}

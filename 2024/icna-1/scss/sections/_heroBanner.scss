@@ -1,0 +1,33 @@
+// Home Banner
+.heroBannerOne {
+  padding: 80px 0 40px;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @include md {
+    padding: 60px 0 20px;
+    min-height: 450px;
+  }
+
+  .sectionTitle {
+    text-align: center;
+    color: clr(light, outline);
+    text-transform: uppercase;
+
+    h1 {
+      color: inherit;
+      margin-bottom: 12px;
+    }
+
+    h4 {
+      color: inherit;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+  }
+}

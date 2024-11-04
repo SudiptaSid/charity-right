@@ -1,0 +1,132 @@
+// Main Header
+.main-header {
+    padding: 30px 0;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 10px 0;
+    }
+    .logo {
+        display: inline-block;
+        img {
+            height: 55px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                height: 35px;
+            }
+        }
+    }
+    .left-menu {
+        .logo {
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                display: none;
+            }
+        }
+        #mobile-menu-toggle {
+            border: none;
+            background-color: $no-clr;
+            padding: 0;
+            cursor: pointer;
+            display: none;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                display: inline-block;
+            }
+            &:focus {
+                outline: none;
+            }
+            img {
+                width: 24px;
+            }
+        }
+    }
+    .center-menu {
+        text-align: center;
+        .logo {
+            display: none;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                display: inline-block;
+            }
+        }
+        ul {
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                display: none;
+            }
+            li {
+                display: inline-block;
+                position: relative;
+                + li {
+                    margin-left: 48px;
+                }
+                a {
+                    display: inline-block;
+                    color: $clr-333333;
+                    font-size: 14px;
+                    line-height: 16px;
+                    &:hover,
+                    &.active {
+                        color: $primary-clr;
+                    }
+                }
+            }
+        }
+    }
+    .right-menu {
+        text-align: right;
+    }
+}
+
+// Header Two
+.header-two {
+    .left-menu {
+        .logo {
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// Mobile Menu
+.mobile-menu {
+    background-color: $white-clr;
+    position: fixed;
+    top: 58px;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    height: calc(100% - 58px);
+    transition: 0.6s all;
+    display: none;
+    &.active {
+        display: block;
+    }
+    ul {
+        text-align: center;
+        margin-top: 50px;
+        li {
+            display: block;
+            position: relative;
+            margin-top: 24px;
+            a {
+                display: inline-block;
+                color: $clr-333333;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 600;
+                &:hover {
+                    color: $primary-clr;
+                }
+                img {
+                    width: 22px;
+                    margin-right: 5px;
+                    position: relative;
+                    top: -2px;
+                }
+            }
+        }
+    }
+}

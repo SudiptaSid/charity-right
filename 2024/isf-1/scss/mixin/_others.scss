@@ -1,0 +1,13 @@
+// Icon Box
+@mixin iconBox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  font-size: 1em;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 0;
+}

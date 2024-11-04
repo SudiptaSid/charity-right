@@ -1,0 +1,109 @@
+// Buttons
+.btn {
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.5;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 10px 15px;
+    min-width: 180px;
+    box-shadow: none;
+    text-shadow: none;
+    outline: none;
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 10px 15px;
+        min-width: 150px;
+    }
+}
+
+// Btn Width
+.btn-270 {
+    width: 100%;
+    max-width: 270px;
+}
+
+// Btn Main
+.btn-main {
+    color: $white-clr;
+    background-color: $clr-50AC97;
+    border-color: $clr-50AC97;
+    &:hover,
+    &:active {
+        color: $white-clr;
+        background-color: darken($clr-50AC97, 10%);
+        border-color: darken($clr-50AC97, 10%);
+    }
+}
+
+// Btn Red
+.btn-red {
+    color: $white-clr;
+    background-color: $clr-E43D30;
+    border-color: $clr-E43D30;
+    &:hover,
+    &:active {
+        color: $white-clr;
+        background-color: darken($clr-E43D30, 10%);
+        border-color: darken($clr-E43D30, 10%);
+    }
+}
+
+// Btn White
+.btn-white {
+    color: $clr-152243;
+    background-color: $white-clr;
+    border-color: $white-clr;
+    &:hover,
+    &:active {
+        color: $clr-152243;
+        background-color: darken($white-clr, 10%);
+        border-color: darken($white-clr, 10%);
+    }
+}
+
+// Btn Gray
+.btn-gray {
+    color: $clr-152243;
+    background-color: $clr-ECF1FF;
+    border-color: $clr-ECF1FF;
+    &:hover,
+    &:active {
+        color: $clr-152243;
+        background-color: darken($clr-ECF1FF, 10%);
+        border-color: darken($clr-ECF1FF, 10%);
+    }
+}
+
+// Btn Gray Two
+.btn-gray-two {
+    color: $clr-6D6D6D;
+    background-color: $clr-f4f4f4;
+    border-color: $clr-f4f4f4;
+    &:hover,
+    &:active {
+        color: $clr-6D6D6D;
+        background-color: darken($clr-f4f4f4, 10%);
+        border-color: darken($clr-f4f4f4, 10%);
+    }
+}
+
+// Btn White Border
+.btn-white-border {
+    color: $white-clr;
+    background-color: $no-clr;
+    border-color: $white-clr;
+    &:hover,
+    &:active {
+        color: $white-clr;
+        background-color: $no-clr;
+        border-color: darken($white-clr, 10%);
+    }
+}

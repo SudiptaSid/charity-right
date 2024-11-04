@@ -1,0 +1,25 @@
+// Service Card One
+.serviceCardOne {
+  text-align: center;
+  padding: 0 32px;
+
+  @include md {
+    padding: 0 24px;
+  }
+
+  img {
+    height: 50px;
+  }
+
+  h6 {
+    font-weight: 600;
+    color: clr(secondary, main);
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+}

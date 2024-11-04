@@ -1,0 +1,79 @@
+// RESET
+body {
+    font-family: $primary-ff;
+    font-size: $base-fz;
+    line-height: 22px;
+    font-weight: 400;
+    color: $clr-101010;
+    background-color: $white-clr;
+    overflow-x: hidden;
+}
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: $clr-101010;
+}
+h1 {
+    font-size: 2.8em;
+}
+h2 {
+    font-size: 2.2em;
+}
+h3 {
+    font-size: 1.6em;
+}
+h4 {
+    font-size: 1.375em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+    font-size: 0.75em;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+img {
+    max-width: 100%;
+}
+
+// Bootstrap
+.container {
+    @media (min-width: $break_1280 + 20px) {
+        max-width: 1280px;
+    }
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        max-width: 100%;
+    }
+}
+
+// Color Class
+.blue {
+    color: $blue-clr !important;
+}
+.yellow {
+    color: $clr-FAC723 !important;
+}
+.pink {
+    color: $primary-clr !important;
+}
+.black {
+    color: $black-clr !important;
+}

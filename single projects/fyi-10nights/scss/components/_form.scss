@@ -1,0 +1,35 @@
+// Form
+input,
+textarea,
+select {
+    outline: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}
+
+// Form Control
+.form-control {
+    padding: 8px 15px;
+    font-size: 1em;
+    border: 1px solid rgba($black-clr, 0.2);
+    border-radius: 6px;
+    color: $clr-7E8499;
+    &:placeholder {
+        color: rgba($black-clr, 0.1);
+    }
+}
+
+// Modal
+#exampleModal {
+    color: $black-clr;
+    .table-bordered {
+        td {
+            font-weight: normal;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+// Heading
+.section-heading {
+    margin-bottom: 48px;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        margin-bottom: 24px;
+    }
+    h2 {
+        color: inherit;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 62px;
+        margin-bottom: 0;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            font-size: 26px;
+            line-height: 36px;
+        }
+        &.h2b {
+            font-size: 55px;
+            line-height: 66px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+        &.h2-40 {
+            font-size: 40px;
+            line-height: 52px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                font-size: 24px;
+                line-height: 34px;
+            }
+        }
+        span {
+            color: $yellow-clr;
+            display: inline-block;
+            background-image: url(../images/heading-ptrn1.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            line-height: 50px;
+            padding: 0 35px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                line-height: 34px;
+                padding: 0 25px;
+            }
+        }
+        + p {
+            margin-top: 16px;
+        }
+        + .btn {
+            margin-top: 36px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                margin-top: 24px;
+            }
+        }
+    }
+    p {
+        margin-bottom: 0;
+        color: inherit;
+        + p {
+            margin-top: 24px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                margin-top: 16px;
+            }
+        }
+        + .btn {
+            margin-top: 36px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                margin-top: 24px;
+            }
+        }
+    }
+}

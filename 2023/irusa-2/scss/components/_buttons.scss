@@ -1,0 +1,79 @@
+a,
+button {
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 1em;
+    cursor: pointer;
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}
+// Button
+.btn {
+    font-size: $sz-18;
+    font-weight: 700;
+    line-height: 1.5;
+    border: none;
+    border-radius: 0;
+    padding: 15px 30px;
+    text-align: center;
+    position: relative;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;
+
+    // Max Width 767px
+    @media (max-width: $break-767) {
+        font-size: $sz-15;
+        padding: 10px 12px;
+    }
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none;
+        box-shadow: none;
+        text-shadow: none;
+    }
+}
+
+// Btn Red
+.btn-red {
+    color: $white-clr !important;
+    background-color: $clr-FF0000 !important;
+    &:focus,
+    &:active,
+    &:hover {
+        color: $white-clr !important;
+        background-color: lighten($clr-FF0000, 5%) !important;
+    }
+}
+
+// Btn Pink
+.btn-pink {
+    color: $white-clr !important;
+    background-color: $clr-F48080 !important;
+    &:focus,
+    &:active,
+    &:hover {
+        color: $white-clr !important;
+        background-color: darken($clr-F48080, 5%) !important;
+    }
+}
+
+// Btn Blue
+.btn-blue {
+    color: $white-clr !important;
+    background-color: $clr-0F3481 !important;
+    &:focus,
+    &:active,
+    &:hover {
+        color: $white-clr !important;
+        background-color: lighten($clr-0F3481, 5%) !important;
+    }
+}

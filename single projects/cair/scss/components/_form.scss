@@ -1,0 +1,74 @@
+// Form
+input,
+textarea,
+select {
+    outline: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}
+
+// Form Control
+.form-control {
+    padding: 15px;
+    font-size: 1em;
+    line-height: 30px;
+    border: none;
+    border-radius: 0;
+    color: $clr-050101;
+    &:placeholder {
+        color: rgba($black-clr, 0.5);
+    }
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 10px 16px;
+        line-height: 20px;
+    }
+}
+
+// Custom Radio One
+.radio-one {
+    display: block;
+    position: relative;
+    margin-bottom: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 4;
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 30px;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 10px;
+        line-height: 20px;
+    }
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $primary-clr;
+        z-index: -1;
+    }
+    .txt {
+        color: $white-clr;
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        &:checked ~ .checkmark {
+            background-color: $secondary-clr;
+        }
+    }
+}

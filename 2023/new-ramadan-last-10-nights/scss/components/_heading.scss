@@ -1,0 +1,60 @@
+// Heading One
+.heading-one {
+    h1 {
+        font-size: $sz-40;
+        font-weight: 800;
+        color: inherit;
+        margin-bottom: 0;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            font-size: $sz-26;
+        }
+        &.fz-60 {
+            font-size: $sz-60;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                font-size: $sz-36;
+            }
+        }
+        + p {
+            margin-top: 24px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                margin-top: 16px;
+            }
+        }
+    }
+    p {
+        margin-bottom: 0;
+        &.fz-24 {
+            font-size: $sz-24;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                font-size: $sz-18;
+            }
+        }
+        + h1 {
+            margin-top: 16px;
+        }
+        + p {
+            margin-top: 24px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                margin-top: 16px;
+            }
+        }
+        + .btn-sec {
+            margin-top: 36px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                margin-top: 24px;
+            }
+        }
+    }
+}

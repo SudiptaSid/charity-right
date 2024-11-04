@@ -1,0 +1,12 @@
+/* Max Width 1280px */
+@media (max-width: $break_1280) {
+}
+/* Max Width 1080px */
+@media (max-width: $break_1080) {
+}
+/* Max Width 991px */
+@media (max-width: $break_991) {
+}
+/* Max Width 767px */
+@media (max-width: $break_767) {
+}

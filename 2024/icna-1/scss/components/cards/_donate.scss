@@ -1,0 +1,32 @@
+// Donate Card One
+.donateCardOne {
+  text-align: center;
+  padding: 30px;
+
+  h1 {
+    @include headingL;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: clr(black, hover);
+
+    img {
+      height: 40px;
+
+      @include md {
+        height: 26px;
+      }
+    }
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 180px;
+
+    @include md {
+      max-width: 90%;
+    }
+  }
+}

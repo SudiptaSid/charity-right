@@ -1,0 +1,280 @@
+// Hero Banner
+.hero-banner {
+    position: relative;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba($black-clr, 0.8);
+    }
+    // Hero One
+    .hero-one {
+        padding: 80px 0 180px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            padding: 40px 0 80px;
+        }
+        .left-sec {
+            .section-heading {
+                color: $white-clr;
+                max-width: 665px;
+                /* Min Width 992px */
+                @media (min-width: $break_991 + 1px) {
+                    margin-bottom: 0;
+                }
+                h2 {
+                    font-size: 60px;
+                    line-height: 72px;
+                    font-weight: 300;
+                    /* Max Width 991px */
+                    @media (max-width: $break_991) {
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
+                    span {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .right-sec {
+            text-align: right;
+        }
+    }
+    // Brown Color
+    .color-brown {
+        .left-sec {
+            .section-heading {
+                h2 {
+                    span {
+                        color: $clr-786453;
+                    }
+                }
+            }
+        }
+        .right-sec {
+            text-align: right;
+            .donation-box {
+                .head-sec {
+                    background-color: $clr-786453;
+                }
+                .radio-one {
+                    .checkmark {
+                        border-color: $clr-786453;
+                    }
+                    .txt {
+                        color: $clr-786453;
+                    }
+                    input {
+                        &:checked ~ .checkmark {
+                            background-color: $clr-786453;
+                        }
+                        &:checked ~ .txt {
+                            color: $white-clr;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Rewards
+.reward-one {
+    padding: 100px 0;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 50px 0;
+    }
+    .right-sec {
+        /* Min Width 992px */
+        @media (min-width: $break_991 + 1px) {
+            padding-left: 40px;
+        }
+        .section-heading {
+            /* Min Width 992px */
+            @media (min-width: $break_991 + 1px) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// Packages
+.packages-one {
+    padding: 100px 0;
+    background-color: $clr-E6F5E6;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 50px 0;
+    }
+    &.color-brown {
+        background-color: $clr-FDF0E6;
+        .section-heading {
+            h2 {
+                span {
+                    color: $clr-786453;
+                }
+            }
+        }
+        .ammount-box {
+            color: $clr-786453;
+        }
+    }
+}
+
+// Why Join
+.why-join {
+    padding: 100px 0;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 50px 0;
+    }
+    .section-heading {
+        /* Min Width 992px */
+        @media (min-width: $break_991 + 1px) {
+            margin-bottom: 0;
+        }
+    }
+    .gaping {
+        height: 150px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            height: 36px;
+        }
+    }
+    &.color-brown {
+        .section-heading {
+            h2 {
+                span {
+                    color: $clr-786453;
+                }
+            }
+        }
+    }
+}
+
+// Join Us
+.join-us {
+    .content {
+        background-color: $clr-E6F5E6;
+        text-align: center;
+        padding: 80px 15px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            padding: 30px 15px;
+        }
+        .section-heading {
+            color: $clr-6CAF6B;
+            margin-bottom: 34px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                margin-bottom: 24px;
+            }
+            h2 {
+                + p {
+                    margin-top: 0;
+                }
+            }
+            p {
+                display: inline-block;
+                max-width: 430px;
+                font-size: 1em;
+            }
+        }
+    }
+    &.color-brown {
+        .content {
+            background-color: $clr-FDF0E6;
+            .section-heading {
+                color: $clr-786453;
+            }
+        }
+    }
+}
+
+// Rewards
+.reward-two {
+    padding: 100px 0;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 50px 0;
+    }
+    .video-box {
+        max-width: 1030px;
+        display: inline-block;
+        #video-overlay {
+            background-color: rgba($clr-786453, 0.45);
+        }
+    }
+    .section-heading {
+        margin: 80px 0;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            margin: 34px 0;
+        }
+        p {
+            max-width: 750px;
+            span {
+                color: $clr-786453;
+            }
+        }
+    }
+    .list-sec {
+        margin-bottom: 80px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            margin-bottom: 34px;
+        }
+        h5 {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 16px;
+            font-weight: 700;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            font-size: 20px;
+            line-height: 24px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                font-size: 16px;
+                line-height: 22px;
+            }
+            li {
+                + li {
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
+
+// Displaced
+.displaced {
+    padding: 100px 0;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 50px 0;
+    }
+    .section-heading {
+        max-width: 1030px;
+        display: inline-block;
+        h2 {
+            max-width: 600px;
+            display: inline-block;
+        }
+    }
+}

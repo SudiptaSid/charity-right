@@ -1,0 +1,329 @@
+/* Default Layout	*/
+
+
+/*	Extra small devices (portrait phones, less than 576px)	*/
+@media (max-width: 575.98px) {
+	
+	.heading h3{
+		font-size: 26px;
+	}
+	.para_texts p{
+		font-size: 16px;
+	}
+	.cta_btn{
+		font-size: 15px;
+		padding: 12px 15px;
+		display: block;
+	}
+
+	/* ============================== */
+
+	.hero_banner .overlay {
+		padding-top: 20px;
+		padding-bottom: 50px;
+	}
+	.hero_banner .contents .texts h2{
+		font-size: 28px;
+	}
+	.hero_banner .contents .logo {
+		margin-bottom: 75px;
+	}
+	.hero_banner .contents .texts p{
+		font-size: 15px;
+		margin: 25px 0px;
+		margin-bottom: 35px;
+	}
+
+	/* ============================== */
+
+	.donation_boxes {
+		padding: 40px 0px;
+		padding-top: 30px;
+	}
+	.donation_boxes .heading {
+		margin-bottom: 30px;
+	}
+	.donation_boxes .boxes {
+		-ms-grid-columns: auto;
+		grid-template-columns: auto;
+		gap: 20px;
+	}
+	.donation_boxes .boxes .single_box h1{
+		font-size: 36px;
+	}
+	.donation_boxes .boxes .single_box {
+		padding: 30px 25px;
+	}
+	.donation_boxes .boxes .single_box h5{
+		font-size: 18px;
+	}
+	.donation_boxes .boxes .single_box h5 .break{
+		display: block;
+	}
+	.donation_boxes .boxes .single_box .cta_btn{
+		min-width: 100%;
+	}
+
+	/* ============================== */
+
+	.emergency_aid {
+		padding: 40px 0px;
+		padding-bottom: 50px;
+	}
+	.emergency_aid .contents .heading {
+		margin-bottom: 25px;
+	}
+	.emergency_aid .contents .para_texts p{
+		font-size: 16px;
+	}
+	.emergency_aid .contents .cta_btn_wrap{
+		margin-top: 30px;
+	}
+
+	/* ============================== */
+
+	.subscribe_banner .banner {
+		padding: 25px 15px;
+		padding-top: 20px;
+	}
+	.subscribe_banner .contents h4{
+		font-size: 16px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.subscribe_banner .contents .subscribe_box {
+		max-width: 100%;
+	}
+
+	.subscribe_banner .contents .cta_btn {
+		font-size: 14px;
+		padding: 7.5px 15px;
+		min-width: inherit;
+		position: absolute;
+		right: 3px;
+		top: 3px;
+		height: inherit;
+	}
+	.subscribe_banner .contents .form-control {
+		font-size: 16px;
+		padding: 10px 15px;
+		padding-right: 90px;
+		height: inherit;
+	}
+	
+	/* ============================== */
+
+	/* ============================== */
+
+	.footer {
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+	.footer .footer_logo img {
+		max-width: 150px;
+	}
+	.footer .social_media ul li i {
+		width: 32px;
+		height: 32px;
+		line-height: 30px;
+		font-size: 14px;
+	}
+	.footer .copyright p {
+		font-size: 14px;
+		text-align: center;
+	}
+	.custom-ammount h2 {
+	    font-size: 26px;
+	    margin-bottom: 10px;
+	}
+	.custom-ammount .form-control {
+	    padding: 10px 15px;
+	}
+	
+}
+
+/*	Small devices (landscape phones, 576px and up)	*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	
+	.container{
+		max-width: 540px;
+	}
+
+	.heading h3{
+		font-size: 32px;
+	}
+	.para_texts p{
+		font-size: 16px;
+	}
+	.cta_btn{
+		font-size: 16px;
+		padding: 12.5px 15px;
+	}
+
+	/* ============================== */
+
+	.hero_banner .overlay {
+		padding-top: 25px;
+		padding-bottom: 60px;
+	}
+	.hero_banner .contents .texts h2{
+		font-size: 42px;
+	}
+
+	/* ============================== */
+
+	.donation_boxes {
+		padding: 40px 0px;
+		padding-top: 30px;
+	}
+	.donation_boxes .heading {
+		margin-bottom: 30px;
+	}
+	.donation_boxes .boxes {
+		-ms-grid-columns: 1fr 15px 1fr 15px 1fr;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 15px;
+	}
+	.donation_boxes .boxes .single_box h1{
+		font-size: 36px;
+	}
+	.donation_boxes .boxes .single_box {
+		padding: 20px 10px;
+	}
+	.donation_boxes .boxes .single_box h5{
+		font-size: 14px;
+	}
+	.donation_boxes .boxes .single_box h5 .break{
+		display: inline-block;
+	}
+	.donation_boxes .boxes .single_box .cta_btn{
+		min-width: 100%;
+	}
+
+	/* ============================== */
+
+	.emergency_aid {
+		padding: 40px 0px;
+		padding-bottom: 50px;
+	}
+	.emergency_aid .contents .para_texts p{
+		font-size: 16px;
+	}
+	.emergency_aid .contents .cta_btn_wrap{
+		margin-top: 40px;
+	}
+
+	/* ============================== */
+
+	.subscribe_banner .banner {
+		padding: 40px 30px;
+		padding-top: 30px;
+	}
+	.subscribe_banner .contents h4{
+		font-size: 24px;
+		margin-bottom: 25px;
+		text-align: center;
+	}
+	.subscribe_banner .contents .subscribe_box {
+		max-width: 100%;
+	}
+
+	/* ============================== */
+
+	.footer {
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+
+	/* ============================== */
+	
+}
+
+/*	Medium devices (tablets, 768px and up)	*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	
+	.container{
+		max-width: 720px;
+	}
+
+	.heading h3{
+		font-size: 36px;
+	}
+	.para_texts p{
+		font-size: 16px;
+	}
+	.cta_btn{
+		font-size: 16px;
+		padding: 12.5px 15px;
+	}
+
+	/* ============================== */
+
+	.hero_banner .overlay {
+		padding-top: 25px;
+		padding-bottom: 60px;
+	}
+	.hero_banner .contents .texts h2{
+		font-size: 48px;
+	}
+
+	/* ============================== */
+
+	.donation_boxes {
+		padding: 50px 0px;
+		padding-top: 40px;
+	}
+	.donation_boxes .heading {
+		margin-bottom: 30px;
+	}
+	.donation_boxes .boxes {
+		-ms-grid-columns: 1fr 25px 1fr 25px 1fr;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 25px;
+	}
+	.donation_boxes .boxes .single_box h1{
+		font-size: 42px;
+	}
+	.donation_boxes .boxes .single_box {
+		padding: 40px 15px;
+	}
+	.donation_boxes .boxes .single_box h5{
+		font-size: 15px;
+	}
+
+	/* ============================== */
+
+	.emergency_aid {
+		padding: 50px 0px;
+		padding-bottom: 65px;
+	}
+	.emergency_aid .contents .para_texts p{
+		font-size: 16px;
+	}
+
+	/* ============================== */
+
+	.subscribe_banner .banner {
+		padding: 50px 40px;
+	}
+	.subscribe_banner .contents h4{
+		font-size: 26px;
+		margin-bottom: 25px;
+	}
+
+	/* ============================== */
+	
+}
+
+/*	Large devices (desktops, 992px and up)	*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	
+	.container{
+		max-width: 960px;
+	}
+
+	.donation_boxes .boxes .single_box {
+		padding: 40px 15px;
+	}
+	
+}

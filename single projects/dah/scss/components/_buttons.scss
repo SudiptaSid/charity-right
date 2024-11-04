@@ -1,0 +1,84 @@
+a,
+button {
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 1em;
+    cursor: pointer;
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}
+
+// Button
+.btn {
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 270px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 10px;
+        line-height: 20px;
+    }
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    // Max 175
+    &.btn-175 {
+        width: 100%;
+        max-width: 175px;
+    }
+
+    // Max 220
+    &.btn-220 {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    // Max 350
+    &.btn-350 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    // Btn Main
+    &.btn-main {
+        color: $white-clr;
+        background-color: $primary-clr;
+        &:hover,
+        &:focus {
+            color: $white-clr;
+            background-color: darken($primary-clr, 5%);
+        }
+    }
+    // Btn Orange
+    &.btn-orange {
+        color: $white-clr;
+        background-color: $secondary-clr;
+        &:hover,
+        &:focus {
+            color: $white-clr;
+            background-color: darken($secondary-clr, 5%);
+        }
+    }
+}

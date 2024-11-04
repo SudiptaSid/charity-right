@@ -1,0 +1,112 @@
+// Countdown
+.is-countdown {
+    .countdown-row {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        .countdown-section {
+            display: block;
+            text-align: center;
+            font-weight: 500;
+            .countdown-period {
+                display: block;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// Table One
+.table-one {
+    thead {
+        tr {
+            th {
+                color: $white-clr;
+                background-color: $clr-2A6877;
+                border: none;
+                border-right: 1px solid $clr-A7A7A7;
+                text-align: center;
+                width: calc(100% / 5);
+                vertical-align: middle;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                color: $clr-6D6D6D;
+                background-color: $clr-EEF6FC;
+                vertical-align: middle;
+                border: none;
+                border-right: 1px solid $clr-A7A7A7;
+                padding: 10px 24px;
+
+                // Max 1080px
+                @media (max-width: $break-1080) {
+                    padding: 6px 15px;
+                }
+                &:last-child {
+                    border-right: none;
+                }
+            }
+            &:nth-child(even) {
+                td {
+                    background-color: rgba($clr-50AC97, 0.22);
+                }
+            }
+        }
+    }
+}
+
+// Table Two
+.table-two {
+    thead {
+        tr {
+            th {
+                color: $white-clr;
+                background-color: $clr-152243;
+                border: none;
+                border-right: 1px solid $white-clr;
+                width: calc(100% / 7);
+                min-width: 120px;
+                vertical-align: middle;
+                text-align: center;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+    tbody {
+        border: 1px solid $clr-3D5970;
+        tr {
+            td {
+                width: calc(100% / 7);
+                color: $clr-152243;
+                background-color: $white-clr;
+                vertical-align: middle;
+                border: none;
+                border-right: 1px solid $clr-3D5970;
+                padding: 10px 24px;
+                text-align: center;
+                font-weight: 500;
+
+                // Max 1080px
+                @media (max-width: $break-1080) {
+                    padding: 6px 15px;
+                }
+                &:last-child {
+                    border-right: none;
+                }
+            }
+            &:nth-child(even) {
+                td {
+                    background-color: $clr-EEF6FC;
+                }
+            }
+        }
+    }
+}

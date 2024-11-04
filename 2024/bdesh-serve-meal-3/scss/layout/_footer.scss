@@ -1,0 +1,32 @@
+// Footer
+.mainFooter {
+  background-color: clr(light, outline);
+  padding: 40px 0;
+  text-align: center;
+
+  @include md {
+    padding: 20px 0;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .socialLinks {
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .copyright {
+    color: clr(black, main);
+
+    @include md {
+      text-align: center;
+    }
+
+    a {
+      font-weight: bold;
+      color: clr(primary, main);
+    }
+  }
+}

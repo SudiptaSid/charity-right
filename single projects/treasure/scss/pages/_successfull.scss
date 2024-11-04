@@ -1,0 +1,49 @@
+/* ----- Successfull ----- */
+#successfull {
+    background-image: url(../images/successful-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        background-image: url(../images/successful-1m.jpg);
+    }
+    .container, .row {
+        height: 100%;
+    }
+    .content {
+        max-width: 450px;
+        margin: auto;
+        text-align: center;
+        h1 {
+            font-family: $secondary-ff;
+            font-size: 80px;
+            line-height: 84px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                font-size: 32px;
+                line-height: 36px;
+                margin-bottom: 20px;
+            }
+        }
+        p {
+            margin-bottom: 32px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                line-height: 22px;
+                margin-bottom: 20px;
+            }
+        }
+        .btn {
+            width: 100%;
+            max-width: 360px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                max-width: 180px;
+            }
+        }
+    }
+}

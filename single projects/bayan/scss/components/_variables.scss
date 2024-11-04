@@ -1,0 +1,39 @@
+// Font
+$base-fz: 18px !default;
+$primary-ff: "Inter", sans-serif;
+
+// Color
+$no-clr: transparent;
+$white-clr: #ffffff;
+$black-clr: #000000;
+$clr-F2FAFF: #f2faff;
+$clr-DEF3FF: #def3ff;
+$clr-DEF3FF-rgba: rgba(222, 243, 255, 0.85);
+$clr-E1BF42: #e1bf42;
+$clr-2F5266: #2f5266;
+$clr-2E5266: #2e5266;
+$clr-273741: #273741;
+$clr-25475a: #25475a;
+$clr-2e4958: #2e4958;
+
+// Shadow
+$shadow-1: 0px 15px 30px rgba(189, 53, 50, 0.3);
+
+// Borders
+$border-1-solid: 1px solid;
+
+// Media Queries
+$break_1440: 1440px;
+$break_1366: 1366px;
+$break_1280: 1280px;
+$break_1240: 1240px;
+$break_1080: 1080px;
+$break_1024: 1024px;
+$break_991: 991px;
+$break_850: 850px;
+$break_767: 767px;
+$break_550: 550px;
+
+//@media (min-width: $break_767 + 1px) and (max-width: $break_1240) {}
+/* Max Width 991px */
+/* Max Width 1240px and Min 992px */

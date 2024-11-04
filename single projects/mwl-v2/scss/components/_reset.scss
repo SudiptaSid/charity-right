@@ -1,0 +1,54 @@
+// RESET
+body {
+    font-family: $primary-ff;
+    font-size: $base-fz;
+    line-height: 1.5;
+    font-weight: 400;
+    overflow-x: hidden;
+    color: $clr-363636;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        font-size: ($base-fz - 2px);
+    }
+}
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: inherit;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+img {
+    max-width: 100%;
+}
+
+section {
+    position: relative;
+}
+
+// Bootstrap
+.container {
+    @media (min-width: $break_1280 + 20px) {
+        max-width: 1280px;
+    }
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        max-width: 100%;
+    }
+}

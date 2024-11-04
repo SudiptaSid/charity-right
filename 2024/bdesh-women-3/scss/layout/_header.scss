@@ -1,0 +1,16 @@
+// Main Header
+.mainHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: clr(light, outline);
+  }
+}

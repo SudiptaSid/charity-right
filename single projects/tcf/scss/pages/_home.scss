@@ -1,0 +1,503 @@
+// Banner One
+.banner-one {
+    padding-top: 40px;
+    padding-bottom: 140px;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding-bottom: 50px;
+    }
+    .section-heading {
+        h2 {
+            font-size: 48px;
+            line-height: 58px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                font-size: 30px;
+                line-height: 38px;
+            }
+            span {
+                color: $primary-clr;
+            }
+        }
+        p {
+            font-size: 18px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+// Giving Voice
+.giving-voice {
+    padding-top: 160px;
+    padding-bottom: 100px;
+    background-color: $clr-00884C;
+    z-index: 5;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .section-heading {
+        color: $white-clr;
+    }
+    .clipart {
+        position: absolute;
+        top: 0;
+        right: 10%;
+        z-index: -1;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            max-width: 30%;
+        }
+    }
+}
+
+// Lasting Positive
+.lasting-positive {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    z-index: 5;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .clipart {
+        position: absolute;
+        top: 0;
+        left: 10%;
+        z-index: -1;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            max-width: 30%;
+        }
+    }
+}
+
+// Promote & Success
+.promote-success {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-color: $clr-E1FAEF;
+    z-index: 5;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .section-heading {
+        p:nth-child(2) {
+            &::first-letter {
+                font-size: 200%;
+            }
+        }
+    }
+    h5 {
+        font-weight: 600;
+    }
+    ul {
+        padding-left: 30px;
+        margin-top: 24px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            padding-left: 10px;
+        }
+        li {
+            position: relative;
+            padding-left: 30px;
+            &:before {
+                content: "";
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: $clr-101010;
+                position: absolute;
+                left: 0;
+                top: 5px;
+            }
+            + li {
+                margin-top: 15px;
+            }
+        }
+    }
+    .clipart1 {
+        position: absolute;
+        top: 0;
+        right: 5%;
+        z-index: -1;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            max-width: 30%;
+        }
+    }
+    .clipart2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            max-width: 50%;
+        }
+    }
+}
+
+// Join Us One
+.join-us-one {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .content {
+        background-color: $clr-E1FAEF;
+        text-align: center;
+        padding: 80px 15px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            padding: 30px 15px;
+        }
+        .section-heading {
+            color: $primary-clr;
+            max-width: 715px;
+            margin: auto;
+            margin-bottom: 24px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                margin-bottom: 16px;
+            }
+            h2 {
+                font-size: 48px;
+                line-height: 58px;
+                /* Max Width 767px */
+                @media (max-width: $break_767) {
+                    font-size: 30px;
+                    line-height: 38px;
+                }
+            }
+            p {
+                max-width: 420px;
+                margin: auto;
+                margin-top: 16px;
+            }
+        }
+        form {
+            max-width: 550px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 15px;
+            background-color: $white-clr;
+            .form-control {
+                width: calc(100% - 130px);
+                line-height: 50px;
+                color: $clr-184655;
+                /* Max Width 767px */
+                @media (max-width: $break_767) {
+                    width: 100%;
+                    line-height: 38px;
+                }
+            }
+            .btn {
+                font-size: 1em;
+                font-weight: 600;
+                width: 130px;
+                padding: 15px;
+                /* Max Width 767px */
+                @media (max-width: $break_767) {
+                    width: auto;
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+}
+
+// Banner Two
+.banner-two {
+    padding: 150px 0;
+    z-index: 5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding: 50px 0;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($black-clr, 0.5);
+        z-index: -1;
+    }
+    .section-heading {
+        text-align: center;
+        color: $white-clr;
+        h2 {
+            font-size: 48px;
+            line-height: 72px;
+            font-weight: 600;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                font-size: 30px;
+                line-height: 46px;
+            }
+            span {
+                font-size: 135%;
+                font-weight: 700;
+                color: $yellow-clr;
+            }
+        }
+        p {
+            max-width: 940px;
+            margin: auto;
+            margin-top: 24px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+// Giving Zakat
+.giving-zakat {
+    padding: 130px 0;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding: 50px 0;
+    }
+    .left-sec {
+        position: relative;
+        padding-top: 40px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            padding-top: 0;
+        }
+        .clipart {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                max-width: 80px;
+            }
+        }
+        .section-heading {
+            h2 {
+                font-weight: 600;
+                span {
+                    font-weight: 700;
+                    color: $yellow-clr;
+                }
+            }
+            p {
+                max-width: 710px;
+            }
+        }
+    }
+    .right-sec {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        padding-left: 75px;
+        padding-bottom: 70px;
+        z-index: -1;
+        max-width: 490px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            position: relative;
+            top: 0;
+            padding-left: 35px;
+            padding-bottom: 30px;
+        }
+        .clipart {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+// Call To Action
+.cta {
+    padding-top: 160px;
+    background-color: $clr-00884C;
+    text-align: center;
+    z-index: 5;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding-top: 50px;
+    }
+    .section-heading {
+        color: $white-clr;
+    }
+    img {
+        margin-top: 60px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            margin-top: 30px;
+        }
+    }
+}
+
+// Be Children
+.be-children {
+    padding: 130px 0;
+    overflow: hidden;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding: 50px 0;
+    }
+    .section-heading {
+        margin-bottom: 80px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            margin-bottom: 30px;
+        }
+        h2 {
+            span {
+                color: $yellow-clr;
+            }
+        }
+    }
+    .children-box {
+        p {
+            margin-bottom: 0;
+            + img {
+                margin-top: 24px;
+                /* Max Width 767px */
+                @media (max-width: $break_767) {
+                    margin-top: 16px;
+                }
+            }
+        }
+        img {
+            width: 100%;
+            + p {
+                margin-top: 24px;
+                /* Max Width 767px */
+                @media (max-width: $break_767) {
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+    .clipart {
+        position: absolute;
+        &.clipart-tl {
+            top: -62px;
+            left: -30px;
+            z-index: -1;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                top: -42px;
+                left: 0;
+            }
+        }
+        &.clipart-br {
+            right: -85px;
+            bottom: -50px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                right: -20px;
+                bottom: -30px;
+                max-width: 130px;
+            }
+        }
+    }
+    .btn-sec {
+        margin-top: 40px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            margin-top: 24px;
+        }
+    }
+}
+
+// Join Us Two
+.join-us-two {
+    background-color: $clr-E1FAEF;
+    overflow: hidden;
+    .content {
+        max-width: 970px;
+        padding: 60px 0;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            padding: 50px 0;
+        }
+        .section-heading {
+            color: $primary-clr;
+            margin-bottom: 24px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                margin-bottom: 16px;
+            }
+        }
+        form {
+            max-width: 540px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .form-control {
+                width: calc(100% - 146px);
+                line-height: 22px;
+                color: $clr-184655;
+                padding: 15px;
+                /* Max Width 767px */
+                @media (max-width: $break_767) {
+                    width: 100%;
+                    line-height: 18px;
+                    padding: 10px 15px;
+                }
+            }
+            .btn {
+                font-size: 1em;
+                font-weight: 600;
+                width: 130px;
+                padding: 15px;
+                margin-left: 16px;
+                /* Max Width 767px */
+                @media (max-width: $break_767) {
+                    width: auto;
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+    .clipart-1 {
+        position: absolute;
+        bottom: 0;
+        right: 190px;
+        z-index: 5;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            position: relative;
+            bottom: -50px;
+            right: -10px;
+        }
+    }
+    .clipart-2 {
+        position: absolute;
+        bottom: -50px;
+        right: 70px;
+        z-index: 1;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            bottom: 0;
+            right: 75px;
+            max-width: 210px;
+        }
+    }
+}

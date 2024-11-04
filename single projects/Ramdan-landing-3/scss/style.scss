@@ -1,0 +1,33 @@
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// Bootstrap
+@import "../plugins/bootstrap/scss/bootstrap.scss";
+
+// Font Awesome
+@import "../plugins/font-awesome/scss/font-awesome.scss";
+
+// Owl Carousel
+@import "../plugins/owl-carousel/scss/owl.carousel.scss";
+@import "../plugins/owl-carousel/scss/owl.theme.default.scss";
+
+// Select
+@import "../plugins/select/select.css";
+
+// Phone Number
+@import "../plugins/phone/phone.css";
+
+// Scss Components
+@import "components/variables";
+@import "components/reset";
+@import "components/buttons";
+@import "components/form";
+@import "components/header";
+@import "components/footer";
+@import "components/headings";
+@import "components/owl-edit";
+@import "components/components";
+
+// Pages
+@import "pages/home";
+@import "pages/home-v2";

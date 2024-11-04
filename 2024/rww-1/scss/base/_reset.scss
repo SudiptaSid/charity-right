@@ -1,0 +1,142 @@
+// Reset
+* {
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: clr(black, outline);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: clr(black, focus);
+    border-radius: 10px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $bodyFont;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding: 0;
+  color: clr(black, hover);
+  background-color: clr(light, outline);
+  overflow-x: hidden;
+
+  @include md {
+    font-size: 14px;
+  }
+}
+
+a,
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+a {
+  text-transform: inherit;
+  text-decoration: none;
+  color: clr(blue, main);
+
+  &:hover,
+  &:focus {
+    color: clr(blue, hover);
+    text-decoration: none;
+    box-shadow: none;
+    outline: 0;
+  }
+}
+
+button {
+  box-shadow: none !important;
+  outline: 0 !important;
+
+  &:focus,
+  &:active {
+    box-shadow: none !important;
+    outline: 0 !important;
+  }
+}
+
+input,
+select {
+  height: auto;
+}
+
+select {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-family: $headingFont;
+  line-height: 1.2;
+  color: clr(black, main);
+  margin: 0 0 12px;
+}
+
+h1 {
+  @include headingOne;
+}
+
+h2 {
+  @include headingTwo;
+}
+
+h3 {
+  @include headingThree;
+}
+
+h4 {
+  @include headingFour;
+}
+
+h5 {
+  @include headingFive;
+}
+
+h6 {
+  @include headingSix;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+small {
+  font-size: 12px;
+}
+
+section {
+  position: relative;
+}

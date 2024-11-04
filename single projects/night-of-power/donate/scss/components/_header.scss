@@ -1,0 +1,124 @@
+// Donation Header
+#cs-donation-header {
+    display: block;
+    padding:20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index:9;
+    background-color:$white-clr;
+    // --------------------------------
+    @media (max-width: $break_767) {
+        padding-top:30px;
+        padding-bottom:14px;
+        box-shadow:$shadow-1;
+    }
+    .need-help {
+        font-weight:600;
+        font-size:14px;
+        line-height:18px;
+        a {
+            color:$black-light;
+            display: inline-block;
+            &:hover {
+                color:$primary-clr;
+            }
+        }
+    }
+    .col-left {
+        .step-text {
+            font-size:16px;
+            line-height:22px;
+            font-weight:600;
+            color:$black-light;
+            span {
+                color:$primary-clr;
+            }
+            // --------------------------------
+            @media (max-width: $break_767) {
+                display: none;
+            }
+        }
+        .need-help {
+            display: none;
+            // --------------------------------
+            @media (max-width: $break_767) {
+                display: inline-block;
+            }
+        }
+    }
+    .col-center {
+        text-align: center;
+        .logo {
+            display: inline-block;
+            a {
+                display: block;
+                img {
+                    height:25px;
+                    width:auto;
+                    // --------------------------------
+                    @media (max-width: $break_767) {
+                        height:14px;
+                    }
+                }
+            }
+        }
+    }
+    .col-right {
+        text-align: right;
+        .need-help {
+            padding:10px 0;
+            padding-right:20px;
+            border-right: 1px solid $grey-clr;
+            margin-right:20px;
+            // --------------------------------
+            @media (max-width: $break_767) {
+                display: none;
+            }
+        }
+        .no-account {
+            a {
+                padding:10px 24px;
+                border:1px solid $grey-clr;
+                background: $white-clr;
+                color:$black-light;
+                font-size:14px;
+                line-height: 20px;
+                font-weight:600;
+                margin-left:0;
+                border-radius:10px;
+                display: inline-block;
+                &:hover {
+                    background-color:$primary-clr;
+                    color:$white-clr;
+                    border-color:$primary-clr;
+                }
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    font-size:12px;
+                    line-height:14px;
+                    padding:8px 14px;
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+}
+
+// Donation Header Progress
+.donation-progress {
+    height: 3px;
+    background-color: rgba($grey-clr, 0.4);
+    border-radius: 0;
+    position: fixed;
+    top: 82px;
+    width: 100%;
+    z-index: 99;
+    @media (max-width: $break_767) {
+        top:76px;
+    }
+    .donation-progress-bar {
+        background-color: $primary-clr;
+    }
+}

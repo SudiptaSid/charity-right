@@ -1,0 +1,22 @@
+// Donate One
+.donateOne {
+  padding: 80px 0;
+  background-color: rgba(clr(secondary, main), 0.1);
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .sectionTitle {
+    h1 {
+      color: clr(secondary, main);
+
+      span {
+        display: inline-block;
+        color: clr(light, outline);
+        background-color: clr(primary, main);
+        padding: 0 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+// Header
+.main-header {
+    position: relative;
+    .topbar {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 0.5em 0;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            padding: 0.5em 0;
+        }
+        .left-sec {
+            .logo {
+                display: inline-block;
+                img {
+                    height: 80px;
+
+                    // Max 767px
+                    @media (max-width: $break-767) {
+                        height: 40px;
+                    }
+                }
+            }
+        }
+        .right-sec {
+            text-align: right;
+            .btn {
+                width: 100%;
+                max-width: 200px;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    width: auto;
+                    max-width: unset;
+                    padding: 6px 10px;
+                }
+            }
+        }
+    }
+    .hero-bg {
+        height: 300px;
+        background-size: auto 100%;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: $clr-E8A61E;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            height: 160px;
+        }
+    }
+}

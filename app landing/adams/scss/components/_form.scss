@@ -1,0 +1,32 @@
+// Form
+input,
+textarea,
+select {
+    outline: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}
+
+.form-control {
+    font-size: 1em;
+    line-height: 18px;
+    padding: 18px 20px;
+    color: $clr-3F3F40;
+    background-color: $white-clr;
+    border: 1px solid rgba($black-clr, 0.2);
+    border-radius: 5px;
+    height: auto !important;
+
+    /* Max width 767px */
+    @media (max-width: $break_767) {
+        padding: 14px 20px;
+    }
+    &::placeholder {
+        color: rgba($black-clr, 0.2);
+    }
+}

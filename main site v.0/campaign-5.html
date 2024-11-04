@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Charity Right</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<!-- Custom Css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header id="donation-header">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col text-left  d-none d-md-block">
+					<span class="step-text">Start an appeal. <span>Step 4</span> out of 5</span>
+				</div>
+				<div class="col text-md-center text-left">
+						<span class="logo">
+							<a href="index.html">
+								<img src="images/logo.png" alt="">
+							</a>
+						</span>
+				</div>
+				<div class="col text-right">
+						<span class="need-help d-inline" style="border-right: none;  padding: 10px 0px;  margin-right: 0px;">
+							<a href="need-help.html">Need help?</a>
+						</span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="progress custon-progress d-none d-md-block">
+		<div class="progress-bar custon-progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+	</div>
+
+	<!-- campaign In Body -->
+	<section id="campaign-in-body" class="page-heading page-heading-ptrn">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="top-pattern">
+						<img src="images/pattern/top1.png" alt="">
+					</div>
+					<div class="bottom-pattern">
+						<img src="images/pattern/bottom1.png" alt="">
+					</div>
+					<span class="top-pattern-right-text d-none d-md-block">
+						<p>
+							<b>Unsure about something?</b> Don't worry!<br/>
+							You can make changes before going live.
+						</p>
+					</span>
+					<div class="content">
+						<div class="header-heading-text">
+							<ul class="steps d-block d-md-none">
+								<li class="bold-600">Start an appeal. <span>Step 5</span> out of 5</li>
+							</ul>
+							<h1>Your appeal team</h1>
+							<p>Will you be fundraising on your own or as part of a team?</p>
+						</div>
+						<form action="#">
+
+							<div class="d-flex justify-content-start mbc-23">
+								<label class="custom-radio">
+									On my owm
+									<input type="radio" name="appealteam" checked="checked" value="myownValue">
+									<span class="checkmark"></span>
+								</label>
+								<label class="custom-radio">
+									Team campaign
+									<input type="radio" name="appealteam" value="teamcampValue">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+
+							<div id="myownValue" class="team-members">
+								<h2>Team members</h2>
+								<div class="member-info">
+									<div class="d-flex justify-content-between status mbc-10">
+										<span>You</span>
+										<span>Organiser</span>
+									</div>
+									<div class="d-flex justify-content-start email">
+										<span>metthewdallas@gmail.com</span>
+										<span><img src="images/campaign-pg/icon-tick-small.png" alt=""></span>
+									</div>
+								</div>
+							</div>
+
+							<div id="teamcampValue" class="team-campaign">
+								<h2>Team members</h2>
+								<div class="member-info">
+									<div class="d-flex justify-content-between status mbc-10">
+										<span>You</span>
+										<span>Organiser</span>
+									</div>
+									<div class="d-flex justify-content-start email">
+										<span>metthewdallas@gmail.com</span>
+										<span><img src="images/campaign-pg/icon-tick-small.png" alt=""></span>
+									</div>
+								</div>
+								<div class="member-info pending-status">
+									<div class="d-flex justify-content-between status mbc-10">
+										<span>Pending invite</span>
+										<span>Team member</span>
+									</div>
+									<div class="d-flex justify-content-start email">
+										<span>bredwilliams@gmail.com</span>
+										<span><img src="images/campaign-pg/icon-clock-small.png" alt=""></span>
+									</div>
+								</div>
+								<!-- Add Member Form -->
+								<div class="member-info add-member-section">
+									<h2>Add Team members</h2>
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Enter email">
+									</div>
+									<div class="d-flex justify-content-between status mbc-10">
+										<a class="btn btn-back btn-grey-border w-50 p-3 mt-0 mr-1" href="#" onclick="hideInviteForm()">Cancel</a>
+										<a class="btn btn-main-active w-50 p-3 mt-0 ml-1 send-invite-btn" href="#" onclick="sendInvite()">Send invite</a>
+									</div>
+								</div>
+
+								<p>
+									We have sent an email to bredwilliams@gmail.com. When they accept your invitation and create an account they will be added to your team.
+								</p>
+								<button type="submit" class="btn btn-back btn-grey-border add-member-btn"
+										onclick="showaddMemberForm()"
+								>
+									Add team member
+								</button>
+								<div class="form-group warn">
+									<div class="warn-msg">Tip: Having team members can help make raising money easier and more fun! </div>
+								</div>
+							</div>
+
+
+
+							<p class="about-something d-block d-md-none">
+								<b>Unsure about something?</b> Don't worry!<br/>
+								You can make changes before going live.
+							</p>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="bottom-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="btn-sec">
+						<a href="campaign-4.html" class="btn btn-back btn-grey-border">Back</a>
+						<a href="campaign-finish.html" class="btn btn-main-active">Continue</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+	<!-- Jquery Min -->
+	<script src="js/jquery.min.js"></script>
+
+	<!-- Popper Min -->
+	<script src="plugins/bootstrap/js/popper.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Owl Carousel -->
+	<script src="plugins/owl-carousel/js/owl.carousel.min.js"></script>
+
+	<!-- Star Rating -->
+	<script src="plugins/star_rating/star-rating.js"></script>
+
+	<!-- A Carousel -->
+	<script src="plugins/acarousel/jquery.acarousel.min.js"></script>
+
+	<!-- Select -->
+	<script src="plugins/select/select.js"></script>
+
+	<!-- Input Phone -->
+	<script src="plugins/phone/phone.js"></script>
+
+	<!-- Date Picker -->
+	<script src="plugins/datepicker/bootstrap-datepicker.min.js"></script>
+
+	<!-- CK Editor -->
+	<script src="plugins/ckeditor.js"></script>
+
+	<!-- Pie Chart -->
+	<script src="plugins/chart1.js"></script>
+
+	<!-- Custom Js -->
+	<script src="js/default.js"></script>
+</body>
+</html>

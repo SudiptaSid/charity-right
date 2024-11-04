@@ -1,0 +1,37 @@
+// About One
+.aboutOne {
+  padding: 80px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .sectionTitle {
+    h5 {
+      color: clr(secondary, main);
+    }
+
+    h1 {
+      color: clr(primary, main);
+    }
+
+    .btnSec {
+      .btn {
+        width: 100%;
+        max-width: max-content;
+
+        @include md {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .imgSec {
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+// About One
+.aboutOne {
+  padding: 80px 0;
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .sectionTitle {
+    h1 {
+      color: clr(primary, main);
+    }
+  }
+
+  .imgSec {
+    margin: 24px 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .btnSec {
+    .btn {
+      width: 100%;
+      max-width: 150px;
+
+      @include md {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+// About Two
+.aboutTwo {
+  padding-bottom: 80px;
+
+  @include md {
+    padding-bottom: 40px;
+  }
+
+  .container {
+    max-width: 1080px;
+  }
+
+  .content {
+    position: relative;
+    line-height: 0;
+
+    img {
+      min-height: 300px;
+      object-fit: cover;
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 150px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      @include md {
+        max-width: 100%;
+      }
+    }
+  }
+}

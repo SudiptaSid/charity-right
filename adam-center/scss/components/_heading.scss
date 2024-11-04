@@ -1,0 +1,67 @@
+// Heading One
+.heading-one {
+    h1 {
+        font-size: 3em;
+        font-weight: 800;
+        color: inherit;
+        margin-bottom: 0;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 2em;
+        }
+        &.size-64 {
+            font-size: 4em;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 2em;
+            }
+        }
+        &.size-38 {
+            font-size: 2.4em;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.6em;
+            }
+        }
+        &.size-32 {
+            font-size: 2em;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.4em;
+            }
+        }
+        &.size-24 {
+            font-size: 1.5em;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.2em;
+            }
+        }
+        + p {
+            margin-top: 20px;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                margin-top: 15px;
+            }
+        }
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: inherit;
+        + p {
+            margin-top: 20px;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                margin-top: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+// Footer
+.mainFooter {
+  background-color: clr(light, outline);
+  padding: 40px 0;
+
+  @include md {
+    padding: 20px 0;
+  }
+
+  .logo {
+    @include md {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .socialLinks {
+    justify-content: end;
+
+    @include md {
+      justify-content: center;
+    }
+  }
+}

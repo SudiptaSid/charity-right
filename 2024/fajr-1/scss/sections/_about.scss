@@ -1,0 +1,107 @@
+// About One
+.aboutOne {
+  padding: 80px 0;
+  margin-top: 80px;
+  background-color: clr(secondary, main);
+  position: relative;
+  z-index: 4;
+
+  @include md {
+    padding: 40px 0;
+    margin-top: 40px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15%;
+    height: 100%;
+    background-color: clr(primary, main);
+    z-index: -1;
+
+    @include md {
+      width: 100%;
+      height: 25%;
+      top: unset;
+      bottom: 0;
+    }
+  }
+
+  .imgSec {
+    img {
+      width: 100%;
+    }
+  }
+
+  .sectionTitle {
+    color: clr(light, outline);
+
+    h1 {
+      color: inherit;
+      border-left: 5px solid clr(light, outline);
+      padding-left: 10px;
+    }
+
+    .btnSec {
+      .btn {
+        @include md {
+          min-width: 90%;
+        }
+      }
+    }
+  }
+}
+
+// About Two
+.aboutTwo {
+  padding: 80px 0;
+  background-color: clr(primary, main);
+  position: relative;
+  z-index: 4;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background-color: clr(secondary, main);
+    z-index: -1;
+
+    @include md {
+      width: 100%;
+      height: 25%;
+    }
+  }
+
+  .imgSec {
+    img {
+      width: 100%;
+    }
+  }
+
+  .sectionTitle {
+    color: clr(light, outline);
+
+    h1 {
+      color: inherit;
+      border-left: 5px solid clr(light, outline);
+      padding-left: 10px;
+    }
+
+    .btnSec {
+      .btn {
+        @include md {
+          min-width: 90%;
+        }
+      }
+    }
+  }
+}

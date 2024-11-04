@@ -1,0 +1,42 @@
+// Font
+$ff-open-sans: 'Open Sans', sans-serif;
+
+$sz-70:70px;
+$sz-60:60px;
+$sz-50:50px;
+$sz-40:40px;
+$sz-36:36px;
+$sz-26:26px;
+$sz-24:24px;
+$sz-18:18px;
+$sz-16:16px;
+$sz-14: 14px;
+
+// Colors
+$no-clr: transparent;
+$white-clr: #ffffff;
+$clr-FAFAFA:#FAFAFA;
+$clr-999999: #999999;
+$clr-333335:#333335;
+$black-clr: #000000;
+$clr-160041:#160041;
+$clr-A098FA: #A098FA;
+$clr-784DFF:#784DFF;
+$clr-EE6DD4: #EE6DD4;
+$clr-FFCB66:#FFCB66;
+$white-50:rgba($white-clr, 0.50);
+$black-25:rgba($black-clr, 0.25);
+
+// Box Shadow
+$shadow-one: 0 4px 4px $black-25;
+
+// Media Sizes
+$break-1300: 1300px;
+$break-1280: 1280px;
+$break-1080: 1080px;
+$break-991: 991px;
+$break-767: 767px;
+
+/*
+@media (max-width: $break-767) {}
+*/

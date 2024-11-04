@@ -1,0 +1,970 @@
+// Service Box One
+.service-box-one {
+    padding: 45px;
+    background-color: $white-clr;
+    border: 1px solid $clr-565656;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 25px 15px;
+    }
+    h4 {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+        position: relative;
+        &:after {
+            content: "";
+            width: 100px;
+            height: 3px;
+            background-color: $clr-50AC97;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+    }
+    p {
+        margin-bottom: 0;
+        margin-top: 24px;
+        color: $black-clr;
+        font-size: ($base-fz - 2px);
+    }
+}
+
+// Service Box Two
+.service-box-two {
+    h5 {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 30px;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            margin-bottom: 16px;
+            font-size: 1.2em;
+        }
+    }
+    p {
+        span {
+            display: block;
+        }
+    }
+}
+
+// Fundraising Box One
+.fundraising-box-one {
+    color: $clr-152243;
+    background-color: $clr-EEF6FC;
+    img {
+        width: 100%;
+    }
+    .details {
+        padding: 20px 28px;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            padding: 20px 15px;
+        }
+        .meta-tag {
+            font-size: ($base-fz - 2px);
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 12px;
+            }
+            i {
+                margin-right: 10px;
+            }
+        }
+        h4 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            font-weight: 700;
+            a {
+                color: inherit;
+                display: inline-block;
+            }
+        }
+        p {
+            font-size: ($base-fz - 2px);
+            margin-bottom: 16px;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 12px;
+            }
+        }
+        .price {
+            font-size: ($base-fz - 2px);
+            font-weight: 700;
+            margin-bottom: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 12px;
+            }
+            .span1 {
+                span {
+                    margin-left: 15px;
+                }
+            }
+        }
+        .progress {
+            height: 10px;
+            border-radius: 25px;
+            background-color: $clr-C4C4C4;
+            .progress-bar {
+                background-color: $clr-2A6877;
+            }
+        }
+        .deadline {
+            text-align: right;
+            font-size: 12px;
+            color: $clr-9A9A9A;
+            margin-bottom: 10px;
+        }
+        .btn {
+            font-size: ($base-fz - 2px);
+            min-width: 130px;
+        }
+    }
+}
+
+// Number Content Box One
+.number-content-box-one {
+    display: flex;
+    .number {
+        font-size: 1.5em;
+        font-weight: 700;
+        line-height: 1;
+        color: $clr-2A6877;
+        width: 100%;
+        max-width: 60px;
+        position: relative;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 1.2em;
+            max-width: 40px;
+        }
+        &:after {
+            content: "";
+            width: 1px;
+            height: 100px;
+            background-color: $clr-50AC97;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                height: 100%;
+            }
+        }
+    }
+    .details {
+        padding-left: 20px;
+        width: calc(100% - 40px);
+        h4 {
+            font-size: 1.5em;
+            font-weight: 700;
+            line-height: 1;
+            color: $clr-2A6877;
+            margin-bottom: 10px;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.2em;
+            }
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Event Box One
+.event-box-one {
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        gap: 1em;
+    }
+    .date-sec {
+        color: $clr-003767;
+        width: 30%;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            width: auto;
+            min-width: 100px;
+        }
+        h4 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 0;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.6em;
+            }
+            span {
+                font-size: 65%;
+            }
+        }
+        h5 {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 0;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.2em;
+            }
+        }
+    }
+    .details-sec {
+        color: $clr-152243;
+        h4 {
+            font-size: 1.4em;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 5px;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1em;
+            }
+        }
+        p {
+            margin-bottom: 10px;
+            &.small {
+                font-size: ($base-fz - 2px);
+
+                // Max 1080px
+                @media (max-width: $break-1080) {
+                    font-size: 12px;
+                }
+            }
+            img {
+                margin-right: 10px;
+                width: 14px;
+            }
+        }
+        .btn {
+            font-size: ($base-fz - 2px);
+        }
+    }
+}
+
+// Event Box Two
+.event-box-two {
+    position: relative;
+    max-width: 300px;
+    min-height: 300px;
+    border-radius: 20px;
+    margin-left: auto;
+    padding: 180px 20px 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        margin: auto;
+        width: 100%;
+        max-width: unset;
+    }
+    .date-badge {
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: $white-clr;
+        background-color: $clr-50AC97;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: ($base-fz - 2px);
+        line-height: 1;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 12px;
+        }
+    }
+    .bottom-sec {
+        color: $white-clr;
+        h4 {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 5px;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.2em;
+            }
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Contact Info box One
+.contact-info-box-one {
+    background-color: $clr-ECF1FF;
+    padding: 60px;
+    min-height: 293px;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 40px 30px;
+        min-height: unset;
+    }
+    h4 {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin: 15px 0;
+    }
+    p {
+        margin-bottom: 0;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+}
+
+// Membership Box One
+.membership-box-one {
+    padding: 30px;
+    background-color: $clr-EEF6FC;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 24px;
+    }
+    h2 {
+        font-size: 1.4em;
+        font-weight: 700;
+        margin-bottom: 0;
+        color: $clr-152243;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 1.2em;
+        }
+        span {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: $clr-152243;
+            flex-shrink: 0;
+        }
+    }
+}
+
+// Club Box One
+.club-box-one {
+    padding: 30px;
+    background-color: $clr-EEF6FC;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 24px;
+    }
+    h2 {
+        font-size: 1.4em;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: $clr-152243;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 1.2em;
+        }
+        span {
+            width: 70px;
+            height: 70px;
+            line-height: 60px;
+            text-align: center;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: $clr-152243;
+            flex-shrink: 0;
+            img {
+                width: 30px;
+            }
+        }
+    }
+    p {
+        margin-bottom: 0;
+        font-size: ($base-fz - 2px);
+    }
+}
+
+// Outreach Box One
+.outreach-box-one {
+    background-color: $white-clr;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 20px;
+    }
+    h2 {
+        margin-bottom: 0;
+        color: $clr-152243;
+        font-weight: 600;
+    }
+    p {
+        margin-bottom: 0;
+        color: $black-clr;
+    }
+}
+
+// Islam Box One
+.islam-box-one {
+    background-color: $clr-ECF1FF;
+    padding: 24px 40px;
+    border-radius: 10px;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 24px;
+    }
+    h6 {
+        font-size: 1.2em;
+        font-weight: 700;
+        max-width: 350px;
+        color: $clr-152243;
+    }
+    p {
+        margin-bottom: 0;
+        color: $black-clr;
+    }
+}
+
+// Muslim Support Box One
+.support-box-one {
+    display: flex;
+    gap: 1.4em;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        gap: 1em;
+    }
+    span {
+        width: 70px;
+        height: 70px;
+        line-height: 60px;
+        text-align: center;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: $clr-50AC97;
+        flex-shrink: 0;
+        img {
+            width: 30px;
+        }
+    }
+    h2 {
+        font-family: $ff-averia-libre;
+        font-size: 2em;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 15px;
+        color: $clr-1D2C57;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 1.4em;
+            line-height: 1.4;
+        }
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+// Watch video Box One
+.watch-video-box-one {
+    a {
+        display: block;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// Episode Box One
+.episode-box-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    height: 100%;
+
+    img {
+        width: 100%;
+    }
+    h2 {
+        font-family: $ff-averia-libre;
+        font-size: 2em;
+        font-weight: 700;
+        line-height: 1;
+        color: $clr-1D2C57;
+        margin-bottom: 0;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 1.4em;
+            line-height: 1.4;
+        }
+    }
+    p {
+        margin-bottom: 0;
+        color: $clr-6D6D6D;
+        .links {
+            text-decoration: underline;
+        }
+    }
+}
+
+// Qurtuba Box One
+.qurtuba-box-one {
+    padding: 32px 40px;
+    border: 1px solid $clr-565656;
+    border-radius: 10px;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 24px 15px;
+    }
+    .meta {
+        max-width: 300px;
+        span {
+            display: inline-block;
+            padding-right: 10px;
+            margin-right: 10px;
+            color: $clr-152243;
+            border-right: 1px solid $clr-50AC97;
+            font-weight: 600;
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+    h2 {
+        font-size: 2em;
+        font-weight: 700;
+        margin: 15px 0 24px;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 1.4em;
+        }
+        span {
+            &:first-child {
+                padding-bottom: 5px;
+                border-bottom: 3px solid $clr-1DB578;
+            }
+            &:last-child {
+                font-size: 70%;
+                font-weight: 600;
+                color: $clr-50AC97;
+                padding-left: 15px;
+                margin-left: 15px;
+                border-left: 1px solid $clr-50AC97;
+
+                // Max 1080px
+                @media (max-width: $break-1080) {
+                    display: block;
+                    border-left: none;
+                    padding-left: 0;
+                    margin-left: 0;
+                    margin-top: 10px;
+                    font-size: 80%;
+                }
+            }
+        }
+    }
+    p {
+        margin-bottom: 0;
+        color: $clr-6D6D6D;
+        max-width: 450px;
+    }
+}
+
+// Instructor Box One
+.instructor-box-one {
+    h2 {
+        font-weight: 700;
+        font-size: 2em;
+        color: $clr-50AC97;
+        margin: 20px 0;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 1.4em;
+        }
+    }
+    p {
+        color: $clr-6D6D6D;
+        margin-bottom: 0;
+        + p {
+            margin-top: 30px;
+        }
+    }
+}
+
+// Ad Box One
+.ad-box-one {
+    img {
+        width: 100%;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 2.4em;
+        color: $clr-1D2C57;
+        margin: 20px 0;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 1.8em;
+        }
+    }
+    .btn {
+        font-family: $ff-averia-libre;
+        font-weight: 700;
+        border-radius: 0;
+    }
+}
+
+// Ad Box Two
+.ad-box-two {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    img {
+        width: 30%;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            width: 100%;
+        }
+    }
+    .details {
+        width: 65%;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            width: 100%;
+        }
+        h2 {
+            font-weight: 700;
+            font-size: 2em;
+            color: $clr-101010;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.4em;
+            }
+        }
+        .btn {
+            width: 100%;
+            max-width: 280px;
+            border-radius: 0;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+// Youth box One
+.youth-box-one {
+    padding: 30px 60px;
+    color: $white-clr;
+    background-color: $clr-152243;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 24px;
+    }
+    h1 {
+        font-weight: 700;
+        font-size: 2.4em;
+        margin-bottom: 0;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 1.8em;
+        }
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+// Youth box Two
+.youth-box-two {
+    padding: 30px 60px;
+    color: $white-clr;
+    background-color: $clr-152243;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 24px;
+    }
+    h1 {
+        font-weight: 700;
+        font-size: 2.4em;
+        margin-bottom: 0;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 1.8em;
+        }
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+// Education Box One
+.education-box-one {
+    background-color: $white-clr;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 20px;
+    }
+    h2 {
+        margin-bottom: 0;
+        color: $clr-152243;
+        font-weight: 600;
+    }
+    p {
+        margin-bottom: 0;
+        color: $black-clr;
+        word-break: break-all;
+        font-size: ($base-fz - 2px);
+    }
+}
+
+// Radiant Box One
+.radiant-box-one {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    h2 {
+        font-size: 1.4em;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: $clr-1D2C57;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 1.2em;
+        }
+        span {
+            width: 70px;
+            height: 70px;
+            line-height: 60px;
+            text-align: center;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: $clr-ECF1FF;
+            flex-shrink: 0;
+            img {
+                width: 30px;
+            }
+        }
+    }
+    p {
+        margin-bottom: 0;
+        font-size: ($base-fz - 2px);
+    }
+}
+
+// Zakat Box One
+.zakat-box-one {
+    color: $clr-6D6D6D;
+    border: 1px solid $clr-152243;
+    border-radius: 15px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    text-align: center;
+    justify-content: center;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 24px 15px;
+    }
+    p {
+        margin-bottom: 0;
+        font-size: 1.2em;
+    }
+}
+
+// Zakat Box Two
+.zakat-box-two {
+    background-color: $white-clr;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 20px;
+    }
+    h2 {
+        margin-bottom: 0;
+        color: $clr-152243;
+        font-weight: 600;
+    }
+    p {
+        margin-bottom: 0;
+        color: $black-clr;
+    }
+}
+
+// Funeral Box One
+.funeral-box-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        gap: 1em;
+    }
+    .img-sec {
+        width: 100%;
+        max-width: 180px;
+        border-radius: 5px;
+        overflow: hidden;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            max-width: 100px;
+        }
+        a {
+            display: block;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .details-sec {
+        width: calc(100% - 230px);
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            width: calc(100% - 120px);
+        }
+        h4 {
+            font-size: 1.5em;
+            font-weight: 700;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                font-size: 1.2em;
+            }
+            a {
+                color: inherit;
+            }
+        }
+        p {
+            word-wrap: break-word;
+            margin-bottom: 0;
+        }
+    }
+    &:hover {
+        .details-sec {
+            h4 {
+                color: $clr-50AC97;
+            }
+        }
+    }
+}
+
+// Prayer Box One
+.prayer-box-one {
+    color: $clr-6D6D6D;
+    border: 1px solid $clr-152243;
+    border-radius: 15px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    text-align: center;
+    justify-content: center;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 24px 15px;
+    }
+    h6 {
+        font-size: 1.2em;
+        color: $clr-152243;
+        margin: 0;
+    }
+    p {
+        margin-bottom: 0;
+        font-size: 1.2em;
+    }
+}

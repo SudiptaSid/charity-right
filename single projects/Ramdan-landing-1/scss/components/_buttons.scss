@@ -1,0 +1,105 @@
+a, button {
+    outline:none;
+    text-shadow:none;
+    font-size:1em;
+    cursor: pointer;
+    &:focus, &:active, &:hover {
+        outline:none !important;
+        text-shadow:none !important;
+    }
+}
+// Button
+.btn {
+    border:none;
+    border-radius:50px;
+    padding:30px;
+    font-size:14px;
+    line-height:14px;
+    font-weight:700;
+    text-align: center;
+    position: relative;
+    outline:none;
+    box-shadow:none;
+    text-shadow:none;
+    cursor: pointer;
+    text-transform: uppercase;
+    min-width:260px;
+    &:focus, &:active, &:hover {
+        border:none;
+        outline:none;
+        box-shadow:none;
+        text-shadow:none;
+    }
+    /* ----- Max Width 767px ----- */
+    @media (max-width: $break_767) {
+        font-size:12px;
+        line-height:22px;
+        padding:10px;
+        min-width:unset;
+        width:100%;
+    }
+    // Yellow Btn
+    &.btn-yellow {
+        color:$white-clr;
+        background-color:#F9C63b;
+        &:hover, &:focus {
+            color:$white-clr;
+            background-color:darken(#F9C63b, 5%);
+        }
+    }
+    // Blue Btn
+    &.btn-blue {
+        color:$white-clr;
+        background-color:#4CA5FD;
+        &:hover, &:focus {
+            color:$white-clr;
+            background-color:darken(#4CA5FD, 5%);
+        }
+    }
+    // Blue Green
+    &.btn-green {
+        color:$white-clr;
+        background-color:#27C967;
+        &:hover, &:focus {
+            color:$white-clr;
+            background-color:darken(#27C967, 5%);
+        }
+    }
+    // Blue Pink
+    &.btn-pink {
+        color:$white-clr;
+        background-color:#E42281;
+        &:hover, &:focus {
+            color:$white-clr;
+            background-color:darken(#E42281, 5%);
+        }
+    }
+    // White Btn
+    &.btn-white {
+        color:$black-clr;
+        background-color:$white-clr;
+        &:hover, &:focus {
+            color:$black-clr;
+            background-color:darken($white-clr, 5%);
+        }
+    }
+    // Btn Black
+    &.btn-black {
+        color:$white-clr;
+        background-color:$black-clr;
+        &:hover, &:focus {
+            color:$white-clr;
+            background-color:lighten($black-clr, 10%);
+        }
+    }
+    &.btn-blue-border {
+        color:#031B4E;
+        background-color:$no-clr;
+        border:1px solid #031B4E;
+        &:hover, &:focus {
+            color:$white-clr;
+            background-color:#031B4E;
+            border:1px solid #031B4E;
+        }
+    }
+}

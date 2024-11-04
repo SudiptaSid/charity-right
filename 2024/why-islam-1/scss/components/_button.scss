@@ -1,0 +1,45 @@
+// Btn
+.btn {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: center;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  white-space: nowrap;
+  box-shadow: none;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &Primary {
+    color: clr(light, outline) !important;
+    background-color: clr(primary, main) !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: clr(light, outline) !important;
+      background-color: clr(primary, hover) !important;
+    }
+  }
+
+  &White {
+    color: clr(primary, main) !important;
+    background-color: clr(light, outline);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: clr(light, outline) !important;
+      background-color: clr(primary, hover);
+    }
+  }
+}

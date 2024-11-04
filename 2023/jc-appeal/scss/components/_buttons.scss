@@ -1,0 +1,55 @@
+// Buttons
+.btn {
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.4;
+    border: none;
+    border-radius: 0;
+    padding: 12px 20px;
+    outline: none;
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        text-shadow: none;
+        text-decoration: none;
+    }
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 8px 14px;
+    }
+}
+
+// Btn White
+.btn-white {
+    color: $clr-333335 !important;
+    background-color: $white-clr !important;
+    &:hover,
+    &:focus {
+        color: $clr-333335 !important;
+        background-color: darken($white-clr, 5%) !important;
+    }
+}
+
+// Btn Main
+.btn-main {
+    color: $white-clr !important;
+    background-color: $clr-784DFF !important;
+    &:hover,
+    &:focus {
+        color: $white-clr !important;
+        background-color: darken($clr-784DFF, 5%) !important;
+    }
+}
+
+// Btn 99A1FF
+.btn-99A1FF {
+    color: $white-clr !important;
+    background-color: $clr-99A1FF !important;
+    &:hover,
+    &:focus {
+        color: $white-clr !important;
+        background-color: darken($clr-99A1FF, 5%) !important;
+    }
+}

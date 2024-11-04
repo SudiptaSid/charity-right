@@ -1,0 +1,788 @@
+// Hero Banner
+#hero-banner-hp {
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top: 170px;
+    padding-bottom:180px;
+    border-radius: 0 0 40px 40px;
+    /* ----- Max Width 991px ----- */
+    @media (max-width: $break_991) {
+        padding-top:100px;
+        padding-bottom:50px;
+        border-radius: 0 0 25px 25px;
+    }
+    /* ----- Max Width 767px ----- */
+    @media (max-width: $break_767) {
+        padding-top:70px;
+        background-position-x:35%;
+        border-radius: 0;
+    }
+    .content {
+        color:$white-clr;
+        margin-left:50px;
+        /* ----- Max Width 1200px ----- */
+        @media (max-width: $break_1200) {
+            margin-left:0;
+        }
+        /* ----- Max Width 991px ----- */
+        @media (max-width: $break_991) {
+            margin-left:50px;
+        }
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            margin-top:70px;
+            margin-left: 0;
+        }
+        h2 {
+            font-size:75px;
+            line-height:105px;
+            font-weight: 700;
+            /* ----- Max Width 1200px ----- */
+            @media (max-width: $break_1200) {
+                font-size:70px;
+                line-height:90px;
+            }
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                font-size:50px;
+                line-height:65px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size:34px;
+                line-height:42px;
+            }
+        }
+        p {
+            font-size:20px;
+            line-height:30px;
+            max-width: 540px;
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                font-size:18px;
+                line-height:26px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size:16px;
+                line-height:24px;
+            }
+        }
+    }
+}
+
+// Break The Cycle
+#break-cycle {
+    padding-top:30px;
+    padding-bottom:150px;
+    /* ----- Max Width 1200px ----- */
+    @media (max-width: $break_1200) {
+        padding-bottom:50px;
+    }
+    .content {
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            margin-bottom:30px;
+        }
+        h5 {
+            font-size:34px;
+            line-height:44px;
+            font-weight: 500;
+            margin-bottom:0;
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size:30px;
+                line-height:40px;
+            }
+        }
+        p {
+            margin-bottom:0;
+            margin-top:30px;
+            color:$grey2-clr;
+            font-size:18px;
+            line-height:30px;
+            max-width: 520px;
+            /* ----- Max Width 1200px ----- */
+            @media (max-width: $break_1200) {
+                font-size:16px;
+                line-height:26px;
+            }
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                margin-top:20px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size:14px;
+                line-height:22px;
+            }
+        }
+    }
+    .img-sec {
+        position: relative;
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            padding-bottom:80px;
+        }
+        .main-img {
+            border-radius:20px;
+            overflow:hidden;
+            z-index: 9;
+            position: relative;
+            img {
+                width:100%;
+            }
+        }
+        .ptrn {
+            position: absolute;
+            max-width: 320px;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -160px;
+            /* ----- Max Width 1200px ----- */
+            @media (max-width: $break_1200) {
+                bottom:-135px;
+            }
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                bottom:-82.5px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                bottom:0;
+            }
+            img {
+                width:100%;
+            }
+        }
+    }
+}
+
+// Donate Shortcut
+#donate-shortcut {
+    .content {
+        position: relative;
+        padding: 0 50px;
+        /* ----- Max Width 991px ----- */
+        @media (max-width: $break_991) {
+            padding:0;
+        }
+        .ptrn-left {
+            max-width:164px;
+            position: absolute;
+            bottom:30px;
+            left:-32px;
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                max-width:64px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                left:0;
+                max-width:80px;
+                bottom:-40px;
+            }
+            img {
+                width:100%;
+            }
+        }
+        .ptrn-right {
+            max-width:164px;
+            position: absolute;
+            top:20px;
+            right:-32px;
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                max-width:64px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                max-width:80px;
+                top:-40px;
+                right:0;
+            }
+            img {
+                width:100%;
+            }
+        }
+        .donate-item {
+            position: relative;
+            z-index:9;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap:wrap;
+                li {
+                    width:calc(33.333333% - 20px);
+                    +li {
+                        /* ----- Max Width 767px ----- */
+                        @media (max-width: $break_767) {
+                            margin-top:30px;
+                        }
+                    }
+                    /* ----- Max Width 767px ----- */
+                    @media (max-width: $break_767) {
+                        width:100%;
+                    }
+                    .box {
+                        text-align: center;
+                        border-radius:10px;
+                        color: $white-clr;
+                        background-color:$secondary-clr;
+                        padding:60px 55px 35px;
+                        /* ----- Max Width 1200px ----- */
+                        @media (max-width: $break_1200) {
+                            padding:50px 35px 35px;
+                        }
+                        /* ----- Max Width 991px ----- */
+                        @media (max-width: $break_991) {
+                            padding:40px 20px 30px;
+                        }
+                        h1 {
+                            font-size:100px;
+                            line-height:122px;
+                            font-weight:700;
+                            margin-bottom:0;
+                            /* ----- Max Width 1200px ----- */
+                            @media (max-width: $break_1200) {
+                                font-size:70px;
+                                line-height:90px;
+                                margin-bottom:10px;
+                            }
+                            /* ----- Max Width 991px ----- */
+                            @media (max-width: $break_991) {
+                                font-size:50px;
+                                line-height:64px;
+                                margin-bottom:0;
+                            }
+                        }
+                        p {
+                            font-size:36px;
+                            line-height:50px;
+                            margin-bottom:40px;
+                            /* ----- Max Width 1200px ----- */
+                            @media (max-width: $break_1200) {
+                                font-size:30px;
+                                line-height:40px;
+                            }
+                            /* ----- Max Width 991px ----- */
+                            @media (max-width: $break_991) {
+                                font-size:24px;
+                                line-height:30px;
+                            }
+                        }
+                        .btn {
+                            margin:auto;
+                            /* ----- Max Width 1200px ----- */
+                            @media (max-width: $break_1200) {
+                                width:100%;
+                            }
+                            /* ----- Max Width 991px ----- */
+                            @media (max-width: $break_991) {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// About Cair
+#about-cair {
+    margin-top:100px;
+    margin-bottom:80px;
+    padding-top:40px;
+    padding-bottom:100px;
+    color: $white-clr;
+    background-color:rgba($secondary-clr, 0.6);
+    /* ----- Max Width 991px ----- */
+    @media (max-width: $break_991) {
+        margin:60px 0;
+    }
+    /* ----- Max Width 767px ----- */
+    @media (max-width: $break_767) {
+        margin-top:80px;
+        padding-bottom:40px;
+    }
+    .content {
+        margin-left:50px;
+        /* ----- Max Width 991px ----- */
+        @media (max-width: $break_991) {
+            margin-left:0;
+        }
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            margin-bottom:30px;
+        }
+        h5 {
+            font-size:34px;
+            line-height:44px;
+            font-weight: 700;
+            margin-bottom:0;
+        }
+        p {
+            margin-bottom:0;
+            margin-top:30px;
+            font-size:18px;
+            line-height:30px;
+            max-width: 520px;
+            /* ----- Max Width 1200px ----- */
+            @media (max-width: $break_1200) {
+                font-size:16px;
+                line-height:26px;
+            }
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                margin-top:20px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size:14px;
+                line-height:22px;
+            }
+        }
+        .btn-sec {
+            margin-top:30px;
+        }
+    }
+    .img-sec {
+        position: relative;
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            padding-bottom:60px;
+        }
+        .main-img {
+            border-radius:20px 0 0 20px;
+            overflow:hidden;
+            z-index: 9;
+            position: relative;
+            img {
+                width:100%;
+            }
+        }
+        .ptrn {
+            position: absolute;
+            max-width: 240px;
+            left: 0px;
+            transform: translateX(-50%);
+            bottom: -90px;
+            /* ----- Max Width 1200px ----- */
+            @media (max-width: $break_1200) {
+                max-width:170px;
+                bottom:-70px;
+            }
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                max-width:120px;
+                bottom:-40px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                bottom:0;
+                left:50%;
+            }
+            img {
+                width:100%;
+            }
+        }
+    }       
+}
+
+// Newsletter
+#newsletter {
+    margin-bottom:110px;
+    /* ----- Max Width 991px ----- */
+    @media (max-width: $break_991) {
+        margin-bottom:60px;
+    }
+    .content {
+        color: $white-clr;
+        background-color:$secondary-clr;
+        border-radius:10px;
+        padding:55px 20px 100px;
+        text-align: center;
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            padding:50px 15px;
+        }
+        h2 {
+            font-size:48px;
+            line-height:62px;
+            font-weight:500;
+            margin-bottom:20px;
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                font-size:40px;
+                line-height:52px;
+                margin-bottom:10px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size:30px;
+                line-height:36px;
+            }
+        }
+        p {
+            font-size:16px;
+            line-height:30px;
+            margin-bottom: 40px;
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                margin-bottom:30px;
+            }
+        }
+        .box {
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            background-color: $white-clr;
+            max-width:550px;
+            padding: 8px 12px;
+            border-radius:15px;
+            margin:auto;
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                border-radius:6px;
+            }
+            .form-control {
+                border:none;
+                border-radius:0;
+                font-size:14px;
+                line-height:21px;
+                padding-left:12px;
+                padding-right:10px;
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    padding-left:0;
+                    padding-right:5px;
+                }
+            }
+            .btn {
+                min-width:130px;
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    min-width:unset;
+                }
+            }
+        }
+    }
+}
+
+// Hero Banner 2
+#hero-banner-hp2 {
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top: 160px;
+    padding-bottom:66px;
+    border-radius: 0 0 40px 40px;
+    /* ----- Max Width 1200px ----- */
+    @media (max-width: $break_1200) {
+        padding-top: 120px;
+    }
+    /* ----- Max Width 991px ----- */
+    @media (max-width: $break_991) {
+        padding-top:80px;
+        padding-bottom:50px;
+        border-radius: 0 0 25px 25px;
+    }
+    /* ----- Max Width 767px ----- */
+    @media (max-width: $break_767) {
+        border-radius: 0;
+    }
+    .content {
+        color:$white-clr;
+        h2 {
+            font-size:65px;
+            line-height:70px;
+            font-weight: 700;
+            margin-bottom:30px;
+            /* ----- Max Width 1200px ----- */
+            @media (max-width: $break_1200) {
+                font-size:60px;
+                line-height:70px;
+            }
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                font-size: 40px;
+                line-height: 50px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size:34px;
+                line-height:42px;
+                margin-bottom: 20px;
+            }
+        }
+        p {
+            font-size:30px;
+            line-height:30px;
+            max-width: 540px;
+            margin-bottom:40px;
+            /* ----- Max Width 1200px ----- */
+            @media (max-width: $break_1200) {
+                font-size:24px;
+                line-height:24px;
+                margin-bottom:30px;
+            }
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                font-size:18px;
+                line-height:26px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size:16px;
+                line-height:24px;
+            }
+        }
+    }
+}
+
+// Ramadan Time
+#ramadan-time {
+    padding-top:60px;
+    padding-bottom:150px;
+    /* ----- Max Width 1200px ----- */
+    @media (max-width: $break_1200) {
+        padding-bottom:50px;
+    }
+    .content {
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            margin-bottom:30px;
+        }
+        h5 {
+            font-size:34px;
+            line-height:44px;
+            font-weight: 500;
+            margin-bottom:0;
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size:30px;
+                line-height:40px;
+            }
+        }
+        p {
+            margin-bottom:0;
+            margin-top:30px;
+            color:$grey2-clr;
+            font-size:18px;
+            line-height:30px;
+            max-width: 420px;
+            /* ----- Max Width 1200px ----- */
+            @media (max-width: $break_1200) {
+                font-size:16px;
+                line-height:26px;
+            }
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                margin-top:20px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size:14px;
+                line-height:22px;
+            }
+        }
+        .btn-sec {
+            margin-top:30px;
+        }
+    }
+    .img-sec {
+        position: relative;
+        /* ----- Max Width 767px ----- */
+        @media (max-width: $break_767) {
+            padding-bottom:60px;
+        }
+        .main-img {
+            border-radius:20px;
+            overflow:hidden;
+            z-index: 9;
+            position: relative;
+            img {
+                width:100%;
+            }
+        }
+        .ptrn {
+            position: absolute;
+            max-width: 320px;
+            left: 0;
+            transform: translateX(-50%);
+            bottom: 0;
+            /* ----- Max Width 1200px ----- */
+            @media (max-width: $break_1200) {
+                max-width: 120px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                left: 50%;
+            }
+            img {
+                width:100%;
+            }
+        }
+    }
+}
+
+// Donate Shortcut
+#donate-shortcut2 {
+    .headings {
+        margin-bottom:38px;
+        text-align: center;
+        h2 {
+            font-size:48px;
+            line-height:62px;
+            font-weight: 300;
+            margin-bottom:0;
+            color: #283036;
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                font-size:36px;
+                line-height:46px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                font-size:30px;
+                line-height:40px;
+            }
+        }
+        p {
+            font-size:18px;
+            line-height:30px;
+            margin-bottom:0;
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                font-size:16px;
+                line-height:24px;
+            }
+        }
+    }
+    .content {
+        position: relative;
+        padding: 0 50px;
+        /* ----- Max Width 991px ----- */
+        @media (max-width: $break_991) {
+            padding:0;
+        }
+        .ptrn-left {
+            max-width:164px;
+            position: absolute;
+            bottom:30px;
+            left:-32px;
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                max-width:64px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                left:0;
+                max-width:80px;
+                bottom:-40px;
+            }
+            img {
+                width:100%;
+            }
+        }
+        .ptrn-right {
+            max-width:164px;
+            position: absolute;
+            top:20px;
+            right:-32px;
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                max-width:64px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                max-width:80px;
+                top:-40px;
+                right:0;
+            }
+            img {
+                width:100%;
+            }
+        }
+        .donate-item {
+            position: relative;
+            z-index:9;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap:wrap;
+                li {
+                    width:calc(33.333333% - 20px);
+                    +li {
+                        /* ----- Max Width 767px ----- */
+                        @media (max-width: $break_767) {
+                            margin-top:30px;
+                        }
+                    }
+                    /* ----- Max Width 767px ----- */
+                    @media (max-width: $break_767) {
+                        width:100%;
+                    }
+                    .box {
+                        text-align: center;
+                        border-radius:10px;
+                        color: $white-clr;
+                        background-color:$secondary-clr;
+                        padding:60px 55px 35px;
+                        /* ----- Max Width 1200px ----- */
+                        @media (max-width: $break_1200) {
+                            padding:50px 35px 35px;
+                        }
+                        /* ----- Max Width 991px ----- */
+                        @media (max-width: $break_991) {
+                            padding:40px 20px 30px;
+                        }
+                        h1 {
+                            font-size:100px;
+                            line-height:122px;
+                            font-weight:700;
+                            margin-bottom:0;
+                            /* ----- Max Width 1200px ----- */
+                            @media (max-width: $break_1200) {
+                                font-size:70px;
+                                line-height:90px;
+                                margin-bottom:10px;
+                            }
+                            /* ----- Max Width 991px ----- */
+                            @media (max-width: $break_991) {
+                                font-size:50px;
+                                line-height:64px;
+                                margin-bottom:0;
+                            }
+                        }
+                        p {
+                            font-size:30px;
+                            line-height:40px;
+                            max-width: 200px;
+                            margin: auto;
+                            margin-bottom:40px;
+                            /* ----- Max Width 991px ----- */
+                            @media (max-width: $break_991) {
+                                font-size:24px;
+                                line-height:30px;
+                            }
+                            /* ----- Max Width 767px ----- */
+                            @media (max-width: $break_767) {
+                                max-width:unset;
+                            }
+                        }
+                        .btn {
+                            margin:auto;
+                            /* ----- Max Width 1200px ----- */
+                            @media (max-width: $break_1200) {
+                                width:100%;
+                            }
+                            /* ----- Max Width 991px ----- */
+                            @media (max-width: $break_991) {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+// Sponsor One
+.sponsor-box-one {
+    padding: 40px 30px;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 30px 20px;
+    }
+    .heading-one {
+        h1 {
+        }
+    }
+}

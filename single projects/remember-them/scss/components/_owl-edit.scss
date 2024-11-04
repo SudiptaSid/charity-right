@@ -1,0 +1,74 @@
+// Owl Nav
+.owl-theme {
+    .owl-nav {
+        position: absolute;
+        left:0;
+        top:50%;
+        transform:translateY(-50%);
+        width: 100%;
+        // --------------------------------
+        @media (max-width: $break_991) {
+            position: relative;
+            margin-top:10px;
+            text-align: center;
+            top: unset;
+            transform:translateY(0);
+        }
+        [class*='owl-'] {
+            width:50px;
+            height:50px;
+            background-color:$white-clr !important;
+            color:$black-light !important;
+            box-shadow: $shadow-1;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            border:1px solid $grey-clr !important;
+            border-radius: 50%;
+            margin:0;
+            font-size: 26px !important;
+            line-height: 20px !important;
+            text-align: center;
+            &:focus {
+                outline:none;
+            }
+            // --------------------------------
+            @media (max-width: $break_991) {
+                position: relative;
+                top:unset;
+                transform:translateY(0);
+                margin:0 10px;
+            }
+        }
+        .owl-prev {
+            left:-70px;
+            // --------------------------------
+            @media (min-width: $break_991 + 1px) and (max-width: $break_1280) {
+                left:0;
+            }
+            // --------------------------------
+            @media (max-width: $break_991) {
+                left:0;
+            }
+            i {
+                position: relative;
+                left: -2px;
+            }
+        }
+        .owl-next {
+            right:-70px;
+            // --------------------------------
+            @media (min-width: $break_991 + 1px) and (max-width: $break_1280) {
+                right:0;
+            }
+            // --------------------------------
+            @media (max-width: $break_991) {
+                right:0;
+            }
+            i {
+                position: relative;
+                left: 2px;
+            }
+        }
+    }
+}

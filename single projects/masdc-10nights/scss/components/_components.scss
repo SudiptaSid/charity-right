@@ -1,0 +1,51 @@
+// Donation Box
+.donation-box {
+    color: $white-clr;
+    background-color: $secondary-clr;
+    padding: 80px 20px 30px;
+    text-align: center;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 4;
+
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding: 50px 15px;
+    }
+    h3 {
+        font-size: 100px;
+        font-weight: 900;
+        margin-bottom: 0;
+
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            font-size: 60px;
+        }
+    }
+    p {
+        font-size: 34px;
+        margin: 32px 0 60px;
+
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            font-size: 22px;
+            margin: 16px 0 30px;
+        }
+    }
+    .btn {
+        text-transform: uppercase;
+        font-size: 1.2em;
+        padding: 24px 50px;
+
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            width: 100%;
+            font-size: 1em;
+            padding: 10px 20px;
+        }
+    }
+}

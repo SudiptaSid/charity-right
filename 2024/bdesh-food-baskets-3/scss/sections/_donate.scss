@@ -1,0 +1,17 @@
+// Donate One
+.donateOne {
+  padding: 80px 0;
+  background-size: cover;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .sectionTitle {
+    h1 {
+      color: clr(secondary, main);
+    }
+  }
+}

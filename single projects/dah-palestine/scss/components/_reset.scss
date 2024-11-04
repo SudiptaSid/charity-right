@@ -1,0 +1,94 @@
+// RESET
+body {
+    font-family: $primary-ff;
+    font-size: $base-fz;
+    line-height: 1.5;
+    font-weight: 400;
+    color: $clr-7E8499;
+    background-color: $white-clr;
+    overflow-x: hidden;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        font-size: ($base-fz - 2px);
+        line-height: 20px;
+    }
+}
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: inherit;
+    font-family: $secondary-ff;
+}
+h1 {
+    font-size: 2.8em;
+}
+h2 {
+    font-size: 2.2em;
+}
+h3 {
+    font-size: 1.6em;
+}
+h4 {
+    font-size: 1.375em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+    font-size: 0.75em;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+img {
+    max-width: 100%;
+}
+
+section {
+    position: relative;
+}
+
+.pt-80 {
+    padding-top: 80px;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding-top: 50px;
+    }
+}
+.pt-100 {
+    padding-top: 100px;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding-top: 50px;
+    }
+}
+
+.pb-80 {
+    padding-bottom: 80px;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding-bottom: 60px;
+    }
+}
+.pb-100 {
+    padding-bottom: 100px;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding-bottom: 60px;
+    }
+}

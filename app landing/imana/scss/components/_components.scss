@@ -1,0 +1,126 @@
+// Accordian
+.accordion {
+    /* Max width 767px */
+    @media (max-width: $break_767) {
+    }
+    .card {
+        background-color: $no-clr;
+        border-radius: 0;
+        padding: 24px 40px;
+        border: none;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            padding: 24px 0;
+        }
+        .card-header {
+            border: none;
+            border-radius: 0;
+            background-color: $no-clr;
+            padding: 0;
+            h2 {
+                font-size: 18px;
+                line-height: 32px;
+                /* Max width 767px */
+                @media (max-width: $break_767) {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                button {
+                    font-weight: 600;
+                    color: $black-clr;
+                    background-color: $no-clr;
+                    border: none;
+                    border-radius: 0;
+                    padding: 0;
+                    display: block;
+                    width: 100%;
+                    position: relative;
+                    text-align: left;
+                    /* Max width 767px */
+                    @media (max-width: $break_767) {
+                        padding-right: 30px;
+                    }
+                    &:after {
+                        content: "";
+                        width: 32px;
+                        height: 32px;
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        background-image: url(../images/minus.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        /* Max width 767px */
+                        @media (max-width: $break_767) {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                    &.collapsed {
+                        color: $black-clr;
+                        &:after {
+                            background-image: url(../images/plus.png);
+                        }
+                    }
+                }
+            }
+        }
+        .card-body {
+            padding: 0;
+            padding-top: 20px;
+            p {
+                margin-bottom: 0;
+                + p {
+                    margin-top: 16px;
+                }
+            }
+        }
+        + .card {
+            border-top: 1px solid #e2e2e2;
+        }
+    }
+}
+
+
+// Newsletter
+.newsletter {
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: $white-clr;
+    /* Max width 767px */
+    @media (max-width: $break_767) {
+    }
+    .form-control {
+        width: calc(100% - 130px);
+        padding: 10px 15px;
+        padding-left: 0;
+        color: $clr-646464;
+        line-height: 30px;
+        border: none;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            width: 100%;
+            line-height: 18px;
+            padding: 10px 15px;
+            padding-left: 0;
+        }
+    }
+    .btn {
+        font-size: 1em;
+        font-weight: 600;
+        line-height: 30px;
+        width: 130px;
+        padding: 10px 15px;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            width: auto;
+            padding: 10px 15px;
+            line-height: 18px;
+        }
+    }
+}

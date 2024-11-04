@@ -1,0 +1,56 @@
+.header
+    padding: 10px 0
+    height: 90px
+    
+    .headerContainer
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        a.btnLeft,
+        a.btnright
+            max-width: 32%
+            font-family: epilogue-medium
+            font-size: 14px
+            font-style: normal
+            line-height: 18px
+            letter-spacing: 0em
+            text-align: center
+            text-transform: capitalize
+            color: $white
+            padding: 12.5px 25px
+            border-radius: 15px
+            border: 1px solid $white
+
+            &.btnRight
+                background-color: $white
+                color: $black
+
+        a.logo
+            display: block
+            max-width: 32%
+
+            img
+                width: 178px
+                max-width: 100%
+                height: auto
+
+// header responsive
+@media screen and (max-width: 767px)
+    .header
+        .headerContainer
+            a
+                .notMobile
+                    display: none
+
+            a.btnLeft,
+            a.btnright
+                font-size: 12px
+                line-height: 14px
+                padding: 10px 24px
+
+                &.btnRight
+                    background-color: transparent
+                    color: $white
+                    padding: 10px 13px

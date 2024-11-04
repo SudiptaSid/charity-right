@@ -1,0 +1,13 @@
+// Main Header
+.main-header {
+    background-color: $clr-F2FAFF;
+    .logo {
+        display: inline-block;
+        img {
+            /* Max width 767px */
+            @media (max-width: $break_767) {
+                height: 70px;
+            }
+        }
+    }
+}

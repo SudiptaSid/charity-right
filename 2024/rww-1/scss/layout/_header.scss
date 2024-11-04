@@ -1,0 +1,17 @@
+// Main Header
+.mainHeader {
+  padding: 15px 0;
+  background-color: clr(light, outline);
+  position: relative;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .btn {
+      width: 100%;
+      max-width: 150px;
+    }
+  }
+}

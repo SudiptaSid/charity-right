@@ -1,0 +1,32 @@
+// Font
+@import "../fonts/stylesheet.css";
+
+// Font Awesome
+@import "../plugins/font-awesome/scss/font-awesome.scss";
+
+// Line Icon
+@import "../plugins/lineicons/scss/lineicons.scss";
+
+// Bootstrap
+@import "../plugins/bootstrap/scss/bootstrap.scss";
+
+// Owl Carousel
+@import "../plugins/owl-carousel/scss/owl.carousel.scss";
+@import "../plugins/owl-carousel/scss/owl.theme.default.scss";
+
+// Components
+@import "components/variables";
+@import "components/mixins";
+@import "components/gap";
+@import "components/reset";
+@import "components/buttons";
+@import "components/form";
+@import "components/box";
+@import "components/components";
+@import "components/heading";
+@import "components/header";
+@import "components/footer";
+
+// Pages
+@import "pages/home-one";
+@import "pages/home-two";

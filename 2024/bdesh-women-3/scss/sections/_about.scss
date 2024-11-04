@@ -1,0 +1,116 @@
+// About One
+.aboutOne {
+  padding: 80px 0;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .bgBox {
+    position: relative;
+    z-index: 4;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      background-color: clr(primary, main);
+      width: 20%;
+      max-width: 200px;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .content {
+      background-color: clr(light, outline);
+      box-shadow: 0 1px 32px rgba(clr(black, main), 0.2);
+      padding: 50px;
+
+      @include md {
+        padding: 15px;
+      }
+
+      .sectionTitle {
+        h1 {
+          color: clr(secondary, main);
+        }
+
+        .btnSec {
+          .btn {
+            @include md {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .imgSec {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    &.bgLeft {
+      padding: 50px;
+      padding-right: 0;
+
+      @include md {
+        padding: 32px 15px;
+        padding-right: 0;
+      }
+
+      &:before {
+        left: 0;
+      }
+    }
+
+    &.bgRight {
+      padding: 50px;
+      padding-left: 0;
+
+      @include md {
+        padding: 32px 15px;
+        padding-left: 0;
+      }
+
+      &:before {
+        right: 0;
+      }
+    }
+  }
+}
+
+// About Two
+.aboutTwo {
+  padding: 80px 0;
+  position: relative;
+  z-index: 4;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: clr(secondary, main);
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+
+    @include md {
+      height: 90%;
+    }
+  }
+
+  .sectionTitle {
+    color: clr(light, outline);
+
+    h1 {
+      color: inherit;
+    }
+  }
+}

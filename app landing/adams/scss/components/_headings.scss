@@ -1,0 +1,46 @@
+// Heading
+.section-heading {
+    h1 {
+        font-size: 44px;
+        font-weight: 800;
+        line-height: 54px;
+        margin-bottom: 0;
+        color: $clr-3F3F40;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            font-size: 26px;
+            line-height: 36px;
+        }
+        span {
+            color: $primary-clr;
+        }
+        + p {
+            margin-top: 24px;
+            /* Max width 767px */
+            @media (max-width: $break_767) {
+                margin-top: 16px;
+            }
+        }
+    }
+    p {
+        margin-bottom: 0;
+        color: $clr-646464;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+        }
+        + p {
+            margin-top: 24px;
+            /* Max width 767px */
+            @media (max-width: $break_767) {
+                margin-top: 16px;
+            }
+        }
+        + .btn-sec {
+            margin-top: 50px;
+            /* Max width 767px */
+            @media (max-width: $break_767) {
+                margin-top: 24px;
+            }
+        }
+    }
+}

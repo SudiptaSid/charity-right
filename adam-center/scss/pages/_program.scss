@@ -1,0 +1,477 @@
+// Muslim Support Group
+.muslim-support-group {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    h5 {
+        font-family: $ff-averia-libre;
+        font-size: 1.2em;
+        font-weight: 700;
+        color: $clr-1D2C57;
+    }
+}
+
+// Momin One
+.momin-one {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .heading-one {
+        h1 {
+            color: $clr-101010;
+            font-family: $ff-averia-libre;
+        }
+    }
+    h5 {
+        font-family: $ff-averia-libre;
+        font-weight: 700;
+        color: $clr-1D2C57;
+    }
+}
+
+// Qurtuba One
+.qurtuba-one {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .left-sec {
+        .heading-one {
+            h1 {
+                &.size-32 {
+                    color: $clr-50AC97;
+                }
+            }
+        }
+    }
+    .right-sec {
+        text-align: right;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            text-align: center;
+        }
+        img {
+            height: 150px;
+        }
+    }
+}
+
+// Qurtuba Three
+.qurtuba-three {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+}
+
+// Taleem One
+.taleem-one {
+    padding: 80px 0;
+    font-family: $ff-averia-libre;
+    color: $clr-6D6D6D;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .heading-one {
+        h1,
+        h6 {
+            color: $clr-1D2C57;
+        }
+        h6 {
+            font-weight: 700;
+            font-size: 1.2em;
+            margin: 24px 0;
+        }
+        .btn {
+            font-weight: 700;
+            margin-top: 24px;
+            border-radius: 0;
+            padding: 24px;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                padding: 15px;
+            }
+        }
+    }
+    .link-box {
+        border: 1px solid $clr-1D2C57;
+        padding: 24px 30px;
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        a {
+            color: $clr-1D2C57;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// Taleem Two
+.taleem-two {
+    font-family: $ff-averia-libre;
+    color: $clr-6D6D6D;
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .heading-one {
+        h1 {
+            color: $clr-101010;
+        }
+    }
+}
+
+// Tahfeedh One
+.tahfeedh-one {
+    font-family: $ff-averia-libre;
+    color: $clr-6D6D6D;
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .heading-one {
+        h1 {
+            color: $clr-101010;
+        }
+        ul {
+            list-style-type: disc;
+            list-style-position: inside;
+            margin-top: 24px;
+            li {
+                + li {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    h4 {
+        font-size: 1.4em;
+        font-weight: 700;
+        color: $clr-1D2C57;
+    }
+}
+
+// Youth One
+.youth-one {
+    color: $clr-6D6D6D;
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .heading-one {
+        h1 {
+            color: $clr-101010;
+        }
+    }
+    .youth-box-one {
+        height: 100%;
+    }
+    .time-line {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-weight: 700;
+        font-size: 1.2em;
+        color: $clr-101010;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            font-size: 1em;
+        }
+        li {
+            position: relative;
+            padding-bottom: 24px;
+            width: calc(100% / 6);
+            text-align: center;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                width: calc(100% / 2);
+                padding-top: 15px;
+            }
+            &:before {
+                content: "";
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                position: absolute;
+                bottom: -6px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: $black-clr;
+            }
+            &:after {
+                content: "";
+                height: 1px;
+                width: 100%;
+                border-top: 1px dashed $clr-A7A7A7;
+                position: absolute;
+                left: 50%;
+                bottom: -1px;
+                z-index: -1;
+            }
+            &:nth-child(1) {
+                &::before {
+                    background-color: $clr-F99D27;
+                }
+            }
+            &:nth-child(2) {
+                &::before {
+                    background-color: $clr-ED1C24;
+                }
+                &:after {
+                    // Max 1080px
+                    @media (max-width: $break-1080) {
+                        display: none;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                &::before {
+                    background-color: $clr-004C8F;
+                }
+            }
+            &:nth-child(4) {
+                &::before {
+                    background-color: $clr-11C700;
+                }
+                &:after {
+                    // Max 1080px
+                    @media (max-width: $break-1080) {
+                        display: none;
+                    }
+                }
+            }
+            &:nth-child(5) {
+                &::before {
+                    background-color: $clr-2A6877;
+                }
+            }
+            &:nth-child(6) {
+                &::before {
+                    background-color: $clr-FE7500;
+                }
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// Youth Two
+.youth-two {
+    font-family: $ff-averia-libre;
+    color: $clr-6D6D6D;
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .heading-one {
+        h1 {
+            color: $clr-101010;
+            &.size-32 {
+                color: $clr-1D2C57;
+            }
+        }
+        ul {
+            &.ul-one {
+                list-style-type: decimal;
+                list-style-position: inside;
+                margin: 24px 0;
+                li {
+                    + li {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .ul-two {
+        margin-bottom: 24px;
+        li {
+            position: relative;
+            padding-left: 30px;
+            font-size: 1.4em;
+            font-weight: 700;
+            color: $clr-101010;
+            &:before {
+                content: "";
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: $clr-50AC97;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            + li {
+                margin-top: 24px;
+            }
+        }
+    }
+    .btn {
+        border-radius: 0;
+    }
+}
+
+// Education One
+.education-one {
+    color: $clr-6D6D6D;
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .heading-one {
+        h1 {
+            color: $clr-152243;
+            + p {
+                margin-top: 32px;
+
+                // Max 1080px
+                @media (max-width: $break-1080) {
+                    margin-top: 24px;
+                }
+            }
+        }
+    }
+    .img-sec {
+        text-align: right;
+    }
+    .table-sec {
+        ul {
+            background-color: $clr-F3F3F3;
+            li {
+                display: flex;
+                span {
+                    padding: 10px;
+                    width: 50%;
+                    color: $clr-101010;
+                    border-bottom: 1px solid $clr-1DB578;
+                    text-align: center;
+                    &:first-child {
+                        border-right: 1px solid $clr-1DB578;
+                    }
+                }
+            }
+        }
+    }
+    h4 {
+        display: inline-block;
+        font-weight: 700;
+        color: $clr-363636;
+        border-bottom: 3px solid $clr-1DB578;
+    }
+    .disk-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style-type: disc;
+        list-style-position: inside;
+        gap: 2em;
+        li {
+            width: 45%;
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                width: 100%;
+            }
+        }
+    }
+    .bg-text {
+        padding: 64px;
+        background-color: $clr-EEF6FC;
+        border-radius: 10px;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            padding: 24px 15px;
+        }
+    }
+}
+
+// Education Two
+.education-two {
+    padding: 60px 0;
+    color: $white-clr;
+    background-color: $clr-152243;
+    margin-bottom: 80px;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+        margin-bottom: 50px;
+    }
+}
+
+// Radiant One
+.radiant-one {
+    padding-bottom: 80px;
+    margin-top: -25px;
+    font-family: $ff-averia-libre;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding-bottom: 50px;
+    }
+    .link-box {
+        background-color: $white-clr;
+        border: 1px solid $clr-1D2C57;
+        padding: 24px 30px;
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        flex-wrap: wrap;
+
+        // Max 1080px
+        @media (max-width: $break-1080) {
+            padding: 24px 15px;
+            gap: 1em;
+        }
+        a {
+            color: $clr-1D2C57;
+            white-space: pre;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .heading-one {
+        h1 {
+            color: $clr-1D2C57;
+        }
+        .btn {
+            border-radius: 0;
+            max-width: 280px;
+            width: 100%;
+            margin-top: 24px;
+        }
+    }
+}

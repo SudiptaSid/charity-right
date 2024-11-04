@@ -1,0 +1,43 @@
+// Heading
+.section-heading {
+    margin-bottom: 16px;
+    h2 {
+        color: inherit;
+        font-size: 44px;
+        line-height: 52px;
+        font-weight: 700;
+        margin-bottom: 0;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            font-size: 26px;
+            line-height: 36px;
+        }
+        span {
+            display: inline-block;
+        }
+        + p {
+            margin-top: 32px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                margin-top: 16px;
+            }
+        }
+    }
+    p {
+        margin-bottom: 0;
+        + p {
+            margin-top: 20px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                margin-top: 16px;
+            }
+        }
+    }
+    .btn {
+        margin-top: 40px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            margin-top: 16px;
+        }
+    }
+}

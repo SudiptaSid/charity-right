@@ -1,0 +1,63 @@
+// Service One
+.serviceOne {
+  padding: 80px 0;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .sectionTitle {
+    text-align: center;
+
+    h1 {
+      color: clr(primary, main);
+    }
+
+    .btnSec {
+      .btn {
+        width: 100%;
+        max-width: 150px;
+
+        @include md {
+          max-width: 100%;
+        }
+
+      }
+
+    }
+
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 24px;
+    margin: 32px 0;
+
+    @include lg {
+      grid-template-columns: repeat(3, auto);
+    }
+
+    @include md {
+      grid-template-columns: repeat(1, auto);
+    }
+
+    li {
+      + li {
+        border-left: 1px solid clr(black, outline);
+
+        @include md {
+          border-left: none;
+        }
+
+      }
+
+      &:nth-child(6) {
+        border-left: none;
+      }
+
+    }
+
+  }
+
+}

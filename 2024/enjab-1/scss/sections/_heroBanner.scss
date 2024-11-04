@@ -1,0 +1,40 @@
+// Home Banner
+.heroBannerOne {
+  padding: 80px 0 120px;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  @include md {
+    padding: 40px 0 80px;
+  }
+
+  .sectionTitle {
+    color: clr(light, outline);
+
+    h1 {
+      color: inherit;
+      margin: auto;
+      margin-bottom: 24px;
+      max-width: 600px;
+      display: block;
+    }
+
+    h5 {
+      color: inherit;
+      margin: auto;
+      margin-bottom: 24px;
+      max-width: 480px;
+      display: block;
+    }
+
+    .btnSec {
+      .btn {
+        @include md {
+          min-width: 90%;
+        }
+      }
+    }
+  }
+}

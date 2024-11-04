@@ -1,0 +1,87 @@
+// Bg Image One
+.bg-img-one {
+    background-image: url(../images/bg1.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        height: 20px;
+    }
+}
+
+// Price Box One
+.price-box-one {
+    background-color: $clr-784DFF;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: auto;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        width: 90px;
+        height: 90px;
+    }
+    h2 {
+        font-family: $ff-poppins;
+        font-size: $sz-50;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: $white-clr;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            font-size: $sz-24;
+        }
+        small {
+            display: block;
+            font-family: $ff-noto;
+            font-size: $sz-30;
+            font-style: italic;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                font-size: $sz-18;
+            }
+        }
+    }
+}
+
+// Price Box Two
+.price-box-two {
+    background-image: url(../images/shape1.png);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 2em;
+    height: 100%;
+    gap: 2em;
+    h2 {
+        font-family: $ff-noto;
+        font-size: $sz-60;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: $clr-784DFF;
+        small {
+            display: block;
+            font-size: $sz-30;
+            font-style: italic;
+        }
+    }
+    hr {
+        margin: 0 auto;
+        width: 60%;
+        border-color: $clr-333335;
+    }
+    p {
+        font-size: $sz-18;
+        margin-bottom: 0;
+    }
+}

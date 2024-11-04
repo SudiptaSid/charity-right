@@ -1,0 +1,59 @@
+// Buttons
+.btn {
+    font-size: $sz-16;
+    font-weight: 600;
+    line-height: 1.4;
+    border: none;
+    border-radius: 0;
+    padding: 12px 24px;
+    outline: none;
+    width: 100%;
+    min-width: 180px;
+    max-width: fit-content;
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        text-shadow: none;
+        text-decoration: none;
+    }
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        font-size: $sz-14;
+        padding: 10px 16px;
+    }
+}
+
+// Btn Purple
+.btn-purple {
+    color: $white-clr !important;
+    background-color: $clr-7160FF !important;
+    &:hover,
+    &:focus {
+        color: $white-clr !important;
+        background-color: darken($clr-7160FF, 5%) !important;
+    }
+}
+
+// Btn Blue
+.btn-blue {
+    color: $clr-333335 !important;
+    background-color: $clr-91C1FF !important;
+    &:hover,
+    &:focus {
+        color: $clr-333335 !important;
+        background-color: darken($clr-91C1FF, 5%) !important;
+    }
+}
+
+// Btn White
+.btn-white {
+    color: $clr-333335 !important;
+    background-color: $white-clr !important;
+    &:hover,
+    &:focus {
+        color: $clr-333335 !important;
+        background-color: darken($white-clr, 5%) !important;
+    }
+}

@@ -1,0 +1,469 @@
+// hero section styles 
+.hero
+    padding-bottom: 70px
+
+    .heroContainer
+        text-align: center
+        position: relative
+        padding-top: 100px
+        padding-bottom: 100px
+
+        &::before
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100px
+            height: 400px
+            background-image: url('../image/heroBottomLeft.png')
+            background-size: 100% 100%
+            background-position: center
+
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            width: 100px
+            height: 400px
+            background-image: url('../image/heroTopRight.png')
+            background-size: 100% 100%
+            background-position: center   
+
+        h6
+            font-family: epilogue-medium
+            font-size: 20px
+            font-style: normal
+            line-height: 26px
+            letter-spacing: 0em
+            margin-bottom: 25px
+            color: $black
+
+        img
+            width: auto
+            height: 180px
+            margin-bottom: 20px
+            max-width: 100%
+
+        p
+            font-size: 18px
+            line-height: 24px
+            font-weight: 500
+            max-width: 470px
+            margin: 0 auto
+            margin-bottom: 50px
+            color: $black
+
+        a
+            display: inline-block
+            color: $white
+            background-color: $secondary2
+            font-size: 16px
+            line-height: 22px
+            font-family: epilogue-medium
+            padding: 15px 35px
+            border-radius: 15px
+
+        
+// hero responsive
+@media screen and (max-width: 767px)
+    .hero
+        padding-bottom: 0
+        .heroContainer
+            padding-top: 50px
+            padding-bottom: 50px
+            &::after,
+            &::before
+                display: none
+
+            img
+                height: 90px
+
+            p
+                font-size: 16px
+                line-height: 22px
+                
+
+// text image section
+.txtImg
+    padding: 80px 0
+
+    .txtImgContainer
+        .innerContainer
+            display: flex
+            align-items: center
+
+            figure
+                width: 50%
+                padding-right: 10%
+
+                img
+                    width: 100%
+                    height: auto
+
+            article
+                width: 50%
+                color: $black
+
+                h6
+                    font-family: epilogue-medium
+                    font-size: 14px
+                    font-style: normal
+                    line-height: 18px
+                    letter-spacing: 0em
+                    text-align: left
+                    margin-bottom: 25px
+                    color: $secondary2
+
+                h2
+                    font-size: 48px
+                    font-style: normal
+                    line-height: 54px
+                    letter-spacing: -0.02em
+                    text-align: left
+                    margin-bottom: 25px
+                    color: $black
+                    
+                    span
+                        color: $secondary2
+
+                p
+                    font-size: 20px
+                    line-height: 26px
+                    color: $black
+
+
+// text image responsive
+@media screen and (max-width: 767px)
+    .txtImg
+        padding: 60px 0
+
+        .txtImgContainer
+            .innerContainer
+                flex-direction: column-reverse
+
+                figure
+                    width: 100%
+                    padding-right: 0
+                    margin-top: 50px
+                    margin-bottom: 0
+
+                article
+                    width: 100%
+
+                    h2
+                        font-size: 24px
+                        line-height: 30px
+
+                    p
+                        font-size: 16px
+                        line-height: 22px
+
+
+// cards section
+.cards
+    padding: 80px 0
+    position: relative
+
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        width: 400px
+        height: 100px
+        background-image: url('../image/scheduleTopRight.png')
+        background-size: 100% 100%
+        background-position: center
+
+    .cardsContainer
+        .innerContainer
+            position: relative
+
+            .cardsTxt
+                max-width: calc( 100% - 270px )
+                margin-bottom: 80px
+
+                h6
+                    font-family: epilogue-medium
+                    font-size: 14px
+                    font-style: normal
+                    line-height: 18px
+                    letter-spacing: 0em
+                    text-align: left
+                    color: $secondary2
+                    margin-bottom: 25px
+
+                h2
+                    font-size: 48px
+                    font-style: normal
+                    line-height: 54px
+                    letter-spacing: -0.02em
+                    text-align: left
+                    margin-bottom: 25px
+                    max-width: 572px
+                    color: $black
+
+                p
+                    font-size: 20px
+                    line-height: 26px
+                    color: $black
+
+            .cardsItemsContainer
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr
+                grid-gap: 20px
+
+                .cardItem
+                    padding: 40px 25px
+                    background-color: rgba(0, 0, 0, .06)
+                    border-radius: 20px
+                    border: 1px solid rgba(0, 0, 0, .2)
+
+                    img
+                        width: 64px
+                        height: auto
+                        margin-bottom: 25px
+                        margin-top: -72px
+
+
+                    h4
+                        font-size: 24px
+                        font-style: normal
+                        line-height: 30px
+                        letter-spacing: 0em
+                        text-align: left
+                        margin-bottom: 15px
+                        max-width: 258px
+                        color: $black
+
+                    p
+                        font-size: 14px
+                        line-height: 18px
+                        margin-bottom: 0
+                        color: $black
+
+
+// cards section responsive
+@media screen and (max-width: 767px)
+    .cards
+        padding: 60px 0
+        background-size: cover
+        background-position: center
+
+        &::before 
+            display: none
+        
+        .cardsContainer
+            .innerContainer
+                &::before
+                    display: none
+
+                .cardsTxt
+                    max-width: 100%
+
+                    h2
+                        font-size: 24px
+                        line-height: 30px
+
+                    p
+                        font-size: 16px
+                        line-height: 22px
+
+                .cardsItemsContainer
+                    grid-template-columns: 1fr
+                    grid-gap: 65px
+
+                    .cardItem
+                        h4
+                            font-size: 18px
+                            line-height: 24px
+
+
+// blog section styles
+.blog
+    padding: 80px 0
+
+    .blogContainer
+        padding: 40px
+        background-color: rgba(0, 0, 0, .06)
+        border-radius: 20px
+        border: 1px solid rgba(0, 0, 0, .2)
+
+        position: relative
+
+        &::before
+            position: absolute
+            top: 40px
+            left: 40px
+            width: 154px
+            height: 154px
+            content: ''
+            background-image: url('../image/ppTopLeft.png')
+            background-size: 100% 100%
+            background-position: center
+
+        &::after
+            position: absolute
+            top: 40px
+            right: 40px
+            width: 154px
+            height: 154px
+            content: ''
+            background-image: url('../image/ppTopRight.png')
+            background-size: 100% 100%
+            background-position: center
+        
+        .innerContainer
+            .blogTxt
+                text-align: center
+                max-width: calc( 100% - 308px )
+                margin: 0 auto
+                margin-bottom: 50px
+
+                h6
+                    font-family: epilogue-medium
+                    font-size: 14px
+                    font-style: normal
+                    line-height: 18px
+                    letter-spacing: 0em
+                    color: $secondary2
+                    margin: 25px
+
+                h2
+                    font-size: 48px
+                    font-style: normal
+                    line-height: 54px
+                    letter-spacing: -0.02em
+                    margin-bottom: 25px
+                    color: $black
+
+                p
+                    font-size: 20px
+                    line-height: 26px
+                    max-width: 589px
+                    margin: 0 auto
+                    color: $black
+
+            .blogItemsContainer
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr 1fr
+                grid-gap: 20px
+
+                .blogItem
+                    figure
+                        margin-bottom: 15px
+
+                        img
+                            width: 100%
+                            height: auto
+                            border-radius: 6px
+
+                    article
+                        h4
+                            font-family: epilogue-medium
+                            font-size: 20px
+                            font-style: normal
+                            line-height: 26px
+                            letter-spacing: 0em
+                            text-align: left
+                            margin-bottom: 15px
+                            color: $black
+
+                        p
+                            font-size: 14px
+                            line-height: 18px
+                            color: $black
+
+        .blogBtn
+            text-align: center
+            margin-top: 40px
+
+            a
+                font-family: epilogue-medium
+                font-size: 16px
+                font-style: normal
+                line-height: 22px
+                letter-spacing: 0em
+                padding: 14px 32px
+                border-radius: 12px
+                color: $white
+                background-color: $secondary2
+                display: inline-block
+
+@media screen and (max-width: 767px)
+    .blog
+        padding: 60px 0
+
+        .blogContainer
+            padding: 20px
+            max-width: calc( 100% - 30px )
+
+            &::after,
+            &::before
+                display: none
+                
+            .innerContainer
+                .blogTxt
+                    max-width: 100%
+
+                    h2
+                        font-size: 22px
+                        line-height: 28px
+
+                    p
+                        font-size: 16px
+                        line-height: 22px
+
+                .blogItemsContainer
+                    grid-template-columns: 1fr
+
+            .blogBtn
+                margin-bottom: 40px
+
+// text image second
+.txtImg.txtImgSecond
+    background-size: 66% 100%
+    background-position: left center
+    background-repeat: no-repeat
+
+    .txtImgContainer
+        .innerContainer
+            align-items: start
+
+            figure
+                padding-right: 0
+
+            article
+                padding-right: 15px
+
+                h2
+                    span
+                        display: inline
+
+                a
+                    font-family: epilogue-medium
+                    font-size: 16px
+                    font-style: normal
+                    line-height: 22px
+                    letter-spacing: 0em
+                    padding: 14px 32px
+                    border-radius: 12px
+                    color: $white
+                    background-color: $secondary2
+                    margin-top: 40px
+                    display: inline-block
+
+
+// text imag second
+@media screen and (max-width: 767px)
+    .txtImg.txtImgSecond
+        background-size: 100% 66%
+        background-position: top center
+
+        .txtImgContainer
+            .innerContainer
+                flex-direction: column
+
+                article
+                    padding-right: 0

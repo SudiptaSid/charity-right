@@ -1,0 +1,239 @@
+// Select
+.select2-container--cs-theme1 {
+    .select2-selection--single {
+        border:1px solid $grey-clr;
+        border-radius:10px;
+        display: flex;
+        align-items: center;
+        .select2-selection__rendered {
+            padding:10px 15px 10px 20px;
+            font-size:16px;
+            line-height:22px;
+        }
+        .select2-selection__arrow {
+            b {
+                &:after {
+                    content: "\f107";
+                    font-family: FontAwesome;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .select2-results__option {
+        margin:5px;
+        padding:10px 15px;
+        &:hover {
+            background-color:$blue-bg-clr;
+        }
+    }
+}
+
+// Ammount Dropdown
+.select-currency-field2 {
+    padding: 10px 0;
+    color: $black-light;
+    background-color:$white-clr;
+    border: 1px solid $grey-clr;
+    border-radius: 12px;
+    margin-top:8px;
+    margin-bottom:15px;
+    // --------------------------------
+    @media (max-width: $break_767) {
+        padding:8px 0;
+        border-radius:6px;
+    }
+    .input-group-prepend {
+        margin-right:0;
+        .btn-currency {
+            border-radius:0;
+            color: $black-light;
+            background:$no-clr;
+            border: none;
+            min-width: 100px;
+            line-height: 18px;
+            padding: 10px 20px;
+            // --------------------------------
+            @media (max-width: $break_767) {
+                min-width: 80px;
+                line-height: 14px;
+            }
+            &:active, &:focus {
+                color:$black-light;
+                background-color:$no-clr !important;
+            }
+            &:after {
+                margin-left: 0em;
+                content: "\f107";
+                font-family: FontAwesome;
+                font-size: 16px;
+                border: none;
+                vertical-align: unset;
+                position: absolute;
+                top: 8px;
+                right: 30px;
+            }
+        }
+    }
+    .dropdown-menu {
+        min-width: 100px;
+        text-align: center;
+        font-size: 20px;
+        transform: translate3d(-1px, 65px, 7px) !important;
+        .dropdown-item {
+            font-size: 20px;
+        }
+    }
+    .form-control {
+        padding:0;
+        padding-left: 15px;
+        border: none;
+        border-left: 1px solid $grey-clr;
+        border-radius: 0;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 600;
+        // --------------------------------
+        @media (max-width: $break_767) {
+            font-size:14px;
+            line-height:18px;
+        }
+    }
+}
+
+// Donation Modal
+.donations-modal {
+    .modal-dialog {
+        max-width: 414px;
+        .modal-content {
+            .modal-body {
+                padding:40px 24px;
+                h5 {
+                    font-size:24px;
+                    line-height:30px;
+                    font-weight: 700;
+                    margin-bottom:40px;
+                }
+                .split-boxi {
+                    padding:24px;
+                    border:1px solid $grey-clr;
+                    border-radius:10px;
+                    max-width: 240px;
+                    min-height: 250px;
+                    margin: auto;
+                    margin-bottom: 40px;
+                    text-align: center;
+                    // --------------------------------
+                    @media (max-width: $break_767) {
+                        min-height: 220px;
+                        margin-bottom: 20px;
+                    }
+                    .circle-number {
+                        span {
+                            color:$white-clr;
+                            background-color:$light-pink-clr;
+                            width:100px;
+                            height:100px;
+                            font-size:36px;
+                            line-height:100px;
+                            font-weight: 700;
+                            display: inline-block;
+                            border-radius:50%;
+                            text-align: center;
+                            // --------------------------------
+                            @media (max-width: $break_767) {
+                                font-size:26px;
+                                width:60px;
+                                height:60px;
+                                line-height:60px;
+                            }
+                        }
+                    }
+                    p {
+                        font-size:20px;
+                        line-height:26px;
+                        margin:20px 0;
+                        color:$grey2-clr;
+                        // --------------------------------
+                        @media (max-width: $break_767) {
+                            font-size:18px;
+                            line-height:24px;
+                            margin:15px 0;
+                        }
+                    }
+                    .ammount-sec {
+                        span {
+                            display: inline-block;
+                            font-size:36px;
+                            line-height:44px;
+                            font-weight: 700;
+                            // --------------------------------
+                            @media (max-width: $break_767) {
+                                font-size:26px;
+                                line-height:32px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Warning Msg
+.warning-msg {
+    font-size: 14px;
+    line-height: 18px;
+    color: $black-light;
+    background-color: #FCEEC3;
+    margin-top: 12px;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    padding-left: 45px;
+    position: relative;
+    &:before {
+        content: url(../images/warn-icon-left.png);
+        position: absolute;
+        left: 15px;
+    }
+}
+
+// Tooltip
+.sd-tooltip2 {
+    position: relative;
+    display: inline-block;
+    .tooltiptext {
+        visibility: hidden;
+        min-width: 120px;
+        color: $white-clr;
+        background-color: $primary-clr;
+        text-align: center;
+        border-radius: 4px;
+        padding: 5px 10px;
+        position: absolute;
+        z-index: 1;
+        top: -35px;
+        right: 0;
+        opacity: 0;
+        transition: opacity 0.3s;
+        font-size: 12px;
+        line-height: 16px;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            right: 5px;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: $primary-clr transparent transparent transparent;
+        }
+    }
+    &:hover {
+        .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}

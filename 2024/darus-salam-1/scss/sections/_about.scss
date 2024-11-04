@@ -1,0 +1,93 @@
+// About One
+.aboutOne {
+  padding: 80px 0;
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .imgSec {
+    margin-top: -140px;
+    position: relative;
+    z-index: 5;
+
+    @include md {
+      margin-top: 0;
+    }
+  }
+
+  .sectionTitle {
+    h1 {
+      color: clr(secondary, main);
+    }
+
+    .btnSec {
+      .btn {
+        min-width: 90%;
+      }
+    }
+  }
+}
+
+// About Two
+.aboutTwo {
+  padding: 80px 0;
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .sectionTitle {
+    h1 {
+      color: clr(secondary, main);
+    }
+  }
+
+  .content {
+    position: relative;
+
+    .imgSec {
+      max-width: 800px;
+    }
+
+    .bgBox {
+      background-size: cover;
+      padding: 48px;
+      max-width: 600px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+
+      @include md {
+        position: relative;
+        top: unset;
+        right: unset;
+        transform: unset;
+        padding: 24px 15px;
+      }
+
+      .sectionTitle {
+        color: clr(light, outline);
+
+        p {
+          font-size: 14px;
+        }
+
+        .btn {
+          width: 100%;
+
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

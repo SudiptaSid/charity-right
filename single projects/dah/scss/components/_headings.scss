@@ -1,0 +1,40 @@
+// Heading
+.section-heading {
+    margin-bottom: 48px;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        margin-bottom: 36px;
+    }
+    h2 {
+        color: inherit;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 62px;
+        margin-bottom: 0;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        span {
+            color: $primary-clr;
+            display: inline;
+        }
+        + p {
+            margin-top: 24px;
+        }
+        + .btn-sec {
+            margin-top: 36px;
+        }
+    }
+    p {
+        color: inherit;
+        margin-bottom: 0;
+        + p {
+            margin-top: 24px;
+        }
+        + .btn-sec {
+            margin-top: 36px;
+        }
+    }
+}

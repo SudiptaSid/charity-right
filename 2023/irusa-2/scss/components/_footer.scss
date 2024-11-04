@@ -1,0 +1,54 @@
+// Footer
+.main-footer {
+    color: $white-clr;
+    background-color: $clr-0F3481;
+    padding: 2em 0;
+    .gap-y {
+        gap: 3em 0;
+
+        // Max Width 767px
+        @media (max-width: $break-767) {
+            gap: 2em 0;
+        }
+    }
+    .gap-y2 {
+        gap: 2em 0;
+    }
+    .newsletter-two {
+        max-width: 600px;
+        margin: auto;
+    }
+    h5 {
+        font-size: $sz-22;
+        margin-bottom: 20px;
+
+        // Max Width 767px
+        @media (max-width: $break-767) {
+            font-size: $sz-18;
+            margin-bottom: 10px;
+        }
+    }
+    .link-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        li {
+            a {
+                color: $white-clr;
+                &:hover {
+                    font-weight: 600;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .social-list {
+        display: flex;
+        gap: 8px;
+        a {
+            img {
+                height: 26px;
+            }
+        }
+    }
+}

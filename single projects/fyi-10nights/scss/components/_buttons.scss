@@ -1,0 +1,79 @@
+a,
+button {
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 1em;
+    cursor: pointer;
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}
+
+// Button
+.btn {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;
+
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 10px 15px;
+        border-radius: 6px;
+    }
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    // Btn Sm
+    &.btn-sm {
+        border-radius: 6px;
+        padding: 8px 15px;
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    // Max 230
+    &.btn-230 {
+        width: 100%;
+        max-width: 230px;
+    }
+
+    // Btn Main
+    &.btn-main {
+        color: $black-clr;
+        background-color: $primary-clr;
+        &:hover,
+        &:focus {
+            color: $black-clr;
+            background-color: darken($primary-clr, 5%);
+        }
+    }
+
+    // Btn White
+    &.btn-white {
+        color: $black-clr;
+        background-color: $white-clr;
+        &:hover,
+        &:focus {
+            color: $black-clr;
+            background-color: darken($white-clr, 5%);
+        }
+    }
+}

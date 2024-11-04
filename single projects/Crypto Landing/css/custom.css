@@ -1,0 +1,191 @@
+#main-header .right-menu .btn_sec {
+    display: flex;
+    align-items: center;
+}
+
+#main-header .right-menu .btn_sec .dropdown {
+    margin-right: 25px;
+}
+
+#main-header .right-menu .btn_sec .dropdown .dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    padding: 0;
+    padding-right: 30px;
+    position: relative;
+}
+
+#main-header .right-menu .btn_sec .dropdown .dropdown-toggle:after {
+    content: "\f107";
+    border: none;
+    font-family: FontAwesome;
+    font-size: 16px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    vertical-align: unset;
+    margin: 0;
+    width: auto;
+    height: auto;
+}
+
+#main-header .right-menu .btn_sec .dropdown .dropdown-toggle:hover,
+#main-header .right-menu .btn_sec .dropdown .dropdown-toggle:focus,
+#main-header .right-menu .btn_sec .dropdown .dropdown-toggle:active {
+    background-color: transparent;
+    color: #101010;
+}
+
+#main-header .right-menu .btn_sec .dropdown .dropdown-toggle img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#main-header .right-menu .btn_sec .dropdown .dropdown-menu {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0;
+}
+
+#main-header .right-menu .btn_sec .dropdown .dropdown-menu .dropdown-item {
+    padding: 10px;
+}
+
+#mobile-menu .btn_sec {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#mobile-menu .btn_sec .btn {
+    min-width: 110px;
+}
+
+@media (min-width: 992px) and (max-width: 1240px) {
+    #main-header .right-menu .btn_sec .dropdown {
+        margin-right: 10px;
+    }
+
+    #main-header .right-menu .btn_sec .dropdown .dropdown-toggle {
+        font-size: 12px;
+        line-height: 16px;
+        padding-right: 24px;
+    }
+
+    #main-header .right-menu .btn_sec .dropdown .dropdown-toggle img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 991px) {
+    #main-header .right-menu .btn_sec .dropdown {
+        display: none;
+    }
+}
+
+.basic-modal .modal-dialog {
+    max-width: 630px;
+}
+
+.basic-modal .modal-dialog .modal-content {
+    border-radius: 20px;
+    border: none;
+}
+
+.basic-modal .modal-dialog .modal-content .modal-body {
+    padding: 100px 60px;
+}
+
+.basic-modal .modal-dialog .modal-content .modal-body .close {
+    display: none;
+}
+
+.basic-modal .modal-dialog .modal-content .modal-body h5 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.basic-modal .modal-dialog .modal-content .modal-body p {
+    margin-bottom: 0;
+    text-align: center;
+    color: #7a8193;
+}
+
+.basic-modal .modal-dialog .modal-content .modal-body .btn-sec {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.basic-modal .modal-dialog .modal-content .modal-body .btn-sec .btn {
+    max-width: 200px;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .basic-modal .modal-dialog .modal-content {
+        border-radius: 14px;
+    }
+
+    .basic-modal .modal-dialog .modal-content .modal-body {
+        padding: 30px 20px;
+    }
+
+    .basic-modal .modal-dialog .modal-content .modal-body h5 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+
+#share-modal2.basic-modal .modal-dialog {
+    max-width: 430px;
+}
+
+#share-modal2.basic-modal .modal-dialog .modal-content .modal-body {
+    padding: 30px 20px;
+}
+
+#share-modal2.basic-modal .modal-dialog .modal-content .modal-body h4 {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#share-modal2.basic-modal .modal-dialog .modal-content .modal-body .social-icon {
+    text-align: center;
+}
+
+#share-modal2.basic-modal .modal-dialog .modal-content .modal-body .social-icon li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+#share-modal2.basic-modal .modal-dialog .modal-content .modal-body .social-icon a {
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e42281;
+    color: #e42281;
+    background-color: #fff;
+    font-size: 26px;
+    line-height: 50px;
+    text-align: center;
+}
+
+#share-modal2.basic-modal .modal-dialog .modal-content .modal-body .social-icon a:hover {
+    border: 1px solid #e42281;
+    color: #fff;
+    background-color: #e42281;
+}

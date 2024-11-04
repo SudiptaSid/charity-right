@@ -1,0 +1,44 @@
+// Event Calender One
+.event-calender-one {
+    padding: 80px 0;
+
+    // Max 1080px
+    @media (max-width: $break-1080) {
+        padding: 50px 0;
+    }
+    .filter-sec {
+        display: flex;
+        gap: 1em;
+        select {
+            border: 1px solid $clr-C7BC8E;
+            padding: 8px 15px;
+        }
+        .imput-box {
+            position: relative;
+            border: 1px solid $clr-C7BC8E;
+            padding: 8px 15px;
+            input {
+                border: none;
+                padding: 0;
+                width: 120px;
+            }
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+        li {
+            width: calc(20% - 10px);
+
+            // Max 1080px
+            @media (max-width: $break-1080) {
+                width: calc(50% - 5px);
+            }
+        }
+    }
+}

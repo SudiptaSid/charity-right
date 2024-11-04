@@ -1,0 +1,18 @@
+// Main Header
+.mainHeader {
+    padding: 30px 0;
+    background-color: clr(light, outline);
+
+    @include md {
+        padding: 20px 0;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .rightSec {
+        text-align: left;
+    }
+}

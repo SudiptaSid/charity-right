@@ -1,0 +1,98 @@
+// Main Header
+#main-header {
+    display: block;
+    padding: 40px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index:9;
+    /* ----- Max Width 1200px ----- */
+    @media (max-width: $break_1200) {
+        padding:30px 0;
+    }
+    /* ----- Max Width 991px ----- */
+    @media (max-width: $break_991) {
+        padding:20px 0;
+    }
+    /* ----- Max Width 767px ----- */
+    @media (max-width: $break_767) {
+        padding:10px 0;
+    }
+    .left-menu {
+        a {
+            display: inline-block;
+            img {
+                height:50px;
+                width:auto;
+                /* ----- Max Width 991px ----- */
+                @media (max-width: $break_991) {
+                    height:40px;
+                }
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    height:25px;
+                }
+            }
+        }
+    }
+    .right-menu {
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+        .links-sec {
+            margin-right:48px;
+            /* ----- Max Width 991px ----- */
+            @media (max-width: $break_991) {
+                margin-right:30px;
+            }
+            /* ----- Max Width 767px ----- */
+            @media (max-width: $break_767) {
+                margin-right:10px;
+            }
+            a {
+                display: inline-block;
+                color: $white-clr;
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    font-size:13px;
+                    line-height:18px;
+                }
+                +a {
+                    margin-left:30px;
+                    /* ----- Max Width 991px ----- */
+                    @media (max-width: $break_991) {
+                        margin-left:20px;
+                    }
+                    /* ----- Max Width 767px ----- */
+                    @media (max-width: $break_767) {
+                        margin-left:10px;
+                    }
+                }
+                &.active, &:hover {
+                    color:$primary-clr;
+                }
+            }
+        }
+        .btn_sec {
+            .btn {
+                font-size:13px;
+                line-height:16px;
+                padding:16px;
+                min-width:160px;
+                /* ----- Max Width 991px ----- */
+                @media (max-width: $break_991) {
+                    min-width:120px;
+                    padding:12px;
+                }
+                /* ----- Max Width 767px ----- */
+                @media (max-width: $break_767) {
+                    font-size:11px;
+                    line-height:16px;
+                    min-width:unset;
+                    padding:10px 15px;
+                }
+            }
+        }
+    }
+}

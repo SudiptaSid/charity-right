@@ -1,0 +1,121 @@
+// Range Slider
+.ui-widget.ui-widget-content {
+    border: none;
+    border-radius: 10px;
+    height: 10px;
+    background-color: $white-clr;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    border-radius: 10px;
+    background-color: $primary-clr;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    top: -4px;
+    background-color: $white-clr;
+}
+
+// Tab One
+.tab-one {
+    background-color: $clr-EBF0F9;
+    .nav {
+        border-bottom: 1px solid $clr-BBD3FF;
+        .nav-item {
+            width: 50%;
+            padding: 8px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                padding: 4px;
+            }
+            .nav-link {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 30px;
+                text-align: center;
+                padding: 25px;
+                border: none;
+                border-radius: 0;
+                color: $clr-454545;
+                background-color: $no-clr;
+                /* Max Width 991px */
+                @media (max-width: $break_991) {
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding: 10px;
+                }
+                &.active {
+                    color: $white-clr;
+                    background-color: $primary-clr;
+                }
+            }
+            + .nav-item {
+                border-left: 1px solid $clr-BBD3FF;
+            }
+        }
+    }
+    .tab-content {
+        padding: 40px 25px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            padding: 25px 15px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 28px;
+        }
+    }
+    &.tab-one-e {
+        .nav {
+            .nav-item {
+                padding: 0;
+                /* Max Width 991px */
+                @media (max-width: $break_991) {
+                    padding: 4px;
+                }
+                .nav-link {
+                    &.active {
+                        color: $primary-clr;
+                        background-color: #CED9EF;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Join Us Newsletter
+.newsletter {
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: $white-clr;
+    .form-control {
+        width: calc(100% - 130px);
+        padding: 10px 15px;
+        color: $clr-585858;
+        line-height: 30px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            width: 100%;
+            line-height: 18px;
+        }
+    }
+    .btn {
+        font-size: 1em;
+        font-weight: 600;
+        width: 130px;
+        padding: 12px 15px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            width: auto;
+            padding: 10px 15px;
+        }
+    }
+}

@@ -1,0 +1,250 @@
+// Tab One
+.tab-one {
+    .nav {
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: -5px;
+        .nav-item {
+            width: 30%;
+            .nav-link {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 1;
+                text-align: center;
+                padding: 0;
+                padding-bottom: 20px;
+                border: none;
+                border-bottom: 9px solid $no-clr;
+                border-radius: 0;
+                text-transform: uppercase;
+                color: $white-clr;
+                background-color: $no-clr;
+                /* Max Width 991px */
+                @media (max-width: $break_991) {
+                    font-size: 12px;
+                    padding-bottom: 20px;
+                }
+                &.active {
+                    border-color: $primary-clr;
+                }
+            }
+        }
+    }
+    .tab-content {
+        background-color: $white-clr;
+        border: 3px solid $primary-clr;
+        padding: 50px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            padding: 25px 15px;
+        }
+        p {
+            margin-bottom: 32px;
+            text-align: center;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+
+// Icon Sec
+.icon-sec1 {
+    margin-top: 54px;
+    text-align: center;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        margin-top: 36px;
+    }
+    p {
+        margin-bottom: 0;
+        margin-top: 24px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            margin-top: 0;
+        }
+    }
+}
+
+// Ammount Box
+.ammount-box {
+    margin-top: 80px;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        margin-top: 36px;
+    }
+    .bg-box {
+        text-align: center;
+        background-color: $primary-clr;
+        padding: 75px 15px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            padding: 35px 15px;
+        }
+        h3 {
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 1;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                font-size: 40px;
+            }
+        }
+        &.shadows {
+            background-color: $white-clr;
+            box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.11);
+        }
+    }
+    p {
+        margin: 24px 0;
+        font-weight: bold;
+        font-size: 0.8em;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            margin: 16px 0;
+            font-size: 1em;
+        }
+        span {
+            color: $primary-clr;
+            display: block;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                display: inline;
+            }
+        }
+    }
+    .btn {
+        // Min Width 768px
+        @media (min-width: $break_767 + 1px) {
+            font-size: 18px;
+        }
+    }
+}
+
+// Ammount Box Two
+.abbount-box2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #FFEEEE;
+    font-size: 0.8em;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        font-size: 1em;
+    }
+    span {
+        font-weight: bold;
+        width: 130px;
+        color: $white-clr;
+        background-color: $primary-clr;
+        text-align: center;
+        line-height: 60px;
+        padding: 10px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            width: 100%;
+            line-height: 20px;
+        }
+    }
+    p {
+        width: calc(100% - 260px);
+        padding: 10px;
+        text-align: center;
+        font-size: 0.9em;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            width: 100%;
+            font-size: 1em;
+        }
+    }
+    a {
+        width: 130px;
+        line-height: 60px;
+        padding: 10px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            width: 100%;
+            max-width: unset;
+            line-height: 20px;
+        }
+    }
+}
+
+// Newsletter
+.newsletter-form {
+    max-width: 1060px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $clr-FFF6EB;
+    .form-control {
+        width: calc(100% - 200px);
+        padding: 15px 30px;
+        background-color: $no-clr;
+        line-height: 50px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            line-height: 24px;
+            width: 100%;
+            padding: 10px 16px;
+        }
+    }
+    .btn {
+        font-size: 1em;
+        line-height: 50px;
+        width: 185px;
+        padding: 15px 30px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            line-height: 24px;
+            width: auto;
+            padding: 10px 16px;
+        }
+    }
+}
+
+// Review Box
+.review-box {
+    max-width: 1130px;
+    display: inline-block;
+    padding: 50px 0;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 10px 0;
+    }
+    .avtr-img {
+        span {
+            display: inline-block;
+            img {
+                width: auto;
+                /* Max Width 991px */
+                @media (max-width: $break_991) {
+                    max-width: 80px;
+                }
+            }
+        }
+    }
+    .details-sec {
+        h5 {
+            font-size: 34px;
+            font-weight: bold;
+            line-height: 1.4;
+            margin-bottom: 10px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                font-size: 28px;
+            }
+        }
+        p {
+            font-size: 28px;
+            line-height: 1.6;
+            margin-bottom: 0;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                font-size: 20px;
+            }
+        }
+    }
+}

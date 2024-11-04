@@ -1,0 +1,173 @@
+// Hero Banner
+.hero-banner {
+    padding: 150px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    z-index: 0;
+
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding: 80px 0;
+        text-align: center;
+    }
+    &:before {
+        content: "";
+        background-image: linear-gradient(to left, rgba($white-clr, 0) 0%, rgba(0, 137, 42, 0.85) 50.08%, #005b1c 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        z-index: -1;
+    }
+    .section-heading {
+        color: $white-clr;
+        h1 {
+            font-weight: 900;
+        }
+        p {
+            font-weight: 600;
+        }
+    }
+}
+
+// About One
+.about-one {
+    .section-heading {
+        // Min Width 768px
+        @media (min-width: $break_767 + 1px) {
+            margin-bottom: 0;
+        }
+        h2 {
+            span {
+                color: $secondary-clr;
+                &.span2 {
+                    color: $primary-clr;
+                }
+            }
+        }
+    }
+}
+
+// Donate One
+.donate-one {
+    .section-heading {
+        color: $black-clr;
+    }
+}
+
+// Banner Two
+.banner-two {
+    background-color: #edf6ff;
+    padding: 80px 0;
+    .section-heading {
+        margin-bottom: 100px;
+
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: $primary-clr;
+        }
+    }
+    .content {
+        h4 {
+            font-size: 25px;
+            font-weight: 900;
+            margin-bottom: 50px;
+
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                font-size: 20px;
+                margin-bottom: 24px;
+            }
+        }
+        p {
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 0;
+            color: $secondary-clr;
+
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                font-size: 26px;
+            }
+            span {
+                color: $clr-23496b;
+                font-size: 0.4em;
+
+                /* Max Width 767px */
+                @media (max-width: $break_767) {
+                    font-size: 0.6em;
+                }
+            }
+        }
+    }
+}
+
+// About Two
+.about-two {
+    .left-sec {
+        background-color: #edf6ff;
+        padding: 100px 50px;
+
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            padding: 50px 15px;
+        }
+    }
+    .right-sec {
+        padding: 0;
+    }
+}
+
+// Join Us
+.join-us {
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+    }
+    .content {
+        background-color: #004691;
+        border-radius: 10px;
+        padding: 80px 50px;
+
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            padding: 20px 15px;
+            border-radius: 0;
+        }
+        .section-heading {
+            color: $white-clr;
+        }
+        .form-group {
+            margin-bottom: 0;
+            .input_field {
+                display: flex;
+                align-items: center;
+                border: 3px solid $white-clr;
+                border-radius: 6px;
+                background-color: $white-clr;
+                max-width: 500px;
+                margin: 0 auto;
+                padding: 5px;
+                position: relative;
+                .form-control {
+                    padding: 0 15px;
+                    border: none;
+                    border-radius: 0;
+                    background-color: $no-clr;
+                    &::placeholder {
+                        color: rgba($black-clr, 0.5);
+                    }
+                }
+                .btn {
+                    color: $white-clr;
+                }
+            }
+        }
+    }
+}

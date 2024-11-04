@@ -1,0 +1,62 @@
+// Newsletter One
+.newsletterOne {
+  padding: 80px 0;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .bgBox {
+    background-color: clr(secondary, main);
+    padding: 50px;
+
+    @include md {
+      padding: 32px 24px;
+    }
+
+    .bgTitle {
+      padding-bottom: 10px;
+      margin-bottom: 32px;
+      border-bottom: 5px solid clr(primary, main);
+
+      h1 {
+        display: inline-block;
+        color: clr(light, outline);
+        background-color: clr(primary, main);
+        padding: 15px 10px;
+      }
+    }
+
+    .sectionTitle {
+      p {
+        color: clr(light, outline);
+      }
+    }
+
+    .form-group {
+      max-width: 700px;
+      margin: auto;
+      display: flex;
+      gap: 10px;
+      background-color: clr(light, outline);
+      padding: 5px;
+
+      @include md {
+        flex-wrap: wrap;
+      }
+
+      .inputBox {
+        flex-grow: 1;
+        flex-shrink: 0;
+      }
+
+      .btn {
+        min-width: 150px;
+
+        @include md {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

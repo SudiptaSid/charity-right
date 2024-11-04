@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Charity Right</title>
+
+	<!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+	<!-- Custom Css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Donation Header-->
+<header id="donation-header">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col text-left">
+				<span class="step-text">Donation. <span>Step 1</span> out of 3</span>
+				<span class="need-help">
+						<a href="need-help.html">Need help?</a>
+					</span>
+			</div>
+			<div class="col text-center">
+					<span class="logo">
+						<a href="index.html">
+							<img src="images/logo.png" alt="">
+						</a>
+					</span>
+			</div>
+			<div class="col text-right">
+					<span class="need-help">
+						<a href="need-help.html">Need help?</a>
+					</span>
+				<span class="no-account">
+						<a href="sign-in.html">Sign in</a>
+					</span>
+			</div>
+		</div>
+	</div>
+</header>
+
+	<div class="progress custon-progress">
+		<div class="progress-bar custon-progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+	</div>
+
+
+	<!-- Donation 1 Form -->
+	<section id="donation-page-hp">
+		<div class="container">
+			<div class="bottom-pattern">
+				<img src="images/pattern/bottom1.png" alt="">
+			</div>
+			<div class="row">
+				<div class="col-lg-5 col-md-6">
+					<div class="content">
+						<ul class="steps">
+							<li class="bold-600"><span>Step 1</span> out of 3</li>
+						</ul>
+						<h1>Personal info and <span>payment details</span></h1>
+						<form action="0">
+
+							<div class="custom-form-group">
+								<label for="">Enter full name</label>
+								<input type="text" value="Metthew Dallas" class="form-control" placeholder="Your name">
+							</div>
+							<div class="custom-form-group">
+								<label for="">Your email</label>
+								<input type="text" value="metthewdallas@gmail.com" class="form-control" placeholder="Email">
+							</div>
+							<div class="d-flex justify-content-start mb-25">
+								<label class="custom-checkbox">
+									Register to speed up your donation process
+									<input type="checkbox" checked="checked">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							<div class="custom-form-group">
+								<label for="">Create a password</label>
+								<input type="text" class="form-control" placeholder="Email">
+							</div>
+
+							<div class="devider-40"></div>
+
+							<h2>Payment details</h2>
+
+							<div class="d-flex justify-content-start mb-25">
+								<label class="custom-radio">
+									Credit card
+									<input type="radio" name="payment" checked="checked" value="creditcardValue">
+									<span class="checkmark"></span>
+								</label>
+								<label class="custom-radio">
+									PayPal
+									<input type="radio" name="payment" value="paypalValue">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+
+							<div id="creditcardValue">
+								<h6>We accept:</h6>
+								<div class="we-accept">
+									<ul>
+										<li><img src="images/donation-pg/visa-icon.png" alt=""></li>
+										<li><img src="images/donation-pg/master-icon.png" alt=""></li>
+									</ul>
+								</div>
+								<div class="custom-form-group">
+									<label for="">Enter card number</label>
+									<input type="text" class="form-control" placeholder="XXXX XXXX XXXX XXXX">
+								</div>
+								<div class="row">
+									<div class="col-6">
+										<div class="custom-form-group">
+											<label for="">Expiration date</label>
+											<input type="text" class="form-control" placeholder="MM/YYYY">
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="custom-form-group">
+											<label for="">Security code</label>
+											<div class="row align-items-center m-0">
+												<div class="col-9 p-0">
+													<input type="text" class="form-control" placeholder="***">
+												</div>
+												<div class="col-3 pr-0">
+													<img src="images/donation-pg/info.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div id="paypalValue" class="redirect-paypal">
+								<p>You will be redirected to the PayPal website</p>
+							</div>
+
+							<div class="charge-info">
+								<p>
+									We are charged £2.20 every time we process a donation. You can ensure we receive 100% of your gift by ticking the box below. Thank you.
+								</p>
+							</div>
+
+							<div class="d-flex justify-content-start mb-25">
+								<label class="custom-checkbox">
+									Ensure your charity gets <span>100%</span>
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+
+							<div class="devider-40 d-md-none"></div>
+
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-6">
+					<div class="content mob-mt-0">
+						<div class="donation-description">
+							<div class="supported">
+								<div class="supported-title">
+									<h4>Your donation</h4>
+									<a href="">
+										<img src="images/donation-pg/edit-icon.png" alt="">
+									</a>
+								</div>
+								<ul>
+									<li>School meals</li>
+									<li>One-off gift</li>
+								</ul>
+								<div class="devider"></div>
+								<div class="d-flex justify-content-between amount mb-20">
+									<span>Amount</span>
+									<span>£625</span>
+								</div>
+								<div class="d-flex justify-content-between amount mb-20">
+									<span>Fees</span>
+									<span>£2.22</span>
+								</div>
+								<div class="devider"></div>
+								<div class="d-flex justify-content-between amount-total mb-20">
+									<span>Total</span>
+									<span>£627,22</span>
+								</div>
+								<div class="text-const">
+									<p>Could provide 1 share in a rebuild of an entire school</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="bottom-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="btn-sec">
+						<a href="donate.html" class="btn btn-back btn-grey-border">Back</a>
+						<a href="donation-3.html" class="btn btn-main-inactive">Continue</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Jquery Min -->
+	<script src="js/jquery.min.js"></script>
+
+	<!-- Popper Min -->
+	<script src="plugins/bootstrap/js/popper.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Owl Carousel -->
+	<script src="plugins/owl-carousel/js/owl.carousel.min.js"></script>
+
+	<!-- Star Rating -->
+	<script src="plugins/star_rating/star-rating.js"></script>
+
+	<!-- A Carousel -->
+	<script src="plugins/acarousel/jquery.acarousel.min.js"></script>
+
+	<!-- Select -->
+	<script src="plugins/select/select.js"></script>
+
+	<!-- Input Phone -->
+	<script src="plugins/phone/phone.js"></script>
+
+	<!-- Date Picker -->
+	<script src="plugins/datepicker/bootstrap-datepicker.min.js"></script>
+
+	<!-- CK Editor -->
+	<script src="plugins/ckeditor.js"></script>
+
+	<!-- Pie Chart -->
+	<script src="plugins/chart1.js"></script>
+
+	<!-- Custom Js -->
+	<script src="js/default.js"></script>
+</body>
+</html>

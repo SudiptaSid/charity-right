@@ -1,0 +1,59 @@
+// Buttons
+.btn {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    outline: none;
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        text-shadow: none;
+        text-decoration: none;
+    }
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        font-size: 14px;
+        padding: 10px 16px;
+        border-radius: 6px;
+    }
+}
+
+// Btn Main
+.btn-main {
+    color: $white-clr !important;
+    background-color: $clr-EE6DD4 !important;
+    &:hover,
+    &:focus {
+        color: $white-clr !important;
+        background-color: darken($clr-EE6DD4, 5%) !important;
+    }
+}
+
+// Btn Main Border
+.btn-main-border {
+    color: $clr-333335 !important;
+    background-color: $clr-FFCB66 !important;
+    border: 2px solid $clr-EE6DD4;
+    &:hover,
+    &:focus {
+        color: $clr-333335 !important;
+        background-color: darken($clr-FFCB66, 5%) !important;
+        border: 2px solid $clr-EE6DD4;
+    }
+}
+
+// Btn Yellow
+.btn-yellow {
+    color: $white-clr !important;
+    background-color: $clr-FFCB66 !important;
+    &:hover,
+    &:focus {
+        color: $white-clr !important;
+        background-color: darken($clr-FFCB66, 5%) !important;
+    }
+}

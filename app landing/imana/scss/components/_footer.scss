@@ -1,0 +1,35 @@
+// Footer
+.main-footer {
+    padding: 30px 0;
+    background-color: $clr-020000;
+    /* Max width 767px */
+    @media (max-width: $break_767) {
+    }
+    h4 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: $white-clr;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+    }
+    .btn {
+        border: 1px solid $white-clr;
+        border-radius: 0;
+        padding: 10px 30px;
+        line-height: 20px;
+    }
+    p {
+        margin-bottom: 0;
+        margin-top: 30px;
+        font-size: 14px;
+        color: $white-clr;
+        /* Max width 767px */
+        @media (max-width: $break_767) {
+            margin-top: 16px;
+        }
+    }
+}

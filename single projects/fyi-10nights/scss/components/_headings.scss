@@ -1,0 +1,50 @@
+// Heading
+.section-heading {
+    margin-bottom: 48px;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        margin-bottom: 36px;
+    }
+    h2 {
+        color: inherit;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 11;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            font-size: 26px;
+        }
+        &.h2-55 {
+            font-size: 55px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                font-size: 34px;
+            }
+        }
+        + p {
+            margin-top: 16px;
+        }
+        + .btn-sec {
+            margin-top: 24px;
+        }
+    }
+    p {
+        color: inherit;
+        margin-bottom: 0;
+        &.p-20 {
+            font-size: 20px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                font-size: 16px;
+            }
+        }
+        + p {
+            margin-top: 16px;
+        }
+        + .btn-sec {
+            margin-top: 24px;
+        }
+    }
+}

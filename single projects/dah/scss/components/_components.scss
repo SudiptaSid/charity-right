@@ -1,0 +1,243 @@
+// Donation Box
+.donation-box {
+    max-width: 540px;
+    background-color: $clr-F8F6ED;
+    .head-sec {
+        padding: 30px 15px;
+        text-align: center;
+        color: $white-clr;
+        background-color: $primary-clr;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            padding: 16px 15px;
+        }
+        h4 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 0;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                font-size: 18px;
+            }
+        }
+    }
+    .body-sec {
+        padding: 40px 24px;
+        .donate-shortlist {
+            display: flex;
+            justify-content: space-between;
+            li {
+                width: calc(33.333333% - 10px);
+            }
+        }
+        .custom-ammount {
+            margin: 30px 0;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                margin: 24px 0;
+            }
+            .form-control {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 30px;
+                padding: 15px 20px;
+                color: $clr-363636;
+                background-color: $clr-F1F1F1;
+                /* Max Width 991px */
+                @media (max-width: $break_991) {
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 10px;
+                }
+            }
+        }
+        .donate-shortlist2 {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                margin-bottom: 24px;
+            }
+            li {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+// Package Box
+.package-box {
+    margin-top: 58px;
+    background-color: $white-clr;
+    padding: 55px 15px;
+    text-align: center;
+    border: 1px solid $primary-clr;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 24px 15px;
+        margin-top: 24px;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 44px;
+        margin-bottom: 32px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 24px;
+        }
+    }
+    h1 {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 64px;
+        margin-bottom: 0;
+        color: $primary-clr;
+        font-family: sans-serif;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            font-size: 30px;
+            line-height: 44px;
+        }
+    }
+    p {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 40px 0;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            margin: 24px 0;
+        }
+    }
+}
+
+// Newsletter
+.newsletter {
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: $white-clr;
+    .form-control {
+        width: calc(100% - 130px);
+        padding: 10px 15px;
+        color: $clr-363636;
+        line-height: 30px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            width: 100%;
+            line-height: 18px;
+        }
+    }
+    .btn {
+        font-size: 1em;
+        font-weight: 600;
+        width: 130px;
+        padding: 12px 15px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            width: auto;
+            padding: 10px 15px;
+        }
+    }
+}
+
+// Social Icons
+.social-links {
+    display: flex;
+    li {
+        a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            color: $primary-clr;
+            border: 1px solid $primary-clr;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 20px;
+        }
+        + li {
+            margin-left: 24px;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+// Donation Box Two
+.donation-box2 {
+    background-color: $primary-clr;
+    padding: 50px;
+    padding-left: 110px;
+    position: relative;
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding: 30px;
+        padding-left: 60px;
+    }
+    .clipart {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            left: 10px;
+            top: 30px;
+            max-width: 40px;
+        }
+    }
+    h4 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42px;
+        margin-bottom: 32px;
+        color: $white-clr;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 24px;
+        }
+    }
+    .donate-shortlist {
+        display: flex;
+        justify-content: space-between;
+        li {
+            width: calc(33.333333% - 10px);
+            .radio-one input:checked ~ .checkmark {
+                background-color: $secondary-clr;
+                border-color: $secondary-clr;
+            }
+        }
+    }
+    .custom-ammount {
+        margin: 30px 0;
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            margin: 16px 0;
+        }
+        .form-control {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 30px;
+            padding: 15px 20px;
+            color: $clr-363636;
+            background-color: $clr-F1F1F1;
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                font-size: 14px;
+                line-height: 20px;
+                padding: 10px;
+            }
+        }
+    }
+}

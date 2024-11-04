@@ -1,0 +1,281 @@
+// Hero Banner
+#hero-one {
+    padding-top: 92px;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding-top: 78px;
+    }
+    .content {
+        background-color: $primary-clr;
+        border-radius: 20px;
+        overflow: hidden;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            border-radius: 0;
+        }
+    }
+    .left-sec {
+        padding: 80px 50px;
+        z-index: 5;
+        position: relative;
+        /* Max Width 1280px */
+        @media (max-width: $break_1280) {
+            padding: 52px 60px;
+        }
+        /* Max Width 1080px */
+        @media (max-width: $break_1080) {
+            padding: 40px;
+        }
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            padding: 25px 30px;
+        }
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            padding: 24px 20px;
+        }
+        .section-heading {
+            h6 {
+                color: $white-clr;
+            }
+            h2 {
+                color: $white-clr;
+                font-size: 60px;
+                line-height: 66px;
+                /* Max Width 1280px */
+                @media (max-width: $break_1280) {
+                    line-height: 50px;
+                    line-height: 56px;
+                }
+                /* Max Width 1080px */
+                @media (max-width: $break_1080) {
+                    font-size: 42px;
+                    line-height: 48px;
+                }
+                /* Max Width 991px */
+                @media (max-width: $break_991) {
+                    font-size: 36px;
+                    line-height: 44px;
+                }
+            }
+        }
+    }
+    .right-sec {
+        position: relative;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            margin-top: -40px;
+            padding-bottom: 24px;
+        }
+        .bg-img {
+            position: relative;
+            right: -1px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                max-width: 290px;
+                border-radius: 0 20px 20px 0;
+            }
+        }
+        .btn-sec {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                position: relative;
+                top: 0;
+                right: 0;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .btn {
+                font-size: 14px;
+                line-height: 23px;
+                padding: 10px 20px;
+                img {
+                    max-width: 20px;
+                }
+                &.btn-white {
+                    padding: 10px 12px;
+                    /* Max Width 767px */
+                    @media (max-width: $break_767) {
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Make a difference
+#difference {
+    margin-top: -100px;
+    padding-bottom: 100px;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+    .left-sec {
+        margin-top: 100px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            margin-top: 0;
+        }
+        .section-heading {
+            padding: 50px;
+            margin-bottom: 0;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                padding: 30px 0;
+            }
+        }
+    }
+    .right-sec {
+        .box-413 {
+            margin: auto;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                margin: 0 -15px;
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+// Country Stats
+#stats {
+    .bg-blue {
+        background-color: $clr-EEF6FE;
+        border-radius: 20px;
+        padding: 80px 100px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            border-radius: 0;
+            padding: 30px 20px;
+            margin: 0 -15px;
+        }
+        .section-heading {
+            margin-bottom: 60px;
+            text-align: center;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                margin-bottom: 20px;
+            }
+            h6 {
+                color: $clr-101010;
+            }
+        }
+    }
+}
+
+// Video
+#video-sec {
+    padding: 100px 0;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding: 30px 0;
+    }
+    .section-heading {
+        text-align: center;
+    }
+    .video-box {
+        max-width: 1064px;
+        margin: auto;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            margin: 0 -15px;
+            border-radius: 0;
+        }
+    }
+}
+
+// Give Now
+#give-now {
+    background-color: $primary-clr;
+    padding: 100px 0;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding: 30px 0;
+    }
+    .section-heading {
+        text-align: center;
+        h6 {
+            color: $white-clr;
+            font-weight: 600;
+        }
+        h2 {
+            color: $white-clr;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                max-width: 240px;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// Nop Banner
+#nop-banner {
+    padding: 100px 0;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding: 30px 0;
+    }
+    .bg-img {
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        padding: 80px 100px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            padding: 40px 24px;
+        }
+    }
+    .left-sec {
+        text-align: center;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                max-width: 240px;
+            }
+        }
+    }
+    .right-sec {
+        p {
+            font-size: 24px;
+            line-height: 34px;
+            color: $white-clr;
+            margin-bottom: 30px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+        .btn {
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Our Work
+#our-work {
+    padding-bottom: 100px;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding-bottom: 30px;
+    }
+    .section-heading {
+        text-align: center;
+    }
+}

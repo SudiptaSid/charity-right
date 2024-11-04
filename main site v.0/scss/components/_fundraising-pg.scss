@@ -1,0 +1,562 @@
+// Hero Banner
+#hero-banner-fp {
+    padding:100px 0;
+    margin-top:82px;
+    // --------------------------------
+    @media (max-width: $break_1080) {
+        padding:70px 0;
+    }
+    // --------------------------------
+    @media (max-width: $break_991) {
+        padding:50px 0;
+        margin-top:76px;
+    }
+    // --------------------------------
+    @media (max-width: $break_767) {
+        padding:24px 0 60px 0;
+    }
+    .content {
+        padding-left:90px;
+        // --------------------------------
+        @media (max-width: $break_1080) {
+            padding-left:0;
+        }
+        h1 {
+            font-size:72px;
+            line-height:84px;
+            letter-spacing:-0.02em;
+            font-weight:700;
+            margin-bottom:24px;
+            margin-top:45px;
+            span {
+                color:$primary-clr;
+            }
+            // --------------------------------
+            @media (max-width: $break_1080) {
+                font-size:52px;
+                line-height:64px;
+                margin-bottom:15px;
+                margin-top: 35px;
+            }
+            // --------------------------------
+            @media (max-width: $break_991) {
+                font-size:42px;
+                line-height:54px;
+                margin-top:25px;
+            }
+            // --------------------------------
+            @media (max-width: $break_767) {
+                font-size:36px;
+                line-height:44px;
+                max-width:290px;
+                margin-top:0;
+            }
+        }
+        p {
+            margin-bottom:0;
+            font-size:20px;
+            line-height:26px;
+            color:$grey2-clr;
+            // --------------------------------
+            @media (max-width: $break_1080) {
+                font-size:16px;
+                line-height:22px;
+            }
+            // --------------------------------
+            @media (max-width: $break_767) {
+                margin-bottom:20px;
+            }
+        }
+    }
+    img {
+        width:100%;
+    }
+}
+
+// Bg Slider 1
+#fundraising-bg-slider1 {
+    background-color: $blue-bg-clr;
+    padding:100px 20px;
+    border-radius:20px;
+    // --------------------------------
+    @media (max-width: $break_1080) {
+        padding:70px 20px;
+    }
+    // --------------------------------
+    @media (max-width: $break_767) {
+        border-radius:0;
+        padding:40px 15px;
+    }
+    .slider-content {
+        max-width: 1064px;
+        margin: auto;
+        .section-heading {
+            margin-bottom:100px;
+            // --------------------------------
+            @media (max-width: $break_767) {
+                margin-bottom:20px;
+            }
+            h2 {
+                max-width:630px;
+                margin-bottom:0;
+                display: inline-block;
+            }
+        }
+        .details_sec {
+            // --------------------------------
+            @media (max-width: $break_767) {
+                margin-bottom:20px;
+            }
+            h3 {
+                font-size:36px;
+                line-height:44px;
+                margin-bottom:24px;
+                font-weight:700;
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    font-size:20px;
+                    line-height:26px;
+                    margin-bottom:12px;
+                }
+            }
+            div {
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    height:220px;
+                }
+            }
+            p {
+                margin-bottom:24px;
+                font-size:20px;
+                line-height:26px;
+                color:$grey2-clr;
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    font-size:16px;
+                    line-height:22px;
+                    margin-bottom:15px;
+                }
+                &:last-child {
+                    margin-bottom:40px;
+                    // --------------------------------
+                    @media (max-width: $break_767) {
+                        margin-bottom:20px;
+                    }
+                }
+            }
+            .btn {
+                min-width:200px;
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    min-width:184px;
+                }
+            }
+        }
+        .img_sec {
+            img {
+                border-radius:12px;
+            }
+        }
+    }
+}
+
+// Slider 2
+#fundraising-slider2 {
+    padding:100px 15px;
+    // --------------------------------
+    @media (max-width: $break_1080) {
+        padding:70px 15px;
+    }
+    // --------------------------------
+    @media (max-width: $break_767) {
+        padding:40px 15px;
+    }
+    .slider-content {
+        max-width: 1064px;
+        margin: auto;
+    }
+}
+
+// Bg Slider 2
+#fundraising-bg-slider2 {
+    background-color: $blue-bg-clr;
+    padding:100px 15px;
+    border-radius:20px;
+    // --------------------------------
+    @media (max-width: $break_1080) {
+        padding:70px 15px;
+    }
+    // --------------------------------
+    @media (max-width: $break_767) {
+        border-radius:0;
+        padding:40px 15px;
+    }
+    .slider-content {
+        max-width: 1064px;
+        margin: auto;
+        .heading-btn {
+            h2 {
+                a {
+                    border-color:$white-clr;
+                    // --------------------------------
+                    @media (max-width: $break_767) {
+                        background-color:$no-clr;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#frpg-btn {
+    padding-bottom:100px;
+    // --------------------------------
+    @media (max-width: $break_1080) {
+        padding-bottom:70px;
+    }
+    // --------------------------------
+    @media (max-width: $break_767) {
+        padding-bottom:60px;
+    }
+    .btn {
+        padding:12px 40px;
+    }
+}
+
+// Fundraising Banner 2
+#fundraising-banner2 {
+    background-color: $blue-bg-clr;
+    padding:100px 38px;
+    margin-bottom:100px;
+    border-radius:20px;
+    // --------------------------------
+    @media (max-width: $break_1080) {
+        padding:70px 30px;
+        margin-bottom:70px;
+    }
+    // --------------------------------
+    @media (max-width: $break_767) {
+        border-radius:0;
+        padding:40px 15px;
+        margin-bottom:60px;
+    }
+    .content {
+        max-width: 1064px;
+        margin: auto;
+        .section-heading {
+            margin-bottom:40px;
+            // --------------------------------
+            @media (max-width: $break_767) {
+                margin-bottom:20px;
+            }
+            h2 {
+                font-size:36px;
+                line-height:44px;
+                // --------------------------------
+                @media (max-width: $break_991) {
+                    font-size:32px;
+                    line-height:40px;
+                }
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    font-size:22px;
+                    line-height:28px;
+                }
+            }
+        }
+        .btn-sec {
+            // --------------------------------
+            @media (max-width: $break_767) {
+                margin-bottom:20px;
+            }
+            .btn {
+                min-width:190px;
+                // --------------------------------
+                @media (max-width: $break_1080) {
+                    min-width:unset;
+                }
+                // --------------------------------
+                @media (max-width: $break_767) {
+                    width:100%;
+                }
+                &:first-child {
+                    margin-right:10px;
+                    // --------------------------------
+                    @media (max-width: $break_767) {
+                        margin-right:0;
+                        margin-bottom:10px;
+                    }
+                }
+                &.btn-white {
+                    box-shadow: $shadow-1;
+                }
+            }
+        }
+        img {
+            width:100%;
+        }
+    }
+}
+
+// View All Appeals Hero Banner
+#hero-banner-fp2 {
+    margin-top:122px;
+    background-color:$blue-bg-clr;
+    position: relative;
+    border-radius:20px;
+    text-align: center;
+    padding:132px 15px;
+    // --------------------------------
+    @media (max-width: $break_767) {
+        margin-top:76px;
+        padding:64px 15px;
+        border-radius: 0;
+        max-width:100%;
+    }
+    .top-pattern {
+        position: absolute;
+        max-width:154px;
+        left:40px;
+        top:40px;
+        // --------------------------------
+        @media (max-width: $break_767) {
+            max-width:68px;
+            top:15px;
+            left:15px;
+        }
+        img {
+            width:100%;
+        }
+    }
+    .bottom-pattern {
+        position: absolute;
+        max-width:100px;
+        right:40px;
+        bottom:40px;
+        // --------------------------------
+        @media (max-width: $break_767) {
+            max-width:43px;
+            right:15px;
+            bottom:15px;
+        }
+        img {
+            width:100%;
+        }
+    }
+    h2 {
+        margin:0;
+        font-size:72px;
+        line-height:84px;
+        font-weight:700;
+        // --------------------------------
+        @media (max-width: $break_1080) {
+            font-size:52px;
+            line-height:64px;
+        }
+        // --------------------------------
+        @media (max-width: $break_991) {
+            font-size:42px;
+            line-height:54px;
+        }
+        // --------------------------------
+        @media (max-width: $break_767) {
+            font-size:36px;
+            line-height:44px;
+        }
+    }
+}
+
+// All Appeals
+#all-appeal-grids {
+    padding:100px 0;
+    // --------------------------------
+    @media (max-width: $break_1080) {
+        padding:70px 0;
+    }
+    // --------------------------------
+    @media (max-width: $break_767) {
+        padding:40px 0 60px 0;
+    }
+    .mobile-filter {
+        display: none;
+        width: 100%;
+        margin-bottom:24px;
+        overflow-x:auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        // --------------------------------
+        @media (max-width: $break_767) {
+            display: block;
+        }
+        ul {
+            display: flex;
+            li {
+                display: inline-block;
+                margin-right:10px;
+                .select2-container--filter1 {
+                    min-width:100px;
+                    .select2-selection--single {
+                        border:none;
+                        border-radius:0;
+                        padding:8px 20px 8px 10px;
+                        color:$grey2-clr;
+                        background-color:$white-clr;
+                        border:1px solid $grey-clr;
+                        border-radius:10px;
+                        .select2-selection__arrow {
+                            position: absolute;
+                            top: 50%;
+                            right: 10px;
+                            transform: translateY(-50%);
+                            b {
+                                &:after {
+                                    content:"\f107";
+                                    font-family: FontAwesome;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        .select2-selection__rendered {
+                            font-size:12px;
+                            line-height:20px;
+                            font-weight:600;
+                            padding:0;
+                            color:$grey2-clr;
+                            background-color:$white-clr;
+                            border:none;
+                            border-radius:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .left-panel {
+        @media only screen and (min-width: $break_767 + 1px) {
+            padding-left:0;
+        }
+        // --------------------------------
+        @media (max-width: $break_767) {
+            display: none;
+        }
+        .filter-heading {
+            font-size:36px;
+            line-height:44px;
+            font-weight: 700;
+            margin-bottom:40px;
+        }
+        .filter-left {
+            .filter-box {
+                margin-bottom:30px;
+                @media only screen and (max-width: $break_767) {
+                    margin-bottom:20px;
+                }
+                &:last-child {
+                    margin-bottom:0;
+                }
+                h5 {
+                    margin-bottom:24px;
+                    button {
+                        display: inline-block;
+                        color:$grey2-clr;
+                        background-color:$no-clr;
+                        border:none;
+                        text-align: left;
+                        padding: 0;
+                        padding-right:30px;
+                        font-weight: 400;
+                        font-size:18px;
+                        line-height:24px;
+                        position: relative;
+                        &:after {
+                            content:'';
+                            font-family: FontAwesome;
+                            position: absolute;
+                            right:0;
+                        }
+                        &[aria-expanded="false"] {
+                            &:after {
+                                content:'\f107';
+                            }
+                        }
+                        &[aria-expanded="true"] {
+                            &:after {
+                                content:'\f106';
+                            }
+                        }
+                    }
+                }
+            }
+            .filter-list {
+                li {
+                    margin-right:3px;
+                    margin-bottom:8px;
+                    display: inline-block;
+                    a {
+                        color:$grey2-clr;
+                        border:1px solid $grey-clr;
+                        background-color:$white-clr;
+                        padding:10px 20px;
+                        font-size:14px;
+                        line-height:18px;
+                        display: inline-block;
+                        border-radius:12px;
+                        font-weight: 600;
+                        &:hover, &.active {
+                            color:$white-clr;
+                            background-color:$primary-clr;
+                            border-color:$primary-clr
+                        }
+                    }
+                }
+            }
+            .filter-list2 {
+                li {
+                    margin-bottom:15px;
+                    a {
+                        display: inline-block;
+                        font-size:16px;
+                        line-height:22px;
+                        color:$black-clr;
+                        font-weight:400;
+                        &:hover, &.active {
+                            color:$primary-clr;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right-panel {
+        @media only screen and (min-width: $break_767 + 1px) {
+            padding-right:0;
+        }
+        .text-center {
+            margin-top:40px;
+        }
+    }
+}
+
+// Select Dropdown
+.select2-container--filter1 {
+    .select2-dropdown {
+        max-height: 200px;
+        overflow-y: auto;
+        border-radius:10px;
+        width:auto !important;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .select2-results__option {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 18px;
+            &:hover {
+                background-color:$blue-bg-clr;
+            }
+        }
+    }
+}

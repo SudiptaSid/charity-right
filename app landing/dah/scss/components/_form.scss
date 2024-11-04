@@ -1,0 +1,31 @@
+// Form
+input,
+textarea,
+select {
+    outline: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}
+
+.form-control {
+    font-size: 1em;
+    line-height: 18px;
+    padding: 18px 20px;
+    color: $clr-646464;
+    background-color: $white-clr;
+    border: 1px solid $clr-646464;
+    border-radius: 5px;
+    height: auto !important;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding: 14px 20px;
+    }
+    &::placeholder {
+        color: #d4d4d4;
+    }
+}

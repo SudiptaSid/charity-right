@@ -1,0 +1,82 @@
+// Form Control
+.form-group {
+  > label {
+    font-size: 13px;
+    font-weight: 700;
+    color: clr(black, main);
+    margin-bottom: 4px;
+
+    sup {
+      font-size: 1em;
+      top: 0;
+      color: red;
+    }
+  }
+
+  .inputBox {
+    position: relative;
+
+    .form-control {
+      color: clr(black, main);
+      background-color: clr(light, outline);
+      border: none;
+      border-radius: 0;
+      padding: 10px 15px;
+      font-size: 1em;
+      line-height: 1.6;
+      white-space: nowrap;
+      outline: none;
+      width: 100%;
+
+      &:hover,
+      &:focus {
+        outline: none;
+      }
+
+      &:focus {
+        border-color: clr(primary, focus);
+        box-shadow: 0 0 0 3px rgba(clr(primary, outline), 0.5);
+      }
+
+      &:disabled {
+        background-color: clr(light, main);
+        cursor: no-drop;
+      }
+
+      &::placeholder {
+        color: clr(black, focus);
+      }
+    }
+
+    em {
+      color: clr(black, focus);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &.leftIcon {
+      .form-control {
+        padding-left: 34px;
+      }
+
+      .emLeft {
+        left: 10px;
+      }
+    }
+
+    &.rightIcon {
+      .form-control {
+        padding-right: 34px;
+      }
+
+      .emRight {
+        right: 10px;
+      }
+    }
+  }
+
+  small {
+    font-size: 11px;
+  }
+}

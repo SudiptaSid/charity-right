@@ -1,0 +1,28 @@
+// Main Header
+.main-header {
+    padding: 30px 0;
+    z-index: 5;
+    transition: 600ms all ease-out;
+    /* Max width 767px */
+    @media (max-width: $break_767) {
+        padding: 20px 0;
+    }
+    a {
+        display: inline-block;
+        img {
+            /* Max width 767px */
+            @media (max-width: $break_767) {
+                height: 30px;
+            }
+        }
+    }
+    &.fixed_menu {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: $white-clr;
+        padding: 20px 0;
+        box-shadow: $shadow-1;
+    }
+}

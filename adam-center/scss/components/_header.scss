@@ -1,0 +1,93 @@
+// Main Header
+.main-header {
+    .navbar {
+        padding: 0;
+    }
+    .navbar-brand {
+        order: 1;
+        flex-shrink: 0;
+
+        // Max 991px
+        @media only screen and (max-width: 991.5px) {
+            order: 1;
+        }
+        img {
+            height: 65px;
+        }
+    }
+    .navbar-collapse {
+        order: 2;
+
+        // Max 991px
+        @media only screen and (max-width: 991.5px) {
+            order: 3;
+            position: absolute;
+            width: calc(100% + 30px);
+            left: -15px;
+            top: 75px;
+            background-color: $white-clr;
+            z-index: 9;
+        }
+        .nav-item {
+            .nav-link {
+                color: $clr-152243;
+                font-weight: 400;
+                position: relative;
+                text-align: center;
+                &:after {
+                    content: "";
+                    width: 7px;
+                    height: 7px;
+                    background-color: $clr-50AC97;
+                    border-radius: 50%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    visibility: hidden;
+                }
+                &:hover {
+                    font-weight: 700;
+                }
+            }
+            &.active {
+                .nav-link {
+                    font-weight: 700;
+                    &:after {
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+    .right-sec {
+        order: 3;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        // Max 991px
+        @media only screen and (max-width: 991.5px) {
+            order: 2;
+        }
+        a {
+            color: $clr-152243;
+            &:hover {
+                color: $clr-50AC97;
+            }
+        }
+        .navbar-toggler {
+            color: $clr-152243;
+            display: none;
+            border: none;
+            padding: 0;
+            font-size: 1em;
+            font-weight: 700;
+
+            // Max 991px
+            @media only screen and (max-width: 991.5px) {
+                display: inline;
+            }
+        }
+    }
+}

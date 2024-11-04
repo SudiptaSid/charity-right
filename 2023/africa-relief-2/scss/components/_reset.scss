@@ -1,0 +1,77 @@
+// Reset
+* {
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: $clr-999999;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $clr-333333;
+        border-radius: 10px;
+    }
+}
+body {
+    font-family: $ff-gilroy;
+    font-size: $sz-18;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $clr-1E1E1E;
+    background-color: $white-clr;
+    overflow-x: hidden;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        font-size: $sz-14;
+    }
+}
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 15px;
+}
+a {
+    display: inline-block;
+    color: $clr-E8A61E;
+    transition: 0.3s;
+    &:hover {
+        color: darken($clr-E8A61E, 5%);
+        text-decoration: underline;
+    }
+}
+a,
+button,
+input,
+textarea,
+select {
+    &:focus,
+    &:hover,
+    &:active {
+        outline: none;
+        box-shadow: none;
+    }
+}
+small,
+.small {
+    font-size: 80%;
+}
+section {
+    position: relative;
+}
+hr {
+    border-color: $clr-999999;
+}
+img {
+    max-width: 100%;
+}

@@ -1,0 +1,18 @@
+// Main Header
+.mainHeader {
+  padding: 15px 0;
+  background-color: clr(primary, main);
+  background-size: contain;
+
+  .socialLinks {
+    justify-content: end;
+
+    a {
+      color: clr(light, outline);
+
+      &:hover {
+        color: clr(light, main);
+      }
+    }
+  }
+}

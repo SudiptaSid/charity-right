@@ -1,0 +1,33 @@
+// Donate One
+.donateOne {
+  padding: 80px 0;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .sectionTitle {
+    color: clr(secondary, main);
+
+    h1 {
+      color: inherit;
+
+      small {
+        font-size: 50%;
+        font-weight: 600;
+        display: block;
+      }
+    }
+  }
+
+  .borCol {
+    + .borCol {
+      border-left: 1px solid clr(secondary, main);
+
+      @include md {
+        border-left: none;
+        border-top: 1px solid clr(secondary, main);
+      }
+    }
+  }
+}

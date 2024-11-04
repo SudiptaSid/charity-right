@@ -1,0 +1,37 @@
+// Logo
+.logo {
+  display: inline-block;
+
+  img {
+    height: 60px;
+
+    @include md {
+      height: 40px;
+    }
+  }
+}
+
+// Social Links
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  a {
+    color: clr(primary, main);
+    transition: 0.6s all;
+
+    svg {
+      fill: clr(primary, main);
+      width: 18px;
+    }
+
+    &:hover {
+      color: clr(primary, main);
+
+      svg {
+        fill: clr(primary, hover);
+      }
+    }
+  }
+}

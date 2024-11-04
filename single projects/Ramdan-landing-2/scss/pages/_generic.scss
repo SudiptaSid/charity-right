@@ -1,0 +1,508 @@
+// Generic Banner
+#generic-banner {
+    padding-top: 92px;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding-top: 78px;
+    }
+    .content {
+        background-image: url(../images/generic/bg1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border-radius: 20px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            border-radius: 0;
+            padding: 24px 20px 0;
+        }
+    }
+    .left-sec {
+        padding: 100px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            padding: 0;
+        }
+        .generic-heading {
+            margin-bottom: 0;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                margin-bottom: 30px;
+            }
+            h6 {
+                color: $white-clr;
+            }
+            h2 {
+                color: $white-clr;
+                /* Min Width 991px */
+                @media (min-width: $break_991 + 1px) {
+                    font-size: 40px;
+                    line-height: 44px;
+                }
+            }
+        }
+    }
+    .btn-sec {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            display: none;
+        }
+        .btn-white {
+            padding: 10px 12px;
+            img {
+                max-width: 20px;
+            }
+        }
+    }
+    .right-sec {
+        text-align: center;
+        .bg-img {
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                max-width: 240px;
+            }
+        }
+    }
+}
+
+// Generic Two
+#generic-two {
+    padding: 100px 0;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding: 40px 0;
+    }
+    .left-sec {
+        text-align: center;
+        img {
+            border-radius: 50%;
+        }
+    }
+    .right-sec {
+        max-width: 630px;
+    }
+}
+
+// Generic Three
+#generic-three {
+    .content {
+        max-width: 846px;
+        margin: auto;
+        text-align: center;
+        .generic-heading {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Nop Banner
+#nop-two {
+    padding: 100px 0;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding: 40px 0;
+    }
+    .bg-img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        padding: 80px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            padding: 40px 20px;
+            border-radius: 0;
+        }
+    }
+    .left-sec {
+        text-align: center;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+    .right-sec {
+        > img {
+            width: auto;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                height: 38px;
+            }
+        }
+        .generic-heading {
+            margin-top: 34px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                margin-top: 20px;
+            }
+            p {
+                color: $white-clr;
+            }
+        }
+    }
+}
+
+// Generic Four
+#generic-four {
+    .left-sec {
+        > img {
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                height: 90px;
+            }
+        }
+        .generic-heading {
+            margin-top: 30px;
+            max-width: 640px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                margin-top: 20px;
+            }
+        }
+    }
+    .right-sec {
+        text-align: center;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            display: none;
+        }
+        img {
+            border-radius: 50%;
+        }
+    }
+}
+
+// Generic Five
+#generic-five {
+    padding: 100px 0;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding: 40px 0;
+    }
+    .bg-img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        padding: 80px 80px 0 0;
+        overflow: hidden;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            padding: 40px 20px 0 0;
+            border-radius: 0;
+        }
+    }
+    .left-sec {
+        text-align: center;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+    .right-sec {
+        padding-bottom: 80px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            padding-bottom: 40px;
+            padding-left: 20px;
+        }
+        > img {
+            width: auto;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                height: 80px;
+            }
+        }
+        .generic-heading {
+            margin-top: 34px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                margin-top: 20px;
+            }
+            h5 {
+                color: $white-clr;
+            }
+            p {
+                color: $white-clr;
+            }
+        }
+    }
+}
+
+// Generic Six
+#generic-six {
+    .content1 {
+        max-width: 1064px;
+        margin: auto;
+        .generic-heading {
+            margin-bottom: 0;
+            h2 {
+                text-align: center;
+            }
+            h5 {
+                /* Max Width 767px */
+                @media (max-width: $break_767) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .content2 {
+        max-width: 1064px;
+        margin: 60px auto;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            margin: 30px auto;
+        }
+        .left-sec {
+            text-align: center;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                margin-bottom: 30px;
+            }
+            img {
+                border-radius: 50%;
+            }
+        }
+        .generic-heading {
+            margin-bottom: 0;
+        }
+    }
+    .content3 {
+        max-width: 1064px;
+        margin: auto;
+        .generic-heading {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Generic Seven
+#generic-seven {
+    padding: 100px 0;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        padding: 40px 0;
+    }
+    .bg-img {
+        background-color: $clr-EEF6FE;
+        border-radius: 20px;
+        padding: 100px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            padding: 40px 20px;
+            border-radius: 0;
+        }
+    }
+    .generic-heading {
+        text-align: center;
+    }
+}
+
+/* -----  New Ramadan ----- */
+.btn.btn-blue {
+    color: #101010;
+    background-color: #439afd;
+}
+.btn.btn-blue:hover,
+.btn.btn-blue:focus {
+    color: #101010;
+    background-color: #439afd;
+}
+#ramadan-new {
+    margin-top: 82px;
+    margin-bottom: 20px;
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+        margin-top: 76px;
+    }
+    .bg-img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        padding: 80px 60px 0 80px;
+        overflow: hidden;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            padding: 0;
+            padding-top: 40px;
+            border-radius: 0;
+        }
+    }
+    .left-sec {
+        max-width: 450px;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            padding-bottom: 40px;
+            padding-left: 0;
+        }
+        > img {
+            width: auto;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                height: 80px;
+            }
+        }
+        p {
+            font-family: YoungSerif;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 44px;
+            color: #fff;
+            margin: 32px 0 42px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                font-size: 30px;
+                line-height: 34px;
+                margin: 20px 0 30px;
+            }
+        }
+        .btn {
+            padding: 12px 20px;
+        }
+    }
+    .right-sec {
+        position: relative;
+        z-index: 4;
+        .img-1 {
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                max-width: 80%;
+            }
+        }
+        .img-2 {
+            position: absolute;
+            top: -40px;
+            right: -100px;
+            z-index: -1;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                max-width: 70%;
+                right: -30px;
+            }
+        }
+    }
+}
+
+/* ----- New Nop ----- */
+#nop-new {
+    /* Max Width 767px */
+    @media (max-width: $break_767) {
+    }
+    .btn {
+        padding: 12px 20px;
+    }
+    .left-sec {
+        padding: 40px;
+        border-radius: 20px;
+        overflow: hidden;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .generic-heading {
+            h2 {
+                color: $white-clr;
+            }
+            p {
+                color: $white-clr;
+            }
+        }
+    }
+    .right-sec {
+        background-color: #dc5790;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border-radius: 20px;
+        overflow: hidden;
+        /* Max Width 767px */
+        @media (max-width: $break_767) {
+            border-radius: 10px;
+        }
+        .color1 {
+            width: 45%;
+            padding: 40px;
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                width: 100%;
+                padding: 20px;
+            }
+            .generic-heading {
+                h2 {
+                    color: $white-clr;
+                }
+                p {
+                    color: $white-clr;
+                }
+            }
+            .btn {
+                color: $primary-clr;
+            }
+        }
+        .color2 {
+            width: 55%;
+            padding: 54px 40px;
+            background: #ab1f91;
+            background: linear-gradient(135deg, rgba(171, 31, 145, 1) 0%, rgba(171, 31, 145, 0) 100%);
+            /* Max Width 767px */
+            @media (max-width: $break_767) {
+                width: 100%;
+                padding: 20px;
+            }
+            ul {
+                li {
+                    + li {
+                        margin-top: 20px;
+                    }
+                    h3 {
+                        margin-bottom: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        span {
+                            color: $white-clr;
+                            &:first-child {
+                                font-size: 36px;
+                                font-weight: bold;
+                                line-height: 1;
+                                width: 55%;
+                                /* Max Width 767px */
+                                @media (max-width: $break_767) {
+                                    font-size: 22px;
+                                    line-height: 28px;
+                                    width: 50%;
+                                }
+                            }
+                            &:last-child {
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 20px;
+                                width: 45%;
+                                /* Max Width 767px */
+                                @media (max-width: $break_767) {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

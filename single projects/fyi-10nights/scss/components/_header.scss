@@ -1,0 +1,39 @@
+// Header One
+.header-one {
+    padding: 10px 15px;
+    position: relative;
+
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        background-color: lighten($black-clr, 50%);
+        padding: 6px 10px;
+    }
+    .navbar {
+        padding: 0;
+        .navbar-brand {
+            img {
+                /* Max Width 991px */
+                @media (max-width: $break_991) {
+                    max-width: 60px;
+                }
+            }
+        }
+    }
+    .nav-item {
+        .nav-link {
+            color: $white-clr;
+            border-radius: 10px;
+            padding: 10px 25px;
+
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                border-radius: 6px;
+            }
+            &.donate_now {
+                color: $black-clr;
+                background-color: $primary-clr;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+// Section Heading
+.sectionTitle {
+  h1 {
+    margin-bottom: 0;
+
+    &.titleXL {
+      @include headingXL;
+    }
+
+    &.titleL {
+      @include headingL;
+    }
+
+    span {
+      font-size: 70%;
+      font-weight: 500;
+    }
+
+    + p {
+      margin: 8px 0 0;
+    }
+  }
+
+  p {
+    @include paraL;
+    margin-bottom: 0;
+
+    + p {
+      margin: 15px 0 0;
+    }
+  }
+
+  .btnSec {
+    margin: 32px 0 0;
+  }
+}
